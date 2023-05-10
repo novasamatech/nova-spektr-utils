@@ -54,6 +54,18 @@ function checkChainsFile(filePath) {
         console.log("All chain icons path is correct in " + filePath);
     }
 
+    let buyProviders = jp.query(chainsJSON, "$..buyProviders");
+    if (buyProviders.length > 0) {
+        console.error("Buy providers has to be excluded from " + filePath);
+        console.log(buyProviders);
+
+    }
+    let chainOptions = jp.query(chainsJSON, "$..options[?(@ != 'testnet')]");
+    if (chainOptions.length > 0) {
+        console.error("Chain options has to be removed from " + filePath);
+        console.log(chainOptions);
+    }
+
 }
 
 checkChainsFile("./chains/v1/chains.json");
