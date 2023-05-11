@@ -5,7 +5,7 @@ on:
   pull_request:
 
 jobs:
-  check-localisation:
+  check-chain-config:
     runs-on: ubuntu-latest
 
     steps:
