@@ -1,0 +1,20 @@
+name: Check chains configuration files
+
+on:
+  pull_request:
+
+jobs:
+  check-localisation:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: 🟩 Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: 📝 Check localisation files
+        run: node CheckConfig.js
