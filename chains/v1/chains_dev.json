@@ -83,12 +83,6 @@
                     "type": "github",
                     "url": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/crowdloan/polkadot-dev.json"
                 }
-            ],
-            "governance": [
-                {
-                    "type": "subsquare",
-                    "url": "https://polkadot.subsquare.io/api"
-                }
             ]
         }
     },
@@ -5583,5 +5577,81 @@
         ],
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/chains/3DPass.svg",
         "addressPrefix": 71
+    },
+    {
+        "chainId": "0xf460fe68f5f34ced6b18d8e4612410e334c55521bf27714cdca654b63b685ae6",
+        "name": "Novasama Testnet - Kusama",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "KSM",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/Kusama.svg",
+                "name": "Kusama"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://novasama.uz",
+                "name": "Development node"
+            }
+        ],
+        "externalApi": {
+            "governance-delegations": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-gov-test"
+                }
+            ]
+        },
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/chains/Governance2_Testnet.svg",
+        "addressPrefix": 2,
+        "options": ["testnet"]
+    },
+    {
+        "chainId": "0x67f9723393ef76214df0118c34bbbd3dbebc8ed46a10973a8c969d48fe7598c9",
+        "parentId": "0xe143f23803ac50e8f6f8e62695d1ce9e4e1d68aa36c1cd2cfd15340213f3423e",
+        "name": "Westmint",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "WND",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/Westend.svg",
+                "name": "Westend"
+            },
+            {
+                "assetId": 1,
+                "symbol": "SIRI",
+                "precision": 10,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/Default.svg",
+                "type": "statemine",
+                "typeExtras": {
+                    "assetId": "81"
+                },
+                "name": "Siri"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://westmint-rpc.polkadot.io",
+                "name": "Parity node"
+            },
+            {
+                "url": "wss://westmint-rpc.dwellir.com",
+                "name": "Dwellir node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Statescan",
+                "account": "https://westmint.statescan.io/account/{address}",
+                "extrinsic": "https://westmint.statescan.io/extrinsic/{hash}",
+                "event": "https://westmint.statescan.io/event/{event}"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/chains/Westmint_Testnet.svg",
+        "addressPrefix": 42,
+        "options": ["testnet"]
     }
 ]
