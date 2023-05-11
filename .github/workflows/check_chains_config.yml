@@ -16,6 +16,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
+          
+      - name: ⚙️ Install dependencies
+        run: npm install
+        shell: bash
 
-      - name: 📝 Check localisation files
+      - name: 📝 Check chain config files
         run: node CheckConfig.js
