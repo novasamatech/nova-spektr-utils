@@ -29,7 +29,7 @@ function checkChainsFile(filePath) {
     let assetIcons = jp.query(chainsJSON, "$..assets[*].icon");
     let badAssetIcon = new Set();
     for (let i in assetIcons) {
-        if (assetIcons[i].indexOf('/nova-spektr-utils/main/icons/assets/white/v1/') === -1) {
+        if (assetIcons[i].indexOf('/nova-spektr-utils/main/icons/v1/assets/white/') === -1) {
             badAssetIcon.add(assetIcons[i]);
         }
     }
@@ -43,7 +43,7 @@ function checkChainsFile(filePath) {
     let chainIcons = jp.query(chainsJSON, "$[*].icon");
     let badChainIcons = new Set();
     for (let i in chainIcons) {
-        if (chainIcons[i].indexOf('/nova-spektr-utils/main/icons/chains/v1/') === -1) {
+        if (chainIcons[i].indexOf('/nova-spektr-utils/main/icons/v1/chains') === -1) {
             badChainIcons.add(chainIcons[i]);
         }
     }
@@ -64,6 +64,11 @@ function checkChainsFile(filePath) {
     if (chainOptions.length > 0) {
         console.error("Chain options has to be removed from " + filePath);
         console.log(chainOptions);
+    }
+    let chainTypes = jp.query(chainsJSON, "$..types");
+    if (chainTypes.length > 0) {
+        console.error("Chain types has to be removed from " + filePath);
+        console.log(chainTypes);
     }
 
 }
