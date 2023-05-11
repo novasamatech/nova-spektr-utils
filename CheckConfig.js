@@ -20,7 +20,7 @@ function checkChainsFile(filePath) {
         }
     }
     if (badPath.size > 0) {
-        console.error("No icons for chains or tokens in " + filePath);
+        console.error("No icons for chains or assets in " + filePath);
         console.log(badPath);
     } else {
         console.log("All icons found in in " + filePath);
@@ -29,7 +29,7 @@ function checkChainsFile(filePath) {
     let assetIcons = jp.query(chainsJSON, "$..assets[*].icon");
     let badAssetIcon = new Set();
     for (let i in assetIcons) {
-        if (assetIcons[i].indexOf('/nova-spektr-utils/main/icons/tokens/white/v1/') === -1) {
+        if (assetIcons[i].indexOf('/nova-spektr-utils/main/icons/assets/white/v1/') === -1) {
             badAssetIcon.add(assetIcons[i]);
         }
     }

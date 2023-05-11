@@ -8,7 +8,7 @@
                 "symbol": "DOT",
                 "precision": 10,
                 "priceId": "polkadot",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Polkadot.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Polkadot.svg",
                 "staking": "relaychain",
                 "name": "Polkadot"
             }
@@ -105,7 +105,7 @@
                 "symbol": "KSM",
                 "precision": 12,
                 "priceId": "kusama",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Kusama.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Kusama.svg",
                 "staking": "relaychain",
                 "name": "Kusama"
             }
@@ -211,7 +211,7 @@
                 "assetId": 0,
                 "symbol": "WND",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Westend.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Westend.svg",
                 "staking": "relaychain",
                 "name": "Westend"
             }
@@ -287,7 +287,7 @@
                 "assetId": 0,
                 "symbol": "KSM",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Kusama.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Kusama.svg",
                 "priceId": "kusama",
                 "name": "Kusama"
             },
@@ -297,7 +297,7 @@
                 "precision": 10,
                 "priceId": "rmrk",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/RMRK.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/RMRK.svg",
                 "typeExtras": {
                     "assetId": "8"
                 },
@@ -308,7 +308,7 @@
                 "symbol": "CHAOS",
                 "precision": 10,
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/CHAOS.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/CHAOS.svg",
                 "typeExtras": {
                     "assetId": "69420"
                 },
@@ -319,7 +319,7 @@
                 "symbol": "CHRWNA",
                 "precision": 10,
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/CHRWNA.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/CHRWNA.svg",
                 "typeExtras": {
                     "assetId": "567"
                 },
@@ -330,7 +330,7 @@
                 "symbol": "SHIBATALES",
                 "precision": 0,
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Default.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Default.svg",
                 "typeExtras": {
                     "assetId": "88888"
                 },
@@ -341,7 +341,7 @@
                 "symbol": "BILLCOIN",
                 "precision": 8,
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/BILLCOIN.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/BILLCOIN.svg",
                 "typeExtras": {
                     "assetId": "223"
                 },
@@ -353,7 +353,7 @@
                 "precision": 6,
                 "priceId": "tether",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/USDT.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/USDT.svg",
                 "typeExtras": {
                     "assetId": "1984"
                 },
@@ -422,7 +422,7 @@
                 "assetId": 0,
                 "symbol": "KAR",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Karura.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Karura.svg",
                 "priceId": "karura",
                 "name": "Karura"
             },
@@ -430,7 +430,7 @@
                 "assetId": 1,
                 "symbol": "aUSD",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/AUSD.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/AUSD.svg",
                 "priceId": "acala-dollar",
                 "type": "orml",
                 "typeExtras": {
@@ -445,7 +445,7 @@
                 "assetId": 2,
                 "symbol": "KSM",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Kusama.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Kusama.svg",
                 "priceId": "kusama",
                 "type": "orml",
                 "typeExtras": {
@@ -461,7 +461,7 @@
                 "symbol": "RMRK",
                 "precision": 10,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/RMRK.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/RMRK.svg",
                 "priceId": "rmrk",
                 "typeExtras": {
                     "currencyIdScale": "0x050000",
@@ -476,7 +476,7 @@
                 "symbol": "BNC",
                 "precision": 12,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Bifrost.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Bifrost.svg",
                 "priceId": "bifrost-native-coin",
                 "typeExtras": {
                     "currencyIdScale": "0x00a8",
@@ -492,7 +492,7 @@
                 "precision": 12,
                 "priceId": "liquid-ksm",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/LKSM.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/LKSM.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0083",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -507,7 +507,7 @@
                 "precision": 12,
                 "priceId": "pha",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Phala.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Phala.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x00aa",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -522,7 +522,7 @@
                 "precision": 12,
                 "priceId": "kintsugi",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Kintsugi.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Kintsugi.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x00ab",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -537,7 +537,7 @@
                 "precision": 8,
                 "priceId": "bitcoin",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/KBTC.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/KBTC.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x00ac",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -551,7 +551,7 @@
                 "symbol": "TAI",
                 "precision": 12,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/TAI.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/TAI.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0084",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -565,7 +565,7 @@
                 "symbol": "vsKSM",
                 "precision": 12,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/vsKSM.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/vsKSM.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x00a9",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -579,7 +579,7 @@
                 "symbol": "taiKSM",
                 "precision": 12,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/taiKSM.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/taiKSM.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0300000000",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -594,7 +594,7 @@
                 "precision": 18,
                 "priceId": "quartz",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Quartz.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Quartz.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050200",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -609,7 +609,7 @@
                 "precision": 18,
                 "priceId": "moonriver",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Moonriver.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Moonriver.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050300",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -623,7 +623,7 @@
                 "symbol": "HKO",
                 "precision": 12,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/HKO.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/HKO.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050400",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -638,7 +638,7 @@
                 "precision": 12,
                 "priceId": "crust-storage-market",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/CrustShadow.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/CrustShadow.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050500",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -653,7 +653,7 @@
                 "precision": 6,
                 "priceId": "tether",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/USDT.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/USDT.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050700",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -668,7 +668,7 @@
                 "precision": 12,
                 "priceId": "calamari-network",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Calamari.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Calamari.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050a00",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -683,7 +683,7 @@
                 "precision": 12,
                 "priceId": "integritee",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Integritee.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Integritee.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050800",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -697,7 +697,7 @@
                 "symbol": "KICO",
                 "precision": 14,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/KICO.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/KICO.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050600",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -712,7 +712,7 @@
                 "precision": 18,
                 "priceId": "metaverse-network-pioneer",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Bit.Country.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Bit.Country.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050900",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -727,7 +727,7 @@
                 "precision": 12,
                 "priceId": "basilisk",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Basilisk.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Basilisk.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050b00",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -742,7 +742,7 @@
                 "precision": 18,
                 "priceId": "altair",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Altair.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Altair.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050c00",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -757,7 +757,7 @@
                 "precision": 9,
                 "type": "orml",
                 "priceId": "genshiro",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Genshiro.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Genshiro.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050e00",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -772,7 +772,7 @@
                 "precision": 9,
                 "priceId": "tether",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/EQD.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/EQD.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050f00",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -787,7 +787,7 @@
                 "precision": 18,
                 "type": "orml",
                 "priceId": "darwinia-crab-network",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Crab.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Crab.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050d00",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -870,7 +870,7 @@
                 "assetId": 0,
                 "symbol": "SDN",
                 "precision": 18,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Shiden.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Shiden.svg",
                 "priceId": "shiden",
                 "name": "Shiden"
             },
@@ -880,7 +880,7 @@
                 "precision": 12,
                 "type": "statemine",
                 "priceId": "pha",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Phala.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Phala.svg",
                 "typeExtras": {
                     "assetId": "18446744073709551623"
                 },
@@ -892,7 +892,7 @@
                 "precision": 12,
                 "priceId": "liquid-ksm",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/LKSM.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/LKSM.svg",
                 "typeExtras": {
                     "assetId": "18446744073709551619"
                 },
@@ -904,7 +904,7 @@
                 "precision": 18,
                 "type": "statemine",
                 "priceId": "moonriver",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Moonriver.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Moonriver.svg",
                 "typeExtras": {
                     "assetId": "18446744073709551620"
                 },
@@ -916,7 +916,7 @@
                 "precision": 8,
                 "type": "statemine",
                 "priceId": "bitcoin",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/KBTC.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/KBTC.svg",
                 "typeExtras": {
                     "assetId": "18446744073709551621"
                 },
@@ -928,7 +928,7 @@
                 "precision": 12,
                 "type": "statemine",
                 "priceId": "kintsugi",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Kintsugi.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Kintsugi.svg",
                 "typeExtras": {
                     "assetId": "18446744073709551622"
                 },
@@ -940,7 +940,7 @@
                 "precision": 12,
                 "type": "statemine",
                 "priceId": "kusama",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Kusama.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Kusama.svg",
                 "typeExtras": {
                     "assetId": "340282366920938463463374607431768211455"
                 },
@@ -952,7 +952,7 @@
                 "precision": 12,
                 "type": "statemine",
                 "priceId": "acala-dollar",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/AUSD.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/AUSD.svg",
                 "typeExtras": {
                     "assetId": "18446744073709551616"
                 },
@@ -964,7 +964,7 @@
                 "precision": 12,
                 "type": "statemine",
                 "priceId": "crust-storage-market",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/CrustShadow.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/CrustShadow.svg",
                 "typeExtras": {
                     "assetId": "18446744073709551624"
                 },
@@ -976,7 +976,7 @@
                 "precision": 12,
                 "type": "statemine",
                 "priceId": "karura",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Karura.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Karura.svg",
                 "typeExtras": {
                     "assetId": "18446744073709551618"
                 },
@@ -988,7 +988,7 @@
                 "precision": 6,
                 "type": "statemine",
                 "priceId": "tether",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/USDT.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/USDT.svg",
                 "typeExtras": {
                     "assetId": "4294969280"
                 },
@@ -1060,7 +1060,7 @@
                 "assetId": 0,
                 "symbol": "BNC",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Bifrost.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Bifrost.svg",
                 "priceId": "bifrost-native-coin",
                 "staking": "parachain",
                 "name": "Bifrost"
@@ -1069,7 +1069,7 @@
                 "assetId": 1,
                 "symbol": "KSM",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Kusama.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Kusama.svg",
                 "priceId": "kusama",
                 "type": "orml",
                 "typeExtras": {
@@ -1085,7 +1085,7 @@
                 "symbol": "RMRK",
                 "precision": 10,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/RMRK.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/RMRK.svg",
                 "priceId": "rmrk",
                 "typeExtras": {
                     "currencyIdScale": "0x0209",
@@ -1101,7 +1101,7 @@
                 "precision": 18,
                 "priceId": "zenlink-network-token",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/ZLK.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/ZLK.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0207",
                     "currencyIdType": "node_primitives.currency.CurrencyId",
@@ -1116,7 +1116,7 @@
                 "precision": 12,
                 "priceId": "karura",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Karura.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Karura.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0206",
                     "currencyIdType": "node_primitives.currency.CurrencyId",
@@ -1131,7 +1131,7 @@
                 "precision": 12,
                 "priceId": "acala-dollar",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/AUSD.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/AUSD.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0302",
                     "currencyIdType": "node_primitives.currency.CurrencyId",
@@ -1145,7 +1145,7 @@
                 "symbol": "vsKSM",
                 "precision": 12,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/vsKSM.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/vsKSM.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0404",
                     "currencyIdType": "node_primitives.currency.CurrencyId",
@@ -1160,7 +1160,7 @@
                 "precision": 6,
                 "priceId": "tether",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/USDT.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/USDT.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0800",
                     "currencyIdType": "node_primitives.currency.CurrencyId",
@@ -1175,7 +1175,7 @@
                 "precision": 18,
                 "type": "orml",
                 "priceId": "moonriver",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Moonriver.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Moonriver.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x020a",
                     "currencyIdType": "node_primitives.currency.CurrencyId",
@@ -1190,7 +1190,7 @@
                 "precision": 12,
                 "type": "orml",
                 "priceId": "pha",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Phala.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Phala.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0208",
                     "currencyIdType": "node_primitives.currency.CurrencyId",
@@ -1204,7 +1204,7 @@
                 "symbol": "vKSM",
                 "precision": 12,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/vKSM.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/vKSM.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0104",
                     "currencyIdType": "node_primitives.currency.CurrencyId",
@@ -1277,7 +1277,7 @@
                 "symbol": "BSX",
                 "precision": 12,
                 "priceId": "basilisk",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Basilisk.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Basilisk.svg",
                 "name": "Basilisk"
             },
             {
@@ -1286,7 +1286,7 @@
                 "precision": 12,
                 "priceId": "kusama",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Kusama.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Kusama.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x01000000",
                     "currencyIdType": "u32",
@@ -1301,7 +1301,7 @@
                 "precision": 12,
                 "priceId": "acala-dollar",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/AUSD.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/AUSD.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x02000000",
                     "currencyIdType": "u32",
@@ -1315,7 +1315,7 @@
                 "symbol": "TNKR",
                 "precision": 12,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Tinkernet.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Tinkernet.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x06000000",
                     "currencyIdType": "u32",
@@ -1330,7 +1330,7 @@
                 "precision": 6,
                 "type": "orml",
                 "priceId": "tether",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/USDT.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/USDT.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0e000000",
                     "currencyIdType": "u32",
@@ -1345,7 +1345,7 @@
                 "precision": 9,
                 "type": "orml",
                 "priceId": "robonomics-network",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Robonomics.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Robonomics.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x10000000",
                     "currencyIdType": "u32",
@@ -1413,7 +1413,7 @@
                 "assetId": 0,
                 "symbol": "AIR",
                 "precision": 18,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Altair.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Altair.svg",
                 "priceId": "altair",
                 "name": "Altair"
             }
@@ -1479,7 +1479,7 @@
                 "assetId": 0,
                 "symbol": "HKO",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/HKO.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/HKO.svg",
                 "name": "Parallel Heiko"
             },
             {
@@ -1488,7 +1488,7 @@
                 "precision": 12,
                 "priceId": "kusama",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Kusama.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Kusama.svg",
                 "typeExtras": {
                     "assetId": "100"
                 },
@@ -1500,7 +1500,7 @@
                 "precision": 12,
                 "priceId": "acala-dollar",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/AUSD.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/AUSD.svg",
                 "typeExtras": {
                     "assetId": "103"
                 },
@@ -1512,7 +1512,7 @@
                 "precision": 12,
                 "priceId": "liquid-ksm",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/LKSM.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/LKSM.svg",
                 "typeExtras": {
                     "assetId": "109"
                 },
@@ -1523,7 +1523,7 @@
                 "symbol": "sKSM",
                 "precision": 12,
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/sKSM.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/sKSM.svg",
                 "typeExtras": {
                     "assetId": "1000"
                 },
@@ -1535,7 +1535,7 @@
                 "precision": 12,
                 "priceId": "karura",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Karura.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Karura.svg",
                 "typeExtras": {
                     "assetId": "107"
                 },
@@ -1547,7 +1547,7 @@
                 "precision": 18,
                 "priceId": "moonriver",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Moonriver.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Moonriver.svg",
                 "typeExtras": {
                     "assetId": "113"
                 },
@@ -1559,7 +1559,7 @@
                 "precision": 12,
                 "priceId": "pha",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Phala.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Phala.svg",
                 "typeExtras": {
                     "assetId": "115"
                 },
@@ -1571,7 +1571,7 @@
                 "precision": 9,
                 "priceId": "genshiro",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Genshiro.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Genshiro.svg",
                 "typeExtras": {
                     "assetId": "123"
                 },
@@ -1583,7 +1583,7 @@
                 "precision": 6,
                 "priceId": "tether",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/USDT.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/USDT.svg",
                 "typeExtras": {
                     "assetId": "102"
                 },
@@ -1634,7 +1634,7 @@
                 "symbol": "EDG",
                 "precision": 18,
                 "priceId": "edgeware",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Edgeware.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Edgeware.svg",
                 "staking": "aura-relaychain",
                 "name": "Edgeware"
             }
@@ -1697,7 +1697,7 @@
                 "symbol": "PHA",
                 "precision": 12,
                 "priceId": "pha",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Phala.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Phala.svg",
                 "name": "Phala"
             },
             {
@@ -1706,7 +1706,7 @@
                 "precision": 12,
                 "type": "statemine",
                 "priceId": "kusama",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Kusama.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Kusama.svg",
                 "typeExtras": {
                     "assetId": "0"
                 },
@@ -1718,7 +1718,7 @@
                 "precision": 12,
                 "type": "statemine",
                 "priceId": "karura",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Karura.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Karura.svg",
                 "typeExtras": {
                     "assetId": "1"
                 },
@@ -1730,7 +1730,7 @@
                 "precision": 12,
                 "type": "statemine",
                 "priceId": "bifrost-native-coin",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Bifrost.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Bifrost.svg",
                 "typeExtras": {
                     "assetId": "2"
                 },
@@ -1742,7 +1742,7 @@
                 "precision": 18,
                 "priceId": "zenlink-network-token",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/ZLK.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/ZLK.svg",
                 "typeExtras": {
                     "assetId": "3"
                 },
@@ -1754,7 +1754,7 @@
                 "precision": 12,
                 "priceId": "acala-dollar",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/AUSD.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/AUSD.svg",
                 "typeExtras": {
                     "assetId": "4"
                 },
@@ -1766,7 +1766,7 @@
                 "precision": 12,
                 "priceId": "basilisk",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Basilisk.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Basilisk.svg",
                 "typeExtras": {
                     "assetId": "9"
                 },
@@ -1778,7 +1778,7 @@
                 "precision": 18,
                 "priceId": "moonriver",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Moonriver.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Moonriver.svg",
                 "typeExtras": {
                     "assetId": "6"
                 },
@@ -1789,7 +1789,7 @@
                 "symbol": "HKO",
                 "precision": 12,
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/HKO.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/HKO.svg",
                 "typeExtras": {
                     "assetId": "7"
                 },
@@ -1801,7 +1801,7 @@
                 "precision": 12,
                 "priceId": "calamari-network",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Calamari.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Calamari.svg",
                 "typeExtras": {
                     "assetId": "8"
                 },
@@ -1812,7 +1812,7 @@
                 "symbol": "TUR",
                 "precision": 10,
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Turing.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Turing.svg",
                 "typeExtras": {
                     "assetId": "10"
                 },
@@ -1884,7 +1884,7 @@
                 "assetId": 0,
                 "symbol": "KILT",
                 "priceId": "kilt-protocol",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/KILT.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/KILT.svg",
                 "precision": 15,
                 "name": "KILT Spiritnet"
             }
@@ -1947,7 +1947,7 @@
                 "assetId": 0,
                 "symbol": "KMA",
                 "priceId": "calamari-network",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Calamari.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Calamari.svg",
                 "precision": 12,
                 "staking": "parachain",
                 "name": "Calamari Network"
@@ -2016,7 +2016,7 @@
                 "assetId": 0,
                 "symbol": "QTZ",
                 "priceId": "quartz",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Quartz.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Quartz.svg",
                 "precision": 18,
                 "name": "Quartz"
             }
@@ -2082,14 +2082,14 @@
                 "symbol": "NEER",
                 "precision": 18,
                 "priceId": "metaverse-network-pioneer",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/NEER.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/NEER.svg",
                 "name": "Metaverse.Network Pioneer"
             },
             {
                 "assetId": 1,
                 "symbol": "BIT",
                 "precision": 18,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/BIT.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/BIT.svg",
                 "type": "orml",
                 "typeExtras": {
                     "currencyIdScale": "0x030000000000000000",
@@ -2145,7 +2145,7 @@
                 "symbol": "ACA",
                 "priceId": "acala",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Acala.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Acala.svg",
                 "name": "Acala"
             },
             {
@@ -2154,7 +2154,7 @@
                 "precision": 10,
                 "priceId": "liquid-staking-dot",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/LDOT.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/LDOT.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0003",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -2169,7 +2169,7 @@
                 "precision": 12,
                 "priceId": "acala-dollar",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/AUSD.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/AUSD.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0001",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -2184,7 +2184,7 @@
                 "precision": 10,
                 "priceId": "polkadot",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Polkadot.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Polkadot.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0002",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -2199,7 +2199,7 @@
                 "precision": 10,
                 "priceId": "liquid-crowdloan-dot",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/lcDOT.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/lcDOT.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x040d000000",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -2214,7 +2214,7 @@
                 "precision": 18,
                 "priceId": "moonbeam",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Moonbeam.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Moonbeam.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050000",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -2229,7 +2229,7 @@
                 "precision": 12,
                 "priceId": "parallel-finance",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/PARA.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/PARA.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050100",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -2243,7 +2243,7 @@
                 "symbol": "TAP",
                 "precision": 12,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/TAP.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/TAP.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0004",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -2257,7 +2257,7 @@
                 "symbol": "tDOT",
                 "precision": 10,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/tDOT.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/tDOT.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0300000000",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -2272,7 +2272,7 @@
                 "precision": 10,
                 "type": "orml",
                 "priceId": "interlay",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Interlay.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Interlay.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050400",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -2287,7 +2287,7 @@
                 "precision": 18,
                 "type": "orml",
                 "priceId": "astar",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Astar.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Astar.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050200",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -2302,7 +2302,7 @@
                 "precision": 9,
                 "priceId": "equilibrium-token",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Equilibrium.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Equilibrium.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050700",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -2317,7 +2317,7 @@
                 "precision": 8,
                 "type": "orml",
                 "priceId": "bitcoin",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/interBTC.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/interBTC.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x050300",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -2332,7 +2332,7 @@
                 "precision": 18,
                 "type": "orml",
                 "priceId": "dai",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/DAI.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/DAI.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0254a37a01cd75b616d63e0ab665bffdb0143c52ae",
                     "currencyIdType": "acala_primitives.currency.CurrencyId",
@@ -2419,7 +2419,7 @@
                 "assetId": 0,
                 "symbol": "ASTR",
                 "priceId": "astar",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Astar.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Astar.svg",
                 "precision": 18,
                 "name": "Astar"
             },
@@ -2429,7 +2429,7 @@
                 "precision": 10,
                 "type": "statemine",
                 "priceId": "polkadot",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Polkadot.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Polkadot.svg",
                 "typeExtras": {
                     "assetId": "340282366920938463463374607431768211455"
                 },
@@ -2441,7 +2441,7 @@
                 "precision": 18,
                 "type": "statemine",
                 "priceId": "moonbeam",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Moonbeam.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Moonbeam.svg",
                 "typeExtras": {
                     "assetId": "18446744073709551619"
                 },
@@ -2453,7 +2453,7 @@
                 "precision": 8,
                 "type": "statemine",
                 "priceId": "bitcoin",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/interBTC.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/interBTC.svg",
                 "typeExtras": {
                     "assetId": "18446744073709551620"
                 },
@@ -2465,7 +2465,7 @@
                 "precision": 10,
                 "type": "statemine",
                 "priceId": "interlay",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Interlay.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Interlay.svg",
                 "typeExtras": {
                     "assetId": "18446744073709551621"
                 },
@@ -2477,7 +2477,7 @@
                 "precision": 12,
                 "type": "statemine",
                 "priceId": "pha",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Phala.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Phala.svg",
                 "typeExtras": {
                     "assetId": "18446744073709551622"
                 },
@@ -2489,7 +2489,7 @@
                 "precision": 12,
                 "type": "statemine",
                 "priceId": "acala",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Acala.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Acala.svg",
                 "typeExtras": {
                     "assetId": "18446744073709551616"
                 },
@@ -2501,7 +2501,7 @@
                 "precision": 10,
                 "type": "statemine",
                 "priceId": "liquid-staking-dot",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/LDOT.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/LDOT.svg",
                 "typeExtras": {
                     "assetId": "18446744073709551618"
                 },
@@ -2513,7 +2513,7 @@
                 "precision": 12,
                 "type": "statemine",
                 "priceId": "acala-dollar",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/AUSD.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/AUSD.svg",
                 "typeExtras": {
                     "assetId": "18446744073709551617"
                 },
@@ -2525,7 +2525,7 @@
                 "precision": 6,
                 "type": "statemine",
                 "priceId": "tether",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/USDT.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/USDT.svg",
                 "typeExtras": {
                     "assetId": "4294969280"
                 },
@@ -2601,7 +2601,7 @@
                 "symbol": "PARA",
                 "precision": 12,
                 "priceId": "parallel-finance",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/PARA.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/PARA.svg",
                 "name": "Parallel Finance"
             },
             {
@@ -2610,7 +2610,7 @@
                 "precision": 10,
                 "priceId": "polkadot",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Polkadot.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Polkadot.svg",
                 "typeExtras": {
                     "assetId": "101"
                 },
@@ -2622,7 +2622,7 @@
                 "precision": 10,
                 "priceId": "polkadot",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/sDOT.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/sDOT.svg",
                 "typeExtras": {
                     "assetId": "1001"
                 },
@@ -2634,7 +2634,7 @@
                 "precision": 12,
                 "priceId": "acala",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Acala.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Acala.svg",
                 "typeExtras": {
                     "assetId": "108"
                 },
@@ -2646,7 +2646,7 @@
                 "precision": 12,
                 "priceId": "acala-dollar",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/AUSD.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/AUSD.svg",
                 "typeExtras": {
                     "assetId": "104"
                 },
@@ -2658,7 +2658,7 @@
                 "precision": 10,
                 "priceId": "liquid-staking-dot",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/LDOT.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/LDOT.svg",
                 "typeExtras": {
                     "assetId": "110"
                 },
@@ -2670,7 +2670,7 @@
                 "precision": 18,
                 "priceId": "moonbeam",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Moonbeam.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Moonbeam.svg",
                 "typeExtras": {
                     "assetId": "114"
                 },
@@ -2681,7 +2681,7 @@
                 "symbol": "cDOT-6/13",
                 "precision": 10,
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/cDOT.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/cDOT.svg",
                 "typeExtras": {
                     "assetId": "200060013"
                 },
@@ -2692,7 +2692,7 @@
                 "symbol": "cDOT-7/14",
                 "precision": 10,
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/cDOT.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/cDOT.svg",
                 "typeExtras": {
                     "assetId": "200070014"
                 },
@@ -2703,7 +2703,7 @@
                 "symbol": "cDOT-8/15",
                 "precision": 10,
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/cDOT.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/cDOT.svg",
                 "typeExtras": {
                     "assetId": "200080015"
                 },
@@ -2714,7 +2714,7 @@
                 "symbol": "cDOT-9/16",
                 "precision": 10,
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/cDOT.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/cDOT.svg",
                 "typeExtras": {
                     "assetId": "200090016"
                 },
@@ -2725,7 +2725,7 @@
                 "symbol": "cDOT-10/17",
                 "precision": 10,
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/cDOT.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/cDOT.svg",
                 "typeExtras": {
                     "assetId": "200100017"
                 },
@@ -2737,7 +2737,7 @@
                 "precision": 10,
                 "priceId": "interlay",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Interlay.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Interlay.svg",
                 "typeExtras": {
                     "assetId": "120"
                 },
@@ -2749,7 +2749,7 @@
                 "precision": 8,
                 "priceId": "bitcoin",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/interBTC.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/interBTC.svg",
                 "typeExtras": {
                     "assetId": "122"
                 },
@@ -2761,7 +2761,7 @@
                 "precision": 6,
                 "priceId": "tether",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/USDT.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/USDT.svg",
                 "typeExtras": {
                     "assetId": "102"
                 },
@@ -2772,7 +2772,7 @@
                 "symbol": "CLV",
                 "precision": 18,
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Clover.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Clover.svg",
                 "typeExtras": {
                     "assetId": "130"
                 },
@@ -2784,7 +2784,7 @@
                 "precision": 18,
                 "priceId": "astar",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Astar.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Astar.svg",
                 "typeExtras": {
                     "assetId": "112"
                 },
@@ -2796,7 +2796,7 @@
                 "precision": 12,
                 "priceId": "pha",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Phala.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Phala.svg",
                 "typeExtras": {
                     "assetId": "115"
                 },
@@ -2860,7 +2860,7 @@
                 "assetId": 0,
                 "symbol": "CLV",
                 "precision": 18,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Clover.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Clover.svg",
                 "priceId": "clover-finance",
                 "name": "Clover Finance"
             }
@@ -2910,7 +2910,7 @@
                 "symbol": "DOT",
                 "precision": 10,
                 "priceId": "polkadot",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Polkadot.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Polkadot.svg",
                 "name": "Polkadot"
             },
             {
@@ -2919,7 +2919,7 @@
                 "precision": 6,
                 "priceId": "tether",
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/USDT.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/USDT.svg",
                 "typeExtras": {
                     "assetId": "1984"
                 },
@@ -2977,7 +2977,7 @@
                 "assetId": 0,
                 "symbol": "XRT",
                 "precision": 9,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Robonomics.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Robonomics.svg",
                 "priceId": "robonomics-network",
                 "name": "Robonomics"
             },
@@ -2986,7 +2986,7 @@
                 "symbol": "KSM",
                 "precision": 12,
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Kusama.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Kusama.svg",
                 "priceId": "kusama",
                 "typeExtras": {
                     "assetId": "4294967295"
@@ -3056,7 +3056,7 @@
                 "symbol": "KSM",
                 "precision": 12,
                 "priceId": "kusama",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Kusama.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Kusama.svg",
                 "name": "Kusama"
             }
         ],
@@ -3110,7 +3110,7 @@
                 "precision": 12,
                 "type": "orml",
                 "priceId": "kintsugi",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Kintsugi.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Kintsugi.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x000c",
                     "currencyIdType": "interbtc_primitives.CurrencyId",
@@ -3125,7 +3125,7 @@
                 "precision": 8,
                 "type": "orml",
                 "priceId": "bitcoin",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/KBTC.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/KBTC.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x000b",
                     "currencyIdType": "interbtc_primitives.CurrencyId",
@@ -3140,7 +3140,7 @@
                 "precision": 12,
                 "priceId": "kusama",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Kusama.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Kusama.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x000a",
                     "currencyIdType": "interbtc_primitives.CurrencyId",
@@ -3155,7 +3155,7 @@
                 "precision": 12,
                 "priceId": "liquid-ksm",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/LKSM.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/LKSM.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0102000000",
                     "currencyIdType": "interbtc_primitives.CurrencyId",
@@ -3170,7 +3170,7 @@
                 "precision": 6,
                 "priceId": "tether",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/USDT.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/USDT.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0103000000",
                     "currencyIdType": "interbtc_primitives.CurrencyId",
@@ -3185,7 +3185,7 @@
                 "precision": 12,
                 "priceId": "acala-dollar",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/AUSD.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/AUSD.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0101000000",
                     "currencyIdType": "interbtc_primitives.CurrencyId",
@@ -3199,7 +3199,7 @@
                 "symbol": "KSM-kBTC",
                 "precision": 18,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/KSM-KBTC.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/KSM-KBTC.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x03000a000b",
                     "currencyIdType": "interbtc_primitives.CurrencyId",
@@ -3213,7 +3213,7 @@
                 "symbol": "kBTC-USDT",
                 "precision": 18,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/KBTC-USDT.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/KBTC-USDT.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x03000b0103000000",
                     "currencyIdType": "interbtc_primitives.CurrencyId",
@@ -3227,7 +3227,7 @@
                 "symbol": "KSM-KINT",
                 "precision": 18,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/KSM-KINT.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/KSM-KINT.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x03000a000c",
                     "currencyIdType": "interbtc_primitives.CurrencyId",
@@ -3242,7 +3242,7 @@
                 "precision": 10,
                 "priceId": "interlay",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Interlay.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Interlay.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0002",
                     "currencyIdType": "interbtc_primitives.CurrencyId",
@@ -3257,7 +3257,7 @@
                 "precision": 8,
                 "priceId": "bitcoin",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/interBTC.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/interBTC.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0001",
                     "currencyIdType": "interbtc_primitives.CurrencyId",
@@ -3272,7 +3272,7 @@
                 "precision": 10,
                 "priceId": "polkadot",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Polkadot.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Polkadot.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0000",
                     "currencyIdType": "interbtc_primitives.CurrencyId",
@@ -3330,7 +3330,7 @@
                 "assetId": 0,
                 "symbol": "PICA",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Picasso.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Picasso.svg",
                 "name": "Picasso"
             }
         ],
@@ -3384,7 +3384,7 @@
                 "staking": "parachain",
                 "precision": 10,
                 "priceId": "zeitgeist",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Zeitgeist.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Zeitgeist.svg",
                 "name": "Zeitgeist"
             }
         ],
@@ -3447,7 +3447,7 @@
                 "symbol": "LIT",
                 "precision": 12,
                 "priceId": "litentry",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Litentry.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Litentry.svg",
                 "name": "Litentry"
             }
         ],
@@ -3499,7 +3499,7 @@
                 "assetId": 0,
                 "symbol": "SUB",
                 "precision": 10,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Subsocial.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Subsocial.svg",
                 "name": "Subsocial"
             }
         ],
@@ -3549,7 +3549,7 @@
                 "symbol": "CSM",
                 "precision": 12,
                 "priceId": "crust-storage-market",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/CrustShadow.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/CrustShadow.svg",
                 "name": "Crust Shadow"
             }
         ],
@@ -3611,7 +3611,7 @@
                 "symbol": "TEER",
                 "precision": 12,
                 "priceId": "integritee",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Integritee.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Integritee.svg",
                 "name": "Integritee"
             }
         ],
@@ -3668,7 +3668,7 @@
                 "symbol": "CFG",
                 "precision": 18,
                 "priceId": "centrifuge",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Centrifuge.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Centrifuge.svg",
                 "name": "Centrifuge"
             }
         ],
@@ -3731,7 +3731,7 @@
                 "symbol": "EFI",
                 "precision": 18,
                 "priceId": "efinity",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Efinity.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Efinity.svg",
                 "name": "Efinity"
             }
         ],
@@ -3784,7 +3784,7 @@
                 "symbol": "HDX",
                 "precision": 12,
                 "priceId": "hydradx",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/HydraDX.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/HydraDX.svg",
                 "name": "HydraDX"
             },
             {
@@ -3792,7 +3792,7 @@
                 "symbol": "DOT",
                 "precision": 10,
                 "priceId": "polkadot",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Polkadot.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Polkadot.svg",
                 "type": "orml",
                 "typeExtras": {
                     "currencyIdScale": "0x05000000",
@@ -3808,7 +3808,7 @@
                 "precision": 18,
                 "priceId": "dai",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/DAI.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/DAI.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x02000000",
                     "currencyIdType": "u32",
@@ -3822,7 +3822,7 @@
                 "symbol": "LRNA",
                 "precision": 12,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/LRNA.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/LRNA.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x01000000",
                     "currencyIdType": "u32",
@@ -3837,7 +3837,7 @@
                 "precision": 18,
                 "priceId": "ethereum-wormhole",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/WETH-worm.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/WETH-worm.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x04000000",
                     "currencyIdType": "u32",
@@ -3852,7 +3852,7 @@
                 "precision": 8,
                 "priceId": "wrapped-bitcoin",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/WBTC.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/WBTC.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x03000000",
                     "currencyIdType": "u32",
@@ -3867,7 +3867,7 @@
                 "precision": 8,
                 "priceId": "bitcoin",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/interBTC.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/interBTC.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0b000000",
                     "currencyIdType": "u32",
@@ -3882,7 +3882,7 @@
                 "precision": 10,
                 "priceId": "zeitgeist",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Zeitgeist.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Zeitgeist.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0c000000",
                     "currencyIdType": "u32",
@@ -3897,7 +3897,7 @@
                 "precision": 18,
                 "priceId": "astar",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Astar.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Astar.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x09000000",
                     "currencyIdType": "u32",
@@ -3962,7 +3962,7 @@
                 "symbol": "INTR",
                 "precision": 10,
                 "priceId": "interlay",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Interlay.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Interlay.svg",
                 "type": "orml",
                 "typeExtras": {
                     "currencyIdScale": "0x0002",
@@ -3977,7 +3977,7 @@
                 "symbol": "iBTC",
                 "precision": 8,
                 "priceId": "bitcoin",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/interBTC.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/interBTC.svg",
                 "type": "orml",
                 "typeExtras": {
                     "currencyIdScale": "0x0001",
@@ -3992,7 +3992,7 @@
                 "symbol": "DOT",
                 "precision": 10,
                 "priceId": "polkadot",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Polkadot.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Polkadot.svg",
                 "type": "orml",
                 "typeExtras": {
                     "currencyIdScale": "0x0000",
@@ -4007,7 +4007,7 @@
                 "symbol": "KINT",
                 "precision": 12,
                 "priceId": "kintsugi",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Kintsugi.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Kintsugi.svg",
                 "type": "orml",
                 "typeExtras": {
                     "currencyIdScale": "0x000c",
@@ -4022,7 +4022,7 @@
                 "symbol": "kBTC",
                 "precision": 8,
                 "priceId": "bitcoin",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/KBTC.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/KBTC.svg",
                 "type": "orml",
                 "typeExtras": {
                     "currencyIdScale": "0x000b",
@@ -4037,7 +4037,7 @@
                 "symbol": "KSM",
                 "precision": 12,
                 "priceId": "kusama",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Kusama.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Kusama.svg",
                 "type": "orml",
                 "typeExtras": {
                     "currencyIdScale": "0x000a",
@@ -4052,7 +4052,7 @@
                 "symbol": "LDOT",
                 "precision": 10,
                 "priceId": "liquid-staking-dot",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/LDOT.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/LDOT.svg",
                 "type": "orml",
                 "typeExtras": {
                     "currencyIdScale": "0x0101000000",
@@ -4067,7 +4067,7 @@
                 "symbol": "USDT",
                 "precision": 6,
                 "priceId": "tether",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/USDT.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/USDT.svg",
                 "type": "orml",
                 "typeExtras": {
                     "currencyIdScale": "0x0102000000",
@@ -4127,7 +4127,7 @@
                 "symbol": "NODL",
                 "precision": 11,
                 "priceId": "nodle-network",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Nodle.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Nodle.svg",
                 "name": "Nodle"
             }
         ],
@@ -4184,7 +4184,7 @@
                 "symbol": "PHA",
                 "precision": 12,
                 "priceId": "pha",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Phala.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Phala.svg",
                 "name": "Phala"
             }
         ],
@@ -4233,7 +4233,7 @@
                 "symbol": "TUR",
                 "staking": "turing",
                 "precision": 10,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Turing.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Turing.svg",
                 "name": "Turing"
             },
             {
@@ -4242,7 +4242,7 @@
                 "precision": 12,
                 "priceId": "kusama",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Kusama.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Kusama.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x01000000",
                     "currencyIdType": "u32",
@@ -4257,7 +4257,7 @@
                 "precision": 12,
                 "priceId": "acala-dollar",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/AUSD.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/AUSD.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x02000000",
                     "currencyIdType": "u32",
@@ -4272,7 +4272,7 @@
                 "precision": 12,
                 "priceId": "karura",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Karura.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Karura.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x03000000",
                     "currencyIdType": "u32",
@@ -4287,7 +4287,7 @@
                 "precision": 12,
                 "priceId": "liquid-ksm",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/LKSM.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/LKSM.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x04000000",
                     "currencyIdType": "u32",
@@ -4301,7 +4301,7 @@
                 "symbol": "HKO",
                 "precision": 12,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/HKO.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/HKO.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x05000000",
                     "currencyIdType": "u32",
@@ -4315,7 +4315,7 @@
                 "symbol": "sKSM",
                 "precision": 12,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/sKSM.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/sKSM.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x06000000",
                     "currencyIdType": "u32",
@@ -4330,7 +4330,7 @@
                 "precision": 12,
                 "priceId": "pha",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Phala.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Phala.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x07000000",
                     "currencyIdType": "u32",
@@ -4404,7 +4404,7 @@
                 "staking": "aleph-zero",
                 "priceId": "aleph-zero",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Aleph_zero.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Aleph_zero.svg",
                 "name": "Aleph Zero"
             }
         ],
@@ -4453,7 +4453,7 @@
                 "assetId": 0,
                 "symbol": "LAYR",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Composable.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Composable.svg",
                 "name": "Composable Finance"
             }
         ],
@@ -4511,7 +4511,7 @@
                 "priceId": "polkadex",
                 "staking": "relaychain",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Polkadex.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Polkadex.svg",
                 "name": "Polkadex"
             }
         ],
@@ -4573,7 +4573,7 @@
                 "assetId": 0,
                 "symbol": "OTP",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/OriginTrail.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/OriginTrail.svg",
                 "name": "OriginTrail"
             }
         ],
@@ -4615,7 +4615,7 @@
                 "symbol": "BNC",
                 "precision": 12,
                 "priceId": "bifrost-native-coin",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Bifrost.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Bifrost.svg",
                 "name": "Bifrost"
             },
             {
@@ -4624,7 +4624,7 @@
                 "precision": 18,
                 "priceId": "moonbeam",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Moonbeam.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Moonbeam.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0801",
                     "currencyIdType": "node_primitives.currency.CurrencyId",
@@ -4639,7 +4639,7 @@
                 "precision": 10,
                 "priceId": "polkadot",
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Polkadot.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Polkadot.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0800",
                     "currencyIdType": "node_primitives.currency.CurrencyId",
@@ -4693,7 +4693,7 @@
                 "assetId": 0,
                 "symbol": "LIT",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Litentry.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Litentry.svg",
                 "priceId": "litentry",
                 "name": "Litentry"
             }
@@ -4740,7 +4740,7 @@
                 "symbol": "UNQ",
                 "precision": 18,
                 "priceId": "unique-network",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Unique.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Unique.svg",
                 "name": "UNIQUE"
             }
         ],
@@ -4796,7 +4796,7 @@
                 "assetId": 0,
                 "symbol": "DORA",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/DoraFactory.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/DoraFactory.svg",
                 "priceId": "dora-factory",
                 "name": "Dora Factory"
             }
@@ -4838,7 +4838,7 @@
                 "assetId": 0,
                 "symbol": "MGX",
                 "precision": 18,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/MangataX.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/MangataX.svg",
                 "type": "orml",
                 "typeExtras": {
                     "currencyIdScale": "0x00000000",
@@ -4853,7 +4853,7 @@
                 "symbol": "KSM",
                 "precision": 12,
                 "priceId": "kusama",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Kusama.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Kusama.svg",
                 "type": "orml",
                 "typeExtras": {
                     "currencyIdScale": "0x04000000",
@@ -4868,7 +4868,7 @@
                 "symbol": "ETH",
                 "precision": 18,
                 "priceId": "ethereum",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/ETH.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/ETH.svg",
                 "type": "orml",
                 "typeExtras": {
                     "currencyIdScale": "0x01000000",
@@ -4919,7 +4919,7 @@
                 "assetId": 0,
                 "symbol": "PCHU",
                 "precision": 18,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Pichiu.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Pichiu.svg",
                 "name": "Pichiu"
             }
         ],
@@ -4960,7 +4960,7 @@
                 "assetId": 0,
                 "symbol": "KAB",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Kabocha.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Kabocha.svg",
                 "name": "Kabocha"
             }
         ],
@@ -5001,7 +5001,7 @@
                 "assetId": 0,
                 "symbol": "DHX",
                 "precision": 18,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/DataHighway.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/DataHighway.svg",
                 "priceId": "datahighway",
                 "name": "DataHighway"
             }
@@ -5060,7 +5060,7 @@
                 "symbol": "BAJU",
                 "precision": 12,
                 "priceId": "ajuna-network",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Bajun.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Bajun.svg",
                 "name": "Bajun"
             }
         ],
@@ -5116,7 +5116,7 @@
                 "assetId": 0,
                 "symbol": "IMBU",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Imbue.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Imbue.svg",
                 "name": "Imbue"
             }
         ],
@@ -5157,7 +5157,7 @@
                 "assetId": 0,
                 "symbol": "TNKR",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Tinkernet.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Tinkernet.svg",
                 "name": "Tinkernet"
             }
         ],
@@ -5198,14 +5198,14 @@
                 "assetId": 0,
                 "symbol": "FREN",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/FREN.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/FREN.svg",
                 "name": "GM Token"
             },
             {
                 "assetId": 1,
                 "symbol": "GM",
                 "precision": 0,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/GM.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/GM.svg",
                 "type": "orml",
                 "typeExtras": {
                     "currencyIdScale": "0x01",
@@ -5219,7 +5219,7 @@
                 "assetId": 2,
                 "symbol": "GN",
                 "precision": 0,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/GN.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/GN.svg",
                 "type": "orml",
                 "typeExtras": {
                     "currencyIdScale": "0x02",
@@ -5275,7 +5275,7 @@
                 "assetId": 0,
                 "symbol": "AMPE",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Amplitude.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Amplitude.svg",
                 "name": "Amplitude"
             }
         ],
@@ -5319,7 +5319,7 @@
                 "priceId": "coin-capsule",
                 "staking": "relaychain",
                 "precision": 18,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Ternoa.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Ternoa.svg",
                 "name": "Ternoa"
             }
         ],
@@ -5368,7 +5368,7 @@
                 "symbol": "KYL",
                 "precision": 18,
                 "priceId": "kylin-network",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/KYL.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/KYL.svg",
                 "name": "Kylin"
             }
         ],
@@ -5418,7 +5418,7 @@
                 "assetId": 0,
                 "symbol": "KPX",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/KAPEX.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/KAPEX.svg",
                 "name": "Kapex"
             }
         ],
@@ -5459,7 +5459,7 @@
                 "symbol": "POLYX",
                 "precision": 6,
                 "priceId": "polymesh",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Polymesh.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Polymesh.svg",
                 "staking": "relaychain",
                 "name": "Polymesh Testnet"
             }
@@ -5495,7 +5495,7 @@
                 "assetId": 0,
                 "symbol": "MITO",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/MITO.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/MITO.svg",
                 "name": "DAO IPCI"
             }
         ],
@@ -5536,7 +5536,7 @@
                 "symbol": "MYRIA",
                 "precision": 18,
                 "priceId": "myriad-social",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/MYRIA.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/MYRIA.svg",
                 "name": "Myriad"
             }
         ],
@@ -5570,7 +5570,7 @@
                 "symbol": "XX",
                 "precision": 9,
                 "priceId": "xxcoin",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/XX.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/XX.svg",
                 "name": "XX network"
             }
         ],
@@ -5627,7 +5627,7 @@
                 "symbol": "PEN",
                 "precision": 12,
                 "priceId": "pendulum-chain",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/PEN.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/PEN.svg",
                 "name": "Pendulum token"
             },
             {
@@ -5635,7 +5635,7 @@
                 "symbol": "DOT",
                 "precision": 10,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/Polkadot.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/Polkadot.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0100",
                     "currencyIdType": "pendulum_runtime.currency.CurrencyId",
@@ -5676,7 +5676,7 @@
                 "symbol": "CRU",
                 "precision": 12,
                 "priceId": "crust-network",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/CRU.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/CRU.svg",
                 "name": "Crust"
             }
         ],
@@ -5712,7 +5712,7 @@
                 "symbol": "AVT",
                 "precision": 18,
                 "priceId": "aventus",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/AVT.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/AVT.svg",
                 "name": "Aventus"
             }
         ],
@@ -5746,7 +5746,7 @@
                 "assetId": 0,
                 "symbol": "HASH",
                 "precision": 18,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/HASH.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/HASH.svg",
                 "name": "Hashed"
             }
         ],
@@ -5776,7 +5776,7 @@
                 "symbol": "TAO",
                 "precision": 9,
                 "priceId": "bittensor",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/TAO_bittensor.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/TAO_bittensor.svg",
                 "name": "Fusotao token"
             }
         ],
@@ -5802,7 +5802,7 @@
                 "assetId": 0,
                 "symbol": "AJUN",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/AJUN.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/AJUN.svg",
                 "name": "Ajuna"
             }
         ],
@@ -5831,7 +5831,7 @@
                 "assetId": 0,
                 "symbol": "P3D",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/tokens/white/v1/P3D.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/assets/white/v1/P3D.svg",
                 "name": "3DPass"
             }
         ],
