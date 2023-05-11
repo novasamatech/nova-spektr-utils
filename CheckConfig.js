@@ -1,6 +1,7 @@
 const fs = require('fs');
 const jp = require('jsonpath');
 
+let hasError = false;
 function checkChainsFile(filePath) {
     let chainsFile = fs.readFileSync(filePath);
     let chainsJSON = JSON.parse(chainsFile);
@@ -36,6 +37,7 @@ function checkChainsFile(filePath) {
     if (badAssetIcon.size > 0) {
         console.error("Bad asset icons paths in " + filePath);
         console.log(badAssetIcon);
+        hasError = true;
     } else {
         console.log("All asset icons path is correct in " + filePath);
     }
@@ -50,6 +52,7 @@ function checkChainsFile(filePath) {
     if (badChainIcons.size > 0) {
         console.error("Bad chain icons paths in " + filePath);
         console.log(badChainIcons);
+        hasError = true;
     } else {
         console.log("All chain icons path is correct in " + filePath);
     }
@@ -58,20 +61,25 @@ function checkChainsFile(filePath) {
     if (buyProviders.length > 0) {
         console.error("Buy providers has to be excluded from " + filePath);
         console.log(buyProviders);
-
+        hasError = true;
     }
     let chainOptions = jp.query(chainsJSON, "$..options[?(@ != 'testnet')]");
     if (chainOptions.length > 0) {
         console.error("Chain options has to be removed from " + filePath);
         console.log(chainOptions);
+        hasError = true;
     }
     let chainTypes = jp.query(chainsJSON, "$..types");
     if (chainTypes.length > 0) {
         console.error("Chain types has to be removed from " + filePath);
         console.log(chainTypes);
+        hasError = true;
     }
-
 }
 
 checkChainsFile("./chains/v1/chains.json");
 checkChainsFile("./chains/v1/chains_dev.json");
+
+if (hasError) {
+    process.exit(12);
+}
