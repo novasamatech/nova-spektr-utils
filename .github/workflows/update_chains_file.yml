@@ -35,11 +35,11 @@ jobs:
       - name: 📝 Update chains file
         run: pnpm update:chains-file
 
-      - name: ➡️ Make pull request
-        uses: ./.github/workflows/make-pull-request
-        with:
-          commit-path: chains/**/*.json
-          commit-message: "ci: update chains.json files"
-          pr-title: "Update chains.json file"
-          branch-name: update-chains-file
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+      # - name: ➡️ Make pull request
+      #   uses: ./.github/workflows/make-pull-request
+      #   with:
+      #     commit-path: chains/**/*.json
+      #     commit-message: "ci: update chains.json files"
+      #     pr-title: "Update chains.json file"
+      #     branch-name: update-chains-file
+      #     github-token: ${{ secrets.GITHUB_TOKEN }}
