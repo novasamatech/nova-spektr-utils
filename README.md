@@ -9,7 +9,7 @@ Download and install node js.
 ```shell
 npm install jsonpath
 ```
-3. Run `CheckConfig.js` file
+3. Run `checkChainsConfig.js` file
 ```shell
 node TestIsons.js
 ```
