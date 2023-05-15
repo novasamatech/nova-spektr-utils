@@ -14,32 +14,20 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      # - name: 🛠 Set up env variables
-      #   uses: ./.github/workflows/setup-env
-
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          repository: 'nova-wallet/nova-utils'
-          path: 'nova-utils'
-
-      - name: Setup version to variables
-        run: |
-          echo "NOVA_CONFIG_VERSION=$(bash nova-utils/.github/get_actual_json_path.sh chains)" >> "$GITHUB_ENV"
-          echo "SPEKTR_CONFIG_VERSION=$(bash .github/get_actual_path.sh chains)" >> "$GITHUB_ENV"
-        shell: bash
+      - name: 🛠 Set up env variables
+        uses: ./.github/workflows/setup-env
 
       - name: ⚙️ Install dependencies
-        uses: pnpm install
+        run: pnpm install
 
       - name: 📝 Update chains file
         run: pnpm update:chains-file
 
-      # - name: ➡️ Make pull request
-      #   uses: ./.github/workflows/make-pull-request
-      #   with:
-      #     commit-path: chains/**/*.json
-      #     commit-message: "ci: update chains.json files"
-      #     pr-title: "Update chains.json file"
-      #     branch-name: update-chains-file
-      #     github-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: ➡️ Make pull request
+        uses: ./.github/workflows/make-pull-request
+        with:
+          commit-path: chains/**/*.json
+          commit-message: "ci: update chains.json files"
+          pr-title: "Update chains.json file"
+          branch-name: update-chains-file
+          github-token: ${{ secrets.GITHUB_TOKEN }}
