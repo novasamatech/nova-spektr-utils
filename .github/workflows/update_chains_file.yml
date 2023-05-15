@@ -18,10 +18,10 @@ jobs:
         uses: ./.github/workflows/setup-env
 
       - name: ⚙️ Install dependencies
-        run: pnpm install
+        run: npm install
 
       - name: 📝 Update chains file
-        run: pnpm update:chains-file
+        run: npm update:chains-file
 
       - name: ➡️ Make pull request
         uses: ./.github/workflows/make-pull-request
