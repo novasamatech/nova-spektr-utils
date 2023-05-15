@@ -1,0 +1,15 @@
+name: Set necesary env
+description: Set necessary env variables
+runs:
+  using: "composite"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        repository: ''
+        path: 'nova-utils'
+
+      - name: Setup version to variables
+        run: |
+          echo "NOVA_CONFIG_VERSION=$(bash nova-utils/.github/get_actual_json_path.sh chains)" >> "$GITHUB_ENV"
+          echo "SPEKTR_CONFIG_VERSION=$(bash .github/get_actual_path.sh chains)" >> "$GITHUB_ENV"
+        shell: bash

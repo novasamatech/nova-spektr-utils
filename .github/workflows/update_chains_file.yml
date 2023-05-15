@@ -1,15 +1,10 @@
 name: Update chains file
 
 on:
+  pull_request:
   workflow_dispatch:
-    inputs:
-      file_path:
-        description: 'Which version of chains.json will be used?'
-        required: true
-        type: string
-        default: v1
   schedule:
-    - cron: '0 8 * * 1'
+    - cron: '0 8 * * *'
 
 jobs:
   update-chains-file:
@@ -19,17 +14,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Set spektr config version
-        run: |
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]
-          then
-            echo "CHAINS_VERSION=${{ github.event.inputs.file_path }}" >> $GITHUB_ENV
-          else
-            echo "CHAINS_VERSION=${{ secrets.SPEKTR_CONFIG_VERSION }}" >> $GITHUB_ENV
-          fi
+      - name: 🛠 Set up env variables
+        uses: ./.github/workflows/setup-env
 
       - name: ⚙️ Install dependencies
-        uses: ./.github/workflows/install-pnpm
+        uses: pnpm install
 
       - name: 📝 Update chains file
         run: pnpm update:chains-file
@@ -37,8 +26,8 @@ jobs:
       - name: ➡️ Make pull request
         uses: ./.github/workflows/make-pull-request
         with:
-          commit-path: src/renderer/services/network/common/*.json
-          commit-message: "ci: chains.json file"
+          commit-path: chains/**/*.json
+          commit-message: "ci: update chains.json files"
           pr-title: "Update chains.json file"
           branch-name: update-chains-file
           github-token: ${{ secrets.GITHUB_TOKEN }}
