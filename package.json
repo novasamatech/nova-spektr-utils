@@ -4,6 +4,8 @@
     "jsonpath": "^1.1.1"
   },
   "scripts": {
-    "update:chains-file": "node scripts/buildChainsJson.js"
+    "update:chains-file": "node scripts/buildChainsJson.js",
+    "check:chains-file": "node scripts/checkChainsConfig.js"
+
   }
 }

@@ -8,7 +8,7 @@ function checkChainsFile(filePath) {
     let allIcons = jp.query(chainsJSON, "$..icon");
     let relativeIcons = [];
     for (let i in allIcons) {
-        relativeIcons.push('.' + allIcons[i].substring(allIcons[i].indexOf('/icons/')));
+        relativeIcons.push('.' + allIcons[i].substring(allIcons[i].indexOf('/icons/')).replaceAll("%20", " "));
     }
 
     let badPath = new Set();
