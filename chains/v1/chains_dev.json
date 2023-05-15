@@ -235,7 +235,7 @@
                 "symbol": "SIRI",
                 "precision": 10,
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/3DPass%20(P3D).svgDefault.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/Default.svg",
                 "name": "Siri"
             }
         ],
@@ -303,7 +303,7 @@
                 "symbol": "SHIBATALES",
                 "precision": 0,
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/3DPass%20(P3D).svgDefault.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/Default.svg",
                 "name": "Shibatales"
             },
             {
@@ -1641,7 +1641,7 @@
                 "assetId": 0,
                 "symbol": "PILT",
                 "precision": 15,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/3DPass%20(P3D).svgDefault.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/Default.svg",
                 "name": "KILT Peregrine"
             }
         ],
@@ -2329,7 +2329,7 @@
                 "symbol": "cDOT-6/13",
                 "precision": 10,
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/3DPass%20(P3D).svgDefault.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/Default.svg",
                 "name": "Special DOT token"
             },
             {
@@ -2337,7 +2337,7 @@
                 "symbol": "cDOT-7/14",
                 "precision": 10,
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/3DPass%20(P3D).svgDefault.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/Default.svg",
                 "name": "Special DOT token"
             },
             {
@@ -2345,7 +2345,7 @@
                 "symbol": "cDOT-8/15",
                 "precision": 10,
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/3DPass%20(P3D).svgDefault.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/Default.svg",
                 "name": "Special DOT token"
             },
             {
@@ -2353,7 +2353,7 @@
                 "symbol": "cDOT-9/16",
                 "precision": 10,
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/3DPass%20(P3D).svgDefault.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/Default.svg",
                 "name": "Special DOT token"
             },
             {
@@ -2361,7 +2361,7 @@
                 "symbol": "cDOT-10/17",
                 "precision": 10,
                 "type": "statemine",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/3DPass%20(P3D).svgDefault.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/Default.svg",
                 "name": "Special DOT token"
             },
             {
@@ -4040,7 +4040,7 @@
                 "precision": 12,
                 "priceId": "aleph-zero",
                 "staking": "aleph-zero",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/3DPass%20(P3D).svgDefault.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/Default.svg",
                 "name": "Aleph Zero Testnet"
             }
         ],
@@ -4061,7 +4061,7 @@
                 "assetId": 0,
                 "symbol": "UNIT",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/3DPass%20(P3D).svgDefault.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/Default.svg",
                 "name": "Test token"
             }
         ],
@@ -4570,7 +4570,7 @@
                 "assetId": 0,
                 "symbol": "Unit",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/3DPass%20(P3D).svgDefault.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/Default.svg",
                 "name": "Test token"
             }
         ],
@@ -4706,7 +4706,7 @@
                 "assetId": 0,
                 "symbol": "tEDG",
                 "precision": 18,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/3DPass%20(P3D).svgDefault.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/Default.svg",
                 "name": "Beresheet"
             }
         ],

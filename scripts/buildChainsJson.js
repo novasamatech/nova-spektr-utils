@@ -94,7 +94,7 @@ function findFileByTicker(ticker, dirPath) {
       const filePath = path.join(dirPath, files[i]);
 
       if (defaultAssets.includes(ticker)) {
-        return filePath + 'Default.svg' // Set default icon for some assets
+        return dirPath + '/Default.svg' // Set default icon for some assets
       }
 
       // Check if file satisfies ticker pattern
