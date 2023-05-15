@@ -392,7 +392,7 @@
                 "precision": 12,
                 "type": "orml",
                 "priceId": "acala-dollar",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/aUSD.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/AUSD.svg",
                 "name": "Acala USD"
             },
             {
@@ -428,7 +428,7 @@
                 "precision": 12,
                 "type": "orml",
                 "priceId": "liquid-ksm",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/lKSM.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/LKSM.svg",
                 "name": "Liquid KSM"
             },
             {
@@ -455,7 +455,7 @@
                 "precision": 8,
                 "type": "orml",
                 "priceId": "bitcoin",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/kBTC.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/KBTC.svg",
                 "name": "KINT Bitcoin"
             },
             {
@@ -686,7 +686,7 @@
                 "precision": 12,
                 "type": "statemine",
                 "priceId": "liquid-ksm",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/lKSM.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/LKSM.svg",
                 "name": "Liquid KSM"
             },
             {
@@ -704,7 +704,7 @@
                 "precision": 8,
                 "type": "statemine",
                 "priceId": "bitcoin",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/kBTC.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/KBTC.svg",
                 "name": "KINT Bitcoin"
             },
             {
@@ -731,7 +731,7 @@
                 "precision": 12,
                 "type": "statemine",
                 "priceId": "acala-dollar",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/aUSD.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/AUSD.svg",
                 "name": "Acala USD"
             },
             {
@@ -861,7 +861,7 @@
                 "precision": 12,
                 "type": "orml",
                 "priceId": "acala-dollar",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/aUSD.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/AUSD.svg",
                 "name": "Acala USD"
             },
             {
@@ -977,7 +977,7 @@
                 "precision": 8,
                 "type": "orml",
                 "priceId": "bitcoin",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/kBTC.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/KBTC.svg",
                 "name": "KINT Bitcoin"
             },
             {
@@ -995,7 +995,7 @@
                 "precision": 12,
                 "type": "orml",
                 "priceId": "liquid-ksm",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/lKSM.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/LKSM.svg",
                 "name": "Liquid KSM"
             },
             {
@@ -1013,7 +1013,7 @@
                 "precision": 12,
                 "type": "orml",
                 "priceId": "acala-dollar",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/aUSD.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/AUSD.svg",
                 "name": "Acala USD"
             },
             {
@@ -1021,7 +1021,7 @@
                 "symbol": "KSM-kBTC",
                 "precision": 18,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/KSM-kBTC.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/KSM-KBTC.svg",
                 "name": "LP token KSM-kBTC"
             },
             {
@@ -1029,7 +1029,7 @@
                 "symbol": "kBTC-USDT",
                 "precision": 18,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/kBTC-USDT.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/KBTC-USDT.svg",
                 "name": "LP token kBTC-USDT"
             },
             {
@@ -1188,7 +1188,7 @@
                 "precision": 12,
                 "type": "statemine",
                 "priceId": "acala-dollar",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/aUSD.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/AUSD.svg",
                 "name": "Acala USD"
             },
             {
@@ -1197,7 +1197,7 @@
                 "precision": 12,
                 "type": "statemine",
                 "priceId": "liquid-ksm",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/lKSM.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/LKSM.svg",
                 "name": "Liquid KSM"
             },
             {
@@ -1313,7 +1313,7 @@
                 "precision": 12,
                 "type": "orml",
                 "priceId": "acala-dollar",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/aUSD.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/AUSD.svg",
                 "name": "Acala USD"
             },
             {
@@ -1490,7 +1490,7 @@
                 "precision": 12,
                 "type": "statemine",
                 "priceId": "acala-dollar",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/aUSD.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/AUSD.svg",
                 "name": "Acala USD"
             },
             {
@@ -1852,7 +1852,7 @@
                 "precision": 10,
                 "type": "orml",
                 "priceId": "liquid-staking-dot",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/lDOT.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/LDOT.svg",
                 "name": "Liquid DOT"
             },
             {
@@ -1861,7 +1861,7 @@
                 "precision": 12,
                 "type": "orml",
                 "priceId": "acala-dollar",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/aUSD.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/AUSD.svg",
                 "name": "Acala USD"
             },
             {
@@ -2192,7 +2192,7 @@
                 "precision": 10,
                 "type": "statemine",
                 "priceId": "liquid-staking-dot",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/lDOT.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/LDOT.svg",
                 "name": "Liquid DOT"
             },
             {
@@ -2201,7 +2201,7 @@
                 "precision": 12,
                 "type": "statemine",
                 "priceId": "acala-dollar",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/aUSD.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/AUSD.svg",
                 "name": "Acala USD"
             },
             {
@@ -2303,7 +2303,7 @@
                 "precision": 12,
                 "type": "statemine",
                 "priceId": "acala-dollar",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/aUSD.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/AUSD.svg",
                 "name": "Acala USD"
             },
             {
@@ -2312,7 +2312,7 @@
                 "precision": 10,
                 "type": "statemine",
                 "priceId": "liquid-staking-dot",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/lDOT.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/LDOT.svg",
                 "name": "Liquid DOT"
             },
             {
@@ -3270,7 +3270,7 @@
                 "precision": 8,
                 "type": "orml",
                 "priceId": "bitcoin",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/kBTC.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/KBTC.svg",
                 "name": "KINT Bitcoin"
             },
             {
@@ -3288,7 +3288,7 @@
                 "precision": 10,
                 "type": "orml",
                 "priceId": "liquid-staking-dot",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/lDOT.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/LDOT.svg",
                 "name": "Liquid DOT"
             },
             {
@@ -3483,7 +3483,7 @@
                 "precision": 12,
                 "type": "orml",
                 "priceId": "acala-dollar",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/aUSD.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/AUSD.svg",
                 "name": "Acala USD"
             },
             {
@@ -3501,7 +3501,7 @@
                 "precision": 12,
                 "type": "orml",
                 "priceId": "liquid-ksm",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/lKSM.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/LKSM.svg",
                 "name": "Liquid KSM"
             },
             {
@@ -4382,7 +4382,7 @@
                 "assetId": 0,
                 "symbol": "FREN",
                 "precision": 12,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/Fren.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/FREN.svg",
                 "name": "GM Token"
             },
             {
@@ -5064,7 +5064,7 @@
                 "symbol": "kBTC",
                 "precision": 8,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/kBTC.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/KBTC.svg",
                 "name": "KINT Bitcoin"
             },
             {
@@ -5072,7 +5072,7 @@
                 "symbol": "LKSM",
                 "precision": 12,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/lKSM.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/LKSM.svg",
                 "name": "Liquid KSM"
             },
             {
@@ -5088,7 +5088,7 @@
                 "symbol": "aUSD",
                 "precision": 12,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/aUSD.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/AUSD.svg",
                 "name": "Acala USD"
             },
             {
@@ -5096,7 +5096,7 @@
                 "symbol": "KSM-kBTC",
                 "precision": 18,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/KSM-kBTC.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/KSM-KBTC.svg",
                 "name": "LP token KSM-kBTC"
             },
             {
@@ -5104,7 +5104,7 @@
                 "symbol": "kBTC-USDT",
                 "precision": 18,
                 "type": "orml",
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/kBTC-USDT.svg",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/KBTC-USDT.svg",
                 "name": "LP token kBTC-USDT"
             },
             {
