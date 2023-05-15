@@ -1,0 +1,33 @@
+name: Update chains file
+
+on:
+  pull_request:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 8 * * *'
+
+jobs:
+  update-chains-file:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: 🛠 Set up env variables
+        uses: ./.github/workflows/setup-env
+
+      - name: ⚙️ Install dependencies
+        run: npm install
+
+      - name: 📝 Update chains file
+        run: npm run update:chains-file
+
+      - name: ➡️ Make pull request
+        uses: ./.github/workflows/make-pull-request
+        with:
+          commit-path: chains/**/*.json
+          commit-message: "ci: update chains.json files"
+          pr-title: "Update chains.json file"
+          branch-name: update-chains-file
+          github-token: ${{ secrets.GITHUB_TOKEN }}
