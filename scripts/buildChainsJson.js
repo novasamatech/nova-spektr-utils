@@ -67,32 +67,23 @@ function getTransformedData(rawData) {
     });
 }
 
-function replaceUrl(url, type, name=undefined) {
-  let changedUrl
+function replaceUrl(url, type, name = undefined) {
 
   const changedBaseUrl = url.replace("nova-utils/master", "nova-spektr-utils/main");
   const lastPartOfUrl = url.split("/").pop()
-  
-  switch(type) {
+
+  switch (type) {
     case "chain":
-      changedUrl = changedBaseUrl.replace(
+      return changedUrl = changedBaseUrl.replace(
         /\/icons\/.*/,
         `/icons/${SPEKTR_CONFIG_VERSION}/chains/${lastPartOfUrl}`
       );
-      break;
     case "asset":
       const relativePath = findFileByTicker(name, "icons/v1/assets/white")
-      changedUrl = changedBaseUrl.replace(
-        /\/icons\/.*/,
-        `/${relativePath}`
-      );
-      changedUrl = changedUrl.replace(/ /g, '%20'); // Replace spaces
-      break;
+      return changedBaseUrl.replace(/\/icons\/.*/, `/${relativePath}`).replace(/ /g, '%20');
     default:
       throw new Error("Unknown type: " + type);
   }
-
-  return changedUrl;
 }
 
 function findFileByTicker(ticker, dirPath) {
@@ -110,10 +101,6 @@ function findFileByTicker(ticker, dirPath) {
       if (files[i].match(new RegExp(`^${ticker}.svg\\b|\\(${ticker}\\)\\.`, 'i'))) {
         return filePath;
       }
-    }
-
-    if (ticker.split('-').length > 1) {
-      return findFileByTicker(ticker.split('-')[0], dirPath)
     }
 
     // No match found
