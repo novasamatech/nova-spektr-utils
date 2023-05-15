@@ -21,7 +21,7 @@ jobs:
         run: npm install
 
       - name: 📝 Update chains file
-        run: npm update:chains-file
+        run: npm run update:chains-file
 
       - name: ➡️ Make pull request
         uses: ./.github/workflows/make-pull-request
