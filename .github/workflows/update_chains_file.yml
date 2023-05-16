@@ -1,7 +1,6 @@
 name: Update chains file
 
 on:
-  pull_request:
   workflow_dispatch:
   schedule:
     - cron: '0 8 * * *'
