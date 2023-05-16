@@ -41,6 +41,7 @@ function getTransformedData(rawData) {
           priceId: asset.priceId,
           staking: asset.staking,
           icon: replaceUrl(asset.icon, 'asset', asset.symbol),
+          typeExtras: asset.typeExtras,
           name: tokenNames[asset.symbol] || 'Should be included in scripts/data/assetsNameMap',
         })),
         nodes: chain.nodes,
