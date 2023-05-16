@@ -1,5 +1,9 @@
 const fs = require('fs');
 const jp = require('jsonpath');
+const path = require('path');
+
+
+const BASE_ICON_PATH = "/nova-spektr-utils/main/icons/"
 
 let hasError = false;
 function checkChainsFile(filePath) {
@@ -8,7 +12,7 @@ function checkChainsFile(filePath) {
     let allIcons = jp.query(chainsJSON, "$..icon");
     let relativeIcons = [];
     for (let i in allIcons) {
-        relativeIcons.push('.' + allIcons[i].substring(allIcons[i].indexOf('/icons/')).replaceAll("%20", " "));
+        relativeIcons.push('.' + allIcons[i].substring(allIcons[i].indexOf('/icons/')))
     }
 
     let badPath = new Set();
@@ -23,6 +27,7 @@ function checkChainsFile(filePath) {
     if (badPath.size > 0) {
         console.error("No icons for chains or assets in " + filePath);
         console.log(badPath);
+        hasError = true;
     } else {
         console.log("All icons found in in " + filePath);
     }
@@ -30,7 +35,10 @@ function checkChainsFile(filePath) {
     let assetIcons = jp.query(chainsJSON, "$..assets[*].icon");
     let badAssetIcon = new Set();
     for (let i in assetIcons) {
-        if (assetIcons[i].indexOf('/nova-spektr-utils/main/icons/v1/assets/white/') === -1) {
+        if (assetIcons[i].indexOf(`${BASE_ICON_PATH}`) === -1) {
+            badAssetIcon.add(assetIcons[i]);
+        }
+        if (assetIcons[i].indexOf(`/assets/white/`) === -1) {
             badAssetIcon.add(assetIcons[i]);
         }
     }
@@ -45,7 +53,10 @@ function checkChainsFile(filePath) {
     let chainIcons = jp.query(chainsJSON, "$[*].icon");
     let badChainIcons = new Set();
     for (let i in chainIcons) {
-        if (chainIcons[i].indexOf('/nova-spektr-utils/main/icons/v1/chains') === -1) {
+        if (chainIcons[i].indexOf(`${BASE_ICON_PATH}`) === -1) {
+            badChainIcons.add(chainIcons[i]);
+        }
+        if (chainIcons[i].indexOf(`/chains/`) === -1) {
             badChainIcons.add(chainIcons[i]);
         }
     }
@@ -77,8 +88,32 @@ function checkChainsFile(filePath) {
     }
 }
 
-checkChainsFile("./chains/v1/chains.json");
-checkChainsFile("./chains/v1/chains_dev.json");
+function traverseDir(dirPath, callback) {
+    fs.readdir(dirPath, function (err, files) {
+        if (err) {
+            console.error('Error while reading directory:', err);
+            return;
+        }
+
+        files.forEach(function (file) {
+            const fullPath = path.join(dirPath, file);
+            fs.stat(fullPath, function (err, stats) {
+                if (err) {
+                    console.error('Error while getting file stats:', err);
+                    return;
+                }
+
+                if (stats.isDirectory()) {
+                    traverseDir(fullPath, callback);
+                } else {
+                    callback(fullPath);
+                }
+            });
+        });
+    });
+}
+
+traverseDir(path.join(__dirname, '../chains/'), checkChainsFile)
 
 if (hasError) {
     process.exit(12);
