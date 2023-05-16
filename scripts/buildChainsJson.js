@@ -80,7 +80,7 @@ function replaceUrl(url, type, name = undefined) {
       );
     case "asset":
       const relativePath = findFileByTicker(name, "icons/v1/assets/white")
-      return changedBaseUrl.replace(/\/icons\/.*/, `/${relativePath}`).replace(/ /g, '%20');
+      return changedBaseUrl.replace(/\/icons\/.*/, `/${relativePath}`);
     default:
       throw new Error("Unknown type: " + type);
   }
