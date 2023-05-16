@@ -5,7 +5,7 @@
   },
   "scripts": {
     "update:chains-file": "node scripts/buildChainsJson.js",
+    "update:prepare-icons": "node scripts/replaceSpacesToUnderscore.js",
     "check:chains-file": "node scripts/checkChainsConfig.js"
-
   }
 }
