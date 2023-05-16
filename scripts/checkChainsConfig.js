@@ -88,32 +88,33 @@ function checkChainsFile(filePath) {
     }
 }
 
-function traverseDir(dirPath, callback, done) {
+function traverseDir(dirPath, checkFunction, callback) {
     fs.readdir(dirPath, function (err, files) {
         if (err) {
             console.error('Error while reading directory:', err);
-            return done(err);
+            return callback(err);
         }
 
         let pending = files.length;
 
-        if (!pending) return done(null);
+        if (!pending) return callback(null);
 
         files.forEach(function (file) {
             const fullPath = path.join(dirPath, file);
             fs.stat(fullPath, function (err, stats) {
                 if (err) {
                     console.error('Error while getting file stats:', err);
-                    return done(err);
+                    return callback(err);
                 }
 
                 if (stats.isDirectory()) {
-                    traverseDir(fullPath, callback, function (err) {
-                        if (!--pending) done(err);
+                    // Recursive call in order to support nested directories
+                    traverseDir(fullPath, checkFunction, function (err) {
+                        if (!--pending) callback(err);
                     });
                 } else {
-                    callback(fullPath);
-                    if (!--pending) done(null);
+                    checkFunction(fullPath);
+                    if (!--pending) callback(null);
                 }
             });
         });
