@@ -88,33 +88,47 @@ function checkChainsFile(filePath) {
     }
 }
 
-function traverseDir(dirPath, callback) {
+function traverseDir(dirPath, callback, done) {
     fs.readdir(dirPath, function (err, files) {
         if (err) {
             console.error('Error while reading directory:', err);
-            return;
+            return done(err);
         }
+
+        let pending = files.length;
+
+        if (!pending) return done(null);
 
         files.forEach(function (file) {
             const fullPath = path.join(dirPath, file);
             fs.stat(fullPath, function (err, stats) {
                 if (err) {
                     console.error('Error while getting file stats:', err);
-                    return;
+                    return done(err);
                 }
 
                 if (stats.isDirectory()) {
-                    traverseDir(fullPath, callback);
+                    traverseDir(fullPath, callback, function (err) {
+                        if (!--pending) done(err);
+                    });
                 } else {
                     callback(fullPath);
+                    if (!--pending) done(null);
                 }
             });
         });
     });
 }
 
-traverseDir(path.join(__dirname, '../chains/'), checkChainsFile)
-
-if (hasError) {
-    process.exit(12);
-}
+traverseDir(path.join(__dirname, '../chains/'), checkChainsFile, function (err) {
+    if (err) {
+        throw new Error('Error while traversing directory:', err);
+    } else {
+        // All files and directories have been processed
+        if (hasError) {
+            throw new Error('Some chains file has problems with path, check the log');
+        } else {
+            console.log('All files processed successfully');
+        }
+    }
+});
