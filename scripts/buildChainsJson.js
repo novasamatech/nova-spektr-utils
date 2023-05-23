@@ -11,6 +11,7 @@ const CONFIG_PATH = `chains/${SPEKTR_CONFIG_VERSION}/`;
 const NOVA_CONFIG_URL = `https://raw.githubusercontent.com/nova-wallet/nova-utils/master/chains/${NOVA_CONFIG_VERSION}/`;
 
 const CHAINS_ENV = ['chains_dev.json', 'chains.json'];
+const EXCLUDED_CHAINS = { '89d3ec46d2fb43ef5a9713833373d5ea666b092fa8fd68fbc34596036571b907': 'Equilibrium' }
 
 const defaultAssets = ['SHIBATALES', 'SIRI', 'PILT', 'cDOT-6/13', 'cDOT-7/14', 'cDOT-8/15', 'cDOT-9/16', 'cDOT-10/17', 'TZERO', 'UNIT', 'Unit', 'tEDG']
 
@@ -27,6 +28,7 @@ async function getDataViaHttp(url, filePath) {
 function getTransformedData(rawData) {
   return rawData
     .filter(chain => !chain.options?.includes('ethereumBased'))
+    .filter(chain => !(chain.chainId in EXCLUDED_CHAINS))
     .map(chain => {
       const externalApi = filterObjectByKeys(chain.externalApi, ['staking', 'history'])
       const updatedChain = {
