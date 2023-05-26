@@ -5385,5 +5385,35 @@
         ],
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/chains/Frequency.svg",
         "addressPrefix": 90
+    },
+    {
+        "chainId": "0xfe1b4c55fd4d668101126434206571a7838a8b6b93a6d1b95d607e78e6c53763",
+        "name": "Vara",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "VARA",
+                "precision": 12,
+                "staking": "relaychain",
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/Vara.svg",
+                "name": "Vara"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rpc.vara-network.io",
+                "name": "Gear Tech node"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Varascan",
+                "extrinsic": null,
+                "account": "https://explorer.vara-network.io/account/{address}",
+                "event": null
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/chains/Vara.svg",
+        "addressPrefix": 137
     }
 ]
