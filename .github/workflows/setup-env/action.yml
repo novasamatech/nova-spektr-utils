@@ -6,7 +6,7 @@ runs:
     - name: Checkout
       uses: actions/checkout@v3
       with:
-        repository: 'nova-wallet/nova-utils'
+        repository: 'novasamatech/nova-utils'
         path: 'nova-utils'
 
     - name: Setup version to variables
