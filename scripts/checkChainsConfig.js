@@ -30,8 +30,11 @@ let hasError = false;
 function checkChainsFile(filePath) {
     let chainsFile = fs.readFileSync(filePath);
     let chainsJSON = JSON.parse(chainsFile);
-    let allIcons = jp.query(chainsJSON, "$..icon");
+
+    // check that new explorers were not added
     checkBlockExplorers(chainsJSON)
+    
+    let allIcons = jp.query(chainsJSON, "$..icon");
     let relativeIcons = [];
     for (let i in allIcons) {
         relativeIcons.push('.' + allIcons[i].substring(allIcons[i].indexOf('/icons/')))
