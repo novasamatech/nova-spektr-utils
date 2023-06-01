@@ -5719,7 +5719,7 @@
                 "name": "Kintsugi Labs"
             }
         ],
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/chains/Kintrusgi_Testnet.svg",
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/chains/Kintsugi_Testnet.svg",
         "addressPrefix": 2092
     },
     {
