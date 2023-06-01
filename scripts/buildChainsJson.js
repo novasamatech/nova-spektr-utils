@@ -5,13 +5,24 @@ const axios = require('axios');
 
 const tokenNames = require('./data/assetsNameMap.json');
 
-const NOVA_CONFIG_VERSION = process.env.CHAINS_VERSION || 'v11';
+const NOVA_CONFIG_VERSION = process.env.CHAINS_VERSION || 'v12';
 const SPEKTR_CONFIG_VERSION = process.env.SPEKTR_CONFIG_VERSION || 'v1';
 const CONFIG_PATH = `chains/${SPEKTR_CONFIG_VERSION}/`;
 const NOVA_CONFIG_URL = `https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/${NOVA_CONFIG_VERSION}/`;
 
 const CHAINS_ENV = ['chains_dev.json', 'chains.json'];
-const EXCLUDED_CHAINS = { '89d3ec46d2fb43ef5a9713833373d5ea666b092fa8fd68fbc34596036571b907': 'Equilibrium' }
+const EXCLUDED_CHAINS = { 
+  '89d3ec46d2fb43ef5a9713833373d5ea666b092fa8fd68fbc34596036571b907': 'Equilibrium', // Custom logic
+  '74ed91fbc18497f011290f9119a2217908649170337b6414a2d44923ade07063': 'Myriad', // Temp remove networks with custom explorers
+  '50dd5d206917bf10502c68fb4d18a59fc8aa31586f4e8856b493e43544aa82aa': 'XX network',
+  '8b5c955b5c8fd7112562327e3859473df4e3dff49bd72a113dbb668d2cfa20d7': 'Aventus',
+  '6c5894837ad89b6d92b114a2fb3eafa8fe3d26a54848e3447015442cd6ef4e66': '3DPass',
+  'fe1b4c55fd4d668101126434206571a7838a8b6b93a6d1b95d607e78e6c53763': 'Vara',
+  'a7113159e275582ee71ee499b24378a2416f34dc5aaf714443f0d11c6c3d99d3': 'Fusotao',
+  '18bcdb75a0bba577b084878db2dc2546eb21504eaad4b564bb7d47f9d02b6ace': 'Ternoa Alphanet',
+  'a2ee5a1f55a23dccd0c35e36512f9009e6e50a5654e8e5e469445d0748632aa8': 'Governance2 Testnet',
+  'a6ffcef7fb8caadf7f6c5ad8ada65e3eaa90d1604f3eabda546ff1d486865a0c': 'Aventus Testnet',
+}
 
 const defaultAssets = ['SHIBATALES', 'SIRI', 'PILT', 'cDOT-6/13', 'cDOT-7/14', 'cDOT-8/15', 'cDOT-9/16', 'cDOT-10/17', 'TZERO', 'UNIT', 'Unit', 'tEDG']
 
