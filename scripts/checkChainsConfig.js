@@ -4,11 +4,36 @@ const path = require('path');
 
 
 const BASE_ICON_PATH = "/nova-spektr-utils/main/icons/"
+const KNOWK_EXPLORERS = [
+    'Subscan',
+    'Polkascan',
+    'Polkaholic',
+    'Sub.ID',
+    'Statescan',
+    'Ternoa explorer'
+]
+
+
+function checkBlockExplorers(chainsJSON) {
+    chainsJSON.forEach(chain => {
+        if (chain.explorers) {
+            const explorerNames = chain.explorers.map(explorer => explorer.name);
+            const unknownExplorers = explorerNames.filter(name => !KNOWK_EXPLORERS.includes(name));
+            if (unknownExplorers.length > 0) {
+                throw new Error(`Chain "${chain.name}" has unknown explorers: ${unknownExplorers.join(', ')}`);
+            }
+        }
+    });
+}
 
 let hasError = false;
 function checkChainsFile(filePath) {
     let chainsFile = fs.readFileSync(filePath);
     let chainsJSON = JSON.parse(chainsFile);
+
+    // check that new explorers were not added
+    checkBlockExplorers(chainsJSON)
+    
     let allIcons = jp.query(chainsJSON, "$..icon");
     let relativeIcons = [];
     for (let i in allIcons) {
