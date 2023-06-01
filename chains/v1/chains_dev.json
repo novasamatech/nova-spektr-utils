@@ -8,9 +8,7 @@
                 "symbol": "DOT",
                 "precision": 10,
                 "priceId": "polkadot",
-                "staking": [
-                    "relaychain"
-                ],
+                "staking": "relaychain",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/Polkadot_(DOT).svg",
                 "name": "Polkadot"
             }
@@ -95,9 +93,7 @@
                 "symbol": "KSM",
                 "precision": 12,
                 "priceId": "kusama",
-                "staking": [
-                    "relaychain"
-                ],
+                "staking": "relaychain",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/Kusama_(KSM).svg",
                 "name": "Kusama"
             }
@@ -185,9 +181,7 @@
                 "assetId": 0,
                 "symbol": "WND",
                 "precision": 12,
-                "staking": [
-                    "relaychain"
-                ],
+                "staking": "relaychain",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/Westend_(WND).svg",
                 "name": "Westend"
             }
@@ -1030,9 +1024,7 @@
                 "symbol": "BNC",
                 "precision": 12,
                 "priceId": "bifrost-native-coin",
-                "staking": [
-                    "parachain"
-                ],
+                "staking": "parachain",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/Bifrost_(BNC).svg",
                 "name": "Bifrost"
             },
@@ -1461,9 +1453,7 @@
                 "symbol": "EDG",
                 "precision": 18,
                 "priceId": "edgeware",
-                "staking": [
-                    "aura-relaychain"
-                ],
+                "staking": "aura-relaychain",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/Edgeware_(EDG).svg",
                 "name": "Edgeware"
             }
@@ -2111,9 +2101,7 @@
                 "symbol": "KMA",
                 "precision": 12,
                 "priceId": "calamari-network",
-                "staking": [
-                    "parachain"
-                ],
+                "staking": "parachain",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/Calamari_(KMA).svg",
                 "name": "Calamari Network"
             }
@@ -3338,9 +3326,7 @@
                 "symbol": "ZTG",
                 "precision": 10,
                 "priceId": "zeitgeist",
-                "staking": [
-                    "parachain"
-                ],
+                "staking": "parachain",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/Zeitgeist_(ZTG).svg",
                 "name": "Zeitgeist"
             }
@@ -4168,9 +4154,7 @@
                 "assetId": 0,
                 "symbol": "TUR",
                 "precision": 10,
-                "staking": [
-                    "turing"
-                ],
+                "staking": "turing",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/Turing_(TUR).svg",
                 "name": "Turing"
             },
@@ -4328,9 +4312,7 @@
                 "symbol": "AZERO",
                 "precision": 12,
                 "priceId": "aleph-zero",
-                "staking": [
-                    "aleph-zero"
-                ],
+                "staking": "aleph-zero",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/Aleph_Zero_(AZERO).svg",
                 "name": "Aleph Zero"
             }
@@ -4469,9 +4451,7 @@
                 "symbol": "PDEX",
                 "precision": 12,
                 "priceId": "polkadex",
-                "staking": [
-                    "relaychain"
-                ],
+                "staking": "relaychain",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/Polkadex_(PDEX).svg",
                 "name": "Polkadex"
             }
@@ -4858,9 +4838,7 @@
                 "symbol": "TZERO",
                 "precision": 12,
                 "priceId": "aleph-zero",
-                "staking": [
-                    "aleph-zero"
-                ],
+                "staking": "aleph-zero",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/Default.svg",
                 "name": "Aleph Zero Testnet"
             }
@@ -4904,9 +4882,7 @@
                 "symbol": "POLYX",
                 "precision": 6,
                 "priceId": "polymesh",
-                "staking": [
-                    "relaychain"
-                ],
+                "staking": "relaychain",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/Polymesh_(POLYX).svg",
                 "name": "Polymesh Testnet"
             }
@@ -5304,9 +5280,7 @@
                 "symbol": "CAPS",
                 "precision": 18,
                 "priceId": "coin-capsule",
-                "staking": [
-                    "relaychain"
-                ],
+                "staking": "relaychain",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/Ternoa_(CAPS).svg",
                 "name": "Ternoa"
             }
@@ -5350,9 +5324,7 @@
                 "assetId": 0,
                 "symbol": "TUR",
                 "precision": 10,
-                "staking": [
-                    "turing"
-                ],
+                "staking": "turing",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/Turing_(TUR).svg",
                 "name": "Turing"
             }
@@ -5450,9 +5422,7 @@
                 "symbol": "POLYX",
                 "precision": 6,
                 "priceId": "polymesh",
-                "staking": [
-                    "relaychain"
-                ],
+                "staking": "relaychain",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/Polymesh_(POLYX).svg",
                 "name": "Polymesh Testnet"
             }
@@ -5504,9 +5474,7 @@
                 "assetId": 0,
                 "symbol": "KSM",
                 "precision": 12,
-                "staking": [
-                    "relaychain"
-                ],
+                "staking": "relaychain",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/Kusama_(KSM).svg",
                 "name": "Kusama"
             }

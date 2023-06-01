@@ -52,7 +52,7 @@ function getTransformedData(rawData) {
           precision: asset.precision,
           type: asset.type,
           priceId: asset.priceId,
-          staking: asset.staking,
+          staking: Array.isArray(asset.staking) ? asset.staking[0] : typeof asset.staking === 'string' ? asset.staking : undefined,
           icon: replaceUrl(asset.icon, 'asset', asset.symbol),
           typeExtras: asset.typeExtras,
           name: tokenNames[asset.symbol] || 'Should be included in scripts/data/assetsNameMap',
