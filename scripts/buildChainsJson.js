@@ -11,7 +11,7 @@ const CONFIG_PATH = `chains/${SPEKTR_CONFIG_VERSION}/`;
 const NOVA_CONFIG_URL = `https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/${NOVA_CONFIG_VERSION}/`;
 
 const CHAINS_ENV = ['chains_dev.json', 'chains.json'];
-const EXCLUDED_CHAINS = { 
+const EXCLUDED_CHAINS = {
   '89d3ec46d2fb43ef5a9713833373d5ea666b092fa8fd68fbc34596036571b907': 'Equilibrium', // Custom logic
   '74ed91fbc18497f011290f9119a2217908649170337b6414a2d44923ade07063': 'Myriad', // Temp remove networks with custom explorers
   '50dd5d206917bf10502c68fb4d18a59fc8aa31586f4e8856b493e43544aa82aa': 'XX network',
@@ -23,6 +23,15 @@ const EXCLUDED_CHAINS = {
   'a2ee5a1f55a23dccd0c35e36512f9009e6e50a5654e8e5e469445d0748632aa8': 'Governance2 Testnet',
   'a6ffcef7fb8caadf7f6c5ad8ada65e3eaa90d1604f3eabda546ff1d486865a0c': 'Aventus Testnet',
 }
+
+const TYPE_EXTRAS_REPLACEMENTS = [
+    'acala_primitives.currency.CurrencyId',   'AcalaPrimitivesCurrencyCurrencyId',
+    'node_primitives.currency.CurrencyId',    'NodePrimitivesCurrencyCurrencyId',
+    'bit_country_primitives.FungibleTokenId', 'BitCountryPrimitivesFungibleTokenId',
+    'interbtc_primitives.CurrencyId',         'InterbtcPrimitivesCurrencyId',
+    'gm_chain_runtime.Coooooins',             'GmChainRuntimeCoooooins',
+    'pendulum_runtime.currency.CurrencyId',   'PendulumRuntimeCurrencyCurrencyId',
+]
 
 const defaultAssets = ['SHIBATALES', 'SIRI', 'PILT', 'cDOT-6/13', 'cDOT-7/14', 'cDOT-8/15', 'cDOT-9/16', 'cDOT-10/17', 'TZERO', 'UNIT', 'Unit', 'tEDG']
 
@@ -54,7 +63,7 @@ function getTransformedData(rawData) {
           priceId: asset.priceId,
           staking: Array.isArray(asset.staking) ? asset.staking[0] : typeof asset.staking === 'string' ? asset.staking : undefined,
           icon: replaceUrl(asset.icon, 'asset', asset.symbol),
-          typeExtras: asset.typeExtras,
+          typeExtras: replaceTypeExtras(asset.typeExtras),
           name: tokenNames[asset.symbol] || 'Should be included in scripts/data/assetsNameMap',
         })),
         nodes: chain.nodes,
@@ -98,6 +107,17 @@ function replaceUrl(url, type, name = undefined) {
     default:
       throw new Error("Unknown type: " + type);
   }
+}
+
+function replaceTypeExtras(typeExtras) {
+  if (typeExtras && typeExtras.currencyIdType) {
+    console.log("currenyIdType!!!!");
+    const replacementIndex = TYPE_EXTRAS_REPLACEMENTS.indexOf(typeExtras.currencyIdType);
+    if (replacementIndex >= 0) {
+      typeExtras.currencyIdType = TYPE_EXTRAS_REPLACEMENTS[replacementIndex + 1];
+    }
+  }
+  return typeExtras;
 }
 
 function findFileByTicker(ticker, dirPath) {
