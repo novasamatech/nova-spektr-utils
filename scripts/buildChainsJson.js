@@ -111,7 +111,6 @@ function replaceUrl(url, type, name = undefined) {
 
 function replaceTypeExtras(typeExtras) {
   if (typeExtras && typeExtras.currencyIdType) {
-    console.log("currenyIdType!!!!");
     const replacementIndex = TYPE_EXTRAS_REPLACEMENTS.indexOf(typeExtras.currencyIdType);
     if (replacementIndex >= 0) {
       typeExtras.currencyIdType = TYPE_EXTRAS_REPLACEMENTS[replacementIndex + 1];
