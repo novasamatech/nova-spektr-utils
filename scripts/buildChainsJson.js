@@ -9,7 +9,7 @@ const NOVA_CONFIG_VERSION = process.env.CHAINS_VERSION || 'v12';
 const SPEKTR_CONFIG_VERSION = process.env.SPEKTR_CONFIG_VERSION || 'v1';
 const CONFIG_PATH = `chains/${SPEKTR_CONFIG_VERSION}/`;
 const NOVA_CONFIG_URL = `https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/${NOVA_CONFIG_VERSION}/`;
-const ICONS_DIR = `icons/v1/assets/white`
+const ASSET_ICONS_DIR = `icons/v1/assets/white`
 
 const CHAINS_ENV = ['chains_dev.json', 'chains.json'];
 const EXCLUDED_CHAINS = {
@@ -104,10 +104,10 @@ function replaceUrl(url, type, name = undefined) {
         `/icons/${SPEKTR_CONFIG_VERSION}/chains/${lastPartOfUrl}`
       );
     case "asset":
-      const relativePath = findFileByTicker(name, ICONS_DIR) || findFileByTicker(name.split("-")[0], ICONS_DIR);
+      const relativePath = findFileByTicker(name, ASSET_ICONS_DIR) || findFileByTicker(name.split("-")[0], ASSET_ICONS_DIR);
       
       if (!relativePath) {
-        throw new Error(`Can't find file for: ${name} in: ${ICONS_DIR}`);
+        throw new Error(`Can't find file for: ${name} in: ${ASSET_ICONS_DIR}`);
       }
 
       return changedBaseUrl.replace(/\/icons\/.*/, `/${relativePath}`);
