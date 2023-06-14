@@ -23,6 +23,7 @@ const EXCLUDED_CHAINS = {
   '18bcdb75a0bba577b084878db2dc2546eb21504eaad4b564bb7d47f9d02b6ace': 'Ternoa Alphanet',
   'a2ee5a1f55a23dccd0c35e36512f9009e6e50a5654e8e5e469445d0748632aa8': 'Governance2 Testnet',
   'a6ffcef7fb8caadf7f6c5ad8ada65e3eaa90d1604f3eabda546ff1d486865a0c': 'Aventus Testnet',
+  'c9824829d23066e7dd92b80cfef52559c7692866fcfc3530e737e3fe01410eef': 'Giant Testnet'
 }
 
 const TYPE_EXTRAS_REPLACEMENTS = [
