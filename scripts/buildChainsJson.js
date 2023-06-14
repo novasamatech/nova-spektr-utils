@@ -9,6 +9,7 @@ const NOVA_CONFIG_VERSION = process.env.CHAINS_VERSION || 'v12';
 const SPEKTR_CONFIG_VERSION = process.env.SPEKTR_CONFIG_VERSION || 'v1';
 const CONFIG_PATH = `chains/${SPEKTR_CONFIG_VERSION}/`;
 const NOVA_CONFIG_URL = `https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/${NOVA_CONFIG_VERSION}/`;
+const ICONS_DIR = `icons/v1/assets/white`
 
 const CHAINS_ENV = ['chains_dev.json', 'chains.json'];
 const EXCLUDED_CHAINS = {
@@ -102,7 +103,12 @@ function replaceUrl(url, type, name = undefined) {
         `/icons/${SPEKTR_CONFIG_VERSION}/chains/${lastPartOfUrl}`
       );
     case "asset":
-      const relativePath = findFileByTicker(name, "icons/v1/assets/white")
+      const relativePath = findFileByTicker(name, ICONS_DIR) || findFileByTicker(name.split("-")[0], ICONS_DIR);
+      
+      if (!relativePath) {
+        throw new Error(`Can't find file for: ${name} in: ${ICONS_DIR}`);
+      }
+
       return changedBaseUrl.replace(/\/icons\/.*/, `/${relativePath}`);
     default:
       throw new Error("Unknown type: " + type);
@@ -135,9 +141,6 @@ function findFileByTicker(ticker, dirPath) {
         return filePath;
       }
     }
-
-    // No match found
-    throw new Error("Can't find file for: " + ticker + " in: " + dirPath);
   } catch (error) {
     throw new Error(error);
   }

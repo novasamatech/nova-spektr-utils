@@ -3704,7 +3704,7 @@
             },
             {
                 "assetId": 2,
-                "symbol": "DAI",
+                "symbol": "DAI-worm",
                 "precision": 18,
                 "type": "orml",
                 "priceId": "dai",
@@ -3715,7 +3715,7 @@
                     "existentialDeposit": "10000000000000000",
                     "transfersEnabled": true
                 },
-                "name": "DAI"
+                "name": "DAI wormhol"
             },
             {
                 "assetId": 3,
@@ -4906,43 +4906,6 @@
         "addressPrefix": 42
     },
     {
-        "chainId": "0x0e06260459b4f9034aba0a75108c08ed73ea51d2763562749b1d3600986c4ea5",
-        "parentId": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "name": "Pichiu",
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "PCHU",
-                "precision": 18,
-                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/Pichiu_(PCHU).svg",
-                "name": "Pichiu"
-            }
-        ],
-        "nodes": [
-            {
-                "url": "wss://kusama.kylin-node.co.uk",
-                "name": "Kylin node"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
-            }
-        ],
-        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/chains/Pichiu.svg",
-        "addressPrefix": 42,
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-pichiu"
-                }
-            ]
-        }
-    },
-    {
         "chainId": "0xfeb426ca713f0f46c96465b8f039890370cf6bfd687c9076ea2843f58a6ae8a7",
         "parentId": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "name": "Kabocha (PAUSED)",
@@ -5869,6 +5832,28 @@
             }
         ],
         "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/chains/Giant.svg",
+        "addressPrefix": 42
+    },
+    {
+        "chainId": "0xc9824829d23066e7dd92b80cfef52559c7692866fcfc3530e737e3fe01410eef",
+        "parentId": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "name": "GIANT Testnet",
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "GIANT",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/GIANT.svg",
+                "name": "Should be included in scripts/data/assetsNameMap"
+            }
+        ],
+        "nodes": [
+            {
+                "url": "wss://rpc-4-us-east-1-dev.giantprotocol.org:443",
+                "name": "Giant testnet node"
+            }
+        ],
+        "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/chains/Giant_Testnet.svg",
         "addressPrefix": 42
     }
 ]
