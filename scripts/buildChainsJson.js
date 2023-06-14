@@ -9,6 +9,7 @@ const NOVA_CONFIG_VERSION = process.env.CHAINS_VERSION || 'v12';
 const SPEKTR_CONFIG_VERSION = process.env.SPEKTR_CONFIG_VERSION || 'v1';
 const CONFIG_PATH = `chains/${SPEKTR_CONFIG_VERSION}/`;
 const NOVA_CONFIG_URL = `https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/${NOVA_CONFIG_VERSION}/`;
+const ASSET_ICONS_DIR = `icons/v1/assets/white`
 
 const CHAINS_ENV = ['chains_dev.json', 'chains.json'];
 const EXCLUDED_CHAINS = {
@@ -22,6 +23,7 @@ const EXCLUDED_CHAINS = {
   '18bcdb75a0bba577b084878db2dc2546eb21504eaad4b564bb7d47f9d02b6ace': 'Ternoa Alphanet',
   'a2ee5a1f55a23dccd0c35e36512f9009e6e50a5654e8e5e469445d0748632aa8': 'Governance2 Testnet',
   'a6ffcef7fb8caadf7f6c5ad8ada65e3eaa90d1604f3eabda546ff1d486865a0c': 'Aventus Testnet',
+  'c9824829d23066e7dd92b80cfef52559c7692866fcfc3530e737e3fe01410eef': 'Giant Testnet'
 }
 
 const TYPE_EXTRAS_REPLACEMENTS = [
@@ -102,7 +104,12 @@ function replaceUrl(url, type, name = undefined) {
         `/icons/${SPEKTR_CONFIG_VERSION}/chains/${lastPartOfUrl}`
       );
     case "asset":
-      const relativePath = findFileByTicker(name, "icons/v1/assets/white")
+      const relativePath = findFileByTicker(name, ASSET_ICONS_DIR) || findFileByTicker(name.split("-")[0], ASSET_ICONS_DIR);
+      
+      if (!relativePath) {
+        throw new Error(`Can't find file for: ${name} in: ${ASSET_ICONS_DIR}`);
+      }
+
       return changedBaseUrl.replace(/\/icons\/.*/, `/${relativePath}`);
     default:
       throw new Error("Unknown type: " + type);
@@ -135,9 +142,6 @@ function findFileByTicker(ticker, dirPath) {
         return filePath;
       }
     }
-
-    // No match found
-    throw new Error("Can't find file for: " + ticker + " in: " + dirPath);
   } catch (error) {
     throw new Error(error);
   }
