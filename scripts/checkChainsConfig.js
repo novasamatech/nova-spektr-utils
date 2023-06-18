@@ -11,6 +11,7 @@ const KNOWK_EXPLORERS = [
     'Sub.ID',
     'Statescan',
     'Ternoa explorer',
+    'Ternoa Alphanet explorer',
     'Explorer',
     'XX explorer',
     'Aventus testnet explorer',
