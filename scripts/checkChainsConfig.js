@@ -16,7 +16,8 @@ const KNOWK_EXPLORERS = [
     'Aventus testnet explorer',
     'Aventus explorer',
     '3DPass explorer',
-    'Varascan'
+    'Varascan',
+    'Polkastats'
 ]
 
 
