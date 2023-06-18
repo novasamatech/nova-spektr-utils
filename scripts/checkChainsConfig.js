@@ -10,7 +10,13 @@ const KNOWK_EXPLORERS = [
     'Polkaholic',
     'Sub.ID',
     'Statescan',
-    'Ternoa explorer'
+    'Ternoa explorer',
+    'Explorer',
+    'XX explorer',
+    'Aventus testnet explorer',
+    'Aventus explorer',
+    '3DPass explorer',
+    'Varascan'
 ]
 
 
