@@ -40,10 +40,10 @@ async function getDataViaHttp(url, filePath) {
 
 function getTransformedData(rawData) {
   const filteredData = rawData.filter(chain => {
-    const hasEthereumBased = chain.options?.includes('ethereumBased');
+    const isEthereumBased = chain.options?.includes('ethereumBased');
     const isExcludedChain = chain.chainId in EXCLUDED_CHAINS;
 
-    return !hasEthereumBased && !isExcludedChain;
+    return !isEthereumBased && !isExcludedChain;
   });
 
   return filteredData.map(chain => {
