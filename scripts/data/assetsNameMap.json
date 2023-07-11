@@ -111,9 +111,9 @@
   "WBTC-worm": "Wrapped BTC",
   "TAO": "Fusotao token",
   "PEN": "Pendulum token",
-  "KSM-kBTC": "LP token KSM-kBTC",
-  "kBTC-USDT": "LP token kBTC-USDT",
-  "KSM-KINT": "LP token KSM-KINT",
+  "LP KSM-kBTC": "LP token KSM-kBTC",
+  "LP kBTC-USDT": "LP token kBTC-USDT",
+  "LP KSM-KINT": "LP token KSM-KINT",
   "AVT": "Aventus",
   "CRU": "Crust",
   "HASH": "Hashed",
@@ -122,5 +122,14 @@
   "VARA": "Vara",
   "FRQCY": "Frequency",
   "DAI-worm": "DAI wormhol",
-  "GIANT": "Giant"
+  "GIANT": "Giant",
+  "LP iBTC-USDT":  "LP token iBTC-USDT",
+  "LP DOT-iBTC": "LP token DOT-iBTC",
+  "LP INTR-USDT":  "LP token INTR-USDT",
+  "TRAC": "OriginTrail Parachain",
+  "qkBTC": "Kitsugi BTC",
+  "qKSM": "Kitsugi KSM",
+  "qUSDT": "USD Tether",
+  "qiBTC": "Interlay BTC",
+  "qDOT": "Interlay DOT"
 }

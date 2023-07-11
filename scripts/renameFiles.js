@@ -39,6 +39,6 @@ function renameFiles(parentDir, callback) {
   });
 }
 
-renameFiles(dirPath, function() {
+renameFiles(dirPath, () => {
   console.log('Done renaming files.');
 });

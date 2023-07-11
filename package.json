@@ -1,11 +1,20 @@
 {
+  "name": "nova-spektr-utils",
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": {
+    "name": "Novasama Technologies"
+  },
+  "engines": {
+    "node": ">=18.x"
+  },
   "dependencies": {
     "axios": "^1.4.0",
     "jsonpath": "^1.1.1"
   },
   "scripts": {
     "update:chains-file": "node scripts/buildChainsJson.js",
-    "update:prepare-icons": "node scripts/replaceSpacesToUnderscore.js",
+    "update:prepare-icons": "node scripts/renameFiles.js",
     "check:chains-file": "node scripts/checkChainsConfig.js"
   }
 }
