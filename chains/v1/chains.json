@@ -3005,7 +3005,6 @@
                 "symbol": "qkBTC",
                 "precision": 8,
                 "type": "orml",
-                "priceId": "bitcoin",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/kBTC.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0201000000",
@@ -3020,7 +3019,6 @@
                 "symbol": "qKSM",
                 "precision": 12,
                 "type": "orml",
-                "priceId": "kusama",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/Kusama_(KSM).svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0202000000",
@@ -3035,7 +3033,6 @@
                 "symbol": "qUSDT",
                 "precision": 6,
                 "type": "orml",
-                "priceId": "tether",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/USDT.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0203000000",
@@ -3891,7 +3888,6 @@
                 "symbol": "qiBTC",
                 "precision": 8,
                 "type": "orml",
-                "priceId": "bitcoin",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/iBTC.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0201000000",
@@ -3906,7 +3902,6 @@
                 "symbol": "qUSDT",
                 "precision": 6,
                 "type": "orml",
-                "priceId": "tether",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/USDT.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0203000000",
@@ -3921,7 +3916,6 @@
                 "symbol": "qDOT",
                 "precision": 10,
                 "type": "orml",
-                "priceId": "polkadot",
                 "icon": "https://raw.githubusercontent.com/nova-wallet/nova-spektr-utils/main/icons/v1/assets/white/Polkadot_(DOT).svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0202000000",

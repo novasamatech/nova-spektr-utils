@@ -26,7 +26,7 @@ const TYPE_EXTRAS_REPLACEMENTS = [
     'pendulum_runtime.currency.CurrencyId',   'PendulumRuntimeCurrencyCurrencyId',
 ]
 
-const DEFAULT_ASSETS = ['SHIBATALES', 'SIRI', 'PILT', 'cDOT-6/13', 'cDOT-7/14', 'cDOT-8/15', 'cDOT-9/16', 'cDOT-10/17', 'TZERO', 'UNIT', 'Unit', 'tEDG']
+const DEFAULT_ASSETS = ['SHIBATALES', 'DEV', 'SIRI', 'PILT', 'cDOT-6/13', 'cDOT-7/14', 'cDOT-8/15', 'cDOT-9/16', 'cDOT-10/17', 'TZERO', 'UNIT', 'Unit', 'tEDG'];
 
 async function getDataViaHttp(url, filePath) {
   try {
