@@ -2,7 +2,6 @@ const fs = require('fs');
 const jp = require('jsonpath');
 const path = require('path');
 
-
 const BASE_ICON_PATH = "/nova-spektr-utils/main/icons/"
 const KNOWK_EXPLORERS = [
     'Subscan',
@@ -63,7 +62,7 @@ function checkChainsFile(filePath) {
         console.log(badPath);
         hasError = true;
     } else {
-        console.log("All icons found in in " + filePath);
+        console.log("All icons found in " + filePath);
     }
 
     let assetIcons = jp.query(chainsJSON, "$..assets[*].icon");
@@ -157,13 +156,14 @@ function traverseDir(dirPath, checkFunction, callback) {
 
 traverseDir(path.join(__dirname, '../chains/'), checkChainsFile, function (err) {
     if (err) {
-        throw new Error('Error while traversing directory:', err);
-    } else {
-        // All files and directories have been processed
-        if (hasError) {
-            throw new Error('Some chains file has problems with path, check the log');
-        } else {
-            console.log('All files processed successfully');
-        }
+        console.error('traverseDir failed - ', err);
+        throw new Error('Error while traversing directory');
     }
+
+    // All files and directories have been processed
+    if (hasError) {
+        throw new Error('Some chains file have problems with path, check the log');
+    }
+
+    console.log('All files processed successfully');
 });
