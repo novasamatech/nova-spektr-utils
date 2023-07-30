@@ -296,17 +296,17 @@ export class ChainArray {
      */
     public getStakingNumber() {
         let count = 0;
-  
+
         for (const chain of this.chains) {
             for (const asset of chain.assets) {
-            if (asset.hasOwnProperty('staking')) {
-                if (asset.staking == 'relaychain') {
-                    count++;
+                if (asset.hasOwnProperty('staking')) {
+                    if (asset.staking == 'relaychain') {
+                        count++;
+                    }
                 }
             }
-            }
         }
-        
+
         return count;
     }
 }

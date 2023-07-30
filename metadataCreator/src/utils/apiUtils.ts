@@ -1,4 +1,4 @@
-import { Chain} from "../models/Chain";
+import { Chain } from "../models/Chain";
 import { MultisigVersionStorage } from "../multisigVersionStorage";
 
 

@@ -1,4 +1,4 @@
-import {Chain} from '../models/Chain'
+import { Chain } from '../models/Chain'
 
 export function calculateChainDataForTable(chain: Chain) {
   const networkName = chain.name
