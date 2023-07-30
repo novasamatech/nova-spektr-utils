@@ -7,7 +7,7 @@
     "start": "ts-node src/App.ts"
   },
   "author": "",
-  "license": "ISC",
+  "license": "Apache-2.0",
   "devDependencies": {
     "typescript": "^5.1.6"
   },
