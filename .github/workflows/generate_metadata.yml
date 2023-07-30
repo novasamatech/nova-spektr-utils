@@ -26,7 +26,7 @@ jobs:
         run: npm run start
 
       - name: Make Pull Request
-        uses: novasamatech/nova-utils/.github/workflows/make-pull-request@develop
+        uses: novasamatech/nova-utils/.github/workflows/make-pull-request@master
         with:
           commit-files: ./chains/*/*.md
           commit-message: Update metadata file
