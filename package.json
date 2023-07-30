@@ -8,6 +8,9 @@
   "engines": {
     "node": ">=18.x"
   },
+  "workspaces": [
+    "./metadataCreator/*"
+  ],
   "dependencies": {
     "axios": "^1.4.0",
     "jsonpath": "^1.1.1"

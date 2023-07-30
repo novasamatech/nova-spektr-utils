@@ -1,19 +1,11 @@
-class MultisigVersionStorage {
-  private networks: { name: string, version: string }[];
+export class MultisigVersionStorage {
+  private networks: { name: string, version: string | undefined }[] = [];
 
-  constructor(networks: { name: string, version: string }[]) {
-    this.networks = networks;
-  }
-
-  setNetworks(networks: { name: string, version: string }[]): void {
-    this.networks = networks;
-  }
-
-  getNetworks(): { name: string, version: string }[] {
+  getNetworks(): { name: string, version: string | undefined}[] {
     return this.networks;
   }
 
-  addNetwork(network: { name: string, version: string }): void {
+  addNetwork(network: { name: string, version: string | undefined }): void {
     this.networks.push(network);
   }
 }

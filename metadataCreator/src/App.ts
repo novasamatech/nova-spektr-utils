@@ -13,17 +13,18 @@ async function buildMetadataMarkdown() {
 
         // Await each async function call
         const multisigData = await calculateMultisigData(sortedChains);
-        const markdownMetaHeader = await buildMarkdownHeader(
-            0,
-            0,
-            0,
-            0
+        const markdownMultisig = markdownMultisigTable(multisigData);
+        const markdownMetaHeader = buildMarkdownHeader(
+            chains.getLength(),
+            chains.getAsssetsNumber(),
+            multisigData.getNetworks().length,
+            chains.getStakingNumber()
         );
-        const markdownMultisig = await markdownMultisigTable();
         const markdownChains = markdownChainsTable(sortedChains);
 
         // Corrected file write using string concatenation
-        fs.writeFileSync('./chains/v1/README.md', markdownMetaHeader + markdownMultisig + markdownChains);
+        fs.writeFileSync('../chains/v1/README.md', markdownMetaHeader + markdownMultisig + markdownChains);
+        return await chains.disconnectAll()
     } catch (error) {
         console.error(error);
     }

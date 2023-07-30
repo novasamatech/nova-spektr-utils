@@ -6,7 +6,7 @@ export function calculateChainDataForTable(chain: Chain) {
   let explorers
 
   if (chain.explorers) {
-    explorers = chain.explorers.map(explorer => explorer.name).join('\n');
+    explorers = chain.explorers.map(explorer => explorer.name).join(' ');
   } else {
     explorers = `Have not been added yet`;
   }

@@ -1,12 +1,14 @@
+import { MultisigVersionStorage } from "../MultisigVersionStorage";
 import { Chain } from "../models/Chain";
 import { calculateChainDataForTable } from "./chainUtils";
 
 export function markdownChainsTable(chains: Chain[]) {
     // Build Markdown table
     let markdownTable = `
-    | -- | Network | Assets count | Explorers |
-    | -------- | -------- | -------- | -------- |
-    `;
+## The list of supported networks
+| -- | Network | Assets count | Explorers |
+| -------- | -------- | -------- | -------- |
+`;
     let counter = 0;
 
     chains.forEach(chain => {
@@ -18,26 +20,35 @@ export function markdownChainsTable(chains: Chain[]) {
     return markdownTable
 }
 
-export function markdownMultisigTable() {
+export function markdownMultisigTable(multisigData: MultisigVersionStorage) {
     let markdownTable = `
-    | -- | Network | Multisig version |
-    | -------- | -------- | -------- |
-    `
+# List of Networks where we are support Multisig pallet
+| -- | Network | Multisig version |
+| -------- | -------- | -------- |
+`
+    let counter = 0;
+    const networks = multisigData.getNetworks()
+    networks.forEach(network => {
+        counter++;
+        markdownTable += `| ${counter} | ${network.name} | ${network.version} |\n`;
+    });
+    return markdownTable
 }
 
 export function buildMarkdownHeader(
-        networksNumber: number,
-        assetsNumber: number,
-        multisigNetworks: number,
-        stakingNumber: number
-    ) {
+    networksNumber: number,
+    assetsNumber: number,
+    multisigNetworks: number,
+    stakingNumber: number
+) {
 
     const makrdownData = `
-        # Supported Features data:
-        🕸️ Supported networks: ${networksNumber}
-        🪙 Added assets: ${assetsNumber}
-        👨‍👩‍👧‍👦 Multisig supported in: ${multisigNetworks}
-        🥞 Staking supported in: ${stakingNumber}
-    `
+# Supported Features data:
+### 🕸️ [Supported networks](#supported-network-list): ${networksNumber}
+### 🪙 Added assets: ${assetsNumber}
+### 👨‍👩‍👧‍👦 [Multisig supported](#list-of-networks-where-we-are-support-multisig) in: ${multisigNetworks}
+### 🥞 Staking supported in: ${stakingNumber}
+\n
+`
     return makrdownData
 }

@@ -1,4 +1,5 @@
 import fs from 'fs'
+import { ApiPromise, WsProvider } from '@polkadot/api';
 
 export class Asset {
     assetId: number;
@@ -126,6 +127,7 @@ export class Chain {
     icon: string;
     addressPrefix: number;
     externalApi: ExternalApi | undefined;
+    api: ApiPromise | undefined;
 
     constructor(
         chainId: string,
@@ -163,6 +165,40 @@ export class Chain {
             explorers,
         );
     }
+
+    /**
+     * createAPI will return polkadot.js/api object
+     */
+    public async createAPI() {
+        let connected = false;
+        let index = 0;
+
+        while (!connected) {
+            try {
+                // Skip first node for edgeware, it stuck with connect state and won't through error even if throwOnConnect is true
+                if (this.name == "Edgeware") {
+                    index++
+                }
+
+                if (this.name == "Dora Factory (PAUSED)") {
+                    return null
+                }
+
+                const wsProvider = new WsProvider(this.nodes[index].url);
+                index = (index + 1) % this.nodes.length;
+                const api = await ApiPromise.create({ provider: wsProvider, throwOnConnect: true });
+
+                if (api.isConnected) {
+                    this.api = api;
+                    connected = true;
+                } else {
+                    await api.disconnect();
+                }
+            } catch (error) {
+                console.error(console.error());
+            }
+        }
+    }
 }
 
 
@@ -175,7 +211,7 @@ export class ChainArray {
     }
 
     /**
-     * This method jenerate an object of chains file
+     * This method generate an object of chains file
      */
     public generateChainsObject(): Chain[] {
         // Read the JSON file from local directory
@@ -198,30 +234,79 @@ export class ChainArray {
         return this.sortChains(this.chains)
     }
 
+    /**
+     * disconnectAll
+     */
+    public async disconnectAll(): Promise<void[]> {
+        return await Promise.all(this.chains.map(async chain => {
+            await chain.api?.disconnect()
+        }));
+    }
+
+
     private sortChains(chainsList: Chain[]) {
         chainsList.sort((a, b) => {
-          const aName = a.name;
-          const bName = b.name;
-      
-          // Check if aName and bName start with a number
-          const aStartsWithNumber = /^\d/.test(aName);
-          const bStartsWithNumber = /^\d/.test(bName);
-      
-          if (aStartsWithNumber && bStartsWithNumber) {
-            // If both names start with a number, compare them normally
-            return aName.localeCompare(bName);
-          } else if (aStartsWithNumber) {
-            // If aName starts with a number, place it after bName
-            return 1;
-          } else if (bStartsWithNumber) {
-            // If bName starts with a number, place it before aName
-            return -1;
-          } else {
-            // If neither name starts with a number, compare them normally
-            return aName.localeCompare(bName);
-          }
+            const aName = a.name;
+            const bName = b.name;
+
+            // Check if aName and bName start with a number
+            const aStartsWithNumber = /^\d/.test(aName);
+            const bStartsWithNumber = /^\d/.test(bName);
+
+            if (aStartsWithNumber && bStartsWithNumber) {
+                // If both names start with a number, compare them normally
+                return aName.localeCompare(bName);
+            } else if (aStartsWithNumber) {
+                // If aName starts with a number, place it after bName
+                return 1;
+            } else if (bStartsWithNumber) {
+                // If bName starts with a number, place it before aName
+                return -1;
+            } else {
+                // If neither name starts with a number, compare them normally
+                return aName.localeCompare(bName);
+            }
         });
-      
+
         return chainsList
-      }
+    }
+
+    /**
+     * Return number of networks
+     */
+    public getLength() {
+        return this.chains.length
+    }
+
+    /**
+     * Return number of assets
+     */
+    public getAsssetsNumber() {
+        let totalAssets = 0;
+
+        for (const chain of this.chains) {
+            totalAssets += chain.assets.length;
+        }
+
+        return totalAssets;
+    }
+
+    /**
+     * Return number of networks were staking is available
+     */
+    public getStakingNumber() {
+        let count = 0;
+  
+        for (const chain of this.chains) {
+            for (const asset of chain.assets) {
+            if (asset.hasOwnProperty('staking')) {
+                if (asset.staking == 'relaychain') {
+                    count++;
+                }
+            }
+            }
+        }
+        
+        return count;
+    }
 }
