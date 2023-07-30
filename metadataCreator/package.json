@@ -6,7 +6,9 @@
   "scripts": {
     "start": "ts-node src/App.ts"
   },
-  "author": "",
+  "author": {
+    "name": "Novasama Technologies"
+  },
   "license": "Apache-2.0",
   "devDependencies": {
     "typescript": "^5.1.6"
