@@ -1,4 +1,4 @@
-import { MultisigVersionStorage } from "../MultisigVersionStorage";
+import { MultisigVersionStorage } from "../multisigVersionStorage";
 import { Chain } from "../models/Chain";
 import { calculateChainDataForTable } from "./chainUtils";
 

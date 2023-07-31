@@ -180,13 +180,10 @@ export class Chain {
                     index++
                 }
 
-                if (this.name == "Dora Factory (PAUSED)") {
-                    return null
-                }
 
                 const wsProvider = new WsProvider(this.nodes[index].url);
                 index = (index + 1) % this.nodes.length;
-                const api = await ApiPromise.create({ provider: wsProvider, throwOnConnect: true });
+                const api = await ApiPromise.create({ provider: wsProvider });
 
                 if (api.isConnected) {
                     this.api = api;

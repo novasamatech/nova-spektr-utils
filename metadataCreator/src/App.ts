@@ -24,7 +24,8 @@ async function buildMetadataMarkdown() {
 
         // Corrected file write using string concatenation
         fs.writeFileSync('../chains/v1/README.md', markdownMetaHeader + markdownMultisig + markdownChains);
-        return await chains.disconnectAll()
+        await chains.disconnectAll()
+        process.exit(0)
     } catch (error) {
         console.error(error);
     }
