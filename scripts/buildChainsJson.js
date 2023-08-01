@@ -38,6 +38,29 @@ async function getDataViaHttp(url, filePath) {
   }
 }
 
+function fillAssetData(chain) {
+  const assetsList = [];
+  chain.assets.map(asset => {
+    // Temp remove, waiting for "AssetManagement pallet support. It's used by Zeitgeist." https://app.clickup.com/t/85ztgpy7n
+    if (chain.name === 'Zeitgeist' && asset.symbol === 'DOT') {
+      return;
+    }
+    assetsList.push({
+      assetId: asset.assetId,
+      symbol: asset.symbol,
+      precision: asset.precision,
+      type: asset.type,
+      priceId: asset.priceId,
+      staking: Array.isArray(asset.staking) ? asset.staking[0] : typeof asset.staking === 'string' ? asset.staking : undefined,
+      icon: replaceUrl(asset.icon, 'asset', asset.symbol),
+      typeExtras: replaceTypeExtras(asset.typeExtras),
+      name: TOKEN_NAMES[asset.symbol] || 'Should be included in scripts/data/assetsNameMap',
+    });
+  });
+  return assetsList;
+}
+
+
 function getTransformedData(rawData) {
   const filteredData = rawData.filter(chain => {
     const isEthereumBased = chain.options?.includes('ethereumBased');
@@ -63,17 +86,7 @@ function getTransformedData(rawData) {
         return explorer;
       });
 
-      const assets = chain.assets.map(asset => ({
-        assetId: asset.assetId,
-        symbol: asset.symbol,
-        precision: asset.precision,
-        type: asset.type,
-        priceId: asset.priceId,
-        staking: Array.isArray(asset.staking) ? asset.staking[0] : typeof asset.staking === 'string' ? asset.staking : undefined,
-        icon: replaceUrl(asset.icon, 'asset', asset.symbol),
-        typeExtras: replaceTypeExtras(asset.typeExtras),
-        name: TOKEN_NAMES[asset.symbol] || 'Should be included in scripts/data/assetsNameMap',
-      }));
+      const assets = fillAssetData(chain)
 
       const updatedChain = {
         name: chain.name,
