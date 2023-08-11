@@ -23,3 +23,6 @@ All icons found in ./chains/v1/chains_dev.json
 All asset icons path is correct in ./chains/v1/chains_dev.json
 All chain icons path is correct in ./chains/v1/chains_dev.json
 ```
+## License
+Nova spektr utils is available under the Apache 2.0 license. See the LICENSE file for more info.
+© Novasama Technologies GmbH 2023
