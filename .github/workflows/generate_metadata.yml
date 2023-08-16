@@ -1,0 +1,41 @@
+name: Generate metadata file
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 8 * * *"
+
+jobs:
+  metadata-file:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: 🛠 Set up env variables
+        uses: ./.github/workflows/setup-env
+
+      - name: Go to module
+        run: cd metadataCreator
+
+      - name: ⚙️ Install dependencies
+        run: npm install
+
+      - name: 📝 Update chains file
+        run: npm run start
+
+      - name: Make Pull Request
+        uses: novasamatech/nova-utils/.github/workflows/make-pull-request@master
+        with:
+          commit-files: ./chains/*/*.md
+          commit-message: Update metadata file
+          app-id: ${{ secrets.PR_APP_ID}}
+          app-token: ${{ secrets.PR_APP_TOKEN}}
+          branch-name: update-metadata-${{github.run_number}}
+          pr-title: Update project metadata
+          pr-body:
+            This PR was generated automatically by the GitHub Action, **generate_metadata**.
+
+            Feel free to close this PR if the changes are not needed.
+          pr-base: main

@@ -2,6 +2,8 @@
 1. Configs for Nova Spektr application in Polkadot &amp; Kusama ecosystem
 2. Chain and asset icons for the Nova Spektr application
 
+# [Project overal info](./chains/v1/README.md)
+
 # Check chains config file
 1. Download and install `node.js`
 2. Install required npm packages  

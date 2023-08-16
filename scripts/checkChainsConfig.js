@@ -41,7 +41,7 @@ function checkChainsFile(filePath) {
 
     // check that new explorers were not added
     checkBlockExplorers(chainsJSON)
-    
+
     let allIcons = jp.query(chainsJSON, "$..icon");
     let relativeIcons = [];
     for (let i in allIcons) {
@@ -145,8 +145,10 @@ function traverseDir(dirPath, checkFunction, callback) {
                     traverseDir(fullPath, checkFunction, function (err) {
                         if (!--pending) callback(err);
                     });
-                } else {
+                } else if (path.extname(file) === '.json') {
                     checkFunction(fullPath);
+                    if (!--pending) callback(null);
+                } else {
                     if (!--pending) callback(null);
                 }
             });
