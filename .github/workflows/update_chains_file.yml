@@ -22,11 +22,17 @@ jobs:
       - name: 📝 Update chains file
         run: npm run update:chains-file
 
-      - name: ➡️ Make pull request
+      - name: Make Pull Request
         uses: ./.github/workflows/make-pull-request
         with:
-          commit-path: chains/**/*.json
+          commit-files: ./chains/**/*.json
           commit-message: "ci: update chains.json files"
+          app-id: ${{ secrets.PR_APP_ID}}
+          app-token: ${{ secrets.PR_APP_TOKEN}}
+          branch-name: update-chains-file-${{github.run_number}}
           pr-title: "Update chains.json file"
-          branch-name: update-chains-file
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          pr-body:
+            This PR was generated automatically by the GitHub Action, **update-chains-file**.
+
+            Feel free to close this PR if the changes are not needed.
+          pr-base: main

@@ -4,6 +4,7 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "0 8 * * *"
+  pull_request:
 
 jobs:
   metadata-file:
@@ -26,14 +27,14 @@ jobs:
         run: npm run start
 
       - name: Make Pull Request
-        uses: novasamatech/nova-utils/.github/workflows/make-pull-request@master
+        uses: ./.github/workflows/make-pull-request
         with:
           commit-files: ./chains/*/*.md
-          commit-message: Update metadata file
+          commit-message: Update chains/readme.md
           app-id: ${{ secrets.PR_APP_ID}}
           app-token: ${{ secrets.PR_APP_TOKEN}}
-          branch-name: update-metadata-${{github.run_number}}
-          pr-title: Update project metadata
+          branch-name: update-chains-readme-${{github.run_number}}
+          pr-title: Update project overal data
           pr-body:
             This PR was generated automatically by the GitHub Action, **generate_metadata**.
 
