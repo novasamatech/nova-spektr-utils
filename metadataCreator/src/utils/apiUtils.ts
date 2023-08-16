@@ -1,5 +1,5 @@
 import { Chain } from "../models/Chain";
-import { MultisigNetwork, MultisigVersionStorage } from "../multisigVersionStorage";
+import { MultisigVersionStorage } from "../multisigVersionStorage";
 
 
 export async function calculateMultisigData(chains: Chain[]): Promise<MultisigVersionStorage> {
@@ -12,7 +12,7 @@ export async function calculateMultisigData(chains: Chain[]): Promise<MultisigVe
 
         if (multisigInstance) {
             const multisigVersion = (await element.api?.query.multisig.palletVersion())?.toString()
-            multisigStorage.addNetwork(new MultisigNetwork(element.name, multisigVersion))
+            multisigStorage.addNetwork({name:element.name, version:multisigVersion})
             console.log(`Network: ${element.name} has Multisig version:` + multisigVersion)
         }
     }));

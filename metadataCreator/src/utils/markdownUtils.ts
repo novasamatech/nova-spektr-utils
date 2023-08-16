@@ -10,8 +10,8 @@ export function markdownChainsTable(chains: Chain[]) {
 | -------- | -------- | -------- | -------- |
 `;
     let counter = 0;
-
-    chains.forEach(chain => {
+    const sortedChains = chains.sort()
+    sortedChains.forEach(chain => {
         const { networkName, assetsCount, explorers } = calculateChainDataForTable(chain)
         counter++;
         markdownTable += `| ${counter} | ${networkName} | ${assetsCount} | ${explorers} |\n`;
@@ -28,9 +28,10 @@ export function markdownMultisigTable(multisigData: MultisigVersionStorage) {
 `
     let counter = 0;
     const networks = multisigData.getNetworks()
-    networks.forEach(network => {
+    const sortedNetworks = networks.sort()
+    sortedNetworks.forEach(network => {
         counter++;
-        markdownTable += `| ${counter} | ${network.getName()} | ${network.getVersion()} |\n`;
+        markdownTable += `| ${counter} | ${network.name} | ${network.version} |\n`;
     });
     return markdownTable
 }

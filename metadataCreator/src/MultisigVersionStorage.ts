@@ -1,24 +1,7 @@
-export class MultisigNetwork {
-    private name: string;
-    private version: string | undefined;
-
-    constructor(name: string, version: string | undefined) {
-        this.name = name;
-        this.version = version;
-    }
-
-    getName(): string {
-        return this.name;
-    }
-
-    getVersion(): string | undefined {
-        return this.version;
-    }
-
-    setVersion(version: string | undefined): void {
-        this.version = version;
-    }
-}
+type MultisigNetwork = {
+    name: string;
+    version?: string;
+  };
 
 export class MultisigVersionStorage {
     private networks: MultisigNetwork[] = [];

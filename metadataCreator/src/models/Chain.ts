@@ -5,8 +5,8 @@ export class Asset {
     assetId: number;
     symbol: string;
     precision: number;
-    priceId: string | undefined;
-    staking: string | undefined;
+    priceId?: string;
+    staking?: string;
     icon: string;
     name: string;
 
@@ -43,10 +43,10 @@ export class Asset {
 
 export class Explorer {
     name: string;
-    extrinsic: string | undefined;
-    account: string | undefined;
-    event: string | undefined;
-    multisig: string | undefined;
+    extrinsic?: string;
+    account?: string;
+    event?: string;
+    multisig?: string;
 
     constructor(
         name: string,
@@ -89,7 +89,7 @@ export class Api {
 
 export class ExternalApi {
     staking: Api[];
-    history: Api[] | undefined;
+    history?: Api[];
 
     constructor(staking: Api[], history?: Api[]) {
         this.staking = staking;
@@ -123,11 +123,11 @@ export class Chain {
     name: string;
     assets: Asset[];
     nodes: NodeElement[];
-    explorers: Explorer[] | undefined;
+    explorers?: Explorer[];
     icon: string;
     addressPrefix: number;
-    externalApi: ExternalApi | undefined;
-    api: ApiPromise | undefined;
+    externalApi?: ExternalApi;
+    api?: ApiPromise;
 
     constructor(
         chainId: string,
@@ -170,29 +170,41 @@ export class Chain {
      * createAPI will return polkadot.js/api object
      */
     public async createAPI() {
-        let connected = false;
-        let index = 0;
+        try {
+            for (const node of this.nodes) {
+                const api = await this.wrapApiWithTimer(node);
 
-        while (!connected) {
-            try {
-                // Skip first node for edgeware, it stuck with connect state and won't through error even if throwOnConnect is true
-                if (this.name == "Edgeware") {
-                    index++
-                }
-
-
-                const wsProvider = new WsProvider(this.nodes[index].url);
-                index = (index + 1) % this.nodes.length;
-                const api = await ApiPromise.create({ provider: wsProvider });
-
-                if (api.isConnected) {
+                if (api?.isConnected) {
                     this.api = api;
-                    connected = true;
+                    break;
                 } else {
-                    await api.disconnect();
+                    await api?.disconnect();
                 }
-            } catch (error) {
-                console.error(console.error());
+            }
+        } catch (error) {
+            console.error(error);
+        }
+    }
+
+
+    private async wrapApiWithTimer(node: NodeElement): Promise<ApiPromise | void> {
+        const wsProvider = new WsProvider(node.url);
+
+        let timeoutId: NodeJS.Timeout | undefined;
+        const timeoutPromise = new Promise<void>((_, reject) => {
+            timeoutId = setTimeout(() => {
+                wsProvider.disconnect()
+                reject(console.error(`Can't connect to ${this.name} via ${node.url}`));
+            }, 80_000);
+        });
+
+        const apiPromise = ApiPromise.create({ provider: wsProvider });
+
+        try {
+            return await Promise.race([apiPromise, timeoutPromise]);
+        } finally {
+            if (timeoutId) {
+                clearTimeout(timeoutId);
             }
         }
     }
@@ -296,10 +308,8 @@ export class ChainArray {
 
         for (const chain of this.chains) {
             for (const asset of chain.assets) {
-                if (asset.hasOwnProperty('staking')) {
-                    if (asset.staking == 'relaychain') {
-                        count++;
-                    }
+                if (asset.hasOwnProperty('staking') && asset.staking == 'relaychain') {
+                    count++;
                 }
             }
         }
