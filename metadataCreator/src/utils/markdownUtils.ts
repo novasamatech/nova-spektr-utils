@@ -30,7 +30,7 @@ export function markdownMultisigTable(multisigData: MultisigVersionStorage) {
     const networks = multisigData.getNetworks()
     networks.forEach(network => {
         counter++;
-        markdownTable += `| ${counter} | ${network.name} | ${network.version} |\n`;
+        markdownTable += `| ${counter} | ${network.getName()} | ${network.getVersion()} |\n`;
     });
     return markdownTable
 }
