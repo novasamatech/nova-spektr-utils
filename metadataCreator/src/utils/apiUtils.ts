@@ -1,5 +1,5 @@
 import { Chain } from "../models/Chain";
-import { MultisigVersionStorage } from "../multisigVersionStorage";
+import { MultisigVersionStorage } from "../models/MultisigVersionStorage";
 
 
 export async function calculateMultisigData(chains: Chain[]): Promise<MultisigVersionStorage> {
