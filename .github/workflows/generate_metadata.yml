@@ -26,7 +26,7 @@ jobs:
       - name: Make Pull Request
         uses: ./.github/workflows/make-pull-request
         with:
-          commit-files: ./chains/*/*.md
+          commit-files: chains/**/*.md
           commit-message: Update chains/readme.md
           app-id: ${{ secrets.PR_APP_ID}}
           app-token: ${{ secrets.PR_APP_TOKEN}}
