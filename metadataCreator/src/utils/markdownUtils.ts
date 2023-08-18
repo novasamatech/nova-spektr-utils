@@ -1,4 +1,4 @@
-import { MultisigVersionStorage } from "../multisigVersionStorage";
+import { MultisigVersionStorage } from "../models/MultisigVersionStorage";
 import { Chain } from "../models/Chain";
 import { calculateChainDataForTable } from "./chainUtils";
 
@@ -10,8 +10,7 @@ export function markdownChainsTable(chains: Chain[]) {
 | -------- | -------- | -------- | -------- |
 `;
     let counter = 0;
-    const sortedChains = chains.sort()
-    sortedChains.forEach(chain => {
+    chains.forEach(chain => {
         const { networkName, assetsCount, explorers } = calculateChainDataForTable(chain)
         counter++;
         markdownTable += `| ${counter} | ${networkName} | ${assetsCount} | ${explorers} |\n`;

@@ -1,4 +1,3 @@
-
 # Supported Features data:
 ### 🕸️ [Supported networks](#supported-network-list): 72
 ### 🪙 Added assets: 252

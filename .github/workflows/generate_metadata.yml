@@ -16,24 +16,21 @@ jobs:
       - name: 🛠 Set up env variables
         uses: ./.github/workflows/setup-env
 
-      - name: Go to module
-        run: cd metadataCreator
-
-      - name: ⚙️ Install dependencies
-        run: npm install
-
       - name: 📝 Update chains file
-        run: npm run start
+        run: |
+          cd metadataCreator
+          npm install
+          npm run start
 
       - name: Make Pull Request
-        uses: novasamatech/nova-utils/.github/workflows/make-pull-request@master
+        uses: ./.github/workflows/make-pull-request
         with:
-          commit-files: ./chains/*/*.md
-          commit-message: Update metadata file
+          commit-files: chains/**/*.md
+          commit-message: Update chains/readme.md
           app-id: ${{ secrets.PR_APP_ID}}
           app-token: ${{ secrets.PR_APP_TOKEN}}
-          branch-name: update-metadata-${{github.run_number}}
-          pr-title: Update project metadata
+          branch-name: update-chains-readme
+          pr-title: Update project overal data
           pr-body:
             This PR was generated automatically by the GitHub Action, **generate_metadata**.
 
