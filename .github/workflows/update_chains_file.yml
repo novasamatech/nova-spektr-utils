@@ -29,7 +29,7 @@ jobs:
           commit-message: "ci: update chains.json files"
           app-id: ${{ secrets.PR_APP_ID}}
           app-token: ${{ secrets.PR_APP_TOKEN}}
-          branch-name: update-chains-file-${{github.run_number}}
+          branch-name: update-chains-file
           pr-title: "Update chains.json file"
           pr-body:
             This PR was generated automatically by the GitHub Action, **update-chains-file**.
