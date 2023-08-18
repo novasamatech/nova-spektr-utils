@@ -10,63 +10,63 @@
 # List of Networks where we are support Multisig pallet
 | -- | Network | Multisig version |
 | -------- | -------- | -------- |
-| 1 | Altair | 1 |
-| 2 | Acala | 1 |
+| 1 | Acala | 1 |
+| 2 | Ajuna | 0 |
 | 3 | Aleph Zero | 1 |
-| 4 | Calamari | 0 |
-| 5 | Bajun | 0 |
-| 6 | Bittensor | 0 |
-| 7 | Ajuna | 0 |
-| 8 | Kabocha | 0 |
-| 9 | HydraDX | 1 |
-| 10 | Interlay | 1 |
-| 11 | Khala | 1 |
-| 12 | Kusama Bridge Hub | 1 |
-| 13 | Kintsugi | 1 |
-| 14 | Efinity | 1 |
-| 15 | Polkadot Asset Hub | 0 |
-| 16 | Polkadot Collectives | 0 |
-| 17 | Polkadot | 1 |
-| 18 | Picasso | 1 |
-| 19 | Polkadot Bridge Hub | 1 |
-| 20 | Parallel Heiko | 1 |
-| 21 | XX network | 0 |
-| 22 | Crust | 0 |
-| 23 | DAO IPCI | 0 |
-| 24 | Frequency | 0 |
-| 25 | Polkadex | 0 |
-| 26 | Westend | 1 |
-| 27 | Karura | 1 |
-| 28 | Basilisk | 1 |
-| 29 | Robonomics | 0 |
-| 30 | Ternoa | 0 |
-| 31 | Tinkernet | 0 |
-| 32 | Imbue | 0 |
-| 33 | Parallel | 1 |
-| 34 | Zeitgeist | 1 |
-| 35 | Phala | 1 |
-| 36 | 3DPass | 0 |
+| 4 | Altair | 1 |
+| 5 | Amplitude | 0 |
+| 6 | Astar | 1 |
+| 7 | Bajun | 0 |
+| 8 | Basilisk | 1 |
+| 9 | Bifrost Kusama | 1 |
+| 10 | Bifrost Polkadot | 1 |
+| 11 | Bit.Country Pioneer | 0 |
+| 12 | Bittensor | 0 |
+| 13 | Calamari | 0 |
+| 14 | Centrifuge Parachain | 1 |
+| 15 | CLV Parachain | 0 |
+| 16 | Composable Finance | 1 |
+| 17 | Crust | 0 |
+| 18 | Crust Shadow | 0 |
+| 19 | DAO IPCI | 0 |
+| 20 | Dora Factory (PAUSED) | 0 |
+| 21 | Efinity | 1 |
+| 22 | Frequency | 0 |
+| 23 | Hashed Network | 0 |
+| 24 | HydraDX | 1 |
+| 25 | Imbue | 0 |
+| 26 | Integritee Parachain | 0 |
+| 27 | Interlay | 1 |
+| 28 | Kabocha | 0 |
+| 29 | Karura | 1 |
+| 30 | Khala | 1 |
+| 31 | Kintsugi | 1 |
+| 32 | Kusama | 1 |
+| 33 | Kusama Asset Hub | 0 |
+| 34 | Kusama Bridge Hub | 1 |
+| 35 | Litentry | 0 |
+| 36 | Litmus | 0 |
 | 37 | Nodle Parachain | 0 |
-| 38 | Vara | 0 |
-| 39 | Kusama | 1 |
-| 40 | Bit.Country Pioneer | 0 |
-| 41 | Hashed Network | 0 |
-| 42 | Litentry | 0 |
-| 43 | CLV Parachain | 0 |
-| 44 | Crust Shadow | 0 |
-| 45 | Kusama Asset Hub | 0 |
-| 46 | Amplitude | 0 |
-| 47 | Integritee Parachain | 0 |
-| 48 | Shiden | 1 |
-| 49 | Turing | 0 |
-| 50 | Litmus | 0 |
-| 51 | Centrifuge Parachain | 1 |
-| 52 | Astar | 1 |
-| 53 | Bifrost Kusama | 1 |
-| 54 | Pendulum | 1 |
-| 55 | Bifrost Polkadot | 1 |
-| 56 | Dora Factory (PAUSED) | 0 |
-| 57 | Composable Finance | 1 |
+| 38 | Parallel | 1 |
+| 39 | Parallel Heiko | 1 |
+| 40 | Pendulum | 1 |
+| 41 | Phala | 1 |
+| 42 | Picasso | 1 |
+| 43 | Polkadex | 0 |
+| 44 | Polkadot | 1 |
+| 45 | Polkadot Asset Hub | 0 |
+| 46 | Polkadot Bridge Hub | 1 |
+| 47 | Polkadot Collectives | 0 |
+| 48 | Robonomics | 0 |
+| 49 | Shiden | 1 |
+| 50 | Ternoa | 0 |
+| 51 | Tinkernet | 0 |
+| 52 | Turing | 0 |
+| 53 | Vara | 0 |
+| 54 | Westend | 1 |
+| 55 | XX network | 0 |
+| 56 | Zeitgeist | 1 |
+| 57 | 3DPass | 0 |
 
 ## The list of supported networks
 | -- | Network | Assets count | Explorers |
