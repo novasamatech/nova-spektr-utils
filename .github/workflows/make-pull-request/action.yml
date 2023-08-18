@@ -28,7 +28,7 @@ inputs:
   pr-reviewer:
     description: "Reviewers for creating PR, support comma delimiter"
     required: false
-    default: "stepanLav,leohar"
+    default: "stepanLav,pgolovkin,Asmadek,tuul-wq,egor0798"
 
 runs:
   using: "composite"
