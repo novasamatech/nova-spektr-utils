@@ -3,7 +3,7 @@ const jp = require('jsonpath');
 const path = require('path');
 
 const BASE_ICON_PATH = "/nova-spektr-utils/main/icons/"
-const KNOWK_EXPLORERS = [
+const KNOWN_EXPLORERS = [
     'Subscan',
     'Polkascan',
     'Polkaholic',
@@ -26,7 +26,7 @@ function checkBlockExplorers(chainsJSON) {
     chainsJSON.forEach(chain => {
         if (chain.explorers) {
             const explorerNames = chain.explorers.map(explorer => explorer.name);
-            const unknownExplorers = explorerNames.filter(name => !KNOWK_EXPLORERS.includes(name));
+            const unknownExplorers = explorerNames.filter(name => !KNOWN_EXPLORERS.includes(name));
             if (unknownExplorers.length > 0) {
                 throw new Error(`Chain "${chain.name}" has unknown explorers: ${unknownExplorers.join(', ')}`);
             }
