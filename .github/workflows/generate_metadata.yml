@@ -4,7 +4,6 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "0 8 * * *"
-  pull_request:
 
 jobs:
   metadata-file:
@@ -30,7 +29,7 @@ jobs:
           commit-message: Update chains/readme.md
           app-id: ${{ secrets.PR_APP_ID}}
           app-token: ${{ secrets.PR_APP_TOKEN}}
-          branch-name: update-chains-readme-${{github.run_number}}
+          branch-name: update-chains-readme
           pr-title: Update project overal data
           pr-body:
             This PR was generated automatically by the GitHub Action, **generate_metadata**.
