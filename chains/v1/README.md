@@ -1,3 +1,4 @@
+
 # Supported Features data:
 ### 🕸️ [Supported networks](#supported-network-list): 72
 ### 🪙 Added assets: 252
@@ -96,7 +97,7 @@
 | 24 | Encointer | 1 | Subscan Polkaholic |
 | 25 | Frequency | 1 | Polkaholic |
 | 26 | GIANT | 1 | Have not been added yet |
-| 27 | GM (PAUSED) | 3 | Polkaholic |
+| 27 | GM | 3 | Polkaholic |
 | 28 | Hashed Network | 1 | Have not been added yet |
 | 29 | HydraDX | 10 | Subscan Polkaholic |
 | 30 | Imbue | 1 | Polkaholic |
