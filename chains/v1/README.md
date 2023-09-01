@@ -2,7 +2,7 @@
 # Supported Features data:
 ### 🕸️ [Supported networks](#supported-network-list): 72
 ### 🪙 Added assets: 252
-### 👨‍👩‍👧‍👦 [Multisig supported](#list-of-networks-where-we-are-support-multisig) in: 57
+### 👨‍👩‍👧‍👦 [Multisig supported](#list-of-networks-where-we-are-support-multisig) in: 53
 ### 🥞 Staking supported in: 5
 
 
@@ -35,38 +35,34 @@
 | 23 | Hashed Network | 0 |
 | 24 | HydraDX | 1 |
 | 25 | Imbue | 0 |
-| 26 | Integritee Parachain | 0 |
-| 27 | Interlay | 1 |
-| 28 | Kabocha | 0 |
-| 29 | Karura | 1 |
-| 30 | Khala | 1 |
-| 31 | Kintsugi | 1 |
-| 32 | Kusama | 1 |
-| 33 | Kusama Asset Hub | 0 |
-| 34 | Kusama Bridge Hub | 1 |
-| 35 | Litentry | 0 |
-| 36 | Litmus | 0 |
-| 37 | Nodle Parachain | 0 |
-| 38 | Parallel | 1 |
-| 39 | Parallel Heiko | 1 |
-| 40 | Pendulum | 1 |
-| 41 | Phala | 1 |
-| 42 | Picasso | 1 |
-| 43 | Polkadex | 0 |
-| 44 | Polkadot | 1 |
-| 45 | Polkadot Asset Hub | 0 |
-| 46 | Polkadot Bridge Hub | 1 |
-| 47 | Polkadot Collectives | 0 |
-| 48 | Robonomics | 0 |
-| 49 | Shiden | 1 |
-| 50 | Ternoa | 0 |
-| 51 | Tinkernet | 0 |
-| 52 | Turing | 0 |
-| 53 | Vara | 0 |
-| 54 | Westend | 1 |
-| 55 | XX network | 0 |
-| 56 | Zeitgeist | 1 |
-| 57 | 3DPass | 0 |
+| 26 | Interlay | 1 |
+| 27 | Kabocha | 0 |
+| 28 | Karura | 1 |
+| 29 | Khala | 1 |
+| 30 | Kintsugi | 1 |
+| 31 | Kusama | 1 |
+| 32 | Kusama Bridge Hub | 1 |
+| 33 | Litentry | 0 |
+| 34 | Litmus | 0 |
+| 35 | Nodle Parachain | 0 |
+| 36 | Parallel | 1 |
+| 37 | Pendulum | 1 |
+| 38 | Phala | 1 |
+| 39 | Picasso | 1 |
+| 40 | Polkadex | 0 |
+| 41 | Polkadot | 1 |
+| 42 | Polkadot Asset Hub | 0 |
+| 43 | Polkadot Bridge Hub | 1 |
+| 44 | Polkadot Collectives | 0 |
+| 45 | Robonomics | 0 |
+| 46 | Shiden | 1 |
+| 47 | Ternoa | 0 |
+| 48 | Turing | 0 |
+| 49 | Vara | 0 |
+| 50 | Westend | 1 |
+| 51 | XX network | 0 |
+| 52 | Zeitgeist | 1 |
+| 53 | 3DPass | 0 |
 
 ## The list of supported networks
 | -- | Network | Assets count | Explorers |
