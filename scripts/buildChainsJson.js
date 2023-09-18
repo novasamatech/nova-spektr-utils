@@ -6,8 +6,8 @@ const axios = require('axios');
 const TOKEN_NAMES = require('./data/assetsNameMap.json');
 const TICKER_NAMES = require('./data/assetTickerMap.json');
 
-const NOVA_CONFIG_VERSION = process.env.CHAINS_VERSION || 'v12';
-const SPEKTR_CONFIG_VERSION = process.env.SPEKTR_CONFIG_VERSION || 'v1';
+const NOVA_CONFIG_VERSION = process.env.NOVA_CONFIG_VERSION;
+const SPEKTR_CONFIG_VERSION = process.env.SPEKTR_CONFIG_VERSION;
 const CONFIG_PATH = `chains/${SPEKTR_CONFIG_VERSION}/`;
 const NOVA_CONFIG_URL = `https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/${NOVA_CONFIG_VERSION}/`;
 const ASSET_ICONS_DIR = `icons/v1/assets/white`
