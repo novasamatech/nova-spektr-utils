@@ -1054,7 +1054,6 @@
                 "symbol": "BNC",
                 "precision": 12,
                 "priceId": "bifrost-native-coin",
-                "staking": "parachain",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Bifrost_(BNC).svg",
                 "name": "Bifrost"
             },
@@ -1521,7 +1520,6 @@
                 "symbol": "EDG",
                 "precision": 18,
                 "priceId": "edgeware",
-                "staking": "aura-relaychain",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Edgeware_(EDG).svg",
                 "name": "Edgeware"
             }
@@ -2157,7 +2155,6 @@
                 "symbol": "KMA",
                 "precision": 12,
                 "priceId": "calamari-network",
-                "staking": "parachain",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Calamari_(KMA).svg",
                 "name": "Calamari Network"
             }
@@ -3406,7 +3403,6 @@
                 "symbol": "ZTG",
                 "precision": 10,
                 "priceId": "zeitgeist",
-                "staking": "parachain",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Zeitgeist_(ZTG).svg",
                 "name": "Zeitgeist"
             }
@@ -4404,7 +4400,6 @@
                 "assetId": 0,
                 "symbol": "TUR",
                 "precision": 10,
-                "staking": "turing",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Turing_(TUR).svg",
                 "name": "Turing"
             },
@@ -4557,7 +4552,6 @@
                 "symbol": "AZERO",
                 "precision": 12,
                 "priceId": "aleph-zero",
-                "staking": "aleph-zero",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Aleph_Zero_(AZERO).svg",
                 "name": "Aleph Zero"
             }
@@ -5274,7 +5268,6 @@
                 "symbol": "TZERO",
                 "precision": 12,
                 "priceId": "aleph-zero",
-                "staking": "aleph-zero",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Default.svg",
                 "name": "Aleph Zero Testnet"
             }
@@ -5324,7 +5317,6 @@
                 "symbol": "POLYX",
                 "precision": 6,
                 "priceId": "polymesh",
-                "staking": "relaychain",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Polymesh_(POLYX).svg",
                 "name": "Polymesh Testnet"
             }
@@ -5684,7 +5676,6 @@
                 "symbol": "CAPS",
                 "precision": 18,
                 "priceId": "coin-capsule",
-                "staking": "relaychain",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Ternoa_(CAPS).svg",
                 "name": "Ternoa"
             }
@@ -5716,7 +5707,6 @@
                 "assetId": 0,
                 "symbol": "TUR",
                 "precision": 10,
-                "staking": "turing",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Turing_(TUR).svg",
                 "name": "Turing"
             }
@@ -5849,7 +5839,6 @@
                 "symbol": "POLYX",
                 "precision": 6,
                 "priceId": "polymesh",
-                "staking": "relaychain",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Polymesh_(POLYX).svg",
                 "name": "Polymesh Testnet"
             }
@@ -6627,7 +6616,6 @@
                 "assetId": 0,
                 "symbol": "VARA",
                 "precision": 12,
-                "staking": "relaychain",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Vara.svg",
                 "name": "Vara"
             }
@@ -7211,7 +7199,6 @@
                 "assetId": 0,
                 "symbol": "TVARA",
                 "precision": 12,
-                "staking": "relaychain",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/tVARA.svg",
                 "name": "Vara testnet"
             }

@@ -25,6 +25,7 @@ const TYPE_EXTRAS_REPLACEMENTS = [
     'gm_chain_runtime.Coooooins',             'GmChainRuntimeCoooooins',
     'pendulum_runtime.currency.CurrencyId',   'PendulumRuntimeCurrencyCurrencyId',
 ]
+const STAKIN_ALLOWED_ARRAY = ['Polkadot', 'Kusama', 'Westend', 'Polkadex', 'Ternoa', 'Novasama Testnet - Kusama']
 
 const DEFAULT_ASSETS = ['SHIBATALES', 'DEV', 'SIRI', 'PILT', 'cDOT-6/13', 'cDOT-7/14', 'cDOT-8/15', 'cDOT-9/16', 'cDOT-10/17', 'TZERO', 'UNIT', 'Unit', 'tEDG'];
 
@@ -36,6 +37,13 @@ async function getDataViaHttp(url, filePath) {
   } catch (error) {
     console.log('Error: ', error?.message || 'getDataViaHttp failed');
   }
+}
+
+function getStakingValue(staking, chainName) {
+  if (STAKIN_ALLOWED_ARRAY.includes(chainName)) {
+    return Array.isArray(staking) ? staking[0] : typeof staking === 'string' ? staking : undefined;
+  }
+  return undefined;
 }
 
 function fillAssetData(chain) {
@@ -51,7 +59,7 @@ function fillAssetData(chain) {
       precision: asset.precision,
       type: asset.type,
       priceId: asset.priceId,
-      staking: Array.isArray(asset.staking) ? asset.staking[0] : typeof asset.staking === 'string' ? asset.staking : undefined,
+      staking: getStakingValue(asset.staking, chain.name),
       icon: replaceUrl(asset.icon, 'asset', asset.symbol),
       typeExtras: replaceTypeExtras(asset.typeExtras),
       name: TOKEN_NAMES[asset.symbol] || 'Should be included in scripts/data/assetsNameMap',
