@@ -341,9 +341,9 @@
         "explorers": [
             {
                 "name": "Subscan",
-                "extrinsic": "https://statemine.subscan.io/extrinsic/{hash}",
-                "account": "https://statemine.subscan.io/account/{address}",
-                "multisig": "https://statemine.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
+                "extrinsic": "https://assethub-kusama.subscan.io/extrinsic/{hash}",
+                "account": "https://assethub-kusama.subscan.io/account/{address}",
+                "multisig": "https://assethub-kusama.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
             },
             {
                 "name": "Statescan",
@@ -2788,6 +2788,12 @@
             }
         ],
         "explorers": [
+            {
+                "name": "Subscan",
+                "account": "https://assethub-polkadot.subscan.io/account/{address}",
+                "extrinsic": "https://assethub-polkadot.subscan.io/extrinsic/{hash}",
+                "multisig": "https://assethub-polkadot.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
+            },
             {
                 "name": "Statescan",
                 "account": "https://statemint.statescan.io/account/{address}",
@@ -5876,7 +5882,15 @@
                 "account": "https://polkaholic.io/account/{address}",
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
-        ]
+        ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/frequency"
+                }
+            ]
+        }
     },
     {
         "name": "Vara",
@@ -5904,7 +5918,15 @@
                 "account": "https://explorer.vara-network.io/account/{address}",
                 "event": "https://explorer.vara-network.io/event/{event}"
             }
-        ]
+        ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---vara"
+                }
+            ]
+        }
     },
     {
         "name": "GIANT",
@@ -5925,7 +5947,15 @@
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/GIANT.svg",
                 "name": "Giant"
             }
-        ]
+        ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---giant"
+                }
+            ]
+        }
     },
     {
         "name": "Polkadot Bridge Hub",
@@ -5960,7 +5990,15 @@
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Polkadot_(DOT).svg",
                 "name": "Polkadot"
             }
-        ]
+        ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/polkadot-bridgehub"
+                }
+            ]
+        }
     },
     {
         "name": "Kusama Bridge Hub",
