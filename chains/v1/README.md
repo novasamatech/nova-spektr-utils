@@ -2,7 +2,7 @@
 # Supported Features data:
 ### 🕸️ [Supported networks](#supported-network-list): 74
 ### 🪙 Added assets: 269
-### 👨‍👩‍👧‍👦 [Multisig supported](#list-of-networks-where-we-are-support-multisig) in: 58
+### 👨‍👩‍👧‍👦 [Multisig supported](#list-of-networks-where-we-are-support-multisig) in: 57
 ### 🥞 Staking supported in: 5
 
 
@@ -30,44 +30,43 @@
 | 18 | Crust Shadow | 0 |
 | 19 | DAO IPCI | 0 |
 | 20 | Dora Factory (PAUSED) | 0 |
-| 21 | Efinity | 1 |
-| 22 | Frequency | 0 |
-| 23 | Hashed Network | 0 |
-| 24 | HydraDX | 1 |
-| 25 | Imbue | 0 |
-| 26 | Integritee Parachain | 0 |
-| 27 | Interlay | 1 |
-| 28 | Jur | 1 |
-| 29 | Kabocha | 0 |
-| 30 | Khala | 1 |
-| 31 | Kintsugi | 1 |
-| 32 | krest | 0 |
-| 33 | Kusama | 1 |
-| 34 | Kusama Asset Hub | 0 |
-| 35 | Kusama Bridge Hub | 1 |
-| 36 | Litentry | 0 |
-| 37 | Litmus | 0 |
-| 38 | Nodle Parachain | 0 |
-| 39 | Parallel | 1 |
-| 40 | Parallel Heiko | 1 |
-| 41 | Pendulum | 1 |
-| 42 | Phala | 1 |
-| 43 | Picasso | 1 |
-| 44 | Polkadex | 0 |
-| 45 | Polkadot | 1 |
-| 46 | Polkadot Asset Hub | 0 |
-| 47 | Polkadot Bridge Hub | 1 |
-| 48 | Polkadot Collectives | 0 |
-| 49 | Robonomics | 0 |
-| 50 | Shiden | 1 |
-| 51 | Ternoa | 0 |
-| 52 | Tinkernet | 0 |
-| 53 | Turing | 0 |
-| 54 | Vara | 0 |
-| 55 | Westend | 1 |
-| 56 | XX network | 0 |
-| 57 | Zeitgeist | 1 |
-| 58 | 3DPass | 0 |
+| 21 | Frequency | 0 |
+| 22 | Hashed Network | 0 |
+| 23 | HydraDX | 1 |
+| 24 | Integritee Parachain | 0 |
+| 25 | Interlay | 1 |
+| 26 | Jur | 1 |
+| 27 | Kabocha | 0 |
+| 28 | Khala | 1 |
+| 29 | KILT | 0 |
+| 30 | Kintsugi | 1 |
+| 31 | krest | 0 |
+| 32 | Kusama | 1 |
+| 33 | Kusama Asset Hub | 0 |
+| 34 | Kusama Bridge Hub | 1 |
+| 35 | Litentry | 0 |
+| 36 | Litmus | 0 |
+| 37 | Nodle Parachain | 0 |
+| 38 | Parallel | 1 |
+| 39 | Parallel Heiko | 1 |
+| 40 | Pendulum | 1 |
+| 41 | Phala | 1 |
+| 42 | Picasso | 1 |
+| 43 | Polkadex | 0 |
+| 44 | Polkadot | 1 |
+| 45 | Polkadot Asset Hub | 0 |
+| 46 | Polkadot Bridge Hub | 1 |
+| 47 | Polkadot Collectives | 0 |
+| 48 | Robonomics | 0 |
+| 49 | Shiden | 1 |
+| 50 | Ternoa | 0 |
+| 51 | Tinkernet | 0 |
+| 52 | Turing | 0 |
+| 53 | Vara | 0 |
+| 54 | Westend | 1 |
+| 55 | XX network | 0 |
+| 56 | Zeitgeist | 1 |
+| 57 | 3DPass | 0 |
 
 ## The list of supported networks
 | -- | Network | Assets count | Explorers |
