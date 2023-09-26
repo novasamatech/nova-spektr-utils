@@ -6149,7 +6149,7 @@
                 "precision": 18,
                 "priceId": "enjincoin",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Enjin_(ENJ).svg",
-                "name": "Should be included in scripts/data/assetsNameMap"
+                "name": "Enjin token"
             }
         ],
         "explorers": [
