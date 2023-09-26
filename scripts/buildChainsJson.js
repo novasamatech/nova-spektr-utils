@@ -201,20 +201,25 @@ async function saveNewFile(newJson, file_name) {
 }
 
 async function buildFullChainsJSON() {
-  const requests = CHAINS_ENV.map((chain) => {
-    return (async () => {
-      try {
-        const novaChainsConfig = await getDataViaHttp(NOVA_CONFIG_URL, chain);
-        const modifiedData = await getTransformedData(novaChainsConfig);
-        await saveNewFile(modifiedData, chain);
-        console.log('❇️ Successfully generated for: ' + chain);
-      } catch (e) {
-        console.log('️🔴 Error for: ', chain, e);
-      }
-    })();
+  const requests = CHAINS_ENV.map(async (chain) => {
+    try {
+      const novaChainsConfig = await getDataViaHttp(NOVA_CONFIG_URL, chain);
+      const modifiedData = await getTransformedData(novaChainsConfig);
+      await saveNewFile(modifiedData, chain);
+      console.log('❇️ Successfully generated for: ' + chain);
+    } catch (e) {
+      console.error('️🔴 Error for: ', chain, e);
+      process.exit(1);
+    }
   });
 
   await Promise.allSettled(requests);
 }
 
-buildFullChainsJSON().then(() => console.log('🏁 buildFullChainsJSON finished'));
+buildFullChainsJSON()
+  .then(() => console.log('🏁 buildFullChainsJSON finished'))
+  .catch(e => {
+    console.error('🔴 Error in buildFullChainsJSON: ', e);
+    process.exit(1);
+  });
+
