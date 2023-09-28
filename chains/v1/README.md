@@ -1,8 +1,8 @@
 
 # Supported Features data:
 ### 🕸️ [Supported networks](#supported-network-list): 74
-### 🪙 Added assets: 269
-### 👨‍👩‍👧‍👦 [Multisig supported](#list-of-networks-where-we-are-support-multisig) in: 57
+### 🪙 Added assets: 272
+### 👨‍👩‍👧‍👦 [Multisig supported](#list-of-networks-where-we-are-support-multisig) in: 59
 ### 🥞 Staking supported in: 5
 
 
@@ -30,43 +30,45 @@
 | 18 | Crust Shadow | 0 |
 | 19 | DAO IPCI | 0 |
 | 20 | Dora Factory (PAUSED) | 0 |
-| 21 | Frequency | 0 |
-| 22 | Hashed Network | 0 |
-| 23 | HydraDX | 1 |
-| 24 | Integritee Parachain | 0 |
-| 25 | Interlay | 1 |
-| 26 | Jur | 1 |
-| 27 | Kabocha | 0 |
-| 28 | Khala | 1 |
-| 29 | KILT | 0 |
-| 30 | Kintsugi | 1 |
-| 31 | krest | 0 |
-| 32 | Kusama | 1 |
-| 33 | Kusama Asset Hub | 0 |
-| 34 | Kusama Bridge Hub | 1 |
-| 35 | Litentry | 0 |
-| 36 | Litmus | 0 |
-| 37 | Nodle Parachain | 0 |
-| 38 | Parallel | 1 |
-| 39 | Parallel Heiko | 1 |
-| 40 | Pendulum | 1 |
-| 41 | Phala | 1 |
-| 42 | Picasso | 1 |
-| 43 | Polkadex | 0 |
-| 44 | Polkadot | 1 |
-| 45 | Polkadot Asset Hub | 0 |
-| 46 | Polkadot Bridge Hub | 1 |
-| 47 | Polkadot Collectives | 0 |
-| 48 | Robonomics | 0 |
-| 49 | Shiden | 1 |
-| 50 | Ternoa | 0 |
-| 51 | Tinkernet | 0 |
-| 52 | Turing | 0 |
-| 53 | Vara | 0 |
-| 54 | Westend | 1 |
-| 55 | XX network | 0 |
-| 56 | Zeitgeist | 1 |
-| 57 | 3DPass | 0 |
+| 21 | Enjin | 1 |
+| 22 | Frequency | 0 |
+| 23 | Hashed Network | 0 |
+| 24 | HydraDX | 1 |
+| 25 | Imbue | 0 |
+| 26 | Integritee Parachain | 0 |
+| 27 | Interlay | 1 |
+| 28 | Jur | 1 |
+| 29 | Kabocha | 0 |
+| 30 | Khala | 1 |
+| 31 | KILT | 0 |
+| 32 | Kintsugi | 1 |
+| 33 | krest | 0 |
+| 34 | Kusama | 1 |
+| 35 | Kusama Asset Hub | 0 |
+| 36 | Kusama Bridge Hub | 1 |
+| 37 | Litentry | 0 |
+| 38 | Litmus | 0 |
+| 39 | Nodle Parachain | 0 |
+| 40 | Parallel | 1 |
+| 41 | Parallel Heiko | 1 |
+| 42 | Pendulum | 1 |
+| 43 | Phala | 1 |
+| 44 | Picasso | 1 |
+| 45 | Polkadex | 0 |
+| 46 | Polkadot | 1 |
+| 47 | Polkadot Asset Hub | 0 |
+| 48 | Polkadot Bridge Hub | 1 |
+| 49 | Polkadot Collectives | 0 |
+| 50 | Robonomics | 0 |
+| 51 | Shiden | 1 |
+| 52 | Ternoa | 0 |
+| 53 | Tinkernet | 0 |
+| 54 | Turing | 0 |
+| 55 | Vara | 0 |
+| 56 | Westend | 1 |
+| 57 | XX network | 0 |
+| 58 | Zeitgeist | 1 |
+| 59 | 3DPass | 0 |
 
 ## The list of supported networks
 | -- | Network | Assets count | Explorers |
@@ -84,7 +86,7 @@
 | 11 | Bifrost Polkadot | 9 | Subscan Polkaholic |
 | 12 | Bit.Country Pioneer | 2 | Subscan Polkaholic |
 | 13 | Bittensor | 1 | Have not been added yet |
-| 14 | Calamari | 1 | Subscan Sub.ID Polkaholic |
+| 14 | Calamari | 4 | Subscan Sub.ID Polkaholic |
 | 15 | Centrifuge Parachain | 1 | Subscan Sub.ID Polkaholic |
 | 16 | CLV Parachain | 1 | Subscan Polkaholic |
 | 17 | Composable Finance | 4 | Subscan Polkaholic |
@@ -93,8 +95,8 @@
 | 20 | DAO IPCI | 1 | Polkaholic |
 | 21 | Dora Factory (PAUSED) | 1 | Polkaholic |
 | 22 | Edgeware | 1 | Subscan Sub.ID |
-| 23 | Efinity | 1 | Subscan Polkaholic |
-| 24 | Encointer | 1 | Subscan Polkaholic |
+| 23 | Encointer | 1 | Subscan Polkaholic |
+| 24 | Enjin | 1 | Subscan |
 | 25 | Frequency | 1 | Polkaholic |
 | 26 | GIANT | 1 | Have not been added yet |
 | 27 | GM | 3 | Polkaholic |
@@ -128,7 +130,7 @@
 | 55 | Picasso | 4 | Subscan Polkaholic |
 | 56 | Polkadex | 3 | Subscan Sub.ID |
 | 57 | Polkadot | 1 | Subscan Polkascan Sub.ID Polkaholic |
-| 58 | Polkadot Asset Hub | 3 | Statescan Polkaholic |
+| 58 | Polkadot Asset Hub | 3 | Subscan Statescan Polkaholic |
 | 59 | Polkadot Bridge Hub | 1 | Have not been added yet |
 | 60 | Polkadot Collectives | 1 | Have not been added yet |
 | 61 | Polymesh | 1 | Subscan |
