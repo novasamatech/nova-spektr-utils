@@ -2,7 +2,7 @@
 # Supported Features data:
 ### 🕸️ [Supported networks](#supported-network-list): 74
 ### 🪙 Added assets: 272
-### 👨‍👩‍👧‍👦 [Multisig supported](#list-of-networks-where-we-are-support-multisig) in: 59
+### 👨‍👩‍👧‍👦 [Multisig supported](#list-of-networks-where-we-are-support-multisig) in: 58
 ### 🥞 Staking supported in: 5
 
 
@@ -35,40 +35,39 @@
 | 23 | Hashed Network | 0 |
 | 24 | HydraDX | 1 |
 | 25 | Imbue | 0 |
-| 26 | Integritee Parachain | 0 |
-| 27 | Interlay | 1 |
-| 28 | Jur | 1 |
-| 29 | Kabocha | 0 |
-| 30 | Khala | 1 |
-| 31 | KILT | 0 |
-| 32 | Kintsugi | 1 |
-| 33 | krest | 0 |
-| 34 | Kusama | 1 |
-| 35 | Kusama Asset Hub | 0 |
-| 36 | Kusama Bridge Hub | 1 |
-| 37 | Litentry | 0 |
-| 38 | Litmus | 0 |
-| 39 | Nodle Parachain | 0 |
-| 40 | Parallel | 1 |
-| 41 | Parallel Heiko | 1 |
-| 42 | Pendulum | 1 |
-| 43 | Phala | 1 |
-| 44 | Picasso | 1 |
-| 45 | Polkadex | 0 |
-| 46 | Polkadot | 1 |
-| 47 | Polkadot Asset Hub | 0 |
-| 48 | Polkadot Bridge Hub | 1 |
-| 49 | Polkadot Collectives | 0 |
-| 50 | Robonomics | 0 |
-| 51 | Shiden | 1 |
-| 52 | Ternoa | 0 |
-| 53 | Tinkernet | 0 |
-| 54 | Turing | 0 |
-| 55 | Vara | 0 |
-| 56 | Westend | 1 |
-| 57 | XX network | 0 |
-| 58 | Zeitgeist | 1 |
-| 59 | 3DPass | 0 |
+| 26 | Interlay | 1 |
+| 27 | Jur | 1 |
+| 28 | Kabocha | 0 |
+| 29 | Khala | 1 |
+| 30 | KILT | 0 |
+| 31 | Kintsugi | 1 |
+| 32 | krest | 0 |
+| 33 | Kusama | 1 |
+| 34 | Kusama Asset Hub | 0 |
+| 35 | Kusama Bridge Hub | 1 |
+| 36 | Litentry | 0 |
+| 37 | Litmus | 0 |
+| 38 | Nodle Parachain | 0 |
+| 39 | Parallel | 1 |
+| 40 | Parallel Heiko | 1 |
+| 41 | Pendulum | 1 |
+| 42 | Phala | 1 |
+| 43 | Picasso | 1 |
+| 44 | Polkadex | 0 |
+| 45 | Polkadot | 1 |
+| 46 | Polkadot Asset Hub | 0 |
+| 47 | Polkadot Bridge Hub | 1 |
+| 48 | Polkadot Collectives | 0 |
+| 49 | Robonomics | 0 |
+| 50 | Shiden | 1 |
+| 51 | Ternoa | 0 |
+| 52 | Tinkernet | 0 |
+| 53 | Turing | 0 |
+| 54 | Vara | 0 |
+| 55 | Westend | 1 |
+| 56 | XX network | 0 |
+| 57 | Zeitgeist | 1 |
+| 58 | 3DPass | 0 |
 
 ## The list of supported networks
 | -- | Network | Assets count | Explorers |
