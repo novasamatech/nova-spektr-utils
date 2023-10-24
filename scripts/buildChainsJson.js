@@ -24,6 +24,7 @@ const TYPE_EXTRAS_REPLACEMENTS = [
     'interbtc_primitives.CurrencyId',         'InterbtcPrimitivesCurrencyId',
     'gm_chain_runtime.Coooooins',             'GmChainRuntimeCoooooins',
     'pendulum_runtime.currency.CurrencyId',   'PendulumRuntimeCurrencyCurrencyId',
+    'spacewalk_primitives.CurrencyId',        'SpacewalkPrimitivesCurrencyId'
 ]
 const STAKIN_ALLOWED_ARRAY = ['Polkadot', 'Kusama', 'Westend', 'Polkadex', 'Ternoa', 'Novasama Testnet - Kusama']
 
