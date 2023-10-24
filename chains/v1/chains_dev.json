@@ -5607,7 +5607,7 @@
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Kusama_(KSM).svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0100",
-                    "currencyIdType": "spacewalk_primitives.CurrencyId",
+                    "currencyIdType": "SpacewalkPrimitivesCurrencyId",
                     "existentialDeposit": "0",
                     "transfersEnabled": true
                 },
@@ -5622,7 +5622,7 @@
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/USDT.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0101",
-                    "currencyIdType": "spacewalk_primitives.CurrencyId",
+                    "currencyIdType": "SpacewalkPrimitivesCurrencyId",
                     "existentialDeposit": "0",
                     "transfersEnabled": true
                 },
