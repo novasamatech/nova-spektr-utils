@@ -30,6 +30,20 @@ const STAKING_ALLOWED_ARRAY = ['Polkadot', 'Kusama', 'Westend', 'Polkadex', 'Ter
 
 const DEFAULT_ASSETS = ['SHIBATALES', 'DEV', 'SIRI', 'PILT', 'cDOT-6/13', 'cDOT-7/14', 'cDOT-8/15', 'cDOT-9/16', 'cDOT-10/17', 'TZERO', 'UNIT', 'Unit', 'tEDG'];
 
+const readmeContent = fs.readFileSync('chains/v1/README.md', 'utf8');
+const multisigSection = readmeContent.split('# List of Networks where we are support Multisig pallet')[1].split('## The list of supported networks')[0];
+const multisigLines = multisigSection.split('\n').slice(3); // Skip the table header
+
+const multisigMap = {};
+multisigLines.forEach(line => {
+  const cells = line.split('|').map(cell => cell.trim());
+  const network = cells[2];
+  const multisigVersion = cells[3];
+  if (network && multisigVersion) {
+    multisigMap[network] = multisigVersion;
+  }
+});
+
 async function getDataViaHttp(url, filePath) {
   try {
     const response = await axios.get(url + filePath);
@@ -82,7 +96,13 @@ function getTransformedData(rawData) {
 
   return filteredData.map(chain => {
       const externalApi = filterObjectByKeys(chain.externalApi, ['staking', 'history']);
-      const options = chain.options?.includes('testnet') ? ['testnet'] : undefined;
+      let options;
+      if (chain.options?.includes('testnet')) {
+        options = ['testnet'];
+      }
+      if (multisigMap[chain.name]) {
+        options = [...(options || []), 'multisig'];
+      }
 
       const explorers = chain.explorers?.map(explorer => {
         if (explorer.name === 'Subscan') {
