@@ -26,12 +26,12 @@
                 "name": "Dotters Net node"
             },
             {
-                "url": "wss://polkadot.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
                 "url": "wss://1rpc.io/dot",
                 "name": "Automata 1RPC node"
+            },
+            {
+                "url": "wss://polkadot.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             }
         ],
         "assets": [
@@ -89,24 +89,8 @@
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Kusama.svg",
         "nodes": [
             {
-                "url": "wss://rpc.ibp.network/kusama",
-                "name": "IBP network node"
-            },
-            {
-                "url": "wss://1rpc.io/ksm",
-                "name": "Automata 1RPC node"
-            },
-            {
                 "url": "wss://kusama-rpc.dwellir.com",
                 "name": "Dwellir node"
-            },
-            {
-                "url": "wss://rpc.dotters.network/kusama",
-                "name": "Dotters Net node"
-            },
-            {
-                "url": "wss://kusama.public.curie.radiumblock.co/ws",
-                "name": "Radium node"
             },
             {
                 "url": "wss://kusama-rpc.polkadot.io",
@@ -115,6 +99,22 @@
             {
                 "url": "wss://rpc-kusama.luckyfriday.io",
                 "name": "LuckyFriday node"
+            },
+            {
+                "url": "wss://1rpc.io/ksm",
+                "name": "Automata 1RPC node"
+            },
+            {
+                "url": "wss://rpc.ibp.network/kusama",
+                "name": "IBP network node"
+            },
+            {
+                "url": "wss://rpc.dotters.network/kusama",
+                "name": "Dotters Net node"
+            },
+            {
+                "url": "wss://kusama.public.curie.radiumblock.co/ws",
+                "name": "Radium node"
             },
             {
                 "url": "wss://kusama.api.onfinality.io/public-ws",
@@ -191,12 +191,12 @@
                 "name": "Parity node"
             },
             {
-                "url": "wss://westend.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
                 "url": "wss://westend-rpc.dwellir.com",
                 "name": "Dwellir node"
+            },
+            {
+                "url": "wss://westend.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             }
         ],
         "assets": [
@@ -269,27 +269,13 @@
                     "assetId": "81"
                 },
                 "name": "Siri"
-            },
-            {
-                "assetId": 2,
-                "symbol": "DOT",
-                "precision": 10,
-                "type": "statemine",
-                "priceId": "polkadot",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Polkadot_(DOT).svg",
-                "typeExtras": {
-                    "assetId": "0x02010902",
-                    "palletName": "ForeignAssets"
-                },
-                "name": "Polkadot"
             }
         ],
         "explorers": [
             {
                 "name": "Statescan",
-                "account": "https://westmint.statescan.io/account/{address}",
-                "extrinsic": "https://westmint.statescan.io/extrinsic/{hash}",
-                "event": "https://westmint.statescan.io/event/{event}"
+                "account": "https://westmint.statescan.io/#/accounts/{address}",
+                "event": "https://westmint.statescan.io/#/events/{event}"
             }
         ]
     },
@@ -404,9 +390,8 @@
             },
             {
                 "name": "Statescan",
-                "extrinsic": "https://statemine.statescan.io/extrinsic/{hash}",
-                "account": "https://statemine.statescan.io/account/{address}",
-                "event": "https://statemine.statescan.io/event/{event}"
+                "account": "https://statemine.statescan.io/#/accounts/{address}",
+                "event": "https://statemine.statescan.io/#/events/{event}"
             },
             {
                 "name": "Sub.ID",
@@ -869,12 +854,12 @@
                 "name": "StakeTechnologies node"
             },
             {
-                "url": "wss://shiden.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
                 "url": "wss://shiden-rpc.dwellir.com",
                 "name": "Dwellir node"
+            },
+            {
+                "url": "wss://shiden.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             }
         ],
         "assets": [
@@ -1005,6 +990,29 @@
                     "assetId": "4294969280"
                 },
                 "name": "USD Tether"
+            },
+            {
+                "assetId": 11,
+                "symbol": "vKSM",
+                "precision": 12,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/vKSM.svg",
+                "typeExtras": {
+                    "assetId": "18446744073709551628"
+                },
+                "name": "v Kusama"
+            },
+            {
+                "assetId": 12,
+                "symbol": "BNC",
+                "precision": 12,
+                "type": "statemine",
+                "priceId": "bifrost-native-coin",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Bifrost_(BNC).svg",
+                "typeExtras": {
+                    "assetId": "18446744073709551627"
+                },
+                "name": "Bifrost"
             }
         ],
         "explorers": [
@@ -1045,12 +1053,12 @@
                 "name": "Liebi node"
             },
             {
-                "url": "wss://bifrost-parachain.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
                 "url": "wss://bifrost-rpc.dwellir.com",
                 "name": "Dwellir node"
+            },
+            {
+                "url": "wss://bifrost-parachain.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             }
         ],
         "assets": [
@@ -1682,6 +1690,30 @@
                     "assetId": "102"
                 },
                 "name": "USD Tether"
+            },
+            {
+                "assetId": 10,
+                "symbol": "KINT",
+                "precision": 12,
+                "type": "statemine",
+                "priceId": "kintsugi",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Kintsugi_(KINT).svg",
+                "typeExtras": {
+                    "assetId": "119"
+                },
+                "name": "Kintsugi"
+            },
+            {
+                "assetId": 11,
+                "symbol": "kBTC",
+                "precision": 8,
+                "type": "statemine",
+                "priceId": "bitcoin",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/kBTC.svg",
+                "typeExtras": {
+                    "assetId": "121"
+                },
+                "name": "KINT Bitcoin"
             }
         ],
         "explorers": [
@@ -1896,12 +1928,12 @@
                 "name": "Phala node"
             },
             {
-                "url": "wss://khala.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
                 "url": "wss://khala-rpc.dwellir.com",
                 "name": "Dwellir node"
+            },
+            {
+                "url": "wss://khala.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             }
         ],
         "assets": [
@@ -2025,11 +2057,70 @@
                 "symbol": "TUR",
                 "precision": 10,
                 "type": "statemine",
+                "priceId": "turing-network",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Turing_(TUR).svg",
                 "typeExtras": {
                     "assetId": "10"
                 },
                 "name": "Turing"
+            },
+            {
+                "assetId": 11,
+                "symbol": "CRAB",
+                "precision": 18,
+                "type": "statemine",
+                "priceId": "darwinia-network-native-token",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Crab_(CRAB).svg",
+                "typeExtras": {
+                    "assetId": "11"
+                },
+                "name": "Darwinia Crab"
+            },
+            {
+                "assetId": 12,
+                "symbol": "SDN",
+                "precision": 18,
+                "type": "statemine",
+                "priceId": "shiden",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Shiden_(SDN).svg",
+                "typeExtras": {
+                    "assetId": "12"
+                },
+                "name": "Shiden"
+            },
+            {
+                "assetId": 13,
+                "symbol": "NEER",
+                "precision": 18,
+                "type": "statemine",
+                "priceId": "metaverse-network-pioneer",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Bit.Country_Pioneer_(NEER).svg",
+                "typeExtras": {
+                    "assetId": "13"
+                },
+                "name": "Metaverse.Network Pioneer"
+            },
+            {
+                "assetId": 14,
+                "symbol": "BIT",
+                "precision": 18,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/BIT.svg",
+                "typeExtras": {
+                    "assetId": "14"
+                },
+                "name": "Bit.Country Pioneer"
+            },
+            {
+                "assetId": 15,
+                "symbol": "PICA",
+                "precision": 12,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Picasso_(PICA).svg",
+                "typeExtras": {
+                    "assetId": "15"
+                },
+                "name": "Picasso"
             }
         ],
         "explorers": [
@@ -2198,6 +2289,42 @@
                     "assetId": "11"
                 },
                 "name": "Moonriver"
+            },
+            {
+                "assetId": 4,
+                "symbol": "USDT",
+                "precision": 6,
+                "type": "statemine",
+                "priceId": "tether",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/USDT.svg",
+                "typeExtras": {
+                    "assetId": "14"
+                },
+                "name": "USD Tether"
+            },
+            {
+                "assetId": 5,
+                "symbol": "DAI-Karura",
+                "precision": 18,
+                "type": "statemine",
+                "priceId": "dai",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/DAI.svg",
+                "typeExtras": {
+                    "assetId": "15"
+                },
+                "name": "Should be included in scripts/data/assetsNameMap"
+            },
+            {
+                "assetId": 6,
+                "symbol": "USDC-Karura",
+                "precision": 6,
+                "type": "statemine",
+                "priceId": "usd-coin",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/USDC.svg",
+                "typeExtras": {
+                    "assetId": "16"
+                },
+                "name": "Should be included in scripts/data/assetsNameMap"
             }
         ],
         "explorers": [
@@ -2300,8 +2427,8 @@
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Bit.Country_Pioneer.svg",
         "nodes": [
             {
-                "url": "wss://pioneer.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
+                "url": "wss://pioneer-rpc-3.bit.country/wss",
+                "name": "MetaverseNetwork node"
             }
         ],
         "assets": [
@@ -2441,7 +2568,7 @@
                 "symbol": "lcDOT",
                 "precision": 10,
                 "type": "orml",
-                "priceId": "liquid-crowdloan-dot",
+                "priceId": "polkadot",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/lcDOT.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x040d000000",
@@ -2686,10 +2813,6 @@
             {
                 "url": "wss://astar.api.onfinality.io/public-ws",
                 "name": "OnFinality node"
-            },
-            {
-                "url": "wss://astar-rpc.dwellir.com",
-                "name": "Dwellir node"
             }
         ],
         "assets": [
@@ -2808,6 +2931,54 @@
                     "assetId": "4294969280"
                 },
                 "name": "USD Tether"
+            },
+            {
+                "assetId": 10,
+                "symbol": "BNC",
+                "precision": 12,
+                "type": "statemine",
+                "priceId": "bifrost-native-coin",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Bifrost_(BNC).svg",
+                "typeExtras": {
+                    "assetId": "18446744073709551623"
+                },
+                "name": "Bifrost"
+            },
+            {
+                "assetId": 11,
+                "symbol": "UNQ",
+                "precision": 18,
+                "type": "statemine",
+                "priceId": "unique-network",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Unique_(UNQ).svg",
+                "typeExtras": {
+                    "assetId": "18446744073709551631"
+                },
+                "name": "UNIQUE"
+            },
+            {
+                "assetId": 12,
+                "symbol": "vDOT",
+                "precision": 10,
+                "type": "statemine",
+                "priceId": "voucher-dot",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/vDOT.svg",
+                "typeExtras": {
+                    "assetId": "18446744073709551624"
+                },
+                "name": "vDOT"
+            },
+            {
+                "assetId": 13,
+                "symbol": "EQD",
+                "precision": 9,
+                "type": "statemine",
+                "priceId": "tether",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/EQD.svg",
+                "typeExtras": {
+                    "assetId": "18446744073709551629"
+                },
+                "name": "Equilibrium USD"
             }
         ],
         "explorers": [
@@ -2846,6 +3017,10 @@
             {
                 "url": "wss://rpc.parallel.fi",
                 "name": "Parallel node"
+            },
+            {
+                "url": "wss://parallel-rpc.dwellir.com",
+                "name": "Dwellir node"
             }
         ],
         "assets": [
@@ -2934,6 +3109,7 @@
                 "symbol": "cDOT-6/13",
                 "precision": 10,
                 "type": "statemine",
+                "priceId": "polkadot",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Default.svg",
                 "typeExtras": {
                     "assetId": "200060013"
@@ -3146,12 +3322,12 @@
                 "name": "Parity node"
             },
             {
-                "url": "wss://statemint.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
                 "url": "wss://statemint-rpc.dwellir.com",
                 "name": "Dwellir node"
+            },
+            {
+                "url": "wss://statemint.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             }
         ],
         "assets": [
@@ -3197,9 +3373,8 @@
             },
             {
                 "name": "Statescan",
-                "account": "https://statemint.statescan.io/account/{address}",
-                "extrinsic": "https://statemint.statescan.io/extrinsic/{hash}",
-                "event": "https://statemint.statescan.io/event/{event}"
+                "account": "https://statemint.statescan.io/#/accounts/{address}",
+                "event": "https://statemint.statescan.io/#/events/{event}"
             },
             {
                 "name": "Polkaholic",
@@ -3298,10 +3473,6 @@
             {
                 "url": "wss://api.kusama.encointer.org",
                 "name": "Encointer association node"
-            },
-            {
-                "url": "wss://encointer.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
             }
         ],
         "assets": [
@@ -3635,12 +3806,12 @@
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Integritee.svg",
         "nodes": [
             {
-                "url": "wss://integritee-kusama.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
                 "url": "wss://kusama.api.integritee.network",
                 "name": "Integritee node"
+            },
+            {
+                "url": "wss://integritee-kusama.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             }
         ],
         "assets": [
@@ -3687,12 +3858,12 @@
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Centrifuge.svg",
         "nodes": [
             {
-                "url": "wss://centrifuge-parachain.api.onfinality.io/public-ws",
-                "name": "Onfinality node"
+                "url": "wss://centrifuge-rpc.dwellir.com",
+                "name": "Dwellir node"
             },
             {
-                "url": "wss://fullnode.parachain.centrifuge.io",
-                "name": "Centrifuge node"
+                "url": "wss://centrifuge-parachain.api.onfinality.io/public-ws",
+                "name": "Onfinality node"
             }
         ],
         "assets": [
@@ -3708,9 +3879,9 @@
         "explorers": [
             {
                 "name": "Subscan",
-                "extrinsic": "https://centrifuge-parachain.subscan.io/extrinsic/{hash}",
-                "account": "https://centrifuge-parachain.subscan.io/account/{address}",
-                "multisig": "https://centrifuge-parachain.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
+                "extrinsic": "https://centrifuge.subscan.io/extrinsic/{hash}",
+                "account": "https://centrifuge.subscan.io/account/{address}",
+                "multisig": "https://centrifuge.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
             },
             {
                 "name": "Sub.ID",
@@ -3979,6 +4150,21 @@
                     "transfersEnabled": true
                 },
                 "name": "USD Coin"
+            },
+            {
+                "assetId": 16,
+                "symbol": "GLMR",
+                "precision": 18,
+                "type": "orml",
+                "priceId": "moonbeam",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Moonbeam_(GLMR).svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x10000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "34854864344868000",
+                    "transfersEnabled": true
+                },
+                "name": "Moonbeam"
             }
         ],
         "explorers": [
@@ -4015,8 +4201,12 @@
                 "name": "Kintsugi Labs node"
             },
             {
-                "url": "wss://interlay.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
+                "url": "wss://interlay-rpc.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
+                "url": "wss://rpc-interlay.luckyfriday.io/",
+                "name": "LuckyFriday node"
             }
         ],
         "assets": [
@@ -4223,6 +4413,21 @@
                     "transfersEnabled": false
                 },
                 "name": "Interlay DOT"
+            },
+            {
+                "assetId": 17,
+                "symbol": "INTR",
+                "precision": 10,
+                "type": "orml",
+                "priceId": "interlay",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Interlay_(INTR).svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x11000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "6164274209",
+                    "transfersEnabled": true
+                },
+                "name": "Interlay"
             }
         ],
         "explorers": [
@@ -4255,12 +4460,12 @@
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Nodle.svg",
         "nodes": [
             {
-                "url": "wss://nodle-parachain.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
                 "url": "wss://eden-rpc.dwellir.com",
                 "name": "Dwellir node"
+            },
+            {
+                "url": "wss://nodle-parachain.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             }
         ],
         "assets": [
@@ -4396,6 +4601,7 @@
                 "assetId": 0,
                 "symbol": "TUR",
                 "precision": 10,
+                "priceId": "turing-network",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Turing_(TUR).svg",
                 "name": "Turing"
             },
@@ -4583,10 +4789,6 @@
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Composable.svg",
         "nodes": [
             {
-                "url": "wss://composable.api.onfinality.io/public-ws",
-                "name": "Onfinality node"
-            },
-            {
                 "url": "wss://rpc.composable.finance",
                 "name": "Composable node"
             }
@@ -4676,6 +4878,14 @@
             {
                 "url": "wss://mainnet.polkadex.trade",
                 "name": "Polkadex team node"
+            },
+            {
+                "url": "wss://polkadex.public.curie.radiumblock.co/ws",
+                "name": "RadiumBlock node"
+            },
+            {
+                "url": "wss://polkadex.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             }
         ],
         "assets": [
@@ -4711,6 +4921,42 @@
                     "assetId": "3496813586714279103986568049643838918"
                 },
                 "name": "USD Tether"
+            },
+            {
+                "assetId": 3,
+                "symbol": "ASTR",
+                "precision": 12,
+                "type": "statemine",
+                "priceId": "astar",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Astar_(ASTR).svg",
+                "typeExtras": {
+                    "assetId": "222121451965151777636299756141619631150"
+                },
+                "name": "Astar"
+            },
+            {
+                "assetId": 4,
+                "symbol": "PHA",
+                "precision": 12,
+                "type": "statemine",
+                "priceId": "pha",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Phala_(PHA).svg",
+                "typeExtras": {
+                    "assetId": "193492391581201937291053139015355410612"
+                },
+                "name": "Phala"
+            },
+            {
+                "assetId": 5,
+                "symbol": "iBTC",
+                "precision": 12,
+                "type": "statemine",
+                "priceId": "bitcoin",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/iBTC.svg",
+                "typeExtras": {
+                    "assetId": "226557799181424065994173367616174607641"
+                },
+                "name": "Interlay Bitcoin"
             }
         ],
         "explorers": [
@@ -4875,6 +5121,7 @@
                 "symbol": "vDOT",
                 "precision": 10,
                 "type": "orml",
+                "priceId": "voucher-dot",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/vDOT.svg",
                 "typeExtras": {
                     "currencyIdScale": "0x0900",
@@ -5039,44 +5286,6 @@
                 {
                     "type": "subquery",
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-unique"
-                }
-            ]
-        }
-    },
-    {
-        "name": "Dora Factory (PAUSED)",
-        "addressPrefix": 128,
-        "chainId": "0x577d331ca43646f547cdaa07ad0aa387a383a93416764480665103081f3eaf14",
-        "parentId": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/DoraFactory.svg",
-        "nodes": [
-            {
-                "url": "wss://kusama.dorafactory.org",
-                "name": "Dora node"
-            }
-        ],
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "DORA",
-                "precision": 12,
-                "priceId": "dora-factory",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Dora_Factory_(DORA).svg",
-                "name": "Dora Factory"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
-            }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-dora"
                 }
             ]
         }
@@ -5375,12 +5584,12 @@
                 "name": "AjunaNetwork node"
             },
             {
-                "url": "wss://bajun.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
                 "url": "wss://bajun.public.curie.radiumblock.co/ws",
                 "name": "Radium node"
+            },
+            {
+                "url": "wss://bajun.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             }
         ],
         "assets": [
@@ -5484,8 +5693,8 @@
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Tinkernet.svg",
         "nodes": [
             {
-                "url": "wss://invarch-tinkernet.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
+                "url": "wss://tinkernet-rpc.dwellir.com",
+                "name": "Dwellir node"
             }
         ],
         "assets": [
@@ -5509,71 +5718,6 @@
                 {
                     "type": "subquery",
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-tinkernet"
-                }
-            ]
-        }
-    },
-    {
-        "name": "GM PAUSED",
-        "addressPrefix": 7013,
-        "chainId": "0x19a3733beb9cb8a970a308d835599e9005e02dc007a35440e461a451466776f8",
-        "parentId": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/GM.svg",
-        "nodes": [
-            {
-                "url": "wss://ws.gm.bldnodes.org",
-                "name": "bLd node"
-            }
-        ],
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "FREN",
-                "precision": 12,
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Fren.svg",
-                "name": "GM Token"
-            },
-            {
-                "assetId": 1,
-                "symbol": "GM",
-                "precision": 0,
-                "type": "orml",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/GM_(GM).svg",
-                "typeExtras": {
-                    "currencyIdScale": "0x01",
-                    "currencyIdType": "GmChainRuntimeCoooooins",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": true
-                },
-                "name": "GM GoodMorning"
-            },
-            {
-                "assetId": 2,
-                "symbol": "GN",
-                "precision": 0,
-                "type": "orml",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/GN.svg",
-                "typeExtras": {
-                    "currencyIdScale": "0x02",
-                    "currencyIdType": "GmChainRuntimeCoooooins",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": true
-                },
-                "name": "GM GoodNight"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
-            }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-gm-network"
                 }
             ]
         }
@@ -5764,8 +5908,7 @@
         "explorers": [
             {
                 "name": "Governance2 Testnet explorer",
-                "extrinsic": "https://gov2.statescan.io/extrinsic/{hash}",
-                "account": "https://gov2.statescan.io/account/{address}"
+                "account": "https://gov2.statescan.io/#/accounts/{address}"
             }
         ]
     },
@@ -5817,10 +5960,6 @@
             {
                 "url": "wss://kapex-rpc.dwellir.com",
                 "name": "Dwellir node"
-            },
-            {
-                "url": "wss://kapex-parachain.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
             }
         ],
         "assets": [
@@ -6063,10 +6202,6 @@
             {
                 "url": "wss://rpc-do.xx.network",
                 "name": "xx Foundation node"
-            },
-            {
-                "url": "wss://xx.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
             }
         ],
         "assets": [
@@ -6531,6 +6666,7 @@
                 "assetId": 0,
                 "symbol": "P3D",
                 "precision": 12,
+                "priceId": "3dpass",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/3DPass_(P3D).svg",
                 "name": "3DPass"
             }
@@ -6642,6 +6778,7 @@
                 "assetId": 0,
                 "symbol": "VARA",
                 "precision": 12,
+                "priceId": "vara-network",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Vara.svg",
                 "name": "Vara"
             }
@@ -6822,16 +6959,16 @@
                 "name": "Parity node"
             },
             {
-                "url": "wss://collectives.api.onfinality.io/public-ws",
-                "name": "Onfinality node"
-            },
-            {
                 "url": "wss://collectives.public.curie.radiumblock.co/ws",
                 "name": "Radium node"
             },
             {
                 "url": "wss://dot-rpc.stakeworld.io/collectives",
                 "name": "Stakeworld node"
+            },
+            {
+                "url": "wss://collectives.api.onfinality.io/public-ws",
+                "name": "Onfinality node"
             }
         ],
         "assets": [
@@ -7182,10 +7319,6 @@
             {
                 "url": "wss://ws.manta.systems",
                 "name": "Manta node"
-            },
-            {
-                "url": "wss://manta.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
             }
         ],
         "assets": [
@@ -7261,6 +7394,90 @@
                 "extrinsic": "https://matrix.subscan.io/extrinsic/{hash}",
                 "account": "https://matrix.subscan.io/account/{address}",
                 "multisig": "https://matrix.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
+            }
+        ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/enjin-matrixchain"
+                }
+            ]
+        }
+    },
+    {
+        "name": "EWX Staging Parachain Argon",
+        "addressPrefix": 42,
+        "chainId": "0x6ab1bd8aed6d5fdcaf347826bfcd0172681181edf8356b90cb3cf47076698ae2",
+        "parentId": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Energy_Web_Testnet.svg",
+        "options": [
+            "testnet"
+        ],
+        "nodes": [
+            {
+                "url": "wss://ewx-staging-parachain-argon-wmfbanx0xb.energyweb.org/ws",
+                "name": "EWX node"
+            }
+        ],
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "VT",
+                "precision": 18,
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Default_(VT).svg",
+                "name": "Should be included in scripts/data/assetsNameMap"
+            }
+        ]
+    },
+    {
+        "name": "Watr",
+        "addressPrefix": 19,
+        "chainId": "0x161db6cdc5896fe55ef12b4778fe78dd65d7af43f65c601786b88d7a93ebc58a",
+        "parentId": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Watr.svg",
+        "nodes": [
+            {
+                "url": "wss://watr-rpc.watr-api.network",
+                "name": "EWX node"
+            }
+        ],
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "WATR",
+                "precision": 18,
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Watr.svg",
+                "name": "Should be included in scripts/data/assetsNameMap"
+            }
+        ]
+    },
+    {
+        "name": "Joystream",
+        "addressPrefix": 126,
+        "chainId": "0x6b5e488e0fa8f9821110d5c13f4c468abcd43ce5e297e62b34c53c3346465956",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Joystream.svg",
+        "nodes": [
+            {
+                "url": "wss://rpc.joystream.org",
+                "name": "Jsgenesis node"
+            }
+        ],
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "JOY",
+                "precision": 10,
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Default_(JOY).svg",
+                "name": "Should be included in scripts/data/assetsNameMap"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://joystream.subscan.io/extrinsic/{hash}",
+                "account": "https://joystream.subscan.io/account/{address}",
+                "multisig": "https://joystream.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
             }
         ]
     }

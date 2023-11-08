@@ -26,7 +26,7 @@ const TYPE_EXTRAS_REPLACEMENTS = [
     'pendulum_runtime.currency.CurrencyId',   'PendulumRuntimeCurrencyCurrencyId',
     'spacewalk_primitives.CurrencyId',        'SpacewalkPrimitivesCurrencyId'
 ]
-const STAKIN_ALLOWED_ARRAY = ['Polkadot', 'Kusama', 'Westend', 'Polkadex', 'Ternoa', 'Novasama Testnet - Kusama']
+const STAKING_ALLOWED_ARRAY = ['Polkadot', 'Kusama', 'Westend', 'Polkadex', 'Ternoa', 'Novasama Testnet - Kusama']
 
 const DEFAULT_ASSETS = ['SHIBATALES', 'DEV', 'SIRI', 'PILT', 'cDOT-6/13', 'cDOT-7/14', 'cDOT-8/15', 'cDOT-9/16', 'cDOT-10/17', 'TZERO', 'UNIT', 'Unit', 'tEDG'];
 
@@ -41,7 +41,7 @@ async function getDataViaHttp(url, filePath) {
 }
 
 function getStakingValue(staking, chainName) {
-  if (STAKIN_ALLOWED_ARRAY.includes(chainName)) {
+  if (STAKING_ALLOWED_ARRAY.includes(chainName)) {
     return Array.isArray(staking) ? staking[0] : typeof staking === 'string' ? staking : undefined;
   }
   return undefined;
@@ -74,8 +74,10 @@ function getTransformedData(rawData) {
   const filteredData = rawData.filter(chain => {
     const isEthereumBased = chain.options?.includes('ethereumBased');
     const isExcludedChain = chain.chainId in EXCLUDED_CHAINS;
+    const isPausedChain = chain.name.includes('PAUSE');
 
-    return !isEthereumBased && !isExcludedChain;
+
+    return !isEthereumBased && !isExcludedChain && !isPausedChain;
   });
 
   return filteredData.map(chain => {
