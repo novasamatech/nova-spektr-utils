@@ -107,12 +107,6 @@ function checkChainsFile(filePath) {
         console.log(buyProviders);
         hasError = true;
     }
-    let chainOptions = jp.query(chainsJSON, "$..options[?(@ != 'testnet')]");
-    if (chainOptions.length > 0) {
-        console.error("Chain options has to be removed from " + filePath);
-        console.log(chainOptions);
-        hasError = true;
-    }
     let chainTypes = jp.query(chainsJSON, "$..types");
     if (chainTypes.length > 0) {
         console.error("Chain types has to be removed from " + filePath);
