@@ -21,6 +21,12 @@ jobs:
 
       - name: 📝 Update chains file
         run: npm run update:chains-file
+      
+      - name: 📝 Update specName
+        run: |
+          cd metadataCreator
+          npm install
+          npm run updateSpecName
 
       - name: Make Pull Request
         uses: ./.github/workflows/make-pull-request
