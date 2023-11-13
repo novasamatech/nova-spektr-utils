@@ -4,7 +4,8 @@
     "description": "Package for creating metadata markdown",
     "main": "App.ts",
     "scripts": {
-        "start": "ts-node src/App.ts"
+        "start": "ts-node src/App.ts",
+        "updateSpecName": "ts-node src/updateSpecName.ts"
     },
     "author": {
         "name": "Novasama Technologies"
