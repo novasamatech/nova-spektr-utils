@@ -83,7 +83,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-polkadot"
                 }
             ]
-        }
+        },
+        "specName": "polkadot"
     },
     {
         "name": "Kusama",
@@ -173,7 +174,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kusama"
                 }
             ]
-        }
+        },
+        "specName": "kusama"
     },
     {
         "name": "Westend",
@@ -794,7 +796,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-karura"
                 }
             ]
-        }
+        },
+        "specName": "karura"
     },
     {
         "name": "Shiden",
@@ -996,7 +999,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-shiden"
                 }
             ]
-        }
+        },
+        "specName": "shiden"
     },
     {
         "name": "Bifrost Kusama",
@@ -1246,7 +1250,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-bifrost"
                 }
             ]
-        }
+        },
+        "specName": "bifrost"
     },
     {
         "name": "Basilisk",
@@ -1375,7 +1380,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-basilisk"
                 }
             ]
-        }
+        },
+        "specName": "basilisk"
     },
     {
         "name": "Altair",
@@ -1426,7 +1432,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-altair"
                 }
             ]
-        }
+        },
+        "specName": "altair"
     },
     {
         "name": "Parallel Heiko",
@@ -1603,7 +1610,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-parallel-heiko"
                 }
             ]
-        }
+        },
+        "specName": "heiko"
     },
     {
         "name": "Edgeware",
@@ -1881,7 +1889,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-khala"
                 }
             ]
-        }
+        },
+        "specName": "khala"
     },
     {
         "name": "KILT",
@@ -1940,7 +1949,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kilt"
                 }
             ]
-        }
+        },
+        "specName": "kilt-spiritnet"
     },
     {
         "name": "Calamari",
@@ -2069,7 +2079,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-calamari"
                 }
             ]
-        }
+        },
+        "specName": "calamari"
     },
     {
         "name": "QUARTZ",
@@ -2129,7 +2140,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-quartz"
                 }
             ]
-        }
+        },
+        "specName": "quartz"
     },
     {
         "name": "Bit.Country Pioneer",
@@ -2190,7 +2202,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-bit-country"
                 }
             ]
-        }
+        },
+        "specName": "pioneer-runtime"
     },
     {
         "name": "Acala",
@@ -2469,7 +2482,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-acala"
                 }
             ]
-        }
+        },
+        "specName": "acala"
     },
     {
         "name": "Astar",
@@ -2684,7 +2698,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-astar"
                 }
             ]
-        }
+        },
+        "specName": "astar"
     },
     {
         "name": "Parallel",
@@ -2938,7 +2953,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-parallel"
                 }
             ]
-        }
+        },
+        "specName": "parallel"
     },
     {
         "name": "CLV Parachain",
@@ -2985,7 +3001,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-clover"
                 }
             ]
-        }
+        },
+        "specName": "clover-mainnet"
     },
     {
         "name": "Polkadot Asset Hub",
@@ -3132,7 +3149,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-robonomics"
                 }
             ]
-        }
+        },
+        "specName": "robonomics"
     },
     {
         "name": "Encointer",
@@ -3401,7 +3419,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kintsugi"
                 }
             ]
-        }
+        },
+        "specName": "kintsugi-parachain"
     },
     {
         "name": "Picasso",
@@ -3496,7 +3515,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-picasso"
                 }
             ]
-        }
+        },
+        "specName": "picasso"
     },
     {
         "name": "Zeitgeist",
@@ -3557,7 +3577,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-zeitgeist"
                 }
             ]
-        }
+        },
+        "specName": "zeitgeist"
     },
     {
         "name": "Litmus",
@@ -3608,7 +3629,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-litmus"
                 }
             ]
-        }
+        },
+        "specName": "litmus-parachain"
     },
     {
         "name": "Subsocial",
@@ -3653,7 +3675,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-subsocial"
                 }
             ]
-        }
+        },
+        "specName": "subsocial-parachain"
     },
     {
         "name": "Crust Shadow",
@@ -3704,7 +3727,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-shadow"
                 }
             ]
-        }
+        },
+        "specName": "crust-collator"
     },
     {
         "name": "Integritee Parachain",
@@ -3759,7 +3783,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-integritee"
                 }
             ]
-        }
+        },
+        "specName": "integritee-parachain"
     },
     {
         "name": "Centrifuge Parachain",
@@ -3814,7 +3839,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-centrifuge"
                 }
             ]
-        }
+        },
+        "specName": "centrifuge"
     },
     {
         "name": "HydraDX",
@@ -4104,7 +4130,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-hydra"
                 }
             ]
-        }
+        },
+        "specName": "hydradx"
     },
     {
         "name": "Interlay",
@@ -4355,7 +4382,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-interlay"
                 }
             ]
-        }
+        },
+        "specName": "interlay-parachain"
     },
     {
         "name": "Nodle Parachain",
@@ -4410,7 +4438,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-nodle"
                 }
             ]
-        }
+        },
+        "specName": "nodle-para"
     },
     {
         "name": "Phala",
@@ -4465,7 +4494,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-phala"
                 }
             ]
-        }
+        },
+        "specName": "phala"
     },
     {
         "name": "Turing",
@@ -4625,7 +4655,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-turing"
                 }
             ]
-        }
+        },
+        "specName": "turing"
     },
     {
         "name": "Aleph Zero",
@@ -4672,7 +4703,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-aleph-zero"
                 }
             ]
-        }
+        },
+        "specName": "aleph-node"
     },
     {
         "name": "Composable Finance",
@@ -4763,7 +4795,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-composable"
                 }
             ]
-        }
+        },
+        "specName": "composable"
     },
     {
         "name": "Polkadex",
@@ -4883,7 +4916,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-polkadex"
                 }
             ]
-        }
+        },
+        "specName": "node"
     },
     {
         "name": "OriginTrail Parachain",
@@ -4932,7 +4966,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-origin-trail"
                 }
             ]
-        }
+        },
+        "specName": "origintrail-parachain"
     },
     {
         "name": "Bifrost Polkadot",
@@ -5096,7 +5131,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-bifrost-polkadot"
                 }
             ]
-        }
+        },
+        "specName": "bifrost_polkadot"
     },
     {
         "name": "Litentry",
@@ -5141,7 +5177,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-litentry"
                 }
             ]
-        }
+        },
+        "specName": "litentry-parachain"
     },
     {
         "name": "UNIQUE",
@@ -5193,7 +5230,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-unique"
                 }
             ]
-        }
+        },
+        "specName": "unique"
     },
     {
         "name": "Mangata X",
@@ -5357,7 +5395,8 @@
                 "account": "https://polkaholic.io/account/{address}",
                 "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
-        ]
+        ],
+        "specName": "mangata-parachain"
     },
     {
         "name": "Kabocha",
@@ -5397,7 +5436,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kabocha"
                 }
             ]
-        }
+        },
+        "specName": "kabocha-parachain"
     },
     {
         "name": "Bajun",
@@ -5452,7 +5492,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-bajun"
                 }
             ]
-        }
+        },
+        "specName": "bajun"
     },
     {
         "name": "Imbue",
@@ -5492,7 +5533,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-imbue"
                 }
             ]
-        }
+        },
+        "specName": "imbue"
     },
     {
         "name": "Tinkernet",
@@ -5532,7 +5574,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-tinkernet"
                 }
             ]
-        }
+        },
+        "specName": "tinkernet_node"
     },
     {
         "name": "Amplitude",
@@ -5595,7 +5638,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-amplitude"
                 }
             ]
-        }
+        },
+        "specName": "amplitude"
     },
     {
         "name": "Ternoa",
@@ -5642,7 +5686,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-ternoa"
                 }
             ]
-        }
+        },
+        "specName": "mainnet"
     },
     {
         "name": "Kapex",
@@ -5682,7 +5727,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kapex"
                 }
             ]
-        }
+        },
+        "specName": "totem-parachain"
     },
     {
         "name": "Polymesh",
@@ -5712,7 +5758,8 @@
                 "account": "https://polymesh.subscan.io/account/{address}",
                 "multisig": "https://polymesh.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
             }
-        ]
+        ],
+        "specName": "polymesh_mainnet"
     },
     {
         "name": "DAO IPCI",
@@ -5752,7 +5799,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-dao-ipci"
                 }
             ]
-        }
+        },
+        "specName": "ipci"
     },
     {
         "name": "Myriad",
@@ -5788,7 +5836,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-myriad"
                 }
             ]
-        }
+        },
+        "specName": "appchain"
     },
     {
         "name": "XX network",
@@ -5845,7 +5894,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-xx-network"
                 }
             ]
-        }
+        },
+        "specName": "xxnetwork"
     },
     {
         "name": "Pendulum",
@@ -5909,7 +5959,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-pendulum"
                 }
             ]
-        }
+        },
+        "specName": "pendulum"
     },
     {
         "name": "Crust",
@@ -5951,7 +6002,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-crust"
                 }
             ]
-        }
+        },
+        "specName": "polkadot-crust-parachain"
     },
     {
         "name": "Aventus",
@@ -5989,7 +6041,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-aventus"
                 }
             ]
-        }
+        },
+        "specName": "avn-parachain"
     },
     {
         "name": "Hashed Network",
@@ -6022,7 +6075,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-hashed-network"
                 }
             ]
-        }
+        },
+        "specName": "luhn"
     },
     {
         "name": "Bittensor",
@@ -6055,7 +6109,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-bittensor"
                 }
             ]
-        }
+        },
+        "specName": "node-subtensor"
     },
     {
         "name": "Ajuna",
@@ -6084,7 +6139,8 @@
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Ajuna_(AJUN).svg",
                 "name": "Ajuna"
             }
-        ]
+        ],
+        "specName": "ajuna"
     },
     {
         "name": "3DPass",
@@ -6132,7 +6188,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-3dpass"
                 }
             ]
-        }
+        },
+        "specName": "poscan-runtime"
     },
     {
         "name": "Frequency",
@@ -6176,7 +6233,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/frequency"
                 }
             ]
-        }
+        },
+        "specName": "frequency"
     },
     {
         "name": "Vara",
@@ -6216,7 +6274,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---vara"
                 }
             ]
-        }
+        },
+        "specName": "vara"
     },
     {
         "name": "GIANT",
@@ -6245,7 +6304,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---giant"
                 }
             ]
-        }
+        },
+        "specName": "giant-runtime"
     },
     {
         "name": "Polkadot Bridge Hub",
@@ -6409,7 +6469,8 @@
                 "account": "https://krest.subscan.io/account/{address}",
                 "multisig": "https://krest.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
             }
-        ]
+        ],
+        "specName": "peaq-node-krest"
     },
     {
         "name": "Jur",
@@ -6445,7 +6506,8 @@
                 "account": "https://jur.io/explorer/jur/account/{address}",
                 "event": "https://jur.io/explorer/jur/event/{event}"
             }
-        ]
+        ],
+        "specName": "jur-node"
     },
     {
         "name": "Enjin",
@@ -6490,7 +6552,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/enjin-matrixchain"
                 }
             ]
-        }
+        },
+        "specName": "matrix-enjin"
     },
     {
         "name": "Watr",
@@ -6512,6 +6575,7 @@
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Watr.svg",
                 "name": "WATR token"
             }
-        ]
+        ],
+        "specName": "watr-mainnet"
     }
 ]

@@ -35,6 +35,16 @@ function checkBlockExplorers(chainsJSON) {
     });
 }
 
+function checkSpecNames(chainsJSON) {
+    const errors = [];
+    chainsJSON.forEach(chain => {
+        if (!chain.specName) {
+            errors.push(`Chain "${chain.name}" is missing specName`);
+        }
+    });
+    return errors;
+}
+
 let hasError = false;
 function checkChainsFile(filePath) {
     let chainsFile = fs.readFileSync(filePath);
@@ -42,6 +52,12 @@ function checkChainsFile(filePath) {
 
     // check that new explorers were not added
     checkBlockExplorers(chainsJSON)
+    const specNameErrors = checkSpecNames(chainsJSON);
+    if (specNameErrors.length > 0) {
+        console.error(`Errors in file ${filePath}:`);
+        specNameErrors.forEach(error => console.error(error));
+        hasError = true;
+    }
 
     let allIcons = jp.query(chainsJSON, "$..icon");
     let relativeIcons = [];
