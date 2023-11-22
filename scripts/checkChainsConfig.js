@@ -5,6 +5,7 @@ const path = require('path');
 const BASE_ICON_PATH = "/nova-spektr-utils/main/icons/"
 const KNOWN_EXPLORERS = [
     'Subscan',
+    'SCAN',
     'Polkascan',
     'Polkaholic',
     'Sub.ID',
