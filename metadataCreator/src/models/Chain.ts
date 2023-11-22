@@ -173,7 +173,7 @@ export class Chain {
         for (const node of this.nodes) {
             try {
                 const api = await this.wrapApiWithTimer(node);
-    
+
                 if (api?.isConnected) {
                     this.api = api;
                     break;
@@ -187,7 +187,7 @@ export class Chain {
 
     private async wrapApiWithTimer(node: NodeElement): Promise<ApiPromise | void> {
         const wsProvider = new WsProvider(node.url);
-    
+
         let timeoutId: NodeJS.Timeout | undefined;
         const timeoutPromise = new Promise<void>((_, reject) => {
             timeoutId = setTimeout(() => {
@@ -195,9 +195,9 @@ export class Chain {
                 reject(new Error(`Connection timeout for ${node.url}`));
             }, 20_000);
         });
-    
+
         const apiPromise = ApiPromise.create({ provider: wsProvider });
-    
+
         try {
             const api = await Promise.race([apiPromise, timeoutPromise]);
             if (api?.isConnected) {

@@ -36,7 +36,7 @@ export class MultisigVersionStorage {
         return networkList
     }
 
-        addNetwork(network: MultisigNetwork): void {
-            this.networks.push(network);
-        }
+    addNetwork(network: MultisigNetwork): void {
+        this.networks.push(network);
     }
+}
