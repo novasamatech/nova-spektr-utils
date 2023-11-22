@@ -239,7 +239,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-westend"
                 }
             ]
-        }
+        },
+        "specName": "westend"
     },
     {
         "name": "Kusama Asset Hub",
@@ -375,7 +376,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-statemine"
                 }
             ]
-        }
+        },
+        "specName": "statemine"
     },
     {
         "name": "Karura",
@@ -1653,7 +1655,8 @@
                 "name": "Sub.ID",
                 "account": "https://sub.id/{address}"
             }
-        ]
+        ],
+        "specName": "edgeware"
     },
     {
         "name": "Khala",
@@ -3094,7 +3097,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-statemint"
                 }
             ]
-        }
+        },
+        "specName": "statemint"
     },
     {
         "name": "Robonomics",
@@ -3202,7 +3206,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-encointer"
                 }
             ]
-        }
+        },
+        "specName": "encointer-parachain"
     },
     {
         "name": "Kintsugi",
@@ -6351,7 +6356,8 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/polkadot-bridgehub"
                 }
             ]
-        }
+        },
+        "specName": "bridge-hub-polkadot"
     },
     {
         "name": "Kusama Bridge Hub",
@@ -6389,7 +6395,8 @@
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Kusama_(KSM).svg",
                 "name": "Kusama"
             }
-        ]
+        ],
+        "specName": "bridge-hub-kusama"
     },
     {
         "name": "Polkadot Collectives",
@@ -6435,7 +6442,8 @@
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Polkadot_(DOT).svg",
                 "name": "Polkadot"
             }
-        ]
+        ],
+        "specName": "collectives"
     },
     {
         "name": "krest",
