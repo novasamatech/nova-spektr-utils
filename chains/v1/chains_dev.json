@@ -2856,6 +2856,52 @@
         "specName": "acala"
     },
     {
+        "name": "Acala Mandala",
+        "addressPrefix": 42,
+        "chainId": "0x23fc729c2cdb7bd6770a4e8c58748387cc715fcf338f1f74a16833d90383f4b0",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Acala_Mandala_Testnet.svg",
+        "options": [
+            "testnet"
+        ],
+        "nodes": [
+            {
+                "url": "wss://mandala-rpc.aca-staging.network/ws",
+                "name": "Acala node"
+            }
+        ],
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "ACA",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Acala_(ACA).svg",
+                "name": "Acala"
+            },
+            {
+                "assetId": 1,
+                "symbol": "DOT",
+                "precision": 10,
+                "type": "orml",
+                "priceId": "polkadot",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Polkadot_(DOT).svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0002",
+                    "currencyIdType": "AcalaPrimitivesCurrencyCurrencyId",
+                    "existentialDeposit": "1000000"
+                },
+                "name": "Polkadot"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://acala-testnet.subscan.io/extrinsic/{hash}",
+                "account": "https://acala-testnet.subscan.io/account/{address}",
+                "multisig": "https://acala-testnet.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
+            }
+        ]
+    },
+    {
         "name": "Astar",
         "addressPrefix": 5,
         "chainId": "0x9eb76c5184c4ab8679d2d5d819fdf90b9c001403e9e17da2e14b6d8aec4029c6",
@@ -4619,6 +4665,30 @@
         "specName": "nodle-para"
     },
     {
+        "name": "Singular testnet",
+        "addressPrefix": 0,
+        "chainId": "0x55b88a59dded27563391d619d805572dd6b6b89d302b0dd792d01b3c41cfe5b1",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Singular_Testnet.svg",
+        "options": [
+            "testnet"
+        ],
+        "nodes": [
+            {
+                "url": "wss://staging.node.rmrk.app",
+                "name": "Singular DEV node"
+            }
+        ],
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "KSM",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Kusama_(KSM).svg",
+                "name": "Kusama"
+            }
+        ]
+    },
+    {
         "name": "Phala",
         "addressPrefix": 30,
         "chainId": "0x1bb969d85965e4bb5a651abbedf21a54b6b31a21f66b5401cc3f1e286268d736",
@@ -6180,7 +6250,7 @@
         ],
         "nodes": [
             {
-                "url": "wss://novasama.co",
+                "url": "wss://novasama.uz",
                 "name": "Development node"
             }
         ],
@@ -6207,8 +6277,7 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/novasama-test-kusama"
                 }
             ]
-        },
-        "specName": "kusama"
+        }
     },
     {
         "name": "DAO IPCI",
@@ -6248,8 +6317,7 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-dao-ipci"
                 }
             ]
-        },
-        "specName": "ipci"
+        }
     },
     {
         "name": "Myriad",
@@ -6508,8 +6576,7 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-aventus"
                 }
             ]
-        },
-        "specName": "avn-parachain"
+        }
     },
     {
         "name": "Crust",
@@ -7017,6 +7084,31 @@
             ]
         },
         "specName": "giant-runtime"
+    },
+    {
+        "name": "GIANT Testnet",
+        "addressPrefix": 42,
+        "chainId": "0xc9824829d23066e7dd92b80cfef52559c7692866fcfc3530e737e3fe01410eef",
+        "parentId": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Giant_Testnet.svg",
+        "options": [
+            "testnet"
+        ],
+        "nodes": [
+            {
+                "url": "wss://rpc-4-us-east-1-dev.giantprotocol.org:443",
+                "name": "Giant testnet node"
+            }
+        ],
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "GIANT",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/GIANT.svg",
+                "name": "Giant"
+            }
+        ]
     },
     {
         "name": "Polkadot Bridge Hub",

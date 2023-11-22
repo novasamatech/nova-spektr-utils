@@ -6046,8 +6046,7 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-aventus"
                 }
             ]
-        },
-        "specName": "avn-parachain"
+        }
     },
     {
         "name": "Hashed Network",
