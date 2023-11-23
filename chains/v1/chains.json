@@ -1861,6 +1861,7 @@
                 "symbol": "PICA",
                 "precision": 12,
                 "type": "statemine",
+                "priceId": "picasso",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Picasso_(PICA).svg",
                 "typeExtras": {
                     "assetId": "15"
@@ -3451,6 +3452,7 @@
                 "assetId": 0,
                 "symbol": "PICA",
                 "precision": 12,
+                "priceId": "picasso",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Picasso_(PICA).svg",
                 "name": "Picasso"
             },
@@ -6046,8 +6048,7 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-aventus"
                 }
             ]
-        },
-        "specName": "avn-parachain"
+        }
     },
     {
         "name": "Hashed Network",
