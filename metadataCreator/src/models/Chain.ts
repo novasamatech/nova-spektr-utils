@@ -121,6 +121,7 @@ export class NodeElement {
 export class Chain {
     chainId: string;
     name: string;
+    specName?: string; 
     assets: Asset[];
     nodes: NodeElement[];
     explorers?: Explorer[];
@@ -210,6 +211,11 @@ export class Chain {
                 clearTimeout(timeoutId);
             }
         }
+    }
+
+    public async fillSpecName() {
+        await this.createAPI();
+        this.specName = this.api?.runtimeVersion.specName.toString();
     }
 }
 

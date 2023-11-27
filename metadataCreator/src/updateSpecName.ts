@@ -25,12 +25,9 @@ async function updateSpecName(url: string) {
 
         const newJson = await Promise.all(
             chains.map(async (chain, index) => {
-                await chain.createAPI();
-                const specName = chain.api?.runtimeVersion.specName.toString();
-        
-                return specName
-                    ? { ...jsonChains[index], specName }
-                    : { ...jsonChains[index] };
+                await chain.fillSpecName();
+
+                return { ...jsonChains[index] };
             })
         );
 
