@@ -6012,6 +6012,7 @@
     },
     {
         "name": "Aventus",
+        "specName": "avn-parachain",
         "addressPrefix": 42,
         "chainId": "0x8b5c955b5c8fd7112562327e3859473df4e3dff49bd72a113dbb668d2cfa20d7",
         "parentId": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
@@ -6046,8 +6047,7 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-aventus"
                 }
             ]
-        },
-        "specName": "avn-parachain"
+        }
     },
     {
         "name": "Hashed Network",
