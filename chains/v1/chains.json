@@ -2208,8 +2208,8 @@
         ],
         "nodes": [
             {
-                "url": "wss://acala-rpc.dwellir.com",
-                "name": "Dwellir node"
+                "url": "wss://rpc-acala.luckyfriday.io",
+                "name": "LuckyFriday node"
             },
             {
                 "url": "wss://acala-rpc-0.aca-api.network",
@@ -2230,6 +2230,10 @@
             {
                 "url": "wss://acala.polkawallet.io",
                 "name": "Polkawallet node"
+            },
+            {
+                "url": "wss://acala-rpc.dwellir.com",
+                "name": "Dwellir node"
             }
         ],
         "assets": [
@@ -3572,7 +3576,6 @@
     },
     {
         "name": "Litmus",
-        "specName": "litmus-parachain",
         "addressPrefix": 131,
         "chainId": "0xda5831fbc8570e3c6336d0d72b8c08f8738beefec812df21ef2afc2982ede09c",
         "parentId": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
@@ -4100,6 +4103,21 @@
                     "transfersEnabled": true
                 },
                 "name": "Moonbeam"
+            },
+            {
+                "assetId": 17,
+                "symbol": "INTR",
+                "precision": 10,
+                "type": "orml",
+                "priceId": "interlay",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Interlay_(INTR).svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x11000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "6164274209",
+                    "transfersEnabled": true
+                },
+                "name": "Interlay"
             },
             {
                 "assetId": 18,
@@ -4992,7 +5010,6 @@
     },
     {
         "name": "Bifrost Polkadot",
-        "specName": "bifrost_polkadot",
         "addressPrefix": 6,
         "chainId": "0x262e1b2ad728475fd6fe88e62d34c200abe6fd693931ddad144059b1eb884e5b",
         "parentId": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
@@ -5426,6 +5443,9 @@
         "chainId": "0xfeb426ca713f0f46c96465b8f039890370cf6bfd687c9076ea2843f58a6ae8a7",
         "parentId": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Kabocha.svg",
+        "options": [
+            "multisig"
+        ],
         "nodes": [
             {
                 "url": "wss://kabocha.jelliedowl.com",
@@ -5556,7 +5576,6 @@
     },
     {
         "name": "Tinkernet",
-        "specName": "tinkernet_node",
         "addressPrefix": 117,
         "chainId": "0xd42e9606a995dfe433dc7955dc2a70f495f350f373daa200098ae84437816ad2",
         "parentId": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
@@ -5665,9 +5684,6 @@
         "addressPrefix": 42,
         "chainId": "0x6859c81ca95ef624c9dfe4dc6e3381c33e5d6509e35e147092bfbc780f777c4e",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Ternoa.svg",
-        "options": [
-            "multisig"
-        ],
         "nodes": [
             {
                 "url": "wss://mainnet.ternoa.network",
@@ -5781,14 +5797,10 @@
     },
     {
         "name": "DAO IPCI",
-        "specName": "ipci",
         "addressPrefix": 32,
         "chainId": "0x6f0f071506de39058fe9a95bbca983ac0e9c5da3443909574e95d52eb078d348",
         "parentId": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/DAOIPCI.svg",
-        "options": [
-            "multisig"
-        ],
         "nodes": [
             {
                 "url": "wss://kusama.rpc.ipci.io",
@@ -6025,7 +6037,6 @@
     },
     {
         "name": "Aventus",
-        "specName": "avn-parachain",
         "addressPrefix": 42,
         "chainId": "0x8b5c955b5c8fd7112562327e3859473df4e3dff49bd72a113dbb668d2cfa20d7",
         "parentId": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
@@ -6064,7 +6075,6 @@
     },
     {
         "name": "Hashed Network",
-        "specName": "luhn",
         "addressPrefix": 42,
         "chainId": "0xdce5477cfca571c2cb652f38bbb70429004be3cf9649dd2b4ad9455b2251fe43",
         "parentId": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
@@ -6590,14 +6600,17 @@
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Watr.svg",
                 "name": "WATR token"
             }
-        ],
-        "specName": "watr-mainnet"
+        ]
     },
     {
         "name": "Joystream",
+        "specName": "joystream-node",
         "addressPrefix": 126,
         "chainId": "0x6b5e488e0fa8f9821110d5c13f4c468abcd43ce5e297e62b34c53c3346465956",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Joystream.svg",
+        "options": [
+            "multisig"
+        ],
         "nodes": [
             {
                 "url": "wss://rpc.joystream.org",
@@ -6629,7 +6642,37 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---joystream"
                 }
             ]
-        },
-        "specName": "joystream-node"
+        }
+    },
+    {
+        "name": "Dock",
+        "specName": "dock-pos-main-runtime",
+        "addressPrefix": 22,
+        "chainId": "0x6bfe24dca2a3be10f22212678ac13a6446ec764103c0f3471c71609eac384aae",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Dock.svg",
+        "nodes": [
+            {
+                "url": "wss://mainnet-node.dock.io",
+                "name": "Dock Association node"
+            }
+        ],
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "DOCK",
+                "precision": 6,
+                "priceId": "dock",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/undefined",
+                "name": "Should be included in scripts/data/assetsNameMap"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://dock.subscan.io/extrinsic/{hash}",
+                "account": "https://dock.subscan.io/account/{address}",
+                "multisig": "https://dock.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
+            }
+        ]
     }
 ]
