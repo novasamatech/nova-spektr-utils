@@ -5958,6 +5958,9 @@
         "addressPrefix": 42,
         "chainId": "0x6859c81ca95ef624c9dfe4dc6e3381c33e5d6509e35e147092bfbc780f777c4e",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Ternoa.svg",
+        "options": [
+            "multisig"
+        ],
         "nodes": [
             {
                 "url": "wss://mainnet.ternoa.network",
@@ -5995,10 +5998,7 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-ternoa"
                 }
             ]
-        },
-        "options": [
-            "multisig"
-        ]
+        }
     },
     {
         "name": "Ternoa Alphanet",
@@ -6241,6 +6241,9 @@
         "chainId": "0x6f0f071506de39058fe9a95bbca983ac0e9c5da3443909574e95d52eb078d348",
         "parentId": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/DAOIPCI.svg",
+        "options": [
+            "multisig"
+        ],
         "nodes": [
             {
                 "url": "wss://kusama.rpc.ipci.io",
