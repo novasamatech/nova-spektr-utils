@@ -1,5 +1,5 @@
 const path = require('path');
-const { writeFile } = require('fs/promises');
+const { writeFile, readFile } = require('fs/promises');
 const fs = require('fs');
 const axios = require('axios');
 
@@ -23,7 +23,7 @@ const TYPE_EXTRAS_REPLACEMENTS = [
     'bit_country_primitives.FungibleTokenId', 'BitCountryPrimitivesFungibleTokenId',
     'interbtc_primitives.CurrencyId',         'InterbtcPrimitivesCurrencyId',
     'gm_chain_runtime.Coooooins',             'GmChainRuntimeCoooooins',
-    'pendulum_runtime.currency.CurrencyId',   'PendulumRuntimeCurrencyCurrencyId',
+    'pendulum_runtime.currency.CurrencyId',   'SpacewalkPrimitivesCurrencyId',
     'spacewalk_primitives.CurrencyId',        'SpacewalkPrimitivesCurrencyId'
 ]
 const STAKING_ALLOWED_ARRAY = ['Polkadot', 'Kusama', 'Westend', 'Polkadex', 'Ternoa', 'Novasama Testnet - Kusama']
@@ -218,9 +218,36 @@ function filterObjectByKeys(obj, keys) {
 
 async function saveNewFile(newJson, file_name) {
   try {
-    await writeFile(path.resolve(CONFIG_PATH, file_name), JSON.stringify(newJson, null, 4));
+    const filePath = path.resolve(CONFIG_PATH, file_name);
+    let existingData = [];
+
+    // Check if file already exists
+    if (fs.existsSync(filePath)) {
+      const existingFileContent = await readFile(filePath, 'utf8');
+      existingData = JSON.parse(existingFileContent);
+    }
+
+    // Merge existing data with new data
+    const mergedData = [...existingData];
+
+    newJson.forEach(newItem => {
+      const existingItemIndex = existingData.findIndex(
+        item => item.chainId === newItem.chainId
+      );
+
+      if (existingItemIndex >= 0) {
+        // If item already exists, update it
+        mergedData[existingItemIndex] = { ...mergedData[existingItemIndex], ...newItem };
+      } else {
+        // If item doesn't exist, add it
+        mergedData.push(newItem);
+      }
+    });
+
+    await writeFile(filePath, JSON.stringify(mergedData, null, 4));
+    console.log('Successfully saved file: ' + file_name);
   } catch (error) {
-    console.log('Error: ', error?.message || '🛑 Something went wrong in writing file');
+    console.log('Error: ', error?.message || 'Something went wrong in writing file');
   }
 }
 
