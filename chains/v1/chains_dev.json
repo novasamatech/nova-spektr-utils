@@ -5240,6 +5240,7 @@
     },
     {
         "name": "Bifrost Polkadot",
+        "specName": "bifrost_polkadot",
         "addressPrefix": 6,
         "chainId": "0x262e1b2ad728475fd6fe88e62d34c200abe6fd693931ddad144059b1eb884e5b",
         "parentId": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
@@ -6460,6 +6461,7 @@
     },
     {
         "name": "Pendulum",
+        "specName": "pendulum",
         "addressPrefix": 56,
         "chainId": "0x5d3c298622d5634ed019bf61ea4b71655030015bde9beb0d6a24743714462c86",
         "parentId": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
@@ -6556,6 +6558,7 @@
     },
     {
         "name": "Aventus",
+        "specName": "avn-parachain",
         "addressPrefix": 42,
         "chainId": "0x8b5c955b5c8fd7112562327e3859473df4e3dff49bd72a113dbb668d2cfa20d7",
         "parentId": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
@@ -6824,6 +6827,7 @@
     },
     {
         "name": "Hashed Network",
+        "specName": "luhn",
         "addressPrefix": 42,
         "chainId": "0xdce5477cfca571c2cb652f38bbb70429004be3cf9649dd2b4ad9455b2251fe43",
         "parentId": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
@@ -7025,6 +7029,7 @@
     },
     {
         "name": "Vara",
+        "specName": "vara",
         "addressPrefix": 137,
         "chainId": "0xfe1b4c55fd4d668101126434206571a7838a8b6b93a6d1b95d607e78e6c53763",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Vara.svg",

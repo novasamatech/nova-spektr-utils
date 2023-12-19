@@ -5797,6 +5797,7 @@
     },
     {
         "name": "DAO IPCI",
+        "specName": "ipci",
         "addressPrefix": 32,
         "chainId": "0x6f0f071506de39058fe9a95bbca983ac0e9c5da3443909574e95d52eb078d348",
         "parentId": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
@@ -6037,6 +6038,7 @@
     },
     {
         "name": "Aventus",
+        "specName": "avn-parachain",
         "addressPrefix": 42,
         "chainId": "0x8b5c955b5c8fd7112562327e3859473df4e3dff49bd72a113dbb668d2cfa20d7",
         "parentId": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
@@ -6075,6 +6077,7 @@
     },
     {
         "name": "Hashed Network",
+        "specName": "luhn",
         "addressPrefix": 42,
         "chainId": "0xdce5477cfca571c2cb652f38bbb70429004be3cf9649dd2b4ad9455b2251fe43",
         "parentId": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
