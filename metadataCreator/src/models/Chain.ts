@@ -97,8 +97,8 @@ export class ExternalApi {
     }
 
     static fromJSON(json: any): ExternalApi {
-        const staking = json.staking.map((apiJson: any) => Api.fromJSON(apiJson));
-        const history = json.history.map((apiJson: any) => Api.fromJSON(apiJson));
+        const staking = json?.staking?.map((apiJson: any) => Api.fromJSON(apiJson));
+        const history = json?.history?.map((apiJson: any) => Api.fromJSON(apiJson));
         return new ExternalApi(staking, history);
     }
 }
@@ -121,6 +121,7 @@ export class NodeElement {
 export class Chain {
     chainId: string;
     name: string;
+    specName?: string; 
     assets: Asset[];
     nodes: NodeElement[];
     explorers?: Explorer[];
@@ -152,7 +153,7 @@ export class Chain {
     static fromJSON(json: any): Chain {
         const assets = json.assets.map((assetJson: any) => Asset.fromJSON(assetJson));
         const nodes = json.nodes.map((nodeJson: any) => NodeElement.fromJSON(nodeJson));
-        const explorers = json.explorers.map((explorerJson: any) => Explorer.fromJSON(explorerJson));
+        const explorers = json?.explorers?.map((explorerJson: any) => Explorer.fromJSON(explorerJson));
         const externalApi = ExternalApi.fromJSON(json.externalApi);
         return new Chain(
             json.chainId,
@@ -210,6 +211,11 @@ export class Chain {
                 clearTimeout(timeoutId);
             }
         }
+    }
+
+    public async fillSpecName() {
+        await this.createAPI();
+        this.specName = this.api?.runtimeVersion.specName.toString();
     }
 }
 

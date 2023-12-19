@@ -29,7 +29,15 @@ async function updateSpecName(url: string) {
                 const specName = chain.api?.runtimeVersion.specName.toString();
         
                 return specName
-                    ? { ...jsonChains[index], specName }
+                    ? { 
+                        ...Object.keys(jsonChains[index]).reduce((obj, key) => {
+                            if (key === 'name') {
+                                return { ...obj, [key]: jsonChains[index][key], specName };
+                            } else {
+                                return { ...obj, [key]: jsonChains[index][key] };
+                            }
+                        }, {}),
+                    }
                     : { ...jsonChains[index] };
             })
         );
