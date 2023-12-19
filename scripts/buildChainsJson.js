@@ -6,8 +6,8 @@ const axios = require('axios');
 const TOKEN_NAMES = require('./data/assetsNameMap.json');
 const TICKER_NAMES = require('./data/assetTickerMap.json');
 
-const NOVA_CONFIG_VERSION = process.env.NOVA_CONFIG_VERSION;
-const SPEKTR_CONFIG_VERSION = process.env.SPEKTR_CONFIG_VERSION;
+const NOVA_CONFIG_VERSION = 'v16';
+const SPEKTR_CONFIG_VERSION = 'v1';
 const CONFIG_PATH = `chains/${SPEKTR_CONFIG_VERSION}/`;
 const NOVA_CONFIG_URL = `https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/${NOVA_CONFIG_VERSION}/`;
 const ASSET_ICONS_DIR = `icons/v1/assets/white`
@@ -15,6 +15,10 @@ const ASSET_ICONS_DIR = `icons/v1/assets/white`
 const CHAINS_ENV = ['chains_dev.json', 'chains.json'];
 const EXCLUDED_CHAINS = {
   '89d3ec46d2fb43ef5a9713833373d5ea666b092fa8fd68fbc34596036571b907': 'Equilibrium', // Custom logic
+  '55b88a59dded27563391d619d805572dd6b6b89d302b0dd792d01b3c41cfe5b1': 'Singular testnet', // testnet
+  '23fc729c2cdb7bd6770a4e8c58748387cc715fcf338f1f74a16833d90383f4b0': 'Acala Mandala',
+  'c9824829d23066e7dd92b80cfef52559c7692866fcfc3530e737e3fe01410eef': 'GIANT testnet',
+  '9b86ea7366584c5ddf67de243433fcc05732864933258de9467db46eb9bef8b5': 'VARA testnet'
 }
 
 const TYPE_EXTRAS_REPLACEMENTS = [
@@ -221,17 +225,23 @@ async function saveNewFile(newJson, file_name) {
     const filePath = path.resolve(CONFIG_PATH, file_name);
     let existingData = [];
 
-    // Check if file already exists
     if (fs.existsSync(filePath)) {
       const existingFileContent = await readFile(filePath, 'utf8');
       existingData = JSON.parse(existingFileContent);
     }
 
+    const newItemsMap = newJson.reduce((map, item) => {
+      map[item.chainId] = item;
+      return map;
+    }, {});
+
+    const filteredExistingData = existingData.filter(item => newItemsMap.hasOwnProperty(item.chainId));
+
     // Merge existing data with new data
-    const mergedData = [...existingData];
+    const mergedData = [...filteredExistingData];
 
     newJson.forEach(newItem => {
-      const existingItemIndex = existingData.findIndex(
+      const existingItemIndex = filteredExistingData.findIndex(
         item => item.chainId === newItem.chainId
       );
 

@@ -2852,52 +2852,6 @@
         }
     },
     {
-        "name": "Acala Mandala",
-        "addressPrefix": 42,
-        "chainId": "0x23fc729c2cdb7bd6770a4e8c58748387cc715fcf338f1f74a16833d90383f4b0",
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Acala_Mandala_Testnet.svg",
-        "options": [
-            "testnet"
-        ],
-        "nodes": [
-            {
-                "url": "wss://mandala-rpc.aca-staging.network/ws",
-                "name": "Acala node"
-            }
-        ],
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "ACA",
-                "precision": 12,
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Acala_(ACA).svg",
-                "name": "Acala"
-            },
-            {
-                "assetId": 1,
-                "symbol": "DOT",
-                "precision": 10,
-                "type": "orml",
-                "priceId": "polkadot",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Polkadot_(DOT).svg",
-                "typeExtras": {
-                    "currencyIdScale": "0x0002",
-                    "currencyIdType": "AcalaPrimitivesCurrencyCurrencyId",
-                    "existentialDeposit": "1000000"
-                },
-                "name": "Polkadot"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://acala-testnet.subscan.io/extrinsic/{hash}",
-                "account": "https://acala-testnet.subscan.io/account/{address}",
-                "multisig": "https://acala-testnet.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
-            }
-        ]
-    },
-    {
         "name": "Astar",
         "specName": "astar",
         "addressPrefix": 5,
@@ -3783,6 +3737,7 @@
     },
     {
         "name": "Litmus",
+        "specName": "litmus-parachain",
         "addressPrefix": 131,
         "chainId": "0xda5831fbc8570e3c6336d0d72b8c08f8738beefec812df21ef2afc2982ede09c",
         "parentId": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
@@ -4688,30 +4643,6 @@
         }
     },
     {
-        "name": "Singular testnet",
-        "addressPrefix": 0,
-        "chainId": "0x55b88a59dded27563391d619d805572dd6b6b89d302b0dd792d01b3c41cfe5b1",
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Singular_Testnet.svg",
-        "options": [
-            "testnet"
-        ],
-        "nodes": [
-            {
-                "url": "wss://staging.node.rmrk.app",
-                "name": "Singular DEV node"
-            }
-        ],
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "KSM",
-                "precision": 12,
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Kusama_(KSM).svg",
-                "name": "Kusama"
-            }
-        ]
-    },
-    {
         "name": "Phala",
         "specName": "phala",
         "addressPrefix": 30,
@@ -5191,6 +5122,7 @@
     },
     {
         "name": "OriginTrail Parachain",
+        "specName": "origintrail-parachain",
         "addressPrefix": 101,
         "chainId": "0xe7e0962324a3b86c83404dbea483f25fb5dab4c224791c81b756cfc948006174",
         "parentId": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
@@ -5917,6 +5849,7 @@
     },
     {
         "name": "Tinkernet",
+        "specName": "tinkernet_node",
         "addressPrefix": 117,
         "chainId": "0xd42e9606a995dfe433dc7955dc2a70f495f350f373daa200098ae84437816ad2",
         "parentId": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
@@ -6300,6 +6233,7 @@
     },
     {
         "name": "DAO IPCI",
+        "specName": "ipci",
         "addressPrefix": 32,
         "chainId": "0x6f0f071506de39058fe9a95bbca983ac0e9c5da3443909574e95d52eb078d348",
         "parentId": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
@@ -7099,31 +7033,6 @@
         }
     },
     {
-        "name": "GIANT Testnet",
-        "addressPrefix": 42,
-        "chainId": "0xc9824829d23066e7dd92b80cfef52559c7692866fcfc3530e737e3fe01410eef",
-        "parentId": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Giant_Testnet.svg",
-        "options": [
-            "testnet"
-        ],
-        "nodes": [
-            {
-                "url": "wss://rpc-4-us-east-1-dev.giantprotocol.org:443",
-                "name": "Giant testnet node"
-            }
-        ],
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "GIANT",
-                "precision": 12,
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/GIANT.svg",
-                "name": "Giant"
-            }
-        ]
-    },
-    {
         "name": "Polkadot Bridge Hub",
         "specName": "bridge-hub-polkadot",
         "addressPrefix": 0,
@@ -7617,30 +7526,6 @@
                 "extrinsic": "https://manta.subscan.io/extrinsic/{hash}",
                 "account": "https://manta.subscan.io/account/{address}",
                 "multisig": "https://manta.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
-            }
-        ]
-    },
-    {
-        "name": "Vara Testnet",
-        "addressPrefix": 137,
-        "chainId": "0x9b86ea7366584c5ddf67de243433fcc05732864933258de9467db46eb9bef8b5",
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Vara_Testnet.svg",
-        "options": [
-            "testnet"
-        ],
-        "nodes": [
-            {
-                "url": "wss://vit.vara-network.io",
-                "name": "Gear Tech test node"
-            }
-        ],
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "TVARA",
-                "precision": 12,
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/tVARA.svg",
-                "name": "Vara testnet"
             }
         ]
     },
