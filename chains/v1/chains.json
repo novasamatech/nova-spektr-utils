@@ -2208,8 +2208,8 @@
         ],
         "nodes": [
             {
-                "url": "wss://acala-rpc.dwellir.com",
-                "name": "Dwellir node"
+                "url": "wss://rpc-acala.luckyfriday.io",
+                "name": "LuckyFriday node"
             },
             {
                 "url": "wss://acala-rpc-0.aca-api.network",
@@ -2230,6 +2230,10 @@
             {
                 "url": "wss://acala.polkawallet.io",
                 "name": "Polkawallet node"
+            },
+            {
+                "url": "wss://acala-rpc.dwellir.com",
+                "name": "Dwellir node"
             }
         ],
         "assets": [
@@ -4102,6 +4106,21 @@
                 "name": "Moonbeam"
             },
             {
+                "assetId": 17,
+                "symbol": "INTR",
+                "precision": 10,
+                "type": "orml",
+                "priceId": "interlay",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Interlay_(INTR).svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x11000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "6164274209",
+                    "transfersEnabled": true
+                },
+                "name": "Interlay"
+            },
+            {
                 "assetId": 18,
                 "symbol": "SUB",
                 "precision": 10,
@@ -5426,6 +5445,9 @@
         "chainId": "0xfeb426ca713f0f46c96465b8f039890370cf6bfd687c9076ea2843f58a6ae8a7",
         "parentId": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Kabocha.svg",
+        "options": [
+            "multisig"
+        ],
         "nodes": [
             {
                 "url": "wss://kabocha.jelliedowl.com",
@@ -6590,14 +6612,17 @@
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Watr.svg",
                 "name": "WATR token"
             }
-        ],
-        "specName": "watr-mainnet"
+        ]
     },
     {
         "name": "Joystream",
+        "specName": "joystream-node",
         "addressPrefix": 126,
         "chainId": "0x6b5e488e0fa8f9821110d5c13f4c468abcd43ce5e297e62b34c53c3346465956",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Joystream.svg",
+        "options": [
+            "multisig"
+        ],
         "nodes": [
             {
                 "url": "wss://rpc.joystream.org",
@@ -6629,7 +6654,37 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---joystream"
                 }
             ]
-        },
-        "specName": "joystream-node"
+        }
+    },
+    {
+        "name": "Dock",
+        "specName": "dock-pos-main-runtime",
+        "addressPrefix": 22,
+        "chainId": "0x6bfe24dca2a3be10f22212678ac13a6446ec764103c0f3471c71609eac384aae",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Dock.svg",
+        "nodes": [
+            {
+                "url": "wss://mainnet-node.dock.io",
+                "name": "Dock Association node"
+            }
+        ],
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "DOCK",
+                "precision": 6,
+                "priceId": "dock",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/DOCK.svg",
+                "name": "Dock token"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://dock.subscan.io/extrinsic/{hash}",
+                "account": "https://dock.subscan.io/account/{address}",
+                "multisig": "https://dock.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
+            }
+        ]
     }
 ]

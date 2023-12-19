@@ -157,5 +157,6 @@
   "HOP": "HOP token",
   "VT": "VT token",
   "WATR": "WATR token",
-  "JOY": "Joystream"
+  "JOY": "Joystream",
+  "DOCK": "Dock token"
 }

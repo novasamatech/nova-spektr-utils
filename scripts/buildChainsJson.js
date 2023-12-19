@@ -1,5 +1,5 @@
 const path = require('path');
-const { writeFile } = require('fs/promises');
+const { writeFile, readFile } = require('fs/promises');
 const fs = require('fs');
 const axios = require('axios');
 
@@ -15,6 +15,10 @@ const ASSET_ICONS_DIR = `icons/v1/assets/white`
 const CHAINS_ENV = ['chains_dev.json', 'chains.json'];
 const EXCLUDED_CHAINS = {
   '89d3ec46d2fb43ef5a9713833373d5ea666b092fa8fd68fbc34596036571b907': 'Equilibrium', // Custom logic
+  '55b88a59dded27563391d619d805572dd6b6b89d302b0dd792d01b3c41cfe5b1': 'Singular testnet', // testnet
+  '23fc729c2cdb7bd6770a4e8c58748387cc715fcf338f1f74a16833d90383f4b0': 'Acala Mandala',
+  'c9824829d23066e7dd92b80cfef52559c7692866fcfc3530e737e3fe01410eef': 'GIANT testnet',
+  '9b86ea7366584c5ddf67de243433fcc05732864933258de9467db46eb9bef8b5': 'VARA testnet'
 }
 
 const TYPE_EXTRAS_REPLACEMENTS = [
@@ -23,7 +27,7 @@ const TYPE_EXTRAS_REPLACEMENTS = [
     'bit_country_primitives.FungibleTokenId', 'BitCountryPrimitivesFungibleTokenId',
     'interbtc_primitives.CurrencyId',         'InterbtcPrimitivesCurrencyId',
     'gm_chain_runtime.Coooooins',             'GmChainRuntimeCoooooins',
-    'pendulum_runtime.currency.CurrencyId',   'PendulumRuntimeCurrencyCurrencyId',
+    'pendulum_runtime.currency.CurrencyId',   'SpacewalkPrimitivesCurrencyId',
     'spacewalk_primitives.CurrencyId',        'SpacewalkPrimitivesCurrencyId'
 ]
 const STAKING_ALLOWED_ARRAY = ['Polkadot', 'Kusama', 'Westend', 'Polkadex', 'Ternoa', 'Novasama Testnet - Kusama']
@@ -218,7 +222,40 @@ function filterObjectByKeys(obj, keys) {
 
 async function saveNewFile(newJson, file_name) {
   try {
-    await writeFile(path.resolve(CONFIG_PATH, file_name), JSON.stringify(newJson, null, 4));
+    const filePath = path.resolve(CONFIG_PATH, file_name);
+    let existingData = [];
+
+    if (fs.existsSync(filePath)) {
+      const existingFileContent = await readFile(filePath, 'utf8');
+      existingData = JSON.parse(existingFileContent);
+    }
+
+    const newItemsMap = newJson.reduce((map, item) => {
+      map[item.chainId] = item;
+      return map;
+    }, {});
+
+    const filteredExistingData = existingData.filter(item => newItemsMap.hasOwnProperty(item.chainId));
+
+    // Merge existing data with new data
+    const mergedData = [...filteredExistingData];
+
+    newJson.forEach(newItem => {
+      const existingItemIndex = filteredExistingData.findIndex(
+        item => item.chainId === newItem.chainId
+      );
+
+      if (existingItemIndex >= 0) {
+        // If item already exists, update it
+        mergedData[existingItemIndex] = { ...mergedData[existingItemIndex], ...newItem };
+      } else {
+        // If item doesn't exist, add it
+        mergedData.push(newItem);
+      }
+    });
+
+    await writeFile(filePath, JSON.stringify(mergedData, null, 4));
+    console.log('Successfully saved file: ' + file_name);
   } catch (error) {
     console.log('Error: ', error?.message || '🛑 Something went wrong in writing file');
   }
