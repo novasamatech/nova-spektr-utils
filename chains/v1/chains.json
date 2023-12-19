@@ -6668,7 +6668,7 @@
                 "precision": 6,
                 "priceId": "dock",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/DOCK.svg",
-                "name": "Should be included in scripts/data/assetsNameMap"
+                "name": "Dock token"
             }
         ],
         "explorers": [
