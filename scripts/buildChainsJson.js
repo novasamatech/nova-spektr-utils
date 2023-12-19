@@ -6,8 +6,8 @@ const axios = require('axios');
 const TOKEN_NAMES = require('./data/assetsNameMap.json');
 const TICKER_NAMES = require('./data/assetTickerMap.json');
 
-const NOVA_CONFIG_VERSION = 'v16';
-const SPEKTR_CONFIG_VERSION = 'v1';
+const NOVA_CONFIG_VERSION = process.env.NOVA_CONFIG_VERSION;
+const SPEKTR_CONFIG_VERSION = process.env.SPEKTR_CONFIG_VERSION;
 const CONFIG_PATH = `chains/${SPEKTR_CONFIG_VERSION}/`;
 const NOVA_CONFIG_URL = `https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/${NOVA_CONFIG_VERSION}/`;
 const ASSET_ICONS_DIR = `icons/v1/assets/white`
@@ -257,7 +257,7 @@ async function saveNewFile(newJson, file_name) {
     await writeFile(filePath, JSON.stringify(mergedData, null, 4));
     console.log('Successfully saved file: ' + file_name);
   } catch (error) {
-    console.log('Error: ', error?.message || 'Something went wrong in writing file');
+    console.log('Error: ', error?.message || '🛑 Something went wrong in writing file');
   }
 }
 

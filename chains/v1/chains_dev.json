@@ -5995,7 +5995,10 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-ternoa"
                 }
             ]
-        }
+        },
+        "options": [
+            "multisig"
+        ]
     },
     {
         "name": "Ternoa Alphanet",
