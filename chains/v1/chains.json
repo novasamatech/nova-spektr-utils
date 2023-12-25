@@ -6140,7 +6140,7 @@
                 "precision": 9,
                 "priceId": "bittensor",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Bittensor_(TAO).svg",
-                "name": "TAO token"
+                "name": "TAO"
             }
         ],
         "explorers": [
