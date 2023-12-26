@@ -6716,7 +6716,7 @@
                 "precision": 18,
                 "priceId": "energy-web-token",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Energy_Web_(EWT).svg",
-                "name": "Should be included in scripts/data/assetsNameMap"
+                "name": "Energy Web token"
             }
         ]
     }
