@@ -26,7 +26,7 @@
 | 14 | Centrifuge Parachain | 1 |
 | 15 | CLV Parachain | 0 |
 | 16 | Composable Finance | 1 |
-| 17 | Crust | 0 |
+| 17 | Crust Polkadot Parachain | 0 |
 | 18 | Crust Shadow | 0 |
 | 19 | Edgeware | 0 |
 | 20 | Enjin | 1 |
@@ -64,13 +64,15 @@
 | 52 | Robonomics | 0 |
 | 53 | Shiden | 1 |
 | 54 | Tinkernet | 0 |
-| 55 | Turing | 1 |
-| 56 | Vara | 0 |
-| 57 | Watr | 1 |
-| 58 | Westend | 1 |
-| 59 | XX network | 0 |
-| 60 | Zeitgeist | 1 |
-| 61 | 3DPass | 0 |
+| 55 | Ternoa | 0 |
+| 56 | Turing | 1 |
+| 57 | Vara | 0 |
+| 58 | Watr | 1 |
+| 59 | Westend | 1 |
+| 60 | XX network | 0 |
+| 61 | Zeitgeist | 1 |
+| 62 | 3DPass | 0 |
+| 63 | DAO IPCI | 0 |
 
 ## The list of supported networks
 | -- | Network | Assets count | Explorers |
