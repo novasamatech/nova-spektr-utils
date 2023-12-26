@@ -10,16 +10,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://api-polkadot-full.dwellir.com/{DWELLIR_API_KEY}",
-                "name": "Nova Dwellir node"
+                "url": "wss://dot-rpc.stakeworld.io",
+                "name": "Stakeworld node"
             },
             {
                 "url": "wss://polkadot.public.curie.radiumblock.co/ws",
                 "name": "Radium node"
-            },
-            {
-                "url": "wss://dot-rpc.stakeworld.io",
-                "name": "Stakeworld node"
             },
             {
                 "url": "wss://polkadot-rpc.dwellir.com",
@@ -5967,6 +5963,9 @@
         "addressPrefix": 42,
         "chainId": "0x6859c81ca95ef624c9dfe4dc6e3381c33e5d6509e35e147092bfbc780f777c4e",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Ternoa.svg",
+        "options": [
+            "multisig"
+        ],
         "nodes": [
             {
                 "url": "wss://mainnet.ternoa.network",
@@ -6247,6 +6246,9 @@
         "chainId": "0x6f0f071506de39058fe9a95bbca983ac0e9c5da3443909574e95d52eb078d348",
         "parentId": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/DAOIPCI.svg",
+        "options": [
+            "multisig"
+        ],
         "nodes": [
             {
                 "url": "wss://kusama.rpc.ipci.io",
@@ -6545,6 +6547,9 @@
         "chainId": "0x4319cc49ee79495b57a1fec4d2bd43f59052dcc690276de566c2691d6df4f7b8",
         "parentId": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Crust_Parachain.svg",
+        "options": [
+            "multisig"
+        ],
         "nodes": [
             {
                 "url": "wss://crust-parachain.crustapps.net",
@@ -7789,8 +7794,8 @@
                 "symbol": "PLMC",
                 "precision": 10,
                 "priceId": "polimec",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/undefined",
-                "name": "Should be included in scripts/data/assetsNameMap"
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/PLMC.svg",
+                "name": "Polimec token"
             }
         ]
     },
