@@ -21,15 +21,19 @@ const EXCLUDED_CHAINS = {
   '9b86ea7366584c5ddf67de243433fcc05732864933258de9467db46eb9bef8b5': 'VARA testnet'
 }
 
-const TYPE_EXTRAS_REPLACEMENTS = [
-    'acala_primitives.currency.CurrencyId',   'AcalaPrimitivesCurrencyCurrencyId',
-    'node_primitives.currency.CurrencyId',    'NodePrimitivesCurrencyCurrencyId',
-    'bit_country_primitives.FungibleTokenId', 'BitCountryPrimitivesFungibleTokenId',
-    'interbtc_primitives.CurrencyId',         'InterbtcPrimitivesCurrencyId',
-    'gm_chain_runtime.Coooooins',             'GmChainRuntimeCoooooins',
-    'pendulum_runtime.currency.CurrencyId',   'SpacewalkPrimitivesCurrencyId',
-    'spacewalk_primitives.CurrencyId',        'SpacewalkPrimitivesCurrencyId'
-]
+const TYPE_EXTRAS_REPLACEMENTS = {
+    'baf5aabe40646d11f0ee8abbdc64f4a4b7674925cba08e4a05ff9ebed6e2126b':   'AcalaPrimitivesCurrencyCurrencyId',
+    'fc41b9bd8ef8fe53d58c7ea67c794c7ec9a73daf05e6d54b14ff6342c99ba64c':   'AcalaPrimitivesCurrencyCurrencyId',
+    '262e1b2ad728475fd6fe88e62d34c200abe6fd693931ddad144059b1eb884e5b':   'NodePrimitivesCurrencyCurrencyId',
+    '9f28c6a68e0fc9646eff64935684f6eeeece527e37bbe1f213d22caa1d9d6bed':   'BifrostPrimitivesCurrencyCurrencyId',
+    'f22b7850cdd5a7657bbfd90ac86441275bbc57ace3d2698a740c7b0ec4de5ec3':   'BitCountryPrimitivesFungibleTokenId',
+    'bf88efe70e9e0e916416e8bed61f2b45717f517d7f3523e33c7b001e5ffcbc72':   'InterbtcPrimitivesCurrencyId',
+    '3a5a5cd27eb15fd26c37315a0f0b938733bb798c897428448efac5e6150cad06':   'InterbtcPrimitivesCurrencyId',
+    '418ae94c9fce02b1ab3b5bc211cd2f2133426f2861d97482bbdfdac1bbb0fb92':   'InterbtcPrimitivesCurrencyId',
+    '9af9a64e6e4da8e3073901c3ff0cc4c3aad9563786d89daf6ad820b6e14a0b8b':   'InterbtcPrimitivesCurrencyId',
+    'cceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf':   'SpacewalkPrimitivesCurrencyId',
+    '5d3c298622d5634ed019bf61ea4b71655030015bde9beb0d6a24743714462c86':   'SpacewalkPrimitivesCurrencyId'
+}
 const STAKING_ALLOWED_ARRAY = ['Polkadot', 'Kusama', 'Westend', 'Polkadex', 'Ternoa', 'Novasama Testnet - Kusama']
 
 const DEFAULT_ASSETS = ['SHIBATALES', 'DEV', 'SIRI', 'PILT', 'cDOT-6/13', 'cDOT-7/14', 'cDOT-8/15', 'cDOT-9/16', 'cDOT-10/17', 'TZERO', 'UNIT', 'Unit', 'tEDG','JOE', 'HOP'];
@@ -80,7 +84,7 @@ function fillAssetData(chain) {
       priceId: asset.priceId,
       staking: getStakingValue(asset.staking, chain.name),
       icon: replaceUrl(asset.icon, 'asset', asset.symbol),
-      typeExtras: replaceTypeExtras(asset.typeExtras),
+      typeExtras: replaceTypeExtras(asset.typeExtras, chain.chainId),
       name: TOKEN_NAMES[asset.symbol] || 'Should be included in scripts/data/assetsNameMap',
     });
   });
@@ -167,11 +171,11 @@ function replaceUrl(url, type, name = undefined) {
   }
 }
 
-function replaceTypeExtras(typeExtras) {
+function replaceTypeExtras(typeExtras, chainId) {
   if (typeExtras && typeExtras.currencyIdType) {
-    const replacementIndex = TYPE_EXTRAS_REPLACEMENTS.indexOf(typeExtras.currencyIdType);
-    if (replacementIndex >= 0) {
-      typeExtras.currencyIdType = TYPE_EXTRAS_REPLACEMENTS[replacementIndex + 1];
+    const replacement = TYPE_EXTRAS_REPLACEMENTS[chainId];
+    if (replacement) {
+      typeExtras.currencyIdType = replacement;
     }
   }
 
