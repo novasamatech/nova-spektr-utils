@@ -24,7 +24,7 @@ const EXCLUDED_CHAINS = {
 const TYPE_EXTRAS_REPLACEMENTS = {
     'baf5aabe40646d11f0ee8abbdc64f4a4b7674925cba08e4a05ff9ebed6e2126b':   'AcalaPrimitivesCurrencyCurrencyId',
     'fc41b9bd8ef8fe53d58c7ea67c794c7ec9a73daf05e6d54b14ff6342c99ba64c':   'AcalaPrimitivesCurrencyCurrencyId',
-    '262e1b2ad728475fd6fe88e62d34c200abe6fd693931ddad144059b1eb884e5b':   'NodePrimitivesCurrencyCurrencyId',
+    '262e1b2ad728475fd6fe88e62d34c200abe6fd693931ddad144059b1eb884e5b':   'BifrostPrimitivesCurrencyCurrencyId',
     '9f28c6a68e0fc9646eff64935684f6eeeece527e37bbe1f213d22caa1d9d6bed':   'BifrostPrimitivesCurrencyCurrencyId',
     'f22b7850cdd5a7657bbfd90ac86441275bbc57ace3d2698a740c7b0ec4de5ec3':   'BitCountryPrimitivesFungibleTokenId',
     'bf88efe70e9e0e916416e8bed61f2b45717f517d7f3523e33c7b001e5ffcbc72':   'InterbtcPrimitivesCurrencyId',
