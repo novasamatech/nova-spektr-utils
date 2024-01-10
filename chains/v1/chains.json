@@ -6757,7 +6757,7 @@
                 "symbol": "VARCH",
                 "precision": 12,
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/InvArch_(VARCH).svg",
-                "name": "Should be included in scripts/data/assetsNameMap"
+                "name": "VARCH token"
             }
         ]
     },
