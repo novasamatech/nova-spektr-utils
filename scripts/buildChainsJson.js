@@ -138,6 +138,7 @@ function getTransformedData(rawData) {
       });
 
       const assets = fillAssetData(chain)
+      const nodes = chain.nodes.filter(node => !node.url.includes('{'));
 
       const updatedChain = {
         name: chain.name,
@@ -146,7 +147,7 @@ function getTransformedData(rawData) {
         parentId: chain.parentId ? `0x${chain.parentId}` : undefined,
         icon: replaceUrl(chain.icon, 'chain'),
         options,
-        nodes: chain.nodes,
+        nodes: nodes,
         assets,
         explorers,
       };
