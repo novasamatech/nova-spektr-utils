@@ -2,7 +2,7 @@
 # Supported Features data:
 ### 🕸️ [Supported networks](#supported-network-list): 75
 ### 🪙 Added assets: 297
-### 👨‍👩‍👧‍👦 [Multisig supported](#list-of-networks-where-we-are-support-multisig) in: 62
+### 👨‍👩‍👧‍👦 [Multisig supported](#list-of-networks-where-we-are-support-multisig) in: 63
 ### 🥞 Staking supported in: 5
 
 
@@ -24,10 +24,10 @@
 | 12 | Bittensor | 0 |
 | 13 | Calamari | 0 |
 | 14 | Centrifuge Parachain | 1 |
-| 15 | Composable Finance | 1 |
-| 16 | Crust Polkadot Parachain | 0 |
-| 17 | Crust Shadow | 0 |
-| 18 | DAO IPCI | 0 |
+| 15 | CLV Parachain | 0 |
+| 16 | Composable Finance | 1 |
+| 17 | Crust Polkadot Parachain | 0 |
+| 18 | Crust Shadow | 0 |
 | 19 | Edgeware | 0 |
 | 20 | Energy Web X | 0 |
 | 21 | Enjin | 1 |
@@ -39,39 +39,40 @@
 | 27 | Interlay | 1 |
 | 28 | Joystream | 0 |
 | 29 | Jur | 1 |
-| 30 | Kapex | 0 |
-| 31 | Karura | 1 |
-| 32 | Khala | 1 |
-| 33 | KILT | 0 |
-| 34 | Kintsugi | 1 |
-| 35 | krest | 1 |
-| 36 | Kusama | 1 |
-| 37 | Kusama Asset Hub | 1 |
-| 38 | Kusama Bridge Hub | 1 |
-| 39 | Litentry | 0 |
-| 40 | Litmus | 0 |
-| 41 | Nodle Parachain | 0 |
-| 42 | Parallel | 1 |
-| 43 | Parallel Heiko | 1 |
-| 44 | Pendulum | 1 |
-| 45 | Phala | 1 |
-| 46 | Picasso | 1 |
-| 47 | Polkadex | 0 |
-| 48 | Polkadot | 1 |
-| 49 | Polkadot Asset Hub | 1 |
-| 50 | Polkadot Bridge Hub | 1 |
-| 51 | Polkadot Collectives | 1 |
-| 52 | Robonomics | 0 |
-| 53 | Shiden | 1 |
-| 54 | Subsocial | 0 |
-| 55 | Tinkernet | 0 |
-| 56 | Turing | 1 |
-| 57 | Vara | 1 |
-| 58 | Watr | 1 |
-| 59 | Westend | 1 |
-| 60 | XX network | 0 |
-| 61 | Zeitgeist | 1 |
-| 62 | 3DPass | 0 |
+| 30 | Kabocha | 0 |
+| 31 | Kapex | 0 |
+| 32 | Karura | 1 |
+| 33 | Khala | 1 |
+| 34 | KILT | 0 |
+| 35 | Kintsugi | 1 |
+| 36 | krest | 1 |
+| 37 | Kusama | 1 |
+| 38 | Kusama Asset Hub | 1 |
+| 39 | Kusama Bridge Hub | 1 |
+| 40 | Litentry | 0 |
+| 41 | Litmus | 0 |
+| 42 | Nodle Parachain | 0 |
+| 43 | Parallel | 1 |
+| 44 | Parallel Heiko | 1 |
+| 45 | Pendulum | 1 |
+| 46 | Phala | 1 |
+| 47 | Picasso | 1 |
+| 48 | Polkadex | 0 |
+| 49 | Polkadot | 1 |
+| 50 | Polkadot Asset Hub | 1 |
+| 51 | Polkadot Bridge Hub | 1 |
+| 52 | Polkadot Collectives | 1 |
+| 53 | Robonomics | 0 |
+| 54 | Shiden | 1 |
+| 55 | Subsocial | 0 |
+| 56 | Tinkernet | 0 |
+| 57 | Turing | 1 |
+| 58 | Vara | 1 |
+| 59 | Watr | 1 |
+| 60 | Westend | 1 |
+| 61 | XX network | 0 |
+| 62 | Zeitgeist | 1 |
+| 63 | 3DPass | 0 |
 
 ## The list of supported networks
 | -- | Network | Assets count | Explorers |
