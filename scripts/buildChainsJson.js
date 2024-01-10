@@ -52,6 +52,13 @@ multisigLines.forEach(line => {
   }
 });
 
+const regularProxies = [
+  "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+  "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+  "0xfe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
+  "0xe143f23803ac50e8f6f8e62695d1ce9e4e1d68aa36c1cd2cfd15340213f3423e"
+]
+
 async function getDataViaHttp(url, filePath) {
   try {
     const response = await axios.get(url + filePath);
@@ -108,8 +115,13 @@ function getTransformedData(rawData) {
       if (chain.options?.includes('testnet')) {
         options = ['testnet'];
       }
+
       if (multisigMap[chain.name]) {
         options = [...(options || []), 'multisig'];
+      }
+
+      if (regularProxies.some((chainId) => chainId.includes(chain.chainId))) {
+        options = [...(options || []), 'regular_proxy'];
       }
 
       const explorers = chain.explorers?.map(explorer => {
