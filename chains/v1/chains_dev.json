@@ -2324,9 +2324,6 @@
         "chainId": "0x4ac80c99289841dd946ef92765bf659a307d39189b3ce374a92b5f0415ee17a1",
         "parentId": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Calamari.svg",
-        "options": [
-            "multisig"
-        ],
         "nodes": [
             {
                 "url": "wss://calamari.systems",
@@ -3082,12 +3079,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://parallel-rpc.dwellir.com",
-                "name": "Dwellir node"
+                "url": "wss://polkadot-parallel-rpc.parallel.fi",
+                "name": "Parallel node"
             },
             {
-                "url": "wss://rpc.parallel.fi",
-                "name": "Parallel node"
+                "url": "wss://parallel-rpc.dwellir.com",
+                "name": "Dwellir node"
             }
         ],
         "assets": [
@@ -7884,7 +7881,15 @@
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/InvArch_(VARCH).svg",
                 "name": "VARCH token"
             }
-        ]
+        ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---invarch"
+                }
+            ]
+        }
     },
     {
         "name": "Crust",
@@ -7919,7 +7924,7 @@
         "explorers": [
             {
                 "name": "Subscan",
-                "extrinsic": "https://crust.subscan.io/extrinsic/extrinsic/{hash}",
+                "extrinsic": "https://crust.subscan.io/extrinsic/{hash}",
                 "account": "https://crust.subscan.io/account/{address}",
                 "multisig": "https://crust.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
             }
