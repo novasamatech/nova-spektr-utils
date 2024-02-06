@@ -120,6 +120,7 @@ export class NodeElement {
 
 export class Chain {
     chainId: string;
+    parentId?: string;
     name: string;
     specName?: string; 
     assets: Asset[];
@@ -138,7 +139,8 @@ export class Chain {
         icon: string,
         addressPrefix: number,
         externalApi?: ExternalApi,
-        explorers?: Explorer[]
+        explorers?: Explorer[],
+        parentId?: string
     ) {
         this.chainId = chainId;
         this.name = name;
@@ -148,6 +150,7 @@ export class Chain {
         this.icon = icon;
         this.addressPrefix = addressPrefix;
         this.externalApi = externalApi;
+        this.parentId = parentId;
     }
 
     static fromJSON(json: any): Chain {
