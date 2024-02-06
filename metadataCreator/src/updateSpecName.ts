@@ -37,7 +37,7 @@ async function updateSpecName(url: string) {
                 specName = BASE_RELAYCHAINS[chain.parentId];
             } else {
                 await chain.createAPI();
-                specName = chain.api?.runtimeVersion.specName.toString() ?? undefined;
+                specName = chain.api?.runtimeVersion.specName.toString();
             }
             return specName
                 ? {
