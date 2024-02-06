@@ -36,23 +36,23 @@
 | 24 | Hashed Network | 1 |
 | 25 | HydraDX | 1 |
 | 26 | Imbue | 1 |
-| 27 | Integritee Parachain | 0 |
+| 27 | Integritee Parachain | 1 |
 | 28 | Interlay | 1 |
 | 29 | Joystream | 0 |
 | 30 | Jur | 1 |
 | 31 | Kabocha | 0 |
-| 32 | Kapex | 0 |
-| 33 | Karura | 1 |
-| 34 | Khala | 1 |
-| 35 | KILT | 0 |
-| 36 | Kintsugi | 1 |
-| 37 | krest | 1 |
-| 38 | Kusama | 1 |
-| 39 | Kusama Asset Hub | 1 |
-| 40 | Kusama Bridge Hub | 1 |
-| 41 | Litentry | 0 |
-| 42 | Litmus | 0 |
-| 43 | Nodle Parachain | 0 |
+| 32 | Karura | 1 |
+| 33 | Khala | 1 |
+| 34 | KILT | 0 |
+| 35 | Kintsugi | 1 |
+| 36 | krest | 1 |
+| 37 | Kusama | 1 |
+| 38 | Kusama Asset Hub | 1 |
+| 39 | Kusama Bridge Hub | 1 |
+| 40 | Litentry | 0 |
+| 41 | Litmus | 0 |
+| 42 | Nodle Parachain | 1 |
+| 43 | Parallel | 1 |
 | 44 | Parallel Heiko | 1 |
 | 45 | Pendulum | 1 |
 | 46 | Phala | 1 |
