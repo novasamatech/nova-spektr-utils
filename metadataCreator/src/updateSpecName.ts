@@ -29,29 +29,28 @@ async function updateSpecName(url: string) {
                 )
             );
         });
-
-        const newJson = await Promise.all(
-            chains.map(async (chain, index) => {
-                let specName = BASE_RELAYCHAINS[chain.chainId] || (chain.parentId ? BASE_RELAYCHAINS[chain.parentId] : null);
-
-                if (!specName) {
-                    await chain.createAPI();
-                    specName = chain.api?.runtimeVersion.specName.toString() ?? null;
+        const newJson = await Promise.all(chains.map(async (chain, index) => {
+            let specName: string | undefined;
+            if (BASE_RELAYCHAINS.hasOwnProperty(chain.chainId)) {
+                specName = BASE_RELAYCHAINS[chain.chainId];
+            } else if (chain.parentId && BASE_RELAYCHAINS.hasOwnProperty(chain.parentId)) {
+                specName = BASE_RELAYCHAINS[chain.parentId];
+            } else {
+                await chain.createAPI();
+                specName = chain.api?.runtimeVersion.specName.toString() ?? undefined;
+            }
+            return specName
+                ? {
+                    ...Object.keys(jsonChains[index]).reduce((obj, key) => {
+                        if (key === 'name') {
+                            return { ...obj, [key]: jsonChains[index][key], specName };
+                        } else {
+                            return { ...obj, [key]: jsonChains[index][key] };
+                        }
+                    }, {}),
                 }
-
-                return specName
-                    ? {
-                        ...Object.keys(jsonChains[index]).reduce((obj, key) => {
-                            if (key === 'name') {
-                                return { ...obj, [key]: jsonChains[index][key], specName };
-                            } else {
-                                return { ...obj, [key]: jsonChains[index][key] };
-                            }
-                        }, {}),
-                    }
-                    : { ...jsonChains[index] };
-            })
-        );
+                : { ...jsonChains[index] };
+        }));
 
         // Corrected file write using string concatenation
         try {
