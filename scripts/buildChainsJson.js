@@ -107,12 +107,13 @@ function fillAssetData(chain) {
 
 function getTransformedData(rawData) {
   const filteredData = rawData.filter(chain => {
+    const isEvmChain = chain.options?.includes('ethereumBased') 
     const isSupportedEvmChain = evmChains.some((chainId) => chainId.includes(chain.chainId));
     const isExcludedChain = chain.chainId in EXCLUDED_CHAINS;
     const isPausedChain = chain.name.includes('PAUSE');
 
 
-    return isSupportedEvmChain && !isExcludedChain && !isPausedChain;
+    return (!isEvmChain || isSupportedEvmChain) && !isExcludedChain && !isPausedChain;
   });
 
   return filteredData.map(chain => {
