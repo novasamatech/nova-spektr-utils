@@ -118,22 +118,23 @@ function getTransformedData(rawData) {
 
   return filteredData.map(chain => {
       const externalApi = filterObjectByKeys(chain.externalApi, ['staking', 'history']);
-      let options;
+      const options = [];
+
       if (chain.options?.includes('testnet')) {
-        options = ['testnet'];
+        options.push('testnet');
       }
 
       if (multisigMap[chain.name]) {
-        options = [...(options || []), 'multisig'];
+        options.push('multisig');
       }
 
       if (chain.options?.includes("ethereumBased")) {
-        options = ["ethereum_based"];
+        options.push('ethereum_based');
       }
 
 
       if (regularProxies.some((chainId) => chainId.includes(chain.chainId))) {
-        options = [...(options || []), 'regular_proxy'];
+        options.push('regular_proxy');
       }
 
       const explorers = chain.explorers?.map(explorer => {
