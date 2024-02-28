@@ -19,7 +19,8 @@ const KNOWN_EXPLORERS = [
     '3DPass explorer',
     'Varascan',
     'Polkastats',
-    'Governance2 Testnet explorer'
+    'Governance2 Testnet explorer',
+    'Moonscan'
 ]
 
 
