@@ -177,6 +177,9 @@ function replaceUrl(url, type, name = undefined) {
   const changedBaseUrl = url.replace("nova-utils/master", "nova-spektr-utils/main");
   const lastPartOfUrl = url.split("/").pop()
 
+  // handling for 'xc' prefixed token names
+  const processedName = name ? name.replace(/^xc/, '') : name;
+
   switch (type) {
     case "chain":
       return changedBaseUrl.replace(
@@ -184,11 +187,12 @@ function replaceUrl(url, type, name = undefined) {
         `/icons/${SPEKTR_CONFIG_VERSION}/chains/${lastPartOfUrl}`
       );
     case "asset":
-      const tickerNames = [name, name.split("-")[0], TICKER_NAMES[name]];
+      const tickerNames = [processedName, processedName.split("-")[0], TICKER_NAMES[processedName]];
       const relativePath = findFileByTicker(tickerNames, ASSET_ICONS_DIR);
       if (!relativePath) {
-        console.error(`Can't find file for: ${name} in: ${ASSET_ICONS_DIR}`);
-        return changedBaseUrl.replace(/\/icons\/.*/, `/${TICKER_NAMES[name]}`);
+        console.error(`Can't find file for: ${processedName} in: ${ASSET_ICONS_DIR}`);
+        // Fallback to TICKER_NAMES using original name if processedName fails
+        return changedBaseUrl.replace(/\/icons\/.*/, `/${TICKER_NAMES[name] || processedName}`);
       }
 
       return changedBaseUrl.replace(/\/icons\/.*/, `/${relativePath}`);
