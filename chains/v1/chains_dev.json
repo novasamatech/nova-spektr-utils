@@ -7892,6 +7892,7 @@
     },
     {
         "name": "Moonriver",
+        "specName": "kusama",
         "addressPrefix": 1285,
         "chainId": "0x401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
         "parentId": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
@@ -8223,6 +8224,7 @@
     },
     {
         "name": "Moonbase Alpha",
+        "specName": "moonbase",
         "addressPrefix": 1287,
         "chainId": "0x91bc6e169807aaa54802737e1c504b2577d4fafedd5a02c10293b1cd60e39527",
         "parentId": "0xe1ea3ab1d46ba8f4898b6b4b9c54ffc05282d299f89e84bd0fd08067758c9443",
@@ -8272,6 +8274,7 @@
     },
     {
         "name": "Moonbeam",
+        "specName": "polkadot",
         "addressPrefix": 1284,
         "chainId": "0xfe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
         "parentId": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
@@ -8596,6 +8599,7 @@
     },
     {
         "name": "Novasama Testnet - Kusama",
+        "specName": "westend",
         "addressPrefix": 42,
         "chainId": "0xeb9f47779a9f5033c160c03511b5e4c1b2869210d7bc78a6ad7d0f28897455a7",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Governance2_Testnet.svg",
