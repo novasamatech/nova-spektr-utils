@@ -35,5 +35,7 @@
   "LP iBTC-USDT":  "iBTC-USDT",
   "LP DOT-iBTC": "DOT-iBTC",
   "LP INTR-USDT":  "INTR-USDT",
-  "DEV":  "MOVR"
+  "DEV":  "MOVR",
+  "RMRK (old)": "RMRK",
+  "RLMC": "PLMC"
 }

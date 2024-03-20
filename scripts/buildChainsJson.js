@@ -37,7 +37,7 @@ const TYPE_EXTRAS_REPLACEMENTS = {
 const STAKING_ALLOWED_ARRAY = ['Polkadot', 'Kusama', 'Westend', 'Polkadex', 'Ternoa', 'Novasama Testnet - Kusama']
 const PURE_PROXY_ARRAY = ['Polkadot', 'Kusama', 'Westend', 'Moonbeam', 'Moonriver', 'Novasama Testnet - Kusama']
 
-const DEFAULT_ASSETS = ['SHIBATALES', 'DEV', 'SIRI', 'PILT', 'cDOT-6/13', 'cDOT-7/14', 'cDOT-8/15', 'cDOT-9/16', 'cDOT-10/17', 'TZERO', 'UNIT', 'Unit', 'tEDG','JOE', 'HOP'];
+const DEFAULT_ASSETS = ['SHIBATALES', 'DEV', 'SIRI', 'PILT', 'cDOT-6/13', 'cDOT-7/14', 'cDOT-8/15', 'cDOT-9/16', 'cDOT-10/17', 'TZERO', 'UNIT', 'Unit', 'tEDG','JOE', 'HOP', 'PAS'];
 
 const readmeContent = fs.readFileSync('chains/v1/README.md', 'utf8');
 const multisigSection = readmeContent.split('# List of Networks where we are support Multisig pallet')[1].split('## The list of supported networks')[0];

@@ -198,5 +198,20 @@
   "xcOTP": "xcOTP",
   "xcvDOT": "xcvDOT",
   "xcvFIL": "xcvFIL",
-  "xcvGLMR": "xcvGLMR"
+  "xcvGLMR": "xcvGLMR",
+  "RMRK (old)": "Remark",
+  "xcRMRK (old)": "Remark",
+  "DED": "DED",
+  "4-Pool": "4 Pool token",
+  "2-Pool": "2 Pool token",
+  "2-Pool-Stbl": "2 Pool-Stbl token",
+  "USDT-Moonbeam": "USDT-Moonbeam",
+  "NEURO": "NEURO",
+  "vsDOT": "vsDOT",
+  "vMANTA": "vMANTA",
+  "xcMANTA": "xcMANTA",
+  "xcUSDC": "xcUSDC",
+  "PAS": "PAS",
+  "RLMC": "RLMC",
+  "NUUM": "NUUM"
 }
