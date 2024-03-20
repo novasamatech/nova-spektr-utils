@@ -55,8 +55,14 @@ multisigLines.forEach(line => {
 const regularProxies = [
   "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3", // Polkadot
   "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe", // Kusama
-  "0xfe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d", // Moonbeam (not supported now)
+  "0xfe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d", // Moonbeam
   "0xe143f23803ac50e8f6f8e62695d1ce9e4e1d68aa36c1cd2cfd15340213f3423e" // Westend
+]
+
+const evmChains = [
+  "0xfe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d", // Moonbeam
+  "0x401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b", // Moonriver
+  "0x91bc6e169807aaa54802737e1c504b2577d4fafedd5a02c10293b1cd60e39527", // Moonbase alpha
 ]
 
 async function getDataViaHttp(url, filePath) {
@@ -101,27 +107,34 @@ function fillAssetData(chain) {
 
 function getTransformedData(rawData) {
   const filteredData = rawData.filter(chain => {
-    const isEthereumBased = chain.options?.includes('ethereumBased');
+    const isEvmChain = chain.options?.includes('ethereumBased') 
+    const isSupportedEvmChain = evmChains.some((chainId) => chainId.includes(chain.chainId));
     const isExcludedChain = chain.chainId in EXCLUDED_CHAINS;
     const isPausedChain = chain.name.includes('PAUSE');
 
 
-    return !isEthereumBased && !isExcludedChain && !isPausedChain;
+    return (!isEvmChain || isSupportedEvmChain) && !isExcludedChain && !isPausedChain;
   });
 
   return filteredData.map(chain => {
       const externalApi = filterObjectByKeys(chain.externalApi, ['staking', 'history']);
-      let options;
+      const options = [];
+
       if (chain.options?.includes('testnet')) {
-        options = ['testnet'];
+        options.push('testnet');
       }
 
       if (multisigMap[chain.name]) {
-        options = [...(options || []), 'multisig'];
+        options.push('multisig');
       }
 
+      if (chain.options?.includes("ethereumBased")) {
+        options.push('ethereum_based');
+      }
+
+
       if (regularProxies.some((chainId) => chainId.includes(chain.chainId))) {
-        options = [...(options || []), 'regular_proxy'];
+        options.push('regular_proxy');
       }
 
       const explorers = chain.explorers?.map(explorer => {
@@ -164,6 +177,9 @@ function replaceUrl(url, type, name = undefined) {
   const changedBaseUrl = url.replace("nova-utils/master", "nova-spektr-utils/main");
   const lastPartOfUrl = url.split("/").pop()
 
+  // handling for 'xc' prefixed token names
+  const processedName = name ? name.replace(/^xc/, '') : name;
+
   switch (type) {
     case "chain":
       return changedBaseUrl.replace(
@@ -171,11 +187,12 @@ function replaceUrl(url, type, name = undefined) {
         `/icons/${SPEKTR_CONFIG_VERSION}/chains/${lastPartOfUrl}`
       );
     case "asset":
-      const tickerNames = [name, name.split("-")[0], TICKER_NAMES[name]];
+      const tickerNames = [processedName, processedName.split("-")[0], TICKER_NAMES[processedName]];
       const relativePath = findFileByTicker(tickerNames, ASSET_ICONS_DIR);
       if (!relativePath) {
-        console.error(`Can't find file for: ${name} in: ${ASSET_ICONS_DIR}`);
-        return changedBaseUrl.replace(/\/icons\/.*/, `/${TICKER_NAMES[name]}`);
+        console.error(`Can't find file for: ${processedName} in: ${ASSET_ICONS_DIR}`);
+        // Fallback to TICKER_NAMES using original name if processedName fails
+        return changedBaseUrl.replace(/\/icons\/.*/, `/${TICKER_NAMES[name] || processedName}`);
       }
 
       return changedBaseUrl.replace(/\/icons\/.*/, `/${relativePath}`);
