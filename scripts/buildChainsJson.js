@@ -35,6 +35,7 @@ const TYPE_EXTRAS_REPLACEMENTS = {
     '5d3c298622d5634ed019bf61ea4b71655030015bde9beb0d6a24743714462c86':   'SpacewalkPrimitivesCurrencyId'
 }
 const STAKING_ALLOWED_ARRAY = ['Polkadot', 'Kusama', 'Westend', 'Polkadex', 'Ternoa', 'Novasama Testnet - Kusama']
+const PURE_PROXY_ARRAY = ['Polkadot', 'Kusama', 'Westend', 'Moonbeam', 'Moonriver', 'Novasama Testnet - Kusama']
 
 const DEFAULT_ASSETS = ['SHIBATALES', 'DEV', 'SIRI', 'PILT', 'cDOT-6/13', 'cDOT-7/14', 'cDOT-8/15', 'cDOT-9/16', 'cDOT-10/17', 'TZERO', 'UNIT', 'Unit', 'tEDG','JOE', 'HOP'];
 
@@ -132,6 +133,9 @@ function getTransformedData(rawData) {
         options.push('ethereum_based');
       }
 
+      if (PURE_PROXY_ARRAY.includes(chain.name)) {
+        options.push('pure_proxy');
+      }
 
       if (regularProxies.some((chainId) => chainId.includes(chain.chainId))) {
         options.push('regular_proxy');
