@@ -65,7 +65,7 @@
     },
     {
         "name": "Novasama Testnet - Kusama",
-        "chainId": "0xfe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
+        "chainId": "0xeb9f47779a9f5033c160c03511b5e4c1b2869210d7bc78a6ad7d0f28897455a7",
         "options": [
             "regular_proxy",
             "pure_proxy"

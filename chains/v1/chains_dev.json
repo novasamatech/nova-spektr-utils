@@ -7,8 +7,8 @@
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Polkadot.svg",
         "options": [
             "multisig",
-            "pure_proxy",
-            "regular_proxy"
+            "regular_proxy",
+            "pure_proxy"
         ],
         "nodes": [
             {
@@ -85,6 +85,12 @@
                     "type": "subquery",
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-polkadot"
                 }
+            ],
+            "proxy": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/novasama-polkadot-proxy"
+                }
             ]
         }
     },
@@ -96,8 +102,8 @@
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Kusama.svg",
         "options": [
             "multisig",
-            "pure_proxy",
-            "regular_proxy"
+            "regular_proxy",
+            "pure_proxy"
         ],
         "nodes": [
             {
@@ -174,6 +180,12 @@
                     "type": "subquery",
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kusama"
                 }
+            ],
+            "proxy": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/novasama-kusama-proxy"
+                }
             ]
         }
     },
@@ -186,8 +198,8 @@
         "options": [
             "testnet",
             "multisig",
-            "pure_proxy",
-            "regular_proxy"
+            "regular_proxy",
+            "pure_proxy"
         ],
         "nodes": [
             {
@@ -240,6 +252,12 @@
                 {
                     "type": "subquery",
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-westend"
+                }
+            ],
+            "proxy": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/novasama-westend-proxy"
                 }
             ]
         }
@@ -8145,6 +8163,7 @@
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Moonriver.svg",
         "options": [
             "ethereum_based",
+            "regular_proxy",
             "pure_proxy"
         ],
         "nodes": [
@@ -8533,8 +8552,8 @@
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Moonbeam.svg",
         "options": [
             "ethereum_based",
-            "pure_proxy",
-            "regular_proxy"
+            "regular_proxy",
+            "pure_proxy"
         ],
         "nodes": [
             {
@@ -8887,6 +8906,7 @@
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Governance2_Testnet.svg",
         "options": [
             "testnet",
+            "regular_proxy",
             "pure_proxy"
         ],
         "nodes": [
