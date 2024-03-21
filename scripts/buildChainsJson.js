@@ -112,7 +112,7 @@ function getTransformedData(rawData) {
 
   return filteredData.map(chain => {
       let externalApi = filterObjectByKeys(chain.externalApi, ['staking', 'history']);
-      let options = [];
+      const options = [];
 
       if (chain.options?.includes('testnet')) {
         options.push('testnet');
@@ -146,10 +146,7 @@ function getTransformedData(rawData) {
       }
 
       if (proxyData?.externalApi) {
-        externalApi = {
-          ...externalApi,
-          ...proxyData.externalApi
-        }
+        externalApi = { ...externalApi, ...proxyData.externalApi }
       }
 
 
