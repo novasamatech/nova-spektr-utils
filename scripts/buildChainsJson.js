@@ -5,6 +5,7 @@ const axios = require('axios');
 
 const TOKEN_NAMES = require('./data/assetsNameMap.json');
 const TICKER_NAMES = require('./data/assetTickerMap.json');
+const PROXY_LIST = require('./data/proxyList.json');
 
 const NOVA_CONFIG_VERSION = process.env.NOVA_CONFIG_VERSION;
 const SPEKTR_CONFIG_VERSION = process.env.SPEKTR_CONFIG_VERSION;
@@ -36,7 +37,7 @@ const TYPE_EXTRAS_REPLACEMENTS = {
 }
 const STAKING_ALLOWED_ARRAY = ['Polkadot', 'Kusama', 'Westend', 'Polkadex', 'Ternoa', 'Novasama Testnet - Kusama']
 
-const DEFAULT_ASSETS = ['SHIBATALES', 'DEV', 'SIRI', 'PILT', 'cDOT-6/13', 'cDOT-7/14', 'cDOT-8/15', 'cDOT-9/16', 'cDOT-10/17', 'TZERO', 'UNIT', 'Unit', 'tEDG','JOE', 'HOP'];
+const DEFAULT_ASSETS = ['SHIBATALES', 'DEV', 'SIRI', 'PILT', 'cDOT-6/13', 'cDOT-7/14', 'cDOT-8/15', 'cDOT-9/16', 'cDOT-10/17', 'TZERO', 'UNIT', 'Unit', 'tEDG','JOE', 'HOP', 'PAS'];
 
 const readmeContent = fs.readFileSync('chains/v1/README.md', 'utf8');
 const multisigSection = readmeContent.split('# List of Networks where we are support Multisig pallet')[1].split('## The list of supported networks')[0];
@@ -51,13 +52,6 @@ multisigLines.forEach(line => {
     multisigMap[network] = multisigVersion;
   }
 });
-
-const regularProxies = [
-  "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3", // Polkadot
-  "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe", // Kusama
-  "0xfe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d", // Moonbeam
-  "0xe143f23803ac50e8f6f8e62695d1ce9e4e1d68aa36c1cd2cfd15340213f3423e" // Westend
-]
 
 const evmChains = [
   "0xfe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d", // Moonbeam
@@ -117,7 +111,7 @@ function getTransformedData(rawData) {
   });
 
   return filteredData.map(chain => {
-      const externalApi = filterObjectByKeys(chain.externalApi, ['staking', 'history']);
+      let externalApi = filterObjectByKeys(chain.externalApi, ['staking', 'history']);
       const options = [];
 
       if (chain.options?.includes('testnet')) {
@@ -132,11 +126,6 @@ function getTransformedData(rawData) {
         options.push('ethereum_based');
       }
 
-
-      if (regularProxies.some((chainId) => chainId.includes(chain.chainId))) {
-        options.push('regular_proxy');
-      }
-
       const explorers = chain.explorers?.map(explorer => {
         if (explorer.name === 'Subscan') {
           const accountParam = explorer.account;
@@ -149,6 +138,17 @@ function getTransformedData(rawData) {
 
         return explorer;
       });
+
+      const proxyData = PROXY_LIST.find(p => p.chainId.includes(chain.chainId));
+
+      if (proxyData) {
+        options.push(...proxyData.options)
+      }
+
+      if (proxyData?.externalApi) {
+        externalApi = { ...externalApi, ...proxyData.externalApi }
+      }
+
 
       const assets = fillAssetData(chain)
       const nodes = chain.nodes.filter(node => !node.url.includes('{'));
