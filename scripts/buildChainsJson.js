@@ -142,7 +142,7 @@ function getTransformedData(rawData) {
       const proxyData = PROXY_LIST.find(p => p.chainId.includes(chain.chainId));
 
       if (proxyData) {
-        options = options.concat(proxyData.options)
+        options.push(...proxyData.options)
       }
 
       if (proxyData?.externalApi) {
