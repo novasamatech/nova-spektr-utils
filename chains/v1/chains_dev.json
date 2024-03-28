@@ -2551,7 +2551,9 @@
         "chainId": "0xf22b7850cdd5a7657bbfd90ac86441275bbc57ace3d2698a740c7b0ec4de5ec3",
         "parentId": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Bit.Country_Pioneer.svg",
-        "options": [],
+        "options": [
+            "multisig"
+        ],
         "nodes": [
             {
                 "url": "wss://pioneer-rpc-1.bit.country/wss",
@@ -3486,6 +3488,17 @@
                     "assetId": "30"
                 },
                 "name": "DED"
+            },
+            {
+                "assetId": 4,
+                "symbol": "PINK",
+                "precision": 10,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/PINK",
+                "typeExtras": {
+                    "assetId": "23"
+                },
+                "name": "Should be included in scripts/data/assetsNameMap"
             }
         ],
         "explorers": [
@@ -4506,6 +4519,34 @@
                     "transfersEnabled": true
                 },
                 "name": "USDT-Moonbeam"
+            },
+            {
+                "assetId": 29,
+                "symbol": "DED",
+                "precision": 10,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/DED.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x53420f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                },
+                "name": "DED"
+            },
+            {
+                "assetId": 30,
+                "symbol": "PINK",
+                "precision": 10,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/PINK",
+                "typeExtras": {
+                    "currencyIdScale": "0x55420f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                },
+                "name": "Should be included in scripts/data/assetsNameMap"
             }
         ],
         "explorers": [
@@ -7731,7 +7772,9 @@
                 "multisig": "https://manta.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
             }
         ],
-        "options": [],
+        "options": [
+            "multisig"
+        ],
         "externalApi": {
             "history": [
                 {
@@ -8162,6 +8205,7 @@
         "parentId": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Moonriver.svg",
         "options": [
+            "multisig",
             "ethereum_based",
             "regular_proxy",
             "pure_proxy"
@@ -8551,6 +8595,7 @@
         "parentId": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Moonbeam.svg",
         "options": [
+            "multisig",
             "ethereum_based",
             "regular_proxy",
             "pure_proxy"
