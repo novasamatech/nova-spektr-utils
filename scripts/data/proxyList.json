@@ -70,6 +70,21 @@
             "regular_proxy",
             "pure_proxy"
         ]
+    },
+    {
+        "name": "HydraDX",
+        "chainId": "0xafdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
+        "options": [
+            "regular_proxy",
+            "pure_proxy"
+        ],
+        "externalApi": {
+            "proxy": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/proxy-hydradx"
+                }
+            ]
+        }
     }
-
 ]
