@@ -34,7 +34,7 @@
 | 22 | Energy Web X | 0 |
 | 23 | Enjin Matrix | 1 |
 | 24 | Enjin Relay | 0 |
-| 25 | Frequency | 0 |
+| 25 | Frequency | 1 |
 | 26 | Hashed Network | 1 |
 | 27 | HydraDX | 1 |
 | 28 | Imbue | 1 |
