@@ -498,7 +498,17 @@
                 }
             },
             {
-                "chainId": "c710a5f16adc17bcd212cff0aedcbf1c1212a043cdc0fb2dcba861efe5305b01",
+                "chainId": "0x401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
+                "name": "Moonriver",
+                "assetId": 2,
+                "assetSymbol": "xcKSM",
+                "type": "statemine",
+                "typeExtras": {
+                    "assetId": "42259045809535163221576417993425387648"
+                }
+            },
+            {
+                "chainId": "0xc710a5f16adc17bcd212cff0aedcbf1c1212a043cdc0fb2dcba861efe5305b01",
                 "name": "Kreivo",
                 "assetId": 0,
                 "assetSymbol": "KSM"
@@ -1324,20 +1334,20 @@
                 }
             },
             {
-                "chainId": "bf88efe70e9e0e916416e8bed61f2b45717f517d7f3523e33c7b001e5ffcbc72",
+                "chainId": "0xbf88efe70e9e0e916416e8bed61f2b45717f517d7f3523e33c7b001e5ffcbc72",
                 "name": "Interlay",
                 "assetId": 14,
                 "assetSymbol": "BNC",
                 "type": "orml",
                 "typeExtras": {
                     "currencyIdScale": "0x010b000000",
-                    "currencyIdType": "interbtc_primitives.CurrencyId",
+                    "currencyIdType": "InterbtcPrimitivesCurrencyId",
                     "existentialDeposit": "0",
                     "transfersEnabled": false
                 }
             },
             {
-                "chainId": "262e1b2ad728475fd6fe88e62d34c200abe6fd693931ddad144059b1eb884e5b",
+                "chainId": "0x262e1b2ad728475fd6fe88e62d34c200abe6fd693931ddad144059b1eb884e5b",
                 "name": "Bifrost Polkadot",
                 "assetId": 0,
                 "assetSymbol": "BNC"
@@ -3199,7 +3209,7 @@
                 "assetSymbol": "KILT"
             },
             {
-                "chainId": "afdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
+                "chainId": "0xafdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
                 "name": "HydraDX",
                 "assetId": 34,
                 "assetSymbol": "KILT",
@@ -3346,11 +3356,37 @@
                 }
             },
             {
-                "chainId": "cceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf",
+                "chainId": "0xcceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf",
                 "name": "Amplitude",
                 "assetId": 3,
                 "assetSymbol": "USDC.s",
                 "type": "orml",
+                "typeExtras": {
+                    "currencyIdScale": "0x0201555344433b9911380efe988ba0a8900eb1cfe44f366f7dbe946bed077240f7f624df15c5",
+                    "currencyIdType": "SpacewalkPrimitivesCurrencyId",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "chainId": "0x5d3c298622d5634ed019bf61ea4b71655030015bde9beb0d6a24743714462c86",
+                "name": "Pendulum",
+                "assetId": 3,
+                "assetSymbol": "USDC.s",
+                "type": "orml",
+                "typeExtras": {
+                    "currencyIdScale": "0x0201555344433b9911380efe988ba0a8900eb1cfe44f366f7dbe946bed077240f7f624df15c5",
+                    "currencyIdType": "SpacewalkPrimitivesCurrencyId",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "chainId": "0xfe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
+                "name": "Moonbeam",
+                "assetId": 23,
+                "assetSymbol": "xcUSDC",
+                "type": "statemine",
                 "typeExtras": {
                     "currencyIdScale": "0x0201555344433b9911380efe988ba0a8900eb1cfe44f366f7dbe946bed077240f7f624df15c5",
                     "currencyIdType": "spacewalk_primitives.CurrencyId",
@@ -3594,7 +3630,7 @@
                 }
             },
             {
-                "chainId": "3920bcb4960a1eef5580cd5367ff3f430eef052774f78468852f7b9cb39f8a3c",
+                "chainId": "0x3920bcb4960a1eef5580cd5367ff3f430eef052774f78468852f7b9cb39f8a3c",
                 "name": "Polkadex",
                 "assetId": 8,
                 "assetSymbol": "GLMR",
@@ -3604,7 +3640,7 @@
                 }
             },
             {
-                "chainId": "262e1b2ad728475fd6fe88e62d34c200abe6fd693931ddad144059b1eb884e5b",
+                "chainId": "0x262e1b2ad728475fd6fe88e62d34c200abe6fd693931ddad144059b1eb884e5b",
                 "name": "Bifrost Polkadot",
                 "assetId": 1,
                 "assetSymbol": "GLMR",
@@ -3617,30 +3653,36 @@
                 }
             },
             {
-                "chainId": "cceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf",
+                "chainId": "0xcceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf",
                 "name": "Amplitude",
                 "assetId": 10,
                 "assetSymbol": "GLMR",
                 "type": "orml",
                 "typeExtras": {
                     "currencyIdScale": "0x0106",
-                    "currencyIdType": "spacewalk_primitives.CurrencyId",
+                    "currencyIdType": "SpacewalkPrimitivesCurrencyId",
                     "existentialDeposit": "1000",
                     "transfersEnabled": true
                 }
             },
             {
-                "chainId": "5d3c298622d5634ed019bf61ea4b71655030015bde9beb0d6a24743714462c86",
+                "chainId": "0x5d3c298622d5634ed019bf61ea4b71655030015bde9beb0d6a24743714462c86",
                 "name": "Pendulum",
                 "assetId": 10,
                 "assetSymbol": "GLMR",
                 "type": "orml",
                 "typeExtras": {
                     "currencyIdScale": "0x0106",
-                    "currencyIdType": "spacewalk_primitives.CurrencyId",
+                    "currencyIdType": "SpacewalkPrimitivesCurrencyId",
                     "existentialDeposit": "1000",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "chainId": "0xfe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
+                "name": "Moonbeam",
+                "assetId": 0,
+                "assetSymbol": "GLMR"
             }
         ]
     },
@@ -4009,6 +4051,61 @@
         ]
     },
     {
+        "name": "Should be included in scripts/data/assetsNameMap",
+        "precision": 10,
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/PINK",
+        "symbol": "PINK",
+        "chains": [
+            {
+                "chainId": "0xfc41b9bd8ef8fe53d58c7ea67c794c7ec9a73daf05e6d54b14ff6342c99ba64c",
+                "name": "Acala",
+                "assetId": 15,
+                "assetSymbol": "PINK",
+                "type": "orml",
+                "typeExtras": {
+                    "currencyIdScale": "0x050d00",
+                    "currencyIdType": "AcalaPrimitivesCurrencyCurrencyId",
+                    "existentialDeposit": "1000000000",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "chainId": "0x68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+                "name": "Polkadot Asset Hub",
+                "assetId": 4,
+                "assetSymbol": "PINK",
+                "type": "statemine",
+                "typeExtras": {
+                    "assetId": "23"
+                }
+            },
+            {
+                "chainId": "0xafdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
+                "name": "HydraDX",
+                "assetId": 30,
+                "assetSymbol": "PINK",
+                "type": "orml",
+                "typeExtras": {
+                    "currencyIdScale": "0x55420f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "chainId": "0x3920bcb4960a1eef5580cd5367ff3f430eef052774f78468852f7b9cb39f8a3c",
+                "name": "Polkadex",
+                "assetId": 7,
+                "assetSymbol": "PINK",
+                "type": "statemine",
+                "typeExtras": {
+                    "assetId": "339306133874233608313826294843504252047"
+                }
+            }
+        ]
+    },
+    {
+        "name": "UNIQUE",
         "precision": 18,
         "priceId": "raresama",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/POOP.svg",
@@ -4482,7 +4579,7 @@
                 }
             },
             {
-                "chainId": "afdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
+                "chainId": "0xafdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
                 "name": "HydraDX",
                 "assetId": 29,
                 "assetSymbol": "DED",
@@ -4495,13 +4592,137 @@
                 }
             },
             {
-                "chainId": "3920bcb4960a1eef5580cd5367ff3f430eef052774f78468852f7b9cb39f8a3c",
+                "chainId": "0x3920bcb4960a1eef5580cd5367ff3f430eef052774f78468852f7b9cb39f8a3c",
                 "name": "Polkadex",
                 "assetId": 6,
                 "assetSymbol": "DED",
                 "type": "statemine",
                 "typeExtras": {
                     "assetId": "119367686984583275840673742485354142551"
+                }
+            }
+        ]
+    },
+    {
+        "name": "Should be included in scripts/data/assetsNameMap",
+        "precision": 4,
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/DOTA",
+        "symbol": "DOTA",
+        "chains": [
+            {
+                "chainId": "0x68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+                "name": "Polkadot Asset Hub",
+                "assetId": 5,
+                "assetSymbol": "DOTA",
+                "type": "statemine",
+                "typeExtras": {
+                    "assetId": "18"
+                }
+            },
+            {
+                "chainId": "0xafdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
+                "name": "HydraDX",
+                "assetId": 32,
+                "assetSymbol": "DOTA",
+                "type": "orml",
+                "typeExtras": {
+                    "currencyIdScale": "0x66420f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                }
+            }
+        ]
+    },
+    {
+        "name": "Should be included in scripts/data/assetsNameMap",
+        "precision": 10,
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/STINK",
+        "symbol": "STINK",
+        "chains": [
+            {
+                "chainId": "0x68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+                "name": "Polkadot Asset Hub",
+                "assetId": 6,
+                "assetSymbol": "STINK",
+                "type": "statemine",
+                "typeExtras": {
+                    "assetId": "42069"
+                }
+            },
+            {
+                "chainId": "0xafdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
+                "name": "HydraDX",
+                "assetId": 31,
+                "assetSymbol": "STINK",
+                "type": "orml",
+                "typeExtras": {
+                    "currencyIdScale": "0x62420f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                }
+            }
+        ]
+    },
+    {
+        "name": "Should be included in scripts/data/assetsNameMap",
+        "precision": 20,
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/GABE",
+        "symbol": "GABE",
+        "chains": [
+            {
+                "chainId": "0x68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+                "name": "Polkadot Asset Hub",
+                "assetId": 7,
+                "assetSymbol": "GABE",
+                "type": "statemine",
+                "typeExtras": {
+                    "assetId": "69420"
+                }
+            },
+            {
+                "chainId": "0xafdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
+                "name": "HydraDX",
+                "assetId": 33,
+                "assetSymbol": "GABE",
+                "type": "orml",
+                "typeExtras": {
+                    "currencyIdScale": "0x7e420f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                }
+            }
+        ]
+    },
+    {
+        "name": "Should be included in scripts/data/assetsNameMap",
+        "precision": 10,
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/WUD",
+        "symbol": "WUD",
+        "chains": [
+            {
+                "chainId": "0x68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+                "name": "Polkadot Asset Hub",
+                "assetId": 8,
+                "assetSymbol": "WUD",
+                "type": "statemine",
+                "typeExtras": {
+                    "assetId": "31337"
+                }
+            },
+            {
+                "chainId": "0xafdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
+                "name": "HydraDX",
+                "assetId": 35,
+                "assetSymbol": "WUD",
+                "type": "orml",
+                "typeExtras": {
+                    "currencyIdScale": "0x95420f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
                 }
             }
         ]
@@ -5436,33 +5657,34 @@
         ]
     },
     {
+        "name": "Should be included in scripts/data/assetsNameMap",
         "precision": 12,
         "priceId": "spacewalk-xlm",
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/XLM.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/XLM.s",
         "symbol": "XLM.s",
         "chains": [
             {
-                "chainId": "cceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf",
+                "chainId": "0xcceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf",
                 "name": "Amplitude",
                 "assetId": 4,
                 "assetSymbol": "XLM.s",
                 "type": "orml",
                 "typeExtras": {
                     "currencyIdScale": "0x0200",
-                    "currencyIdType": "spacewalk_primitives.CurrencyId",
+                    "currencyIdType": "SpacewalkPrimitivesCurrencyId",
                     "existentialDeposit": "1000",
                     "transfersEnabled": true
                 }
             },
             {
-                "chainId": "5d3c298622d5634ed019bf61ea4b71655030015bde9beb0d6a24743714462c86",
+                "chainId": "0x5d3c298622d5634ed019bf61ea4b71655030015bde9beb0d6a24743714462c86",
                 "name": "Pendulum",
                 "assetId": 4,
                 "assetSymbol": "XLM.s",
                 "type": "orml",
                 "typeExtras": {
                     "currencyIdScale": "0x0200",
-                    "currencyIdType": "spacewalk_primitives.CurrencyId",
+                    "currencyIdType": "SpacewalkPrimitivesCurrencyId",
                     "existentialDeposit": "1000",
                     "transfersEnabled": true
                 }
@@ -5470,33 +5692,34 @@
         ]
     },
     {
+        "name": "Should be included in scripts/data/assetsNameMap",
         "precision": 12,
         "priceId": "spacewalk-tzs",
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/TZS.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/TZS.s",
         "symbol": "TZS.s",
         "chains": [
             {
-                "chainId": "cceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf",
+                "chainId": "0xcceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf",
                 "name": "Amplitude",
                 "assetId": 5,
                 "assetSymbol": "TZS.s",
                 "type": "orml",
                 "typeExtras": {
                     "currencyIdScale": "0x0201545a530034c94b2a4ba9e8b57b22547dcbb30f443c4cb02da3829a89aa1bd4780e4466ba",
-                    "currencyIdType": "spacewalk_primitives.CurrencyId",
+                    "currencyIdType": "SpacewalkPrimitivesCurrencyId",
                     "existentialDeposit": "1000",
                     "transfersEnabled": true
                 }
             },
             {
-                "chainId": "5d3c298622d5634ed019bf61ea4b71655030015bde9beb0d6a24743714462c86",
+                "chainId": "0x5d3c298622d5634ed019bf61ea4b71655030015bde9beb0d6a24743714462c86",
                 "name": "Pendulum",
                 "assetId": 5,
                 "assetSymbol": "TZS.s",
                 "type": "orml",
                 "typeExtras": {
                     "currencyIdScale": "0x0201545a530034c94b2a4ba9e8b57b22547dcbb30f443c4cb02da3829a89aa1bd4780e4466ba",
-                    "currencyIdType": "spacewalk_primitives.CurrencyId",
+                    "currencyIdType": "SpacewalkPrimitivesCurrencyId",
                     "existentialDeposit": "1000",
                     "transfersEnabled": true
                 }
@@ -5504,33 +5727,34 @@
         ]
     },
     {
+        "name": "Should be included in scripts/data/assetsNameMap",
         "precision": 12,
         "priceId": "spacewalk-brl",
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/BRL.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/BRL.s",
         "symbol": "BRL.s",
         "chains": [
             {
-                "chainId": "cceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf",
+                "chainId": "0xcceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf",
                 "name": "Amplitude",
                 "assetId": 6,
                 "assetSymbol": "BRL.s",
                 "type": "orml",
                 "typeExtras": {
                     "currencyIdScale": "0x020142524c00eaac68d4d0e37b4c24c2536916e830735f032d0d6b2a1c8fca3bc5a25e083e3a",
-                    "currencyIdType": "spacewalk_primitives.CurrencyId",
+                    "currencyIdType": "SpacewalkPrimitivesCurrencyId",
                     "existentialDeposit": "1000",
                     "transfersEnabled": true
                 }
             },
             {
-                "chainId": "5d3c298622d5634ed019bf61ea4b71655030015bde9beb0d6a24743714462c86",
+                "chainId": "0x5d3c298622d5634ed019bf61ea4b71655030015bde9beb0d6a24743714462c86",
                 "name": "Pendulum",
                 "assetId": 6,
                 "assetSymbol": "BRL.s",
                 "type": "orml",
                 "typeExtras": {
                     "currencyIdScale": "0x020142524c00eaac68d4d0e37b4c24c2536916e830735f032d0d6b2a1c8fca3bc5a25e083e3a",
-                    "currencyIdType": "spacewalk_primitives.CurrencyId",
+                    "currencyIdType": "SpacewalkPrimitivesCurrencyId",
                     "existentialDeposit": "1000",
                     "transfersEnabled": true
                 }
@@ -5538,33 +5762,34 @@
         ]
     },
     {
+        "name": "Should be included in scripts/data/assetsNameMap",
         "precision": 12,
         "priceId": "spacewalk-audd",
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/AUDD.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/AUDD.s",
         "symbol": "AUDD.s",
         "chains": [
             {
-                "chainId": "cceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf",
+                "chainId": "0xcceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf",
                 "name": "Amplitude",
                 "assetId": 7,
                 "assetSymbol": "AUDD.s",
                 "type": "orml",
                 "typeExtras": {
                     "currencyIdScale": "0x020141554444c5fbe9979e240552860221f4fe2f2219f35e40458b8b58fc32da520a154a561d",
-                    "currencyIdType": "spacewalk_primitives.CurrencyId",
+                    "currencyIdType": "SpacewalkPrimitivesCurrencyId",
                     "existentialDeposit": "1000",
                     "transfersEnabled": true
                 }
             },
             {
-                "chainId": "5d3c298622d5634ed019bf61ea4b71655030015bde9beb0d6a24743714462c86",
+                "chainId": "0x5d3c298622d5634ed019bf61ea4b71655030015bde9beb0d6a24743714462c86",
                 "name": "Pendulum",
                 "assetId": 7,
                 "assetSymbol": "AUDD.s",
                 "type": "orml",
                 "typeExtras": {
                     "currencyIdScale": "0x020141554444c5fbe9979e240552860221f4fe2f2219f35e40458b8b58fc32da520a154a561d",
-                    "currencyIdType": "spacewalk_primitives.CurrencyId",
+                    "currencyIdType": "SpacewalkPrimitivesCurrencyId",
                     "existentialDeposit": "1000",
                     "transfersEnabled": true
                 }
@@ -5572,33 +5797,34 @@
         ]
     },
     {
+        "name": "Should be included in scripts/data/assetsNameMap",
         "precision": 12,
         "priceId": "spacewalk-eurc",
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/EUR.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/EURC.s",
         "symbol": "EURC.s",
         "chains": [
             {
-                "chainId": "cceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf",
+                "chainId": "0xcceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf",
                 "name": "Amplitude",
                 "assetId": 8,
                 "assetSymbol": "EURC.s",
                 "type": "orml",
                 "typeExtras": {
                     "currencyIdScale": "0x0201455552432112ee863867e4e219fe254c0918b00bc9ea400775bfc3ab4430971ce505877c",
-                    "currencyIdType": "spacewalk_primitives.CurrencyId",
+                    "currencyIdType": "SpacewalkPrimitivesCurrencyId",
                     "existentialDeposit": "1000",
                     "transfersEnabled": true
                 }
             },
             {
-                "chainId": "5d3c298622d5634ed019bf61ea4b71655030015bde9beb0d6a24743714462c86",
+                "chainId": "0x5d3c298622d5634ed019bf61ea4b71655030015bde9beb0d6a24743714462c86",
                 "name": "Pendulum",
                 "assetId": 8,
                 "assetSymbol": "EURC.s",
                 "type": "orml",
                 "typeExtras": {
                     "currencyIdScale": "0x0201455552432112ee863867e4e219fe254c0918b00bc9ea400775bfc3ab4430971ce505877c",
-                    "currencyIdType": "spacewalk_primitives.CurrencyId",
+                    "currencyIdType": "SpacewalkPrimitivesCurrencyId",
                     "existentialDeposit": "1000",
                     "transfersEnabled": true
                 }
@@ -5606,33 +5832,34 @@
         ]
     },
     {
+        "name": "Should be included in scripts/data/assetsNameMap",
         "precision": 12,
         "priceId": "spacewalk-ngnc",
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/NGN.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/NGNC.s",
         "symbol": "NGNC.s",
         "chains": [
             {
-                "chainId": "cceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf",
+                "chainId": "0xcceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf",
                 "name": "Amplitude",
                 "assetId": 9,
                 "assetSymbol": "NGNC.s",
                 "type": "orml",
                 "typeExtras": {
                     "currencyIdScale": "0x02014e474e43241afadf31883f79972545fc64f3b5b0c95704c6fb4917474e42b0057841606b",
-                    "currencyIdType": "spacewalk_primitives.CurrencyId",
+                    "currencyIdType": "SpacewalkPrimitivesCurrencyId",
                     "existentialDeposit": "1000",
                     "transfersEnabled": true
                 }
             },
             {
-                "chainId": "5d3c298622d5634ed019bf61ea4b71655030015bde9beb0d6a24743714462c86",
+                "chainId": "0x5d3c298622d5634ed019bf61ea4b71655030015bde9beb0d6a24743714462c86",
                 "name": "Pendulum",
                 "assetId": 9,
                 "assetSymbol": "NGNC.s",
                 "type": "orml",
                 "typeExtras": {
                     "currencyIdScale": "0x02014e474e43241afadf31883f79972545fc64f3b5b0c95704c6fb4917474e42b0057841606b",
-                    "currencyIdType": "spacewalk_primitives.CurrencyId",
+                    "currencyIdType": "SpacewalkPrimitivesCurrencyId",
                     "existentialDeposit": "1000",
                     "transfersEnabled": true
                 }
@@ -5640,6 +5867,7 @@
         ]
     },
     {
+        "name": "Ternoa",
         "precision": 18,
         "priceId": "coin-capsule",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/chains/white/Ternoa.svg",
@@ -6108,33 +6336,7 @@
         ]
     },
     {
-        "precision": 18,
-        "priceId": "jur",
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/JUR.svg",
-        "symbol": "JUR",
-        "chains": [
-            {
-                "chainId": "58d1393b47b11707978fbc07e77d7b6f7d9aa88d207dc008a52385f7dba6156a",
-                "name": "Jur (PAUSED)",
-                "assetId": 0,
-                "assetSymbol": "JUR"
-            }
-        ]
-    },
-    {
-        "precision": 12,
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/VARA.svg",
-        "symbol": "TVARA",
-        "chains": [
-            {
-                "chainId": "9b86ea7366584c5ddf67de243433fcc05732864933258de9467db46eb9bef8b5",
-                "name": "Vara Testnet",
-                "assetId": 0,
-                "assetSymbol": "TVARA"
-            }
-        ]
-    },
-    {
+        "name": "Enjin token",
         "precision": 18,
         "priceId": "enjincoin",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-utils/master/icons/tokens/white/ENJ.svg",
@@ -6387,6 +6589,69 @@
         "chains": [
             {
                 "chainId": "61ea8a51fd4a058ee8c0e86df0a89cc85b8b67a0a66432893d09719050c9f540",
+                "name": "Hyperbridge Nexus",
+                "assetId": 0,
+                "assetSymbol": "NAND"
+            }
+        ]
+    },
+    {
+        "name": "Should be included in scripts/data/assetsNameMap",
+        "precision": 18,
+        "priceId": "curio-governance",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/CGT",
+        "symbol": "CGT",
+        "chains": [
+            {
+                "chainId": "0x1d73b9f5dc392744e0dee00a6d6254fcfa2305386cceba60315894fa4807053a",
+                "name": "Curio",
+                "assetId": 0,
+                "assetSymbol": "CGT"
+            }
+        ]
+    },
+    {
+        "name": "Should be included in scripts/data/assetsNameMap",
+        "precision": 18,
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/AVAIL",
+        "symbol": "AVAIL",
+        "chains": [
+            {
+                "chainId": "0xd3d2f3a3495dc597434a99d7d449ebad6616db45e4e4f178f31cc6fa14378b70",
+                "name": "Avail Turing Testnet",
+                "assetId": 0,
+                "assetSymbol": "AVAIL"
+            },
+            {
+                "chainId": "0x128ea318539862c0a06b745981300d527c1041c6f3388a8c49565559e3ea3d10",
+                "name": "Avail",
+                "assetId": 0,
+                "assetSymbol": "AVAIL"
+            }
+        ]
+    },
+    {
+        "name": "Should be included in scripts/data/assetsNameMap",
+        "precision": 12,
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/cACU",
+        "symbol": "cACU",
+        "chains": [
+            {
+                "chainId": "0xce7681fb12aa8f7265d229a9074be0ea1d5e99b53eedcec2deade43857901808",
+                "name": "Acurast Canary",
+                "assetId": 0,
+                "assetSymbol": "cACU"
+            }
+        ]
+    },
+    {
+        "name": "Should be included in scripts/data/assetsNameMap",
+        "precision": 12,
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/NAND",
+        "symbol": "NAND",
+        "chains": [
+            {
+                "chainId": "0x61ea8a51fd4a058ee8c0e86df0a89cc85b8b67a0a66432893d09719050c9f540",
                 "name": "Hyperbridge Nexus",
                 "assetId": 0,
                 "assetSymbol": "NAND"
