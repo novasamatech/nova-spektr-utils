@@ -1,6 +1,5 @@
 const path = require('path');
 const { writeFile, readFile } = require('fs/promises');
-const axios = require('axios');
 
 const SPEKTR_CONFIG_PATH = './chains';
 const SPEKTR_CONFIG_VERSION = process.env.SPEKTR_CONFIG_VERSION;
