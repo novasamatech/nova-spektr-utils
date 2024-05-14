@@ -11,6 +11,7 @@ const CHAINS_ENV = ['chains_dev.json', 'chains.json'];
 async function getDataViaFile(filePath) {
   try {
     const data = await readFile(filePath, 'utf8');
+
     return JSON.parse(data);
   } catch (error) {
     console.log('Error: ', error?.message || 'getDataViaFile failed');
