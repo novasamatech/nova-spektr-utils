@@ -35,13 +35,15 @@ jobs:
       - name: Make Pull Request
         uses: ./.github/workflows/make-pull-request
         with:
-          commit-files: ./chains/**/*.json ./tokens/**/*.json
+          commit-files: |
+            ./chains/**/*.json
+            ./tokens/**/*.json
           commit-message: "ci: update config files"
-          app-id: ${{ secrets.PR_APP_ID}}
-          app-token: ${{ secrets.PR_APP_TOKEN}}
+          app-id: ${{ secrets.PR_APP_ID }}
+          app-token: ${{ secrets.PR_APP_TOKEN }}
           branch-name: update-chains-file
           pr-title: "Update config files"
-          pr-body:
+          pr-body: |
             This PR was generated automatically by the GitHub Action, **update-config-files**.
 
             Feel free to close this PR if the changes are not needed.
