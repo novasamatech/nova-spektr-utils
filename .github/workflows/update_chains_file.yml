@@ -1,4 +1,4 @@
-name: Update chains file
+name: Update config files
 
 on:
   workflow_dispatch:
@@ -6,7 +6,7 @@ on:
     - cron: '0 8 * * *'
 
 jobs:
-  update-chains-file:
+  update-config-files:
     runs-on: ubuntu-latest
 
     steps:
@@ -21,6 +21,9 @@ jobs:
 
       - name: 📝 Update chains file
         run: npm run update:chains-file
+
+      - name: 📝 Update tokens file
+        run: npm run update:tokens-file
       
       - name: 📝 Update specName
         run: |
@@ -31,14 +34,14 @@ jobs:
       - name: Make Pull Request
         uses: ./.github/workflows/make-pull-request
         with:
-          commit-files: ./chains/**/*.json
-          commit-message: "ci: update chains.json files"
+          commit-files: ./chains/**/*.json ./tokens/**/*.json
+          commit-message: "ci: update config files"
           app-id: ${{ secrets.PR_APP_ID}}
           app-token: ${{ secrets.PR_APP_TOKEN}}
           branch-name: update-chains-file
-          pr-title: "Update chains.json file"
+          pr-title: "Update config files"
           pr-body:
-            This PR was generated automatically by the GitHub Action, **update-chains-file**.
+            This PR was generated automatically by the GitHub Action, **update-config-files**.
 
             Feel free to close this PR if the changes are not needed.
           pr-base: main
