@@ -2,19 +2,19 @@ const path = require('path');
 const { writeFile, readFile } = require('fs/promises');
 const axios = require('axios');
 
-const NOVA_CONFIG_VERSION = process.env.NOVA_CONFIG_VERSION;
+const SPEKTR_CONFIG_PATH = './chains';
 const SPEKTR_CONFIG_VERSION = process.env.SPEKTR_CONFIG_VERSION;
-const NOVA_CONFIG_URL = `https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/${NOVA_CONFIG_VERSION}/`;
+
 const CONFIG_PATH = `tokens/${SPEKTR_CONFIG_VERSION}/`;
 
 const CHAINS_ENV = ['chains_dev.json', 'chains.json'];
 
-async function getDataViaHttp(url, filePath) {
+async function getDataViaFile(filePath) {
   try {
-    const response = await axios.get(url + filePath);
-    return response.data;
+    const data = await readFile(filePath, 'utf8');
+    return JSON.parse(data);
   } catch (error) {
-    console.log('Error: ', error?.message || 'getDataViaHttp failed');
+    console.log('Error: ', error?.message || 'getDataViaFile failed');
   }
 }
 
@@ -65,8 +65,8 @@ async function saveNewFile(newJson, file_name) {
 async function buildFullTokensJSON() {
   const requests = CHAINS_ENV.map(async (chain) => {
     try {
-      const novaChainsConfig = await getDataViaHttp(NOVA_CONFIG_URL, chain);
-      const tokensData = transformChainstoTokens(novaChainsConfig);
+      const localChainsConfig = await getDataViaFile(`${SPEKTR_CONFIG_PATH}/${SPEKTR_CONFIG_VERSION}/${chain}`);
+      const tokensData = transformChainstoTokens(localChainsConfig);
       await saveNewFile(tokensData, chain.replace('chains', 'tokens'));
       console.log('❇️ Successfully generated for: ' + chain);
     } catch (e) {
