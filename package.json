@@ -17,6 +17,7 @@
   },
   "scripts": {
     "update:chains-file": "node scripts/buildChainsJson.js",
+    "update:tokens-file": "node scripts/buildTokensJson.js",
     "update:prepare-icons": "node scripts/renameFiles.js",
     "check:chains-file": "node scripts/checkChainsConfig.js"
   }
