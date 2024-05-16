@@ -130,6 +130,7 @@ export class Chain {
     addressPrefix: number;
     externalApi?: ExternalApi;
     api?: ApiPromise;
+    options?: Array<string>;
 
     constructor(
         chainId: string,
@@ -140,7 +141,8 @@ export class Chain {
         addressPrefix: number,
         externalApi?: ExternalApi,
         explorers?: Explorer[],
-        parentId?: string
+        parentId?: string,
+        options?: Array<string>
     ) {
         this.chainId = chainId;
         this.name = name;
@@ -151,6 +153,7 @@ export class Chain {
         this.addressPrefix = addressPrefix;
         this.externalApi = externalApi;
         this.parentId = parentId;
+        this.options = options;
     }
 
     static fromJSON(json: any): Chain {
@@ -248,7 +251,9 @@ export class ChainArray {
                 chain.icon,
                 chain.addressPrefix,
                 chain.externalApi,
-                chain.explorers
+                chain.explorers,
+                chain.parentId,
+                chain.options
             ))
         })
 

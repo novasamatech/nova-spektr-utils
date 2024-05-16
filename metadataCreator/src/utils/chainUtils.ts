@@ -1,19 +1,17 @@
-import { Chain } from '../models/Chain'
+import { Chain } from '../models/Chain';
 
 export function calculateChainDataForTable(chain: Chain) {
-  const networkName = chain.name
-  const assetsCount = chain.assets.length
-  let explorers
-
-  if (chain.explorers) {
-    explorers = chain.explorers.map(explorer => explorer.name).join(' ');
-  } else {
-    explorers = `Have not been added yet`;
-  }
-
   return {
-    networkName,
-    assetsCount,
-    explorers
+    networkName: chain.name,
+    assetsCount: chain.assets.length,
+    explorers: chain.explorers?.map(explorer => explorer.name).join(' ') || 'Have not been added yet'
+  };
+}
+
+export function calculateProxyDataForTable(chain: Chain) {
+  return {
+    networkName: chain.name,
+    regular: chain.options?.includes('regular_proxy') || false,
+    pure: chain.options?.includes('pure_proxy') || false
   };
 }
