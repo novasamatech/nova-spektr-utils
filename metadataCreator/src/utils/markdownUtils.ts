@@ -41,16 +41,16 @@ export function markdownProxyTable(chains: Chain[]) {
 | -- | Network | Pure proxy | Regular proxy |
 | -------- | -------- | -------- | -------- |
 `
-    let counter = 0;
-    chains.forEach(chain => {
+    const { counter, table } = chains.reduce((acc, chain) => {
         const { networkName, pure, regular } = calculateProxyDataForTable(chain);
         if (pure || regular) {
-            counter++;
-            markdownTable += `| ${counter} | ${networkName} | ${pure} | ${regular} |\n`;
+            acc.counter++;
+            acc.table += `| ${acc.counter} | ${networkName} | ${pure} | ${regular} |\n`;
         }
-    });
+        return acc;
+    }, { counter: 0, table: markdownTable });
 
-    return {proxyCounter: counter, proxyTable: markdownTable}
+    return { proxyCounter: counter, proxyTable: table };
 }
 
 export function buildMarkdownHeader(
