@@ -1,8 +1,8 @@
 import { MultisigVersionStorage } from "../models/MultisigVersionStorage";
 import { Chain } from "../models/Chain";
-import { calculateChainDataForTable } from "./chainUtils";
+import { calculateChainDataForTable, calculateProxyDataForTable } from "./chainUtils";
 
-export function markdownChainsTable(chains: Chain[]) {
+export function markdownChainsTable(chains: Chain[]): string {
     // Build Markdown table
     let markdownTable = `
 ## The list of supported networks
@@ -19,7 +19,7 @@ export function markdownChainsTable(chains: Chain[]) {
     return markdownTable
 }
 
-export function markdownMultisigTable(multisigData: MultisigVersionStorage) {
+export function markdownMultisigTable(multisigData: MultisigVersionStorage): string {
     let markdownTable = `
 # List of Networks where we are support Multisig pallet
 | -- | Network | Multisig version |
@@ -35,12 +35,31 @@ export function markdownMultisigTable(multisigData: MultisigVersionStorage) {
     return markdownTable
 }
 
+export function markdownProxyTable(chains: Chain[]) {
+    let markdownTable = `
+# List of Networks where we are support proxy feature
+| -- | Network | Pure proxy | Regular proxy |
+| -------- | -------- | -------- | -------- |
+`
+    const { counter, table } = chains.reduce((acc, chain) => {
+        const { networkName, pure, regular } = calculateProxyDataForTable(chain);
+        if (pure || regular) {
+            acc.counter++;
+            acc.table += `| ${acc.counter} | ${networkName} | ${pure} | ${regular} |\n`;
+        }
+        return acc;
+    }, { counter: 0, table: markdownTable });
+
+    return { proxyCounter: counter, proxyTable: table };
+}
+
 export function buildMarkdownHeader(
     networksNumber: number,
     assetsNumber: number,
     multisigNetworks: number,
-    stakingNumber: number
-) {
+    stakingNumber: number,
+    proxyNumber: number
+): string {
 
     const makrdownData = `
 # Supported Features data:
@@ -48,6 +67,7 @@ export function buildMarkdownHeader(
 ### 🪙 Added assets: ${assetsNumber}
 ### 👨‍👩‍👧‍👦 [Multisig supported](#list-of-networks-where-we-are-support-multisig) in: ${multisigNetworks}
 ### 🥞 Staking supported in: ${stakingNumber}
+### 🕹️ Proxy supported in: ${proxyNumber}
 \n
 `
     return makrdownData
