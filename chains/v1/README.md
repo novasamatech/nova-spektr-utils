@@ -4,6 +4,7 @@
 ### 🪙 Added assets: 362
 ### 👨‍👩‍👧‍👦 [Multisig supported](#list-of-networks-where-we-are-support-multisig) in: 70
 ### 🥞 Staking supported in: 5
+### 🕹️ Proxy supported in: 6
 
 
 
@@ -54,7 +55,7 @@
 | 42 | Litmus | 0 |
 | 43 | Manta Atlantic | 0 |
 | 44 | Moonbeam | 0 |
-| 45 | Moonriver | 0 |
+| 45 | Moonriver | 1 |
 | 46 | NeuroWeb | 0 |
 | 47 | Nodle Parachain | 1 |
 | 48 | Parallel | 1 |
@@ -72,7 +73,7 @@
 | 60 | Shiden | 1 |
 | 61 | Subsocial | 0 |
 | 62 | Ternoa | 1 |
-| 63 | Tinkernet | 0 |
+| 63 | Tinkernet | 1 |
 | 64 | Turing | 1 |
 | 65 | Vara | 1 |
 | 66 | Watr | 1 |
@@ -165,3 +166,13 @@
 | 79 | XX network | 1 | XX explorer Polkastats |
 | 80 | Zeitgeist | 1 | Subscan Sub.ID Polkaholic |
 | 81 | 3DPass | 1 | 3DPass explorer |
+
+# List of Networks where we are support proxy feature
+| -- | Network | Pure proxy | Regular proxy |
+| -------- | -------- | -------- | -------- |
+| 1 | HydraDX | true | true |
+| 2 | Kusama | true | true |
+| 3 | Moonbeam | true | true |
+| 4 | Moonriver | true | true |
+| 5 | Polkadot | true | true |
+| 6 | Westend | true | true |
