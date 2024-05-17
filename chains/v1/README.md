@@ -2,7 +2,7 @@
 # Supported Features data:
 ### 🕸️ [Supported networks](#supported-network-list): 81
 ### 🪙 Added assets: 362
-### 👨‍👩‍👧‍👦 [Multisig supported](#list-of-networks-where-we-are-support-multisig) in: 70
+### 👨‍👩‍👧‍👦 [Multisig supported](#list-of-networks-where-we-are-support-multisig) in: 6
 ### 🥞 Staking supported in: 5
 ### 🕹️ Proxy supported in: 6
 
@@ -11,76 +11,12 @@
 # List of Networks where we are support Multisig pallet
 | -- | Network | Multisig version |
 | -------- | -------- | -------- |
-| 1 | Acala | 1 |
-| 2 | Ajuna | 1 |
-| 3 | Aleph Zero | 1 |
-| 4 | Altair | 1 |
-| 5 | Amplitude | 1 |
-| 6 | Astar | 1 |
-| 7 | Bajun | 1 |
-| 8 | Basilisk | 1 |
-| 9 | Bifrost Kusama | 1 |
-| 10 | Bifrost Polkadot | 1 |
-| 11 | Bit.Country Pioneer | 0 |
-| 12 | Bittensor | 0 |
-| 13 | Calamari | 0 |
-| 14 | Centrifuge Parachain | 1 |
-| 15 | CLV Parachain | 0 |
-| 16 | Composable Finance | 1 |
-| 17 | Continuum | 1 |
-| 18 | Crust Polkadot Parachain | 0 |
-| 19 | Crust Shadow | 0 |
-| 20 | DAO IPCI | 0 |
-| 21 | Edgeware | 0 |
-| 22 | Energy Web X | 0 |
-| 23 | Enjin Matrix | 1 |
-| 24 | Enjin Relay | 0 |
-| 25 | Frequency | 1 |
-| 26 | Hashed Network | 1 |
-| 27 | HydraDX | 1 |
-| 28 | Imbue | 1 |
-| 29 | Integritee Parachain | 1 |
-| 30 | Interlay | 1 |
-| 31 | Joystream | 1 |
-| 32 | Kabocha | 0 |
-| 33 | Karura | 1 |
-| 34 | Khala | 1 |
-| 35 | KILT | 1 |
-| 36 | Kintsugi | 1 |
-| 37 | krest | 1 |
-| 38 | Kusama | 1 |
-| 39 | Kusama Asset Hub | 1 |
-| 40 | Kusama Bridge Hub | 1 |
-| 41 | Litentry | 0 |
-| 42 | Litmus | 0 |
-| 43 | Manta Atlantic | 0 |
-| 44 | Moonbeam | 0 |
-| 45 | Moonriver | 1 |
-| 46 | NeuroWeb | 0 |
-| 47 | Nodle Parachain | 1 |
-| 48 | Parallel | 1 |
-| 49 | Parallel Heiko | 1 |
-| 50 | Pendulum | 1 |
-| 51 | Phala | 1 |
-| 52 | Picasso | 1 |
-| 53 | Polimec | 1 |
-| 54 | Polkadex | 0 |
-| 55 | Polkadot | 1 |
-| 56 | Polkadot Asset Hub | 1 |
-| 57 | Polkadot Bridge Hub | 1 |
-| 58 | Polkadot Collectives | 1 |
-| 59 | Robonomics | 0 |
-| 60 | Shiden | 1 |
-| 61 | Subsocial | 0 |
-| 62 | Ternoa | 1 |
-| 63 | Tinkernet | 1 |
-| 64 | Turing | 1 |
-| 65 | Vara | 1 |
-| 66 | Watr | 1 |
-| 67 | Westend | 1 |
-| 68 | XX network | 0 |
-| 69 | Zeitgeist | 1 |
-| 70 | 3DPass | 0 |
+| 1 | HydraDX | 1 |
+| 2 | Kusama | 1 |
+| 3 | Moonbeam | 0 |
+| 4 | Moonriver | 1 |
+| 5 | Polkadot | 1 |
+| 6 | Westend | 1 |
 
 ## The list of supported networks
 | -- | Network | Assets count | Explorers |
