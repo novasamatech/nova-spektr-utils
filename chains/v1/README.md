@@ -2,7 +2,7 @@
 # Supported Features data:
 ### 🕸️ [Supported networks](#supported-network-list): 81
 ### 🪙 Added assets: 362
-### 👨‍👩‍👧‍👦 [Multisig supported](#list-of-networks-where-we-are-support-multisig) in: 70
+### 👨‍👩‍👧‍👦 [Multisig supported](#list-of-networks-where-we-are-support-multisig) in: 69
 ### 🥞 Staking supported in: 5
 ### 🕹️ Proxy supported in: 6
 
@@ -12,75 +12,74 @@
 | -- | Network | Multisig version |
 | -------- | -------- | -------- |
 | 1 | Acala | 1 |
-| 2 | Ajuna | 1 |
-| 3 | Aleph Zero | 1 |
-| 4 | Altair | 1 |
-| 5 | Amplitude | 1 |
-| 6 | Astar | 1 |
-| 7 | Bajun | 1 |
-| 8 | Basilisk | 1 |
-| 9 | Bifrost Kusama | 1 |
-| 10 | Bifrost Polkadot | 1 |
-| 11 | Bit.Country Pioneer | 0 |
-| 12 | Bittensor | 0 |
-| 13 | Calamari | 0 |
-| 14 | Centrifuge Parachain | 1 |
-| 15 | CLV Parachain | 0 |
-| 16 | Composable Finance | 1 |
-| 17 | Continuum | 1 |
-| 18 | Crust Polkadot Parachain | 0 |
-| 19 | Crust Shadow | 0 |
-| 20 | DAO IPCI | 0 |
-| 21 | Edgeware | 0 |
-| 22 | Energy Web X | 0 |
-| 23 | Enjin Matrix | 1 |
-| 24 | Enjin Relay | 0 |
-| 25 | Frequency | 1 |
-| 26 | Hashed Network | 1 |
-| 27 | HydraDX | 1 |
-| 28 | Imbue | 1 |
-| 29 | Integritee Parachain | 1 |
-| 30 | Interlay | 1 |
-| 31 | Joystream | 1 |
-| 32 | Kabocha | 0 |
-| 33 | Karura | 1 |
-| 34 | Khala | 1 |
-| 35 | KILT | 1 |
-| 36 | Kintsugi | 1 |
-| 37 | krest | 1 |
-| 38 | Kusama | 1 |
-| 39 | Kusama Asset Hub | 1 |
-| 40 | Kusama Bridge Hub | 1 |
-| 41 | Litentry | 0 |
-| 42 | Litmus | 0 |
-| 43 | Manta Atlantic | 0 |
-| 44 | Moonbeam | 0 |
-| 45 | Moonriver | 1 |
-| 46 | NeuroWeb | 0 |
-| 47 | Nodle Parachain | 1 |
-| 48 | Parallel | 1 |
-| 49 | Parallel Heiko | 1 |
-| 50 | Pendulum | 1 |
-| 51 | Phala | 1 |
-| 52 | Picasso | 1 |
-| 53 | Polimec | 1 |
-| 54 | Polkadex | 0 |
-| 55 | Polkadot | 1 |
-| 56 | Polkadot Asset Hub | 1 |
-| 57 | Polkadot Bridge Hub | 1 |
-| 58 | Polkadot Collectives | 1 |
-| 59 | Robonomics | 0 |
-| 60 | Shiden | 1 |
-| 61 | Subsocial | 0 |
-| 62 | Ternoa | 1 |
-| 63 | Tinkernet | 1 |
-| 64 | Turing | 1 |
-| 65 | Vara | 1 |
-| 66 | Watr | 1 |
-| 67 | Westend | 1 |
-| 68 | XX network | 0 |
-| 69 | Zeitgeist | 1 |
-| 70 | 3DPass | 0 |
+| 2 | Aleph Zero | 1 |
+| 3 | Altair | 1 |
+| 4 | Amplitude | 1 |
+| 5 | Astar | 1 |
+| 6 | Bajun | 1 |
+| 7 | Basilisk | 1 |
+| 8 | Bifrost Kusama | 1 |
+| 9 | Bifrost Polkadot | 1 |
+| 10 | Bit.Country Pioneer | 0 |
+| 11 | Bittensor | 0 |
+| 12 | Calamari | 0 |
+| 13 | Centrifuge Parachain | 1 |
+| 14 | CLV Parachain | 0 |
+| 15 | Composable Finance | 1 |
+| 16 | Continuum | 1 |
+| 17 | Crust Polkadot Parachain | 0 |
+| 18 | Crust Shadow | 0 |
+| 19 | DAO IPCI | 0 |
+| 20 | Edgeware | 0 |
+| 21 | Energy Web X | 0 |
+| 22 | Enjin Matrix | 1 |
+| 23 | Enjin Relay | 0 |
+| 24 | Frequency | 1 |
+| 25 | Hashed Network | 1 |
+| 26 | HydraDX | 1 |
+| 27 | Imbue | 1 |
+| 28 | Integritee Parachain | 1 |
+| 29 | Interlay | 1 |
+| 30 | Joystream | 1 |
+| 31 | Kabocha | 0 |
+| 32 | Karura | 1 |
+| 33 | Khala | 1 |
+| 34 | KILT | 1 |
+| 35 | Kintsugi | 1 |
+| 36 | krest | 1 |
+| 37 | Kusama | 1 |
+| 38 | Kusama Asset Hub | 1 |
+| 39 | Kusama Bridge Hub | 1 |
+| 40 | Litentry | 0 |
+| 41 | Litmus | 0 |
+| 42 | Manta Atlantic | 0 |
+| 43 | Moonbeam | 0 |
+| 44 | Moonriver | 1 |
+| 45 | NeuroWeb | 0 |
+| 46 | Nodle Parachain | 1 |
+| 47 | Parallel | 1 |
+| 48 | Parallel Heiko | 1 |
+| 49 | Pendulum | 1 |
+| 50 | Phala | 1 |
+| 51 | Picasso | 1 |
+| 52 | Polimec | 1 |
+| 53 | Polkadex | 0 |
+| 54 | Polkadot | 1 |
+| 55 | Polkadot Asset Hub | 1 |
+| 56 | Polkadot Bridge Hub | 1 |
+| 57 | Polkadot Collectives | 1 |
+| 58 | Robonomics | 0 |
+| 59 | Shiden | 1 |
+| 60 | Subsocial | 0 |
+| 61 | Ternoa | 1 |
+| 62 | Tinkernet | 1 |
+| 63 | Turing | 1 |
+| 64 | Vara | 1 |
+| 65 | Watr | 1 |
+| 66 | Westend | 1 |
+| 67 | XX network | 0 |
+| 68 | Zeitgeist | 1 |
+| 69 | 3DPass | 0 |
 
 ## The list of supported networks
 | -- | Network | Assets count | Explorers |
