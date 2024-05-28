@@ -12,16 +12,24 @@
         ],
         "nodes": [
             {
-                "url": "wss://polkadot.public.curie.radiumblock.co/ws",
-                "name": "Radium node"
+                "url": "wss://rpc-polkadot.novasamatech.org",
+                "name": "Novasama node"
+            },
+            {
+                "url": "wss://apps-rpc.polkadot.io",
+                "name": "Public node"
+            },
+            {
+                "url": "wss://polkadot-rpc.dwellir.com",
+                "name": "Dwellir node"
             },
             {
                 "url": "wss://dot-rpc.stakeworld.io",
                 "name": "Stakeworld node"
             },
             {
-                "url": "wss://polkadot-rpc.dwellir.com",
-                "name": "Dwellir node"
+                "url": "wss://polkadot.public.curie.radiumblock.co/ws",
+                "name": "Radium node"
             },
             {
                 "url": "wss://1rpc.io/dot",
@@ -59,18 +67,8 @@
                 "multisig": "https://polkadot.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
             },
             {
-                "name": "Polkascan",
-                "account": "https://polkascan.io/polkadot/account/{address}",
-                "event": "https://polkascan.io/polkadot/event/{event}"
-            },
-            {
                 "name": "Sub.ID",
                 "account": "https://sub.id/{address}"
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
         "externalApi": {
@@ -106,6 +104,14 @@
             "pure_proxy"
         ],
         "nodes": [
+            {
+                "url": "wss://rpc-kusama.novasamatech.org",
+                "name": "Novasama node"
+            },
+            {
+                "url": "wss://apps-kusama-rpc.polkadot.io",
+                "name": "Public node"
+            },
             {
                 "url": "wss://kusama-rpc.dwellir.com",
                 "name": "Dwellir node"
@@ -154,18 +160,8 @@
                 "multisig": "https://kusama.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
             },
             {
-                "name": "Polkascan",
-                "account": "https://polkascan.io/kusama/account/{address}",
-                "event": "https://polkascan.io/kusama/event/{event}"
-            },
-            {
                 "name": "Sub.ID",
                 "account": "https://sub.id/{address}"
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
         "externalApi": {
@@ -379,11 +375,6 @@
             {
                 "name": "Sub.ID",
                 "account": "https://sub.id/{address}"
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
         "externalApi": {
@@ -801,11 +792,6 @@
             {
                 "name": "Sub.ID",
                 "account": "https://sub.id/{address}"
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
         "externalApi": {
@@ -1009,11 +995,6 @@
             {
                 "name": "Sub.ID",
                 "account": "https://sub.id/{address}"
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
         "externalApi": {
@@ -1261,11 +1242,6 @@
             {
                 "name": "Sub.ID",
                 "account": "https://sub.id/{address}"
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
         "externalApi": {
@@ -1391,11 +1367,6 @@
             {
                 "name": "Sub.ID",
                 "account": "https://sub.id/{address}"
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
         "externalApi": {
@@ -1443,11 +1414,6 @@
             {
                 "name": "Sub.ID",
                 "account": "https://sub.id/{address}"
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
         "externalApi": {
@@ -1621,11 +1587,6 @@
                 "extrinsic": "https://parallel-heiko.subscan.io/extrinsic/{hash}",
                 "account": "https://parallel-heiko.subscan.io/account/{address}",
                 "multisig": "https://parallel-heiko.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
         "externalApi": {
@@ -1909,11 +1870,6 @@
             {
                 "name": "Sub.ID",
                 "account": "https://sub.id/{address}"
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
         "externalApi": {
@@ -1969,11 +1925,6 @@
             {
                 "name": "Sub.ID",
                 "account": "https://sub.id/{address}"
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
         "externalApi": {
@@ -2093,11 +2044,6 @@
             {
                 "name": "Sub.ID",
                 "account": "https://sub.id/{address}"
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
         "externalApi": {
@@ -2160,11 +2106,6 @@
             {
                 "name": "Sub.ID",
                 "account": "https://sub.id/{address}"
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
         "externalApi": {
@@ -2184,7 +2125,9 @@
         "chainId": "0xf22b7850cdd5a7657bbfd90ac86441275bbc57ace3d2698a740c7b0ec4de5ec3",
         "parentId": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Bit.Country_Pioneer.svg",
-        "options": [],
+        "options": [
+            "multisig"
+        ],
         "nodes": [
             {
                 "url": "wss://pioneer-rpc-1.bit.country/wss",
@@ -2229,11 +2172,6 @@
                 "extrinsic": "https://pioneer.subscan.io/extrinsic/{hash}",
                 "account": "https://pioneer.subscan.io/account/{address}",
                 "multisig": "https://pioneer.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
         "externalApi": {
@@ -2505,6 +2443,20 @@
                     "transfersEnabled": true
                 },
                 "name": "USD Tether"
+            },
+            {
+                "assetId": 15,
+                "symbol": "PINK",
+                "precision": 10,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/PINK",
+                "typeExtras": {
+                    "currencyIdScale": "0x050d00",
+                    "currencyIdType": "AcalaPrimitivesCurrencyCurrencyId",
+                    "existentialDeposit": "1000000000",
+                    "transfersEnabled": true
+                },
+                "name": "Should be included in scripts/data/assetsNameMap"
             }
         ],
         "explorers": [
@@ -2517,11 +2469,6 @@
             {
                 "name": "Sub.ID",
                 "account": "https://sub.id/{address}"
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
         "externalApi": {
@@ -2737,11 +2684,6 @@
             {
                 "name": "Sub.ID",
                 "account": "https://sub.id/{address}"
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
         "externalApi": {
@@ -2988,11 +2930,6 @@
             {
                 "name": "Sub.ID",
                 "account": "https://sub.id/{address}"
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
         "externalApi": {
@@ -3033,11 +2970,6 @@
                 "extrinsic": "https://clv.subscan.io/extrinsic/{hash}",
                 "account": "https://clv.subscan.io/account/{address}",
                 "multisig": "https://clv.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
         "externalApi": {
@@ -3118,11 +3050,67 @@
                 "symbol": "DED",
                 "precision": 10,
                 "type": "statemine",
+                "priceId": "dot-is-ded",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/DED.svg",
                 "typeExtras": {
                     "assetId": "30"
                 },
                 "name": "DED"
+            },
+            {
+                "assetId": 4,
+                "symbol": "PINK",
+                "precision": 10,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/PINK",
+                "typeExtras": {
+                    "assetId": "23"
+                },
+                "name": "Should be included in scripts/data/assetsNameMap"
+            },
+            {
+                "assetId": 5,
+                "symbol": "DOTA",
+                "precision": 4,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/DOTA",
+                "typeExtras": {
+                    "assetId": "18"
+                },
+                "name": "Should be included in scripts/data/assetsNameMap"
+            },
+            {
+                "assetId": 6,
+                "symbol": "STINK",
+                "precision": 10,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/STINK",
+                "typeExtras": {
+                    "assetId": "42069"
+                },
+                "name": "Should be included in scripts/data/assetsNameMap"
+            },
+            {
+                "assetId": 7,
+                "symbol": "GABE",
+                "precision": 20,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/GABE",
+                "typeExtras": {
+                    "assetId": "69420"
+                },
+                "name": "Should be included in scripts/data/assetsNameMap"
+            },
+            {
+                "assetId": 8,
+                "symbol": "WUD",
+                "precision": 10,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/WUD",
+                "typeExtras": {
+                    "assetId": "31337"
+                },
+                "name": "Should be included in scripts/data/assetsNameMap"
             }
         ],
         "explorers": [
@@ -3136,11 +3124,6 @@
                 "name": "Statescan",
                 "account": "https://statemint.statescan.io/#/accounts/{address}",
                 "event": "https://statemint.statescan.io/#/events/{event}"
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
         "externalApi": {
@@ -3192,11 +3175,6 @@
             {
                 "name": "Sub.ID",
                 "account": "https://sub.id/{address}"
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
         "externalApi": {
@@ -3245,11 +3223,6 @@
                 "extrinsic": "https://encointer.subscan.io/extrinsic/{hash}",
                 "account": "https://encointer.subscan.io/account/{address}",
                 "multisig": "https://encointer.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
         "externalApi": {
@@ -3464,11 +3437,6 @@
             {
                 "name": "Sub.ID",
                 "account": "https://sub.id/{address}"
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
         "externalApi": {
@@ -3561,11 +3529,6 @@
                 "extrinsic": "https://picasso.subscan.io/extrinsic/{hash}",
                 "account": "https://picasso.subscan.io/account/{address}",
                 "multisig": "https://picasso.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
         "externalApi": {
@@ -3617,11 +3580,6 @@
             {
                 "name": "Sub.ID",
                 "account": "https://sub.id/{address}"
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
         "externalApi": {
@@ -3672,11 +3630,6 @@
             {
                 "name": "Sub.ID",
                 "account": "https://sub.id/{address}"
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
         "externalApi": {
@@ -3722,11 +3675,6 @@
             {
                 "name": "Sub.ID",
                 "account": "https://sub.id/{address}"
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
         "externalApi": {
@@ -3777,11 +3725,6 @@
                 "extrinsic": "https://shadow.subscan.io/extrinsic/{hash}",
                 "account": "https://shadow.subscan.io/account/{address}",
                 "multisig": "https://shadow.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
         "externalApi": {
@@ -3833,11 +3776,6 @@
             {
                 "name": "Sub.ID",
                 "account": "https://sub.id/{address}"
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
         "externalApi": {
@@ -3889,11 +3827,6 @@
             {
                 "name": "Sub.ID",
                 "account": "https://sub.id/{address}"
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
         "externalApi": {
@@ -4351,6 +4284,106 @@
                     "transfersEnabled": true
                 },
                 "name": "USDT-Moonbeam"
+            },
+            {
+                "assetId": 29,
+                "symbol": "DED",
+                "precision": 10,
+                "type": "orml",
+                "priceId": "dot-is-ded",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/DED.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x53420f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                },
+                "name": "DED"
+            },
+            {
+                "assetId": 30,
+                "symbol": "PINK",
+                "precision": 10,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/PINK",
+                "typeExtras": {
+                    "currencyIdScale": "0x55420f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                },
+                "name": "Should be included in scripts/data/assetsNameMap"
+            },
+            {
+                "assetId": 31,
+                "symbol": "STINK",
+                "precision": 10,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/STINK",
+                "typeExtras": {
+                    "currencyIdScale": "0x62420f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                },
+                "name": "Should be included in scripts/data/assetsNameMap"
+            },
+            {
+                "assetId": 32,
+                "symbol": "DOTA",
+                "precision": 4,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/DOTA",
+                "typeExtras": {
+                    "currencyIdScale": "0x66420f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                },
+                "name": "Should be included in scripts/data/assetsNameMap"
+            },
+            {
+                "assetId": 33,
+                "symbol": "GABE",
+                "precision": 20,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/GABE",
+                "typeExtras": {
+                    "currencyIdScale": "0x7e420f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                },
+                "name": "Should be included in scripts/data/assetsNameMap"
+            },
+            {
+                "assetId": 34,
+                "symbol": "KILT",
+                "precision": 15,
+                "type": "orml",
+                "priceId": "kilt-protocol",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Kilt_(KILT).svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x1c000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "21358393848783",
+                    "transfersEnabled": true
+                },
+                "name": "KILT Spiritnet"
+            },
+            {
+                "assetId": 35,
+                "symbol": "WUD",
+                "precision": 10,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/WUD",
+                "typeExtras": {
+                    "currencyIdScale": "0x95420f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                },
+                "name": "Should be included in scripts/data/assetsNameMap"
             }
         ],
         "explorers": [
@@ -4359,18 +4392,13 @@
                 "extrinsic": "https://hydradx.subscan.io/extrinsic/{hash}",
                 "account": "https://hydradx.subscan.io/account/{address}",
                 "multisig": "https://hydradx.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
         "externalApi": {
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-hydra__bm92Y"
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-hydra"
                 }
             ],
             "proxy": [
@@ -4617,11 +4645,6 @@
                 "extrinsic": "https://interlay.subscan.io/extrinsic/{hash}",
                 "account": "https://interlay.subscan.io/account/{address}",
                 "multisig": "https://interlay.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
         "externalApi": {
@@ -4645,12 +4668,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://eden-rpc.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
                 "url": "wss://nodle-parachain.api.onfinality.io/public-ws",
                 "name": "OnFinality node"
+            },
+            {
+                "url": "wss://nodle-rpc.dwellir.com",
+                "name": "Dwellir node"
             }
         ],
         "assets": [
@@ -4673,11 +4696,6 @@
             {
                 "name": "Sub.ID",
                 "account": "https://sub.id/{address}"
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
         "externalApi": {
@@ -4733,11 +4751,6 @@
                 "extrinsic": "https://phala.subscan.io/extrinsic/{hash}",
                 "account": "https://phala.subscan.io/account/{address}",
                 "multisig": "https://phala.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
         "externalApi": {
@@ -4888,11 +4901,6 @@
                 "extrinsic": "https://turing.subscan.io/extrinsic/{hash}",
                 "account": "https://turing.subscan.io/account/{address}",
                 "multisig": "https://turing.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
         "externalApi": {
@@ -5034,11 +5042,6 @@
                 "extrinsic": "https://composable.subscan.io/extrinsic/{hash}",
                 "account": "https://composable.subscan.io/account/{address}",
                 "multisig": "https://composable.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
         "externalApi": {
@@ -5138,6 +5141,41 @@
                     "assetId": "226557799181424065994173367616174607641"
                 },
                 "name": "Interlay Bitcoin"
+            },
+            {
+                "assetId": 6,
+                "symbol": "DED",
+                "precision": 12,
+                "type": "statemine",
+                "priceId": "dot-is-ded",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/DED.svg",
+                "typeExtras": {
+                    "assetId": "119367686984583275840673742485354142551"
+                },
+                "name": "DED"
+            },
+            {
+                "assetId": 7,
+                "symbol": "PINK",
+                "precision": 12,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/PINK",
+                "typeExtras": {
+                    "assetId": "339306133874233608313826294843504252047"
+                },
+                "name": "Should be included in scripts/data/assetsNameMap"
+            },
+            {
+                "assetId": 8,
+                "symbol": "GLMR",
+                "precision": 12,
+                "type": "statemine",
+                "priceId": "moonbeam",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Moonbeam_(GLMR).svg",
+                "typeExtras": {
+                    "assetId": "182269558229932594457975666948556356791"
+                },
+                "name": "Moonbeam"
             }
         ],
         "explorers": [
@@ -5207,9 +5245,10 @@
         ],
         "explorers": [
             {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
+                "name": "Subscan",
+                "account": "https://neuroweb.subscan.io/account/{address}",
+                "extrinsic": "https://neuroweb.subscan.io/extrinsic/{hash}",
+                "multisig": "https://neuroweb.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
             }
         ],
         "externalApi": {
@@ -5220,7 +5259,9 @@
                 }
             ]
         },
-        "options": []
+        "options": [
+            "multisig"
+        ]
     },
     {
         "name": "Bifrost Polkadot",
@@ -5415,11 +5456,6 @@
                 "extrinsic": "https://bifrost.subscan.io/extrinsic/{hash}",
                 "account": "https://bifrost.subscan.io/account/{address}",
                 "multisig": "https://bifrost.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
         "externalApi": {
@@ -5463,9 +5499,10 @@
         ],
         "explorers": [
             {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
+                "name": "Statescan",
+                "account": "https://litentry.statescan.io/#/accounts/{address}",
+                "extrinsic": "https://litentry.statescan.io/#/extrinsics/{hash}",
+                "event": "https://litentry.statescan.io/#/events/{event}"
             }
         ],
         "externalApi": {
@@ -5514,11 +5551,6 @@
                 "extrinsic": "https://unique.subscan.io/extrinsic/{hash}",
                 "account": "https://unique.subscan.io/account/{address}",
                 "multisig": "https://unique.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
         "externalApi": {
@@ -5690,11 +5722,6 @@
                 "extrinsic": "https://mangatax.subscan.io/extrinsic/{hash}",
                 "account": "https://mangatax.subscan.io/account/{address}",
                 "multisig": "https://mangatax.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
         "options": []
@@ -5722,13 +5749,6 @@
                 "precision": 12,
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Kabocha_(KAB).svg",
                 "name": "Kabocha"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
         "externalApi": {
@@ -5780,11 +5800,6 @@
                 "extrinsic": "https://bajun.subscan.io/extrinsic/{hash}",
                 "account": "https://bajun.subscan.io/account/{address}",
                 "multisig": "https://bajun.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
         "externalApi": {
@@ -5821,13 +5836,6 @@
                 "name": "Imbue"
             }
         ],
-        "explorers": [
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
-            }
-        ],
         "externalApi": {
             "history": [
                 {
@@ -5860,13 +5868,6 @@
                 "precision": 12,
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Tinkernet_(TNKR).svg",
                 "name": "Tinkernet"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
         "externalApi": {
@@ -6044,13 +6045,6 @@
                 "name": "DAO IPCI"
             }
         ],
-        "explorers": [
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
-            }
-        ],
         "externalApi": {
             "history": [
                 {
@@ -6213,6 +6207,21 @@
                     "transfersEnabled": true
                 },
                 "name": "USD Tether"
+            },
+            {
+                "assetId": 3,
+                "symbol": "USDC",
+                "precision": 6,
+                "type": "orml",
+                "priceId": "usd-coin",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/USDC.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x0102",
+                    "currencyIdType": "SpacewalkPrimitivesCurrencyId",
+                    "existentialDeposit": "1000",
+                    "transfersEnabled": true
+                },
+                "name": "USD Coin"
             }
         ],
         "externalApi": {
@@ -6222,7 +6231,15 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-pendulum"
                 }
             ]
-        }
+        },
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://pendulum.subscan.io/extrinsic/{hash}",
+                "account": "https://pendulum.subscan.io/account/{address}",
+                "multisig": "https://pendulum.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
+            }
+        ]
     },
     {
         "name": "Crust Polkadot Parachain",
@@ -6392,12 +6409,10 @@
         "chainId": "0xe358eb1d11b31255a286c12e44fe6780b7edb171d657905a97e39f71d9c6c3ee",
         "parentId": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Ajuna.svg",
-        "options": [
-            "multisig"
-        ],
+        "options": [],
         "nodes": [
             {
-                "url": "wss://rpc-parachain.ajuna.network",
+                "url": "wss://rpc-para.ajuna.network",
                 "name": "Ajuna node"
             },
             {
@@ -6421,7 +6436,15 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---ajuna"
                 }
             ]
-        }
+        },
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://ajuna.subscan.io/extrinsic/{hash}",
+                "account": "https://ajuna.subscan.io/account/{address}",
+                "multisig": "https://ajuna.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
+            }
+        ]
     },
     {
         "name": "3DPass",
@@ -6497,13 +6520,6 @@
                 "name": "Frequency"
             }
         ],
-        "explorers": [
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
-            }
-        ],
         "externalApi": {
             "history": [
                 {
@@ -6543,10 +6559,22 @@
                 "name": "Varascan",
                 "account": "https://explorer.vara-network.io/account/{address}",
                 "event": "https://explorer.vara-network.io/event/{event}"
+            },
+            {
+                "name": "Subscan",
+                "extrinsic": "https://vara.subscan.io/extrinsic/{hash}",
+                "account": "https://vara.subscan.io/account/{address}",
+                "multisig": "https://vara.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
             }
         ],
         "externalApi": {
             "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---vara"
+                }
+            ],
+            "staking": [
                 {
                     "type": "subquery",
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---vara"
@@ -6626,7 +6654,15 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/polkadot-bridgehub"
                 }
             ]
-        }
+        },
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://bridgehub-polkadot.subscan.io/extrinsic/{hash}",
+                "account": "https://bridgehub-polkadot.subscan.io/account/{address}",
+                "multisig": "https://bridgehub-polkadot.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
+            }
+        ]
     },
     {
         "name": "Kusama Bridge Hub",
@@ -6660,6 +6696,14 @@
                 "priceId": "kusama",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Kusama_(KSM).svg",
                 "name": "Kusama"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://bridgehub-kusama.subscan.io/extrinsic/{hash}",
+                "account": "https://bridgehub-kusama.subscan.io/account/{address}",
+                "multisig": "https://bridgehub-kusama.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
             }
         ]
     },
@@ -6718,8 +6762,8 @@
         ],
         "nodes": [
             {
-                "url": "wss://wss-krest.peaq.network",
-                "name": "Krest node"
+                "url": "wss://krest.api.onfinality.io/public-ws",
+                "name": "Onfinality node"
             }
         ],
         "assets": [
@@ -6742,57 +6786,14 @@
         ]
     },
     {
-        "name": "Jur",
-        "specName": "jur-node",
-        "addressPrefix": 42,
-        "chainId": "0x58d1393b47b11707978fbc07e77d7b6f7d9aa88d207dc008a52385f7dba6156a",
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Jur.svg",
-        "options": [
-            "multisig"
-        ],
-        "nodes": [
-            {
-                "url": "wss://jur-mainnet-archive-rpc-1.icebergnodes.io",
-                "name": "Iceberg node"
-            },
-            {
-                "url": "wss://jur-archive-mainnet-1.simplystaking.xyz/VX68C07AR4K2/ws",
-                "name": "Simplystaking node"
-            }
-        ],
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "JUR",
-                "precision": 18,
-                "priceId": "jur",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Jur.svg",
-                "name": "Jur token"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Polkascan",
-                "account": "https://jur.io/explorer/jur/account/{address}",
-                "event": "https://jur.io/explorer/jur/event/{event}"
-            }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---jur"
-                }
-            ]
-        }
-    },
-    {
         "name": "Enjin Matrix",
         "specName": "matrix-enjin",
         "addressPrefix": 1110,
         "chainId": "0x3af4ff48ec76d2efc8476730f423ac07e25ad48f5f4c9dc39c778b164d808615",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Enjin.svg",
-        "options": [],
+        "options": [
+            "multisig"
+        ],
         "nodes": [
             {
                 "url": "wss://rpc.matrix.blockchain.enjin.io",
@@ -7020,7 +7021,14 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---polymec"
                 }
             ]
-        }
+        },
+        "explorers": [
+            {
+                "name": "Statescan",
+                "account": "https://polimec.statescan.io/#/accounts/{address}",
+                "event": "https://polimec.statescan.io/#/events/{event}"
+            }
+        ]
     },
     {
         "name": "Moonbeam",
@@ -7030,6 +7038,7 @@
         "parentId": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Moonbeam.svg",
         "options": [
+            "multisig",
             "ethereum_based",
             "regular_proxy",
             "pure_proxy"
@@ -7348,11 +7357,6 @@
                 "name": "Moonscan",
                 "extrinsic": "https://moonbeam.moonscan.io/tx/{hash}",
                 "account": "https://moonbeam.moonscan.io/address/{address}"
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
         "externalApi": {
@@ -7385,6 +7389,7 @@
         "parentId": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Moonriver.svg",
         "options": [
+            "multisig",
             "ethereum_based",
             "regular_proxy",
             "pure_proxy"
@@ -7687,11 +7692,6 @@
                 "name": "Moonscan",
                 "extrinsic": "https://moonriver.moonscan.io/tx/{hash}",
                 "account": "https://moonriver.moonscan.io/address/{address}"
-            },
-            {
-                "name": "Polkaholic",
-                "account": "https://polkaholic.io/account/{address}",
-                "extrinsic": "https://polkaholic.io/tx/{hash}"
             }
         ],
         "externalApi": {
@@ -7723,7 +7723,9 @@
         "chainId": "0xf3c7ad88f6a80f366c4be216691411ef0622e8b809b1046ea297ef106058d4eb",
         "parentId": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Manta.svg",
-        "options": [],
+        "options": [
+            "multisig"
+        ],
         "nodes": [
             {
                 "url": "wss://ws.manta.systems",
@@ -7782,7 +7784,9 @@
         "chainId": "0xae1ca86c936aa252cdc45f4f436220567b2bbbcc4834f5b8f4191462baf19dfb",
         "parentId": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Continuum.svg",
-        "options": [],
+        "options": [
+            "multisig"
+        ],
         "nodes": [
             {
                 "url": "wss://continuum-rpc-1.metaverse.network/wss",
@@ -7814,7 +7818,9 @@
         "addressPrefix": 2135,
         "chainId": "0xd8761d3c88f26dc12875c00d3165f7d67243d56fc85b4cf19937601a7916e5a9",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Enjin.svg",
-        "options": [],
+        "options": [
+            "multisig"
+        ],
         "nodes": [
             {
                 "url": "wss://rpc.relay.blockchain.enjin.io",
@@ -7841,6 +7847,120 @@
                 "extrinsic": "https://enjin.subscan.io/extrinsic/{hash}",
                 "account": "https://enjin.subscan.io/account/{address}",
                 "multisig": "https://enjin.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
+            }
+        ]
+    },
+    {
+        "name": "Kusama People",
+        "specName": "kusama",
+        "addressPrefix": 2,
+        "chainId": "0xc1af4cb4eb3918e5db15086c0cc5ec17fb334f728b7c65dd44bfe1e174ff8b3f",
+        "parentId": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Kusama_People.svg",
+        "options": [],
+        "nodes": [
+            {
+                "url": "wss://kusama-people-rpc.polkadot.io",
+                "name": "Parity node",
+                "features": [
+                    "noTls12"
+                ]
+            },
+            {
+                "url": "wss://ksm-rpc.stakeworld.io/people",
+                "name": "Stakeworld node"
+            }
+        ],
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "KSM",
+                "precision": 12,
+                "priceId": "kusama",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Kusama_(KSM).svg",
+                "name": "Kusama"
+            }
+        ]
+    },
+    {
+        "name": "Curio",
+        "specName": "kusama",
+        "addressPrefix": 777,
+        "chainId": "0x1d73b9f5dc392744e0dee00a6d6254fcfa2305386cceba60315894fa4807053a",
+        "parentId": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Curio.svg",
+        "options": [],
+        "nodes": [
+            {
+                "url": "wss://archive.parachain.curioinvest.com",
+                "name": "Curio node"
+            },
+            {
+                "url": "wss://parachain.curioinvest.com/",
+                "name": "Curio node 2"
+            }
+        ],
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "CGT",
+                "precision": 18,
+                "priceId": "curio-governance",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/CGT",
+                "name": "Should be included in scripts/data/assetsNameMap"
+            }
+        ]
+    },
+    {
+        "name": "Acurast Canary",
+        "specName": "kusama",
+        "addressPrefix": 42,
+        "chainId": "0xce7681fb12aa8f7265d229a9074be0ea1d5e99b53eedcec2deade43857901808",
+        "parentId": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Acurast_Canary.svg",
+        "options": [],
+        "nodes": [
+            {
+                "url": "wss://acurast-canarynet-ws.prod.gke.papers.tech",
+                "name": "Acurast node"
+            }
+        ],
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "cACU",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/cACU",
+                "name": "Should be included in scripts/data/assetsNameMap"
+            }
+        ]
+    },
+    {
+        "name": "Kreivo",
+        "specName": "kusama",
+        "addressPrefix": 2,
+        "chainId": "0xc710a5f16adc17bcd212cff0aedcbf1c1212a043cdc0fb2dcba861efe5305b01",
+        "parentId": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Kreivo.svg",
+        "options": [],
+        "nodes": [
+            {
+                "url": "wss://kreivo.io/",
+                "name": "Virto node"
+            },
+            {
+                "url": "wss://kreivo.kippu.rocks/",
+                "name": "Kippu node"
+            }
+        ],
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "KSM",
+                "precision": 12,
+                "priceId": "kusama",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Kusama_(KSM).svg",
+                "name": "Kusama"
             }
         ]
     }
