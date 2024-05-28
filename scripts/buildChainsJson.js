@@ -37,6 +37,8 @@ const TYPE_EXTRAS_REPLACEMENTS = {
 }
 const STAKING_ALLOWED_ARRAY = ['Polkadot', 'Kusama', 'Westend', 'Polkadex', 'Ternoa', 'Novasama Testnet - Kusama']
 
+const GOV_ALLOWED_ARRAY = ['Polkadot', 'Kusama', 'Westend', 'Rococo', 'Novasama OpenGov'];
+
 const DEFAULT_ASSETS = ['SHIBATALES', 'DEV', 'SIRI', 'PILT', 'cDOT-6/13', 'cDOT-7/14', 'cDOT-8/15', 'cDOT-9/16', 'cDOT-10/17', 'TZERO', 'UNIT', 'Unit', 'tEDG','JOE', 'HOP', 'PAS'];
 
 const readmeContent = fs.readFileSync('chains/v1/README.md', 'utf8');
@@ -83,6 +85,9 @@ function fillAssetData(chain) {
     if (chain.name === 'Zeitgeist' && asset.symbol === 'DOT') {
       return;
     }
+    if (asset.symbol.endsWith('.s')) {
+      return;
+    }
     assetsList.push({
       assetId: asset.assetId,
       symbol: asset.symbol,
@@ -124,6 +129,10 @@ function getTransformedData(rawData) {
 
       if (chain.options?.includes("ethereumBased")) {
         options.push('ethereum_based');
+      }
+
+      if (GOV_ALLOWED_ARRAY.includes(chain.name)) {
+        options.push('governance');
       }
 
       const explorers = chain.explorers?.map(explorer => {
