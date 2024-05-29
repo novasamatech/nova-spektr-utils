@@ -1,8 +1,8 @@
 
 # Supported Features data:
-### 🕸️ [Supported networks](#supported-network-list): 82
-### 🪙 Added assets: 380
-### 👨‍👩‍👧‍👦 [Multisig supported](#list-of-networks-where-we-are-support-multisig) in: 72
+### 🕸️ [Supported networks](#supported-network-list): 81
+### 🪙 Added assets: 379
+### 👨‍👩‍👧‍👦 [Multisig supported](#list-of-networks-where-we-are-support-multisig) in: 71
 ### 🥞 Staking supported in: 5
 ### 🕹️ Proxy supported in: 6
 
@@ -47,42 +47,41 @@
 | 34 | Khala | 1 |
 | 35 | KILT | 1 |
 | 36 | Kintsugi | 1 |
-| 37 | Kreivo | 1 |
-| 38 | krest | 1 |
-| 39 | Kusama | 1 |
-| 40 | Kusama Asset Hub | 1 |
-| 41 | Kusama Bridge Hub | 1 |
-| 42 | Kusama People | 1 |
-| 43 | Litentry | 0 |
-| 44 | Litmus | 0 |
-| 45 | Manta Atlantic | 0 |
-| 46 | Moonbeam | 0 |
-| 47 | Moonriver | 1 |
-| 48 | NeuroWeb | 0 |
-| 49 | Nodle Parachain | 1 |
-| 50 | Parallel | 1 |
-| 51 | Parallel Heiko | 1 |
-| 52 | Pendulum | 1 |
-| 53 | Phala | 1 |
-| 54 | Picasso | 1 |
-| 55 | Polimec | 1 |
-| 56 | Polkadex | 0 |
-| 57 | Polkadot | 1 |
-| 58 | Polkadot Asset Hub | 1 |
-| 59 | Polkadot Bridge Hub | 1 |
-| 60 | Polkadot Collectives | 1 |
-| 61 | Robonomics | 0 |
-| 62 | Shiden | 1 |
-| 63 | Subsocial | 0 |
-| 64 | Ternoa | 1 |
-| 65 | Tinkernet | 1 |
-| 66 | Turing | 1 |
-| 67 | Vara | 1 |
-| 68 | Watr | 1 |
-| 69 | Westend | 1 |
-| 70 | XX network | 0 |
-| 71 | Zeitgeist | 1 |
-| 72 | 3DPass | 0 |
+| 37 | krest | 1 |
+| 38 | Kusama | 1 |
+| 39 | Kusama Asset Hub | 1 |
+| 40 | Kusama Bridge Hub | 1 |
+| 41 | Kusama People | 1 |
+| 42 | Litentry | 0 |
+| 43 | Litmus | 0 |
+| 44 | Manta Atlantic | 0 |
+| 45 | Moonbeam | 0 |
+| 46 | Moonriver | 1 |
+| 47 | NeuroWeb | 0 |
+| 48 | Nodle Parachain | 1 |
+| 49 | Parallel | 1 |
+| 50 | Parallel Heiko | 1 |
+| 51 | Pendulum | 1 |
+| 52 | Phala | 1 |
+| 53 | Picasso | 1 |
+| 54 | Polimec | 1 |
+| 55 | Polkadex | 0 |
+| 56 | Polkadot | 1 |
+| 57 | Polkadot Asset Hub | 1 |
+| 58 | Polkadot Bridge Hub | 1 |
+| 59 | Polkadot Collectives | 1 |
+| 60 | Robonomics | 0 |
+| 61 | Shiden | 1 |
+| 62 | Subsocial | 0 |
+| 63 | Ternoa | 1 |
+| 64 | Tinkernet | 1 |
+| 65 | Turing | 1 |
+| 66 | Vara | 1 |
+| 67 | Watr | 1 |
+| 68 | Westend | 1 |
+| 69 | XX network | 0 |
+| 70 | Zeitgeist | 1 |
+| 71 | 3DPass | 0 |
 
 ## The list of supported networks
 | -- | Network | Assets count | Explorers |
@@ -128,47 +127,46 @@
 | 39 | Khala | 16 | Subscan Sub.ID |
 | 40 | KILT | 1 | Subscan Sub.ID |
 | 41 | Kintsugi | 12 | Subscan Sub.ID |
-| 42 | Kreivo | 1 | Have not been added yet |
-| 43 | krest | 1 | Subscan |
-| 44 | Kusama | 1 | Subscan Sub.ID |
-| 45 | Kusama Asset Hub | 7 | Subscan Statescan Sub.ID |
-| 46 | Kusama Bridge Hub | 1 | Subscan |
-| 47 | Kusama People | 1 | Have not been added yet |
-| 48 | Litentry | 1 | Statescan |
-| 49 | Litmus | 1 | Subscan Sub.ID |
-| 50 | Mangata X | 9 | Subscan |
-| 51 | Manta Atlantic | 2 | Subscan |
-| 52 | Moonbeam | 24 | Subscan Moonscan |
-| 53 | Moonriver | 23 | Subscan Moonscan |
-| 54 | Myriad | 1 | Explorer |
-| 55 | NeuroWeb | 2 | Subscan |
-| 56 | Nodle Parachain | 1 | Subscan Sub.ID |
-| 57 | Parallel | 18 | Subscan Sub.ID |
-| 58 | Parallel Heiko | 12 | Subscan |
-| 59 | Pendulum | 4 | Subscan |
-| 60 | Phala | 1 | Subscan |
-| 61 | Picasso | 4 | Subscan |
-| 62 | Polimec | 1 | Statescan |
-| 63 | Polkadex | 9 | Subscan Sub.ID |
-| 64 | Polkadot | 1 | Subscan Sub.ID |
-| 65 | Polkadot Asset Hub | 9 | Subscan Statescan |
-| 66 | Polkadot Bridge Hub | 1 | Subscan |
-| 67 | Polkadot Collectives | 1 | Have not been added yet |
-| 68 | Polymesh | 1 | Subscan |
-| 69 | QUARTZ | 1 | Subscan Sub.ID |
-| 70 | Robonomics | 1 | Subscan Sub.ID |
-| 71 | Shiden | 13 | Subscan Sub.ID |
-| 72 | Subsocial | 1 | Sub.ID |
-| 73 | Ternoa | 1 | Ternoa explorer |
-| 74 | Tinkernet | 1 | Have not been added yet |
-| 75 | Turing | 8 | Subscan |
-| 76 | UNIQUE | 1 | Subscan |
-| 77 | Vara | 1 | Varascan Subscan |
-| 78 | Watr | 1 | Have not been added yet |
-| 79 | Westend | 1 | Subscan |
-| 80 | XX network | 1 | XX explorer Polkastats |
-| 81 | Zeitgeist | 1 | Subscan Sub.ID |
-| 82 | 3DPass | 1 | 3DPass explorer |
+| 42 | krest | 1 | Subscan |
+| 43 | Kusama | 1 | Subscan Sub.ID |
+| 44 | Kusama Asset Hub | 7 | Subscan Statescan Sub.ID |
+| 45 | Kusama Bridge Hub | 1 | Subscan |
+| 46 | Kusama People | 1 | Have not been added yet |
+| 47 | Litentry | 1 | Statescan |
+| 48 | Litmus | 1 | Subscan Sub.ID |
+| 49 | Mangata X | 9 | Subscan |
+| 50 | Manta Atlantic | 2 | Subscan |
+| 51 | Moonbeam | 24 | Subscan Moonscan |
+| 52 | Moonriver | 23 | Subscan Moonscan |
+| 53 | Myriad | 1 | Explorer |
+| 54 | NeuroWeb | 2 | Subscan |
+| 55 | Nodle Parachain | 1 | Subscan Sub.ID |
+| 56 | Parallel | 18 | Subscan Sub.ID |
+| 57 | Parallel Heiko | 12 | Subscan |
+| 58 | Pendulum | 4 | Subscan |
+| 59 | Phala | 1 | Subscan |
+| 60 | Picasso | 4 | Subscan |
+| 61 | Polimec | 1 | Statescan |
+| 62 | Polkadex | 9 | Subscan Sub.ID |
+| 63 | Polkadot | 1 | Subscan Sub.ID |
+| 64 | Polkadot Asset Hub | 9 | Subscan Statescan |
+| 65 | Polkadot Bridge Hub | 1 | Subscan |
+| 66 | Polkadot Collectives | 1 | Have not been added yet |
+| 67 | Polymesh | 1 | Subscan |
+| 68 | QUARTZ | 1 | Subscan Sub.ID |
+| 69 | Robonomics | 1 | Subscan Sub.ID |
+| 70 | Shiden | 13 | Subscan Sub.ID |
+| 71 | Subsocial | 1 | Sub.ID |
+| 72 | Ternoa | 1 | Ternoa explorer |
+| 73 | Tinkernet | 1 | Have not been added yet |
+| 74 | Turing | 8 | Subscan |
+| 75 | UNIQUE | 1 | Subscan |
+| 76 | Vara | 1 | Varascan Subscan |
+| 77 | Watr | 1 | Have not been added yet |
+| 78 | Westend | 1 | Subscan |
+| 79 | XX network | 1 | XX explorer Polkastats |
+| 80 | Zeitgeist | 1 | Subscan Sub.ID |
+| 81 | 3DPass | 1 | 3DPass explorer |
 
 # List of Networks where we are support proxy feature
 | -- | Network | Pure proxy | Regular proxy |
