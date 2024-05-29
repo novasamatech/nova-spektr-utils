@@ -469,6 +469,12 @@
                 "name": "Kreivo",
                 "assetId": 0,
                 "assetSymbol": "KSM"
+            },
+            {
+                "chainId": "0xc1af4cb4eb3918e5db15086c0cc5ec17fb334f728b7c65dd44bfe1e174ff8b3f",
+                "name": "Kusama People",
+                "assetId": 0,
+                "assetSymbol": "KSM"
             }
         ]
     },
@@ -493,6 +499,12 @@
             {
                 "chainId": "0x0441383e31d1266a92b4cb2ddd4c2e3661ac476996db7e5844c52433b81fe782",
                 "name": "Westend Bridge Hub",
+                "assetId": 0,
+                "assetSymbol": "WND"
+            },
+            {
+                "chainId": "0xd67c91ca75c199ff1ee9555567dfad21b9033165c39977170ec8d3f6c1fa433c",
+                "name": "Ledger Novasama Testnet",
                 "assetId": 0,
                 "assetSymbol": "WND"
             }

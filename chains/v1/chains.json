@@ -6234,7 +6234,15 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-pendulum"
                 }
             ]
-        }
+        },
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://pendulum.subscan.io/extrinsic/{hash}",
+                "account": "https://pendulum.subscan.io/account/{address}",
+                "multisig": "https://pendulum.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
+            }
+        ]
     },
     {
         "name": "Crust Polkadot Parachain",
@@ -6431,7 +6439,15 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---ajuna"
                 }
             ]
-        }
+        },
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://ajuna.subscan.io/extrinsic/{hash}",
+                "account": "https://ajuna.subscan.io/account/{address}",
+                "multisig": "https://ajuna.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
+            }
+        ]
     },
     {
         "name": "3DPass",
@@ -6546,6 +6562,12 @@
                 "name": "Varascan",
                 "account": "https://explorer.vara-network.io/account/{address}",
                 "event": "https://explorer.vara-network.io/event/{event}"
+            },
+            {
+                "name": "Subscan",
+                "extrinsic": "https://vara.subscan.io/extrinsic/{hash}",
+                "account": "https://vara.subscan.io/account/{address}",
+                "multisig": "https://vara.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
             }
         ],
         "externalApi": {
@@ -6635,7 +6657,15 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/polkadot-bridgehub"
                 }
             ]
-        }
+        },
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://bridgehub-polkadot.subscan.io/extrinsic/{hash}",
+                "account": "https://bridgehub-polkadot.subscan.io/account/{address}",
+                "multisig": "https://bridgehub-polkadot.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
+            }
+        ]
     },
     {
         "name": "Kusama Bridge Hub",
@@ -6669,6 +6699,14 @@
                 "priceId": "kusama",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Kusama_(KSM).svg",
                 "name": "Kusama"
+            }
+        ],
+        "explorers": [
+            {
+                "name": "Subscan",
+                "extrinsic": "https://bridgehub-kusama.subscan.io/extrinsic/{hash}",
+                "account": "https://bridgehub-kusama.subscan.io/account/{address}",
+                "multisig": "https://bridgehub-kusama.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
             }
         ]
     },
@@ -7881,6 +7919,37 @@
             {
                 "url": "wss://kreivo.kippu.rocks/",
                 "name": "Kippu node"
+            }
+        ],
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "KSM",
+                "precision": 12,
+                "priceId": "kusama",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Kusama_(KSM).svg",
+                "name": "Kusama"
+            }
+        ]
+    },
+    {
+        "name": "Kusama People",
+        "addressPrefix": 2,
+        "chainId": "0xc1af4cb4eb3918e5db15086c0cc5ec17fb334f728b7c65dd44bfe1e174ff8b3f",
+        "parentId": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Kusama_People.svg",
+        "options": [],
+        "nodes": [
+            {
+                "url": "wss://kusama-people-rpc.polkadot.io",
+                "name": "Parity node",
+                "features": [
+                    "noTls12"
+                ]
+            },
+            {
+                "url": "wss://ksm-rpc.stakeworld.io/people",
+                "name": "Stakeworld node"
             }
         ],
         "assets": [
