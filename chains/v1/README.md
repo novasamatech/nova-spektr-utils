@@ -2,7 +2,7 @@
 # Supported Features data:
 ### 🕸️ [Supported networks](#supported-network-list): 81
 ### 🪙 Added assets: 362
-### 👨‍👩‍👧‍👦 [Multisig supported](#list-of-networks-where-we-are-support-multisig) in: 69
+### 👨‍👩‍👧‍👦 [Multisig supported](#list-of-networks-where-we-are-support-multisig) in: 68
 ### 🥞 Staking supported in: 5
 ### 🕹️ Proxy supported in: 6
 
@@ -21,7 +21,7 @@
 | 8 | Bifrost Kusama | 1 |
 | 9 | Bifrost Polkadot | 1 |
 | 10 | Bit.Country Pioneer | 0 |
-| 11 | Bittensor | 0 |
+| 11 | Bittensor | 1 |
 | 12 | Calamari | 0 |
 | 13 | Centrifuge Parachain | 1 |
 | 14 | CLV Parachain | 0 |
@@ -74,12 +74,11 @@
 | 61 | Ternoa | 1 |
 | 62 | Tinkernet | 1 |
 | 63 | Turing | 1 |
-| 64 | Vara | 1 |
-| 65 | Watr | 1 |
-| 66 | Westend | 1 |
-| 67 | XX network | 0 |
-| 68 | Zeitgeist | 1 |
-| 69 | 3DPass | 0 |
+| 64 | Watr | 1 |
+| 65 | Westend | 1 |
+| 66 | XX network | 0 |
+| 67 | Zeitgeist | 1 |
+| 68 | 3DPass | 0 |
 
 ## The list of supported networks
 | -- | Network | Assets count | Explorers |
