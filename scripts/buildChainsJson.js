@@ -14,19 +14,7 @@ const NOVA_CONFIG_URL = `https://raw.githubusercontent.com/novasamatech/nova-uti
 const ASSET_ICONS_DIR = `icons/v1/assets/white`
 
 const CHAINS_ENV = ['chains_dev.json', 'chains.json'];
-const EXCLUDED_CHAINS = {
-  '89d3ec46d2fb43ef5a9713833373d5ea666b092fa8fd68fbc34596036571b907': 'Equilibrium', // Custom logic
-  '55b88a59dded27563391d619d805572dd6b6b89d302b0dd792d01b3c41cfe5b1': 'Singular testnet', // testnet
-  '23fc729c2cdb7bd6770a4e8c58748387cc715fcf338f1f74a16833d90383f4b0': 'Acala Mandala',
-  'c9824829d23066e7dd92b80cfef52559c7692866fcfc3530e737e3fe01410eef': 'GIANT testnet',
-  '9b86ea7366584c5ddf67de243433fcc05732864933258de9467db46eb9bef8b5': 'VARA testnet',
-  'ce7681fb12aa8f7265d229a9074be0ea1d5e99b53eedcec2deade43857901808': 'Acurast Canary',
-  '1d73b9f5dc392744e0dee00a6d6254fcfa2305386cceba60315894fa4807053a': 'Curio',
-  'd3d2f3a3495dc597434a99d7d449ebad6616db45e4e4f178f31cc6fa14378b70': 'Avail Testnet',
-  '61ea8a51fd4a058ee8c0e86df0a89cc85b8b67a0a66432893d09719050c9f540': 'Hyperbridge',
-  '128ea318539862c0a06b745981300d527c1041c6f3388a8c49565559e3ea3d10': 'Avail',
-  'c710a5f16adc17bcd212cff0aedcbf1c1212a043cdc0fb2dcba861efe5305b01': 'Kreivo'
-}
+const ALLOWED_CHAINS = require('./data/allowedChains.json');
 
 const TYPE_EXTRAS_REPLACEMENTS = {
     'baf5aabe40646d11f0ee8abbdc64f4a4b7674925cba08e4a05ff9ebed6e2126b':   'AcalaPrimitivesCurrencyCurrencyId',
@@ -112,80 +100,74 @@ function fillAssetData(chain) {
 
 function getTransformedData(rawData) {
   const filteredData = rawData.filter(chain => {
-    const isEvmChain = chain.options?.includes('ethereumBased') 
-    const isSupportedEvmChain = evmChains.some((chainId) => chainId.includes(chain.chainId));
-    const isExcludedChain = chain.chainId in EXCLUDED_CHAINS;
-    const isPausedChain = chain.name.includes('PAUSE');
-
-
-    return (!isEvmChain || isSupportedEvmChain) && !isExcludedChain && !isPausedChain;
+    const isAllowedChain = chain.chainId in ALLOWED_CHAINS;
+    return isAllowedChain;
   });
 
   return filteredData.map(chain => {
-      let externalApi = filterObjectByKeys(chain.externalApi, ['staking', 'history']);
-      const options = [];
+    let externalApi = filterObjectByKeys(chain.externalApi, ['staking', 'history']);
+    const options = [];
 
-      if (chain.options?.includes('testnet')) {
-        options.push('testnet');
+    if (chain.options?.includes('testnet')) {
+      options.push('testnet');
+    }
+
+    if (multisigMap[chain.name]) {
+      options.push('multisig');
+    }
+
+    if (chain.options?.includes("ethereumBased")) {
+      options.push('ethereum_based');
+    }
+
+    if (GOV_ALLOWED_ARRAY.includes(chain.name)) {
+      options.push('governance');
+    }
+
+    const explorers = chain.explorers?.map(explorer => {
+      if (explorer.name === 'Subscan') {
+        const accountParam = explorer.account;
+        const domain = accountParam.substring(0, accountParam.indexOf('account'));
+        return {
+          ...explorer,
+          multisig: `${domain}multisig_extrinsic/{index}?call_hash={callHash}`
+        };
       }
 
-      if (multisigMap[chain.name]) {
-        options.push('multisig');
-      }
-
-      if (chain.options?.includes("ethereumBased")) {
-        options.push('ethereum_based');
-      }
-
-      if (GOV_ALLOWED_ARRAY.includes(chain.name)) {
-        options.push('governance');
-      }
-
-      const explorers = chain.explorers?.map(explorer => {
-        if (explorer.name === 'Subscan') {
-          const accountParam = explorer.account;
-          const domain = accountParam.substring(0, accountParam.indexOf('account'));
-          return {
-            ...explorer,
-            multisig: `${domain}multisig_extrinsic/{index}?call_hash={callHash}`
-          };
-        }
-
-        return explorer;
-      });
-
-      const proxyData = PROXY_LIST.find(p => p.chainId.includes(chain.chainId));
-
-      if (proxyData) {
-        options.push(...proxyData.options)
-      }
-
-      if (proxyData?.externalApi) {
-        externalApi = { ...externalApi, ...proxyData.externalApi }
-      }
-
-
-      const assets = fillAssetData(chain)
-      const nodes = chain.nodes.filter(node => !node.url.includes('{'));
-
-      const updatedChain = {
-        name: chain.name,
-        addressPrefix: chain.addressPrefix,
-        chainId: `0x${chain.chainId}`,
-        parentId: chain.parentId ? `0x${chain.parentId}` : undefined,
-        icon: replaceUrl(chain.icon, 'chain'),
-        options,
-        nodes: nodes,
-        assets,
-        explorers,
-      };
-
-      if (externalApi) {
-        updatedChain['externalApi'] = externalApi
-      }
-
-      return updatedChain;
+      return explorer;
     });
+
+    const proxyData = PROXY_LIST.find(p => p.chainId.includes(chain.chainId));
+
+    if (proxyData) {
+      options.push(...proxyData.options)
+    }
+
+    if (proxyData?.externalApi) {
+      externalApi = { ...externalApi, ...proxyData.externalApi }
+    }
+
+    const assets = fillAssetData(chain)
+    const nodes = chain.nodes.filter(node => !node.url.includes('{'));
+
+    const updatedChain = {
+      name: chain.name,
+      addressPrefix: chain.addressPrefix,
+      chainId: `0x${chain.chainId}`,
+      parentId: chain.parentId ? `0x${chain.parentId}` : undefined,
+      icon: replaceUrl(chain.icon, 'chain'),
+      options,
+      nodes: nodes,
+      assets,
+      explorers,
+    };
+
+    if (externalApi) {
+      updatedChain['externalApi'] = externalApi
+    }
+
+    return updatedChain;
+  });
 }
 
 function replaceUrl(url, type, name = undefined) {
