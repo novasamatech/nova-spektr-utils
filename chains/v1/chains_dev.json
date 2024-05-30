@@ -9198,5 +9198,62 @@
                 "name": "Westend"
             }
         ]
+    },
+    {
+        "name": "Jur",
+        "specName": "jur-node",
+        "addressPrefix": 42,
+        "chainId": "0x58d1393b47b11707978fbc07e77d7b6f7d9aa88d207dc008a52385f7dba6156a",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Jur.svg",
+        "options": [],
+        "nodes": [
+            {
+                "url": "wss://mainnet.jur.io/",
+                "name": "Iceberg node"
+            }
+        ],
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "JUR",
+                "precision": 18,
+                "priceId": "jur",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Jur.svg",
+                "name": "Jur token"
+            }
+        ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---jur"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Cere",
+        "specName": "polkadot",
+        "addressPrefix": 54,
+        "chainId": "0x81443836a9a24caaa23f1241897d1235717535711d1d3fe24eae4fdc942c092c",
+        "parentId": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Cere.svg",
+        "options": [],
+        "nodes": [
+            {
+                "url": "wss://rpc.mainnet.cere.network/ws",
+                "name": "Cere node"
+            }
+        ],
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "CERE",
+                "precision": 10,
+                "priceId": "cere-network",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/CERE",
+                "name": "Should be included in scripts/data/assetsNameMap"
+            }
+        ]
     }
 ]

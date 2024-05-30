@@ -5929,5 +5929,35 @@
                 "assetSymbol": "NUUM"
             }
         ]
+    },
+    {
+        "name": "Jur token",
+        "precision": 18,
+        "priceId": "jur",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Jur.svg",
+        "symbol": "JUR",
+        "chains": [
+            {
+                "chainId": "0x58d1393b47b11707978fbc07e77d7b6f7d9aa88d207dc008a52385f7dba6156a",
+                "name": "Jur",
+                "assetId": 0,
+                "assetSymbol": "JUR"
+            }
+        ]
+    },
+    {
+        "name": "Should be included in scripts/data/assetsNameMap",
+        "precision": 10,
+        "priceId": "cere-network",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/CERE",
+        "symbol": "CERE",
+        "chains": [
+            {
+                "chainId": "0x81443836a9a24caaa23f1241897d1235717535711d1d3fe24eae4fdc942c092c",
+                "name": "Cere",
+                "assetId": 0,
+                "assetSymbol": "CERE"
+            }
+        ]
     }
 ]

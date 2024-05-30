@@ -7888,5 +7888,37 @@
                 "name": "Kusama"
             }
         ]
+    },
+    {
+        "name": "Jur",
+        "specName": "jur-node",
+        "addressPrefix": 42,
+        "chainId": "0x58d1393b47b11707978fbc07e77d7b6f7d9aa88d207dc008a52385f7dba6156a",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Jur.svg",
+        "options": [],
+        "nodes": [
+            {
+                "url": "wss://mainnet.jur.io/",
+                "name": "Iceberg node"
+            }
+        ],
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "JUR",
+                "precision": 18,
+                "priceId": "jur",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Jur.svg",
+                "name": "Jur token"
+            }
+        ],
+        "externalApi": {
+            "history": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---jur"
+                }
+            ]
+        }
     }
 ]
