@@ -2676,20 +2676,6 @@
         ]
     },
     {
-        "name": "KILT Peregrine",
-        "precision": 15,
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Default.svg",
-        "symbol": "PILT",
-        "chains": [
-            {
-                "chainId": "0xa0c6e3bac382b316a68bca7141af1fba507207594c761076847ce358aeedcc21",
-                "name": "KILT Peregrine",
-                "assetId": 0,
-                "assetSymbol": "PILT"
-            }
-        ]
-    },
-    {
         "name": "Acala",
         "precision": 12,
         "priceId": "acala",

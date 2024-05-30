@@ -2209,39 +2209,6 @@
         }
     },
     {
-        "name": "KILT Peregrine",
-        "specName": "mashnet-node",
-        "addressPrefix": 38,
-        "chainId": "0xa0c6e3bac382b316a68bca7141af1fba507207594c761076847ce358aeedcc21",
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/KILT_Peregrine_Testnet.svg",
-        "options": [
-            "testnet"
-        ],
-        "nodes": [
-            {
-                "url": "wss://peregrine.kilt.io/parachain-public-ws/",
-                "name": "KILT Protocol Node"
-            }
-        ],
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "PILT",
-                "precision": 15,
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Default.svg",
-                "name": "KILT Peregrine"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://kilt-testnet.subscan.io/extrinsic/{hash}",
-                "account": "https://kilt-testnet.subscan.io/account/{address}",
-                "multisig": "https://kilt-testnet.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
-            }
-        ]
-    },
-    {
         "name": "QUARTZ",
         "specName": "kusama",
         "addressPrefix": 255,
