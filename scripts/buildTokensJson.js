@@ -20,7 +20,9 @@ async function getDataViaFile(filePath) {
 
 function transformChainstoTokens(chains) {
   const obj = {};
+  const chainOptionsMap = new Map();
   chains.forEach((i) => {
+    chainOptionsMap.set(i.chainId, i.options);
     i.assets.forEach((asset) => {
       const key = asset.priceId || asset.symbol;
       const updateObj = obj[key] || {
@@ -29,6 +31,7 @@ function transformChainstoTokens(chains) {
         priceId: asset.priceId,
         icon: asset.icon,
         symbol: asset.symbol,
+        isTestToken: false,
         chains: [],
       };
 
@@ -49,7 +52,12 @@ function transformChainstoTokens(chains) {
     });
   });
 
-  return Object.values(obj);
+  const tokens = Object.values(obj).map((token) => {
+    token.isTestToken = token.chains.every((chain) => chainOptionsMap.get(chain.chainId)?.includes('testnet'));
+    return token;
+  });
+
+  return tokens;
 }
 
 async function saveNewFile(newJson, file_name) {
