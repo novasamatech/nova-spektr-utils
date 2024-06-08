@@ -2,7 +2,7 @@
 # Supported Features data:
 ### 🕸️ [Supported networks](#supported-network-list): 43
 ### 🪙 Added assets: 318
-### 👨‍👩‍👧‍👦 [Multisig supported](#list-of-networks-where-we-are-support-multisig) in: 41
+### 👨‍👩‍👧‍👦 [Multisig supported](#list-of-networks-where-we-are-support-multisig) in: 40
 ### 🥞 Staking supported in: 3
 ### 🕹️ Proxy supported in: 6
 
@@ -13,45 +13,44 @@
 | -------- | -------- | -------- |
 | 1 | Acala | 1 |
 | 2 | Aleph Zero | 1 |
-| 3 | Altair | 1 |
-| 4 | Amplitude | 1 |
-| 5 | Astar | 1 |
-| 6 | Basilisk | 1 |
-| 7 | Bifrost Kusama | 1 |
-| 8 | Bifrost Polkadot | 1 |
-| 9 | Centrifuge Parachain | 1 |
-| 10 | HydraDX | 1 |
-| 11 | Imbue | 1 |
-| 12 | Integritee Parachain | 1 |
-| 13 | Interlay | 1 |
-| 14 | Karura | 1 |
-| 15 | Khala | 1 |
-| 16 | KILT | 1 |
-| 17 | Kintsugi | 1 |
-| 18 | Kusama | 1 |
-| 19 | Kusama Asset Hub | 1 |
-| 20 | Kusama Bridge Hub | 1 |
-| 21 | Kusama People | 1 |
-| 22 | Litentry | 0 |
-| 23 | Litmus | 0 |
-| 24 | Moonbeam | 0 |
-| 25 | Moonriver | 1 |
-| 26 | Parallel | 1 |
-| 27 | Parallel Heiko | 1 |
-| 28 | Pendulum | 1 |
-| 29 | Phala | 1 |
-| 30 | Polkadot | 1 |
-| 31 | Polkadot Asset Hub | 1 |
-| 32 | Polkadot Bridge Hub | 1 |
-| 33 | Polkadot Collectives | 1 |
-| 34 | Robonomics | 0 |
-| 35 | Shiden | 1 |
-| 36 | Subsocial | 0 |
-| 37 | Tinkernet | 1 |
-| 38 | Turing | 1 |
-| 39 | Vara | 1 |
-| 40 | Westend | 1 |
-| 41 | Zeitgeist | 1 |
+| 3 | Amplitude | 1 |
+| 4 | Astar | 1 |
+| 5 | Basilisk | 1 |
+| 6 | Bifrost Kusama | 1 |
+| 7 | Bifrost Polkadot | 1 |
+| 8 | Centrifuge Parachain | 1 |
+| 9 | HydraDX | 1 |
+| 10 | Imbue | 1 |
+| 11 | Integritee Parachain | 1 |
+| 12 | Interlay | 1 |
+| 13 | Karura | 1 |
+| 14 | Khala | 1 |
+| 15 | KILT | 1 |
+| 16 | Kintsugi | 1 |
+| 17 | Kusama | 1 |
+| 18 | Kusama Asset Hub | 1 |
+| 19 | Kusama Bridge Hub | 1 |
+| 20 | Kusama People | 1 |
+| 21 | Litentry | 0 |
+| 22 | Litmus | 0 |
+| 23 | Moonbeam | 0 |
+| 24 | Moonriver | 1 |
+| 25 | Parallel | 1 |
+| 26 | Parallel Heiko | 1 |
+| 27 | Pendulum | 1 |
+| 28 | Phala | 1 |
+| 29 | Polkadot | 1 |
+| 30 | Polkadot Asset Hub | 1 |
+| 31 | Polkadot Bridge Hub | 1 |
+| 32 | Polkadot Collectives | 1 |
+| 33 | Robonomics | 0 |
+| 34 | Shiden | 1 |
+| 35 | Subsocial | 0 |
+| 36 | Tinkernet | 1 |
+| 37 | Turing | 1 |
+| 38 | Vara | 1 |
+| 39 | Westend | 1 |
+| 40 | Zeitgeist | 1 |
 
 ## The list of supported networks
 | -- | Network | Assets count | Explorers |
