@@ -36,7 +36,8 @@ function transformChainstoTokens(chains) {
     chainOptionsMap.set(i.chainId, i.options);
     i.assets.forEach((asset) => {
       const normalizedSymbol = normalizeSymbol(asset.symbol);
-      const key = asset.priceId || normalizedSymbol;
+      const uniqueAsset = containsUniqueAsset(asset.symbol); 
+      const key = uniqueAsset || asset.priceId || normalizedSymbol;
       const updateObj = obj[key] || {
         name: asset.name,
         precision: asset.precision,
@@ -56,21 +57,11 @@ function transformChainstoTokens(chains) {
         typeExtras: asset.typeExtras,
       };
 
-      const uniqueAsset = containsUniqueAsset(asset.symbol);
-      if (uniqueAsset) {
-        const uniqueKey = uniqueAsset;
-        obj[uniqueKey] = {
-          ...updateObj,
-          name: asset.name,
-          symbol: uniqueAsset,
-          chains: [...(obj[uniqueKey]?.chains || []), chainData],
-        };
-      } else {
-        obj[key] = {
-          ...updateObj,
-          chains: [...updateObj.chains, chainData],
-        };
-      }
+      
+      obj[key] = {
+        ...updateObj,
+        chains: [...updateObj.chains, chainData],
+      };
     });
   });
 

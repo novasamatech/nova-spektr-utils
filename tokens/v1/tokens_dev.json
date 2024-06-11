@@ -2044,9 +2044,9 @@
     },
     {
         "name": "Equilibrium USD",
-        "precision": 6,
+        "precision": 9,
         "priceId": "tether",
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/USDT.svg",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/EQD.svg",
         "symbol": "EQD",
         "isTestToken": false,
         "chains": [
@@ -4486,8 +4486,8 @@
         "name": "Darwinia",
         "precision": 18,
         "priceId": "darwinia-network-native-token",
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Crab_(CRAB).svg",
-        "symbol": "RING",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Darwinia_(RING).svg",
+        "symbol": "xcRING",
         "isTestToken": false,
         "chains": [
             {
