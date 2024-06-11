@@ -8,6 +8,9 @@ const CONFIG_PATH = `tokens/${SPEKTR_CONFIG_VERSION}/`;
 
 const CHAINS_ENV = ['chains_dev.json', 'chains.json'];
 
+// That assets will be taken as an unique asset, despite priceId
+const UNIQUE_ASSET_LIST = ['EQD', 'iBTC', 'kBTC', 'RING'];
+
 async function getDataViaFile(filePath) {
   try {
     const data = await readFile(filePath, 'utf8');
@@ -18,13 +21,23 @@ async function getDataViaFile(filePath) {
   }
 }
 
+function containsUniqueAsset(symbol) {
+  return UNIQUE_ASSET_LIST.find(uniqueAsset => symbol.includes(uniqueAsset));
+}
+
+function normalizeSymbol(symbol) {
+  return symbol.startsWith('xc') ? symbol.slice(2) : symbol;
+}
+
 function transformChainstoTokens(chains) {
   const obj = {};
   const chainOptionsMap = new Map();
   chains.forEach((i) => {
     chainOptionsMap.set(i.chainId, i.options);
     i.assets.forEach((asset) => {
-      const key = asset.priceId || asset.symbol;
+      const normalizedSymbol = normalizeSymbol(asset.symbol);
+      const uniqueAsset = containsUniqueAsset(asset.symbol); 
+      const key = uniqueAsset || asset.priceId || normalizedSymbol;
       const updateObj = obj[key] || {
         name: asset.name,
         precision: asset.precision,
@@ -35,19 +48,19 @@ function transformChainstoTokens(chains) {
         chains: [],
       };
 
+      const chainData = {
+        chainId: i.chainId,
+        name: i.name,
+        assetId: asset.assetId,
+        assetSymbol: asset.symbol,
+        type: asset.type,
+        typeExtras: asset.typeExtras,
+      };
+
+      
       obj[key] = {
         ...updateObj,
-        chains: [
-          ...updateObj.chains,
-          {
-            chainId: i.chainId,
-            name: i.name,
-            assetId: asset.assetId,
-            assetSymbol: asset.symbol,
-            type: asset.type,
-            typeExtras: asset.typeExtras,
-          },
-        ],
+        chains: [...updateObj.chains, chainData],
       };
     });
   });
