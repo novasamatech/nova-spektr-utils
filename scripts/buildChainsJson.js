@@ -82,6 +82,14 @@ function fillAssetData(chain) {
     if (asset.symbol.endsWith('.s')) {
       return;
     }
+    // Remove LP tokens
+    if (asset.symbol.startsWith('LP ')) {
+      return;
+    }
+    // Remove Special DOT tokens
+    if (asset.symbol.startsWith('cDOT')) {
+      return;
+    }
     assetsList.push({
       assetId: asset.assetId,
       symbol: asset.symbol,
