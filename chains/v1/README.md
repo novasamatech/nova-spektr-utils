@@ -20,7 +20,7 @@
 | 7 | Bifrost Kusama | 1 |
 | 8 | Bifrost Polkadot | 1 |
 | 9 | Centrifuge Parachain | 1 |
-| 10 | HydraDX | 1 |
+| 10 | Hydration | 1 |
 | 11 | Imbue | 1 |
 | 12 | Integritee Parachain | 1 |
 | 13 | Interlay | 1 |
@@ -65,7 +65,7 @@
 | 7 | Bifrost Kusama | 14 | Subscan Sub.ID |
 | 8 | Bifrost Polkadot | 12 | Subscan |
 | 9 | Centrifuge Parachain | 1 | Subscan Sub.ID |
-| 10 | HydraDX | 36 | Subscan |
+| 10 | Hydration | 36 | Subscan |
 | 11 | Imbue | 1 | Have not been added yet |
 | 12 | Integritee Parachain | 1 | Subscan Sub.ID |
 | 13 | Interlay | 14 | Subscan |
@@ -103,7 +103,7 @@
 # List of Networks where we are support proxy feature
 | -- | Network | Pure proxy | Regular proxy |
 | -------- | -------- | -------- | -------- |
-| 1 | HydraDX | true | true |
+| 1 | Hydration | true | true |
 | 2 | Kusama | true | true |
 | 3 | Moonbeam | true | true |
 | 4 | Moonriver | true | true |
