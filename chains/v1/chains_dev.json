@@ -376,7 +376,7 @@
             },
             {
                 "assetId": 1,
-                "symbol": "RMRK (old)",
+                "symbol": "RMRK",
                 "precision": 10,
                 "type": "statemine",
                 "priceId": "rmrk",
@@ -542,7 +542,7 @@
             },
             {
                 "assetId": 3,
-                "symbol": "RMRK (old)",
+                "symbol": "RMRK",
                 "precision": 10,
                 "type": "orml",
                 "priceId": "rmrk",
@@ -1155,7 +1155,7 @@
             },
             {
                 "assetId": 2,
-                "symbol": "RMRK (old)",
+                "symbol": "RMRK",
                 "precision": 10,
                 "type": "orml",
                 "priceId": "rmrk",
@@ -4789,7 +4789,7 @@
             },
             {
                 "assetId": 5,
-                "symbol": "RMRK (old)",
+                "symbol": "RMRK",
                 "precision": 10,
                 "type": "orml",
                 "priceId": "rmrk",
@@ -5498,7 +5498,7 @@
             },
             {
                 "assetId": 1,
-                "symbol": "xcRMRK (old)",
+                "symbol": "xcRMRK",
                 "precision": 10,
                 "type": "statemine",
                 "priceId": "rmrk",
