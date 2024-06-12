@@ -1,7 +1,7 @@
 
 # Supported Features data:
 ### 🕸️ [Supported networks](#supported-network-list): 43
-### 🪙 Added assets: 318
+### 🪙 Added assets: 304
 ### 👨‍👩‍👧‍👦 [Multisig supported](#list-of-networks-where-we-are-support-multisig) in: 41
 ### 🥞 Staking supported in: 3
 ### 🕹️ Proxy supported in: 6
@@ -65,14 +65,14 @@
 | 7 | Bifrost Kusama | 14 | Subscan Sub.ID |
 | 8 | Bifrost Polkadot | 12 | Subscan |
 | 9 | Centrifuge Parachain | 1 | Subscan Sub.ID |
-| 10 | Hydration | 36 | Subscan |
+| 10 | Hydration | 33 | Subscan |
 | 11 | Imbue | 1 | Have not been added yet |
 | 12 | Integritee Parachain | 1 | Subscan Sub.ID |
-| 13 | Interlay | 14 | Subscan |
+| 13 | Interlay | 11 | Subscan |
 | 14 | Karura | 26 | Subscan Sub.ID |
 | 15 | Khala | 16 | Subscan Sub.ID |
 | 16 | KILT | 1 | Subscan Sub.ID |
-| 17 | Kintsugi | 12 | Subscan Sub.ID |
+| 17 | Kintsugi | 9 | Subscan Sub.ID |
 | 18 | Kusama | 1 | Subscan Sub.ID |
 | 19 | Kusama Asset Hub | 7 | Subscan Statescan Sub.ID |
 | 20 | Kusama Bridge Hub | 1 | Subscan |
@@ -82,7 +82,7 @@
 | 24 | Mangata X | 9 | Subscan |
 | 25 | Moonbeam | 24 | Subscan Moonscan |
 | 26 | Moonriver | 23 | Subscan Moonscan |
-| 27 | Parallel | 18 | Subscan Sub.ID |
+| 27 | Parallel | 13 | Subscan Sub.ID |
 | 28 | Parallel Heiko | 12 | Subscan |
 | 29 | Pendulum | 4 | Subscan |
 | 30 | Phala | 1 | Subscan |
