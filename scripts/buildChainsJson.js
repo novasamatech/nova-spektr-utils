@@ -82,6 +82,10 @@ function fillAssetData(chain) {
     if (asset.symbol.endsWith('.s')) {
       return;
     }
+    // Remove Pool tokens
+    if (asset.symbol.includes('Pool')) {
+      return;
+    }
     // Remove LP tokens
     if (asset.symbol.startsWith('LP ')) {
       return;
@@ -90,6 +94,10 @@ function fillAssetData(chain) {
     if (asset.symbol.startsWith('cDOT')) {
       return;
     }
+
+    // Replace (old) in symbols
+    asset.symbol = asset.symbol.replace(/ \(old\)/gi, '');
+
     assetsList.push({
       assetId: asset.assetId,
       symbol: asset.symbol,
