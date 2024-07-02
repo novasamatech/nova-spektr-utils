@@ -72,6 +72,14 @@
         ]
     },
     {
+        "name": "Rococo Testnet",
+        "chainId": "0x6408de7737c59c238890533af25896a2c20608d8b380bb01029acb392781063e",
+        "options": [
+            "regular_proxy",
+            "pure_proxy"
+        ]
+    },
+    {
         "name": "HydraDX",
         "chainId": "0xafdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
         "options": [
