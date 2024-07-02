@@ -20,7 +20,8 @@ const KNOWN_EXPLORERS = [
     'Varascan',
     'Polkastats',
     'Governance2 Testnet explorer',
-    'Moonscan'
+    'Moonscan',
+    'Polimec explorer'
 ]
 
 
