@@ -1,8 +1,8 @@
 
 # Supported Features data:
-### 🕸️ [Supported networks](#supported-network-list): 43
-### 🪙 Added assets: 304
-### 👨‍👩‍👧‍👦 [Multisig supported](#list-of-networks-where-we-are-support-multisig) in: 41
+### 🕸️ [Supported networks](#supported-network-list): 44
+### 🪙 Added assets: 305
+### 👨‍👩‍👧‍👦 [Multisig supported](#list-of-networks-where-we-are-support-multisig) in: 42
 ### 🥞 Staking supported in: 3
 ### 🕹️ Proxy supported in: 6
 
@@ -40,18 +40,19 @@
 | 27 | Parallel Heiko | 1 |
 | 28 | Pendulum | 1 |
 | 29 | Phala | 1 |
-| 30 | Polkadot | 1 |
-| 31 | Polkadot Asset Hub | 1 |
-| 32 | Polkadot Bridge Hub | 1 |
-| 33 | Polkadot Collectives | 1 |
-| 34 | Robonomics | 0 |
-| 35 | Shiden | 1 |
-| 36 | Subsocial | 0 |
-| 37 | Tinkernet | 1 |
-| 38 | Turing | 1 |
-| 39 | Vara | 1 |
-| 40 | Westend | 1 |
-| 41 | Zeitgeist | 1 |
+| 30 | Polimec | 1 |
+| 31 | Polkadot | 1 |
+| 32 | Polkadot Asset Hub | 1 |
+| 33 | Polkadot Bridge Hub | 1 |
+| 34 | Polkadot Collectives | 1 |
+| 35 | Robonomics | 0 |
+| 36 | Shiden | 1 |
+| 37 | Subsocial | 0 |
+| 38 | Tinkernet | 1 |
+| 39 | Turing | 1 |
+| 40 | Vara | 1 |
+| 41 | Westend | 1 |
+| 42 | Zeitgeist | 1 |
 
 ## The list of supported networks
 | -- | Network | Assets count | Explorers |
@@ -86,19 +87,20 @@
 | 28 | Parallel Heiko | 12 | Subscan |
 | 29 | Pendulum | 4 | Subscan |
 | 30 | Phala | 1 | Subscan |
-| 31 | Polkadot | 1 | Subscan Sub.ID |
-| 32 | Polkadot Asset Hub | 9 | Subscan Statescan |
-| 33 | Polkadot Bridge Hub | 1 | Subscan |
-| 34 | Polkadot Collectives | 1 | Have not been added yet |
-| 35 | QUARTZ | 1 | Subscan Sub.ID |
-| 36 | Robonomics | 1 | Subscan Sub.ID |
-| 37 | Shiden | 13 | Subscan Sub.ID |
-| 38 | Subsocial | 1 | Sub.ID |
-| 39 | Tinkernet | 1 | Have not been added yet |
-| 40 | Turing | 8 | Subscan |
-| 41 | Vara | 1 | Varascan Subscan |
-| 42 | Westend | 1 | Subscan |
-| 43 | Zeitgeist | 1 | Subscan Sub.ID |
+| 31 | Polimec | 1 | Statescan |
+| 32 | Polkadot | 1 | Subscan Sub.ID |
+| 33 | Polkadot Asset Hub | 9 | Subscan Statescan |
+| 34 | Polkadot Bridge Hub | 1 | Subscan |
+| 35 | Polkadot Collectives | 1 | Statescan |
+| 36 | QUARTZ | 1 | Subscan Sub.ID |
+| 37 | Robonomics | 1 | Subscan Sub.ID |
+| 38 | Shiden | 13 | Subscan Sub.ID |
+| 39 | Subsocial | 1 | Sub.ID |
+| 40 | Tinkernet | 1 | Have not been added yet |
+| 41 | Turing | 8 | Subscan |
+| 42 | Vara | 1 | Varascan Subscan |
+| 43 | Westend | 1 | Subscan |
+| 44 | Zeitgeist | 1 | Subscan Sub.ID |
 
 # List of Networks where we are support proxy feature
 | -- | Network | Pure proxy | Regular proxy |
