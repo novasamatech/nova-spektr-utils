@@ -2,7 +2,7 @@
 # Supported Features data:
 ### 🕸️ [Supported networks](#supported-network-list): 44
 ### 🪙 Added assets: 305
-### 👨‍👩‍👧‍👦 [Multisig supported](#list-of-networks-where-we-are-support-multisig) in: 42
+### 👨‍👩‍👧‍👦 [Multisig supported](#list-of-networks-where-we-are-support-multisig) in: 41
 ### 🥞 Staking supported in: 3
 ### 🕹️ Proxy supported in: 6
 
@@ -37,22 +37,21 @@
 | 24 | Moonbeam | 0 |
 | 25 | Moonriver | 1 |
 | 26 | Parallel | 1 |
-| 27 | Parallel Heiko | 1 |
-| 28 | Pendulum | 1 |
-| 29 | Phala | 1 |
-| 30 | Polimec | 1 |
-| 31 | Polkadot | 1 |
-| 32 | Polkadot Asset Hub | 1 |
-| 33 | Polkadot Bridge Hub | 1 |
-| 34 | Polkadot Collectives | 1 |
-| 35 | Robonomics | 0 |
-| 36 | Shiden | 1 |
-| 37 | Subsocial | 0 |
-| 38 | Tinkernet | 1 |
-| 39 | Turing | 1 |
-| 40 | Vara | 1 |
-| 41 | Westend | 1 |
-| 42 | Zeitgeist | 1 |
+| 27 | Pendulum | 1 |
+| 28 | Phala | 1 |
+| 29 | Polimec | 1 |
+| 30 | Polkadot | 1 |
+| 31 | Polkadot Asset Hub | 1 |
+| 32 | Polkadot Bridge Hub | 1 |
+| 33 | Polkadot Collectives | 1 |
+| 34 | Robonomics | 0 |
+| 35 | Shiden | 1 |
+| 36 | Subsocial | 0 |
+| 37 | Tinkernet | 1 |
+| 38 | Turing | 1 |
+| 39 | Vara | 1 |
+| 40 | Westend | 1 |
+| 41 | Zeitgeist | 1 |
 
 ## The list of supported networks
 | -- | Network | Assets count | Explorers |
