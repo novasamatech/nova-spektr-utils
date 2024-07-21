@@ -512,7 +512,7 @@
             },
             {
                 "assetId": 1,
-                "symbol": "aSEED",
+                "symbol": "aSEEDk",
                 "precision": 12,
                 "type": "orml",
                 "priceId": "ausd-seed-karura",
@@ -1013,7 +1013,7 @@
             },
             {
                 "assetId": 7,
-                "symbol": "aSEED",
+                "symbol": "aSEEDk",
                 "precision": 12,
                 "type": "statemine",
                 "priceId": "ausd-seed-karura",
@@ -1200,7 +1200,7 @@
             },
             {
                 "assetId": 5,
-                "symbol": "aSEED",
+                "symbol": "aSEEDk",
                 "precision": 12,
                 "type": "orml",
                 "priceId": "ausd-seed-karura",
@@ -1452,7 +1452,7 @@
             },
             {
                 "assetId": 5,
-                "symbol": "aSEED",
+                "symbol": "aSEEDk",
                 "precision": 12,
                 "type": "orml",
                 "priceId": "ausd-seed-karura",
@@ -1567,7 +1567,7 @@
             },
             {
                 "assetId": 2,
-                "symbol": "aSEED",
+                "symbol": "aSEEDk",
                 "precision": 12,
                 "type": "statemine",
                 "priceId": "ausd-seed-karura",
@@ -1687,10 +1687,14 @@
         ],
         "explorers": [
             {
-                "name": "Subscan",
-                "extrinsic": "https://parallel-heiko.subscan.io/extrinsic/{hash}",
-                "account": "https://parallel-heiko.subscan.io/account/{address}",
-                "multisig": "https://parallel-heiko.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
+                "name": "Statescan",
+                "account": "https://heiko.statescan.io/#/accounts/{address}",
+                "extrinsic": "https://heiko.statescan.io/#/extrinsics/{hash}",
+                "event": "https://heiko.statescan.io/#/events/{event}"
+            },
+            {
+                "name": "Sub.ID",
+                "account": "https://sub.id/{address}"
             }
         ],
         "externalApi": {
@@ -1748,7 +1752,7 @@
             },
             {
                 "assetId": 2,
-                "symbol": "aSEED",
+                "symbol": "aSEEDk",
                 "precision": 12,
                 "type": "orml",
                 "priceId": "ausd-seed-karura",
@@ -1961,7 +1965,7 @@
             },
             {
                 "assetId": 5,
-                "symbol": "aSEED",
+                "symbol": "aSEEDk",
                 "precision": 12,
                 "type": "statemine",
                 "priceId": "ausd-seed-karura",
@@ -2293,7 +2297,7 @@
             },
             {
                 "assetId": 2,
-                "symbol": "aSEED",
+                "symbol": "aSEEDp",
                 "precision": 12,
                 "type": "orml",
                 "priceId": "ausd-seed-acala",
@@ -2639,7 +2643,7 @@
             },
             {
                 "assetId": 8,
-                "symbol": "aSEED",
+                "symbol": "aSEEDp",
                 "precision": 12,
                 "type": "statemine",
                 "priceId": "ausd-seed-acala",
@@ -2794,7 +2798,7 @@
             },
             {
                 "assetId": 4,
-                "symbol": "aSEED",
+                "symbol": "aSEEDp",
                 "precision": 12,
                 "type": "statemine",
                 "priceId": "ausd-seed-acala",
@@ -2902,10 +2906,10 @@
         ],
         "explorers": [
             {
-                "name": "Subscan",
-                "extrinsic": "https://parallel.subscan.io/extrinsic/{hash}",
-                "account": "https://parallel.subscan.io/account/{address}",
-                "multisig": "https://parallel.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
+                "name": "Statescan",
+                "account": "https://parallel.statescan.io/#/accounts/{address}",
+                "extrinsic": "https://parallel.statescan.io/#/extrinsics/{hash}",
+                "event": "https://parallel.statescan.io/#/events/{event}"
             },
             {
                 "name": "Sub.ID",
@@ -3898,6 +3902,20 @@
                     "transfersEnabled": true
                 },
                 "name": "WUD"
+            },
+            {
+                "assetId": 36,
+                "symbol": "MYTH",
+                "precision": 18,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/MYTH.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x1e000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "21367521367521400",
+                    "transfersEnabled": true
+                },
+                "name": "Mythical token"
             }
         ],
         "explorers": [
@@ -4244,7 +4262,7 @@
             },
             {
                 "assetId": 2,
-                "symbol": "aSEED",
+                "symbol": "aSEEDk",
                 "precision": 12,
                 "type": "orml",
                 "priceId": "ausd-seed-karura",
@@ -4882,7 +4900,11 @@
         "chainId": "0x6408de7737c59c238890533af25896a2c20608d8b380bb01029acb392781063e",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Rococo_Testnet.svg",
         "options": [
-            "testnet"
+            "testnet",
+            "governance",
+            "regular_proxy",
+            "pure_proxy",
+            "multisig"
         ],
         "nodes": [
             {
@@ -4990,21 +5012,6 @@
                     "transfersEnabled": true
                 },
                 "name": "USD Tether"
-            },
-            {
-                "assetId": 10,
-                "symbol": "GLMR",
-                "precision": 18,
-                "type": "orml",
-                "priceId": "moonbeam",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Moonbeam_(GLMR).svg",
-                "typeExtras": {
-                    "currencyIdScale": "0x0106",
-                    "currencyIdType": "SpacewalkPrimitivesCurrencyId",
-                    "existentialDeposit": "1000",
-                    "transfersEnabled": true
-                },
-                "name": "Moonbeam"
             }
         ],
         "externalApi": {
@@ -5549,7 +5556,7 @@
             },
             {
                 "assetId": 8,
-                "symbol": "xcaSEED",
+                "symbol": "xcaSEEDk",
                 "precision": 12,
                 "type": "statemine",
                 "priceId": "ausd-seed-karura",
@@ -5839,10 +5846,6 @@
             {
                 "url": "wss://moonbeam.public.blastapi.io",
                 "name": "Blast node"
-            },
-            {
-                "url": "wss://1rpc.io/glmr",
-                "name": "Automata 1RPC node"
             }
         ],
         "assets": [
@@ -5868,7 +5871,7 @@
             },
             {
                 "assetId": 2,
-                "symbol": "xcaSEED",
+                "symbol": "xcaSEEDp",
                 "precision": 12,
                 "type": "statemine",
                 "priceId": "ausd-seed-acala",
@@ -6289,13 +6292,53 @@
                 "priceId": "polimec",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/PLMC.svg",
                 "name": "Polimec token"
+            },
+            {
+                "assetId": 1,
+                "symbol": "DOT",
+                "precision": 10,
+                "type": "statemine",
+                "priceId": "polkadot",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Polkadot_(DOT).svg",
+                "typeExtras": {
+                    "assetId": "10",
+                    "palletName": "ForeignAssets"
+                },
+                "name": "Polkadot"
+            },
+            {
+                "assetId": 2,
+                "symbol": "USDT",
+                "precision": 6,
+                "type": "statemine",
+                "priceId": "tether",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/USDT.svg",
+                "typeExtras": {
+                    "assetId": "1984",
+                    "palletName": "ForeignAssets"
+                },
+                "name": "USD Tether"
+            },
+            {
+                "assetId": 3,
+                "symbol": "USDC",
+                "precision": 6,
+                "type": "statemine",
+                "priceId": "usd-coin",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/USDC.svg",
+                "typeExtras": {
+                    "assetId": "1337",
+                    "palletName": "ForeignAssets"
+                },
+                "name": "USD Coin"
             }
         ],
         "explorers": [
             {
-                "name": "Statescan",
-                "account": "https://polimec.statescan.io/#/accounts/{address}",
-                "event": "https://polimec.statescan.io/#/events/{event}"
+                "name": "Polimec explorer",
+                "account": "https://explorer.polimec.org/polimec/account/{address}",
+                "event": "https://explorer.polimec.org/polimec/event/{event}",
+                "extrinsic": "https://explorer.polimec.org/polimec/extrinsic/{hash}"
             }
         ],
         "externalApi": {
