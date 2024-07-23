@@ -95,6 +95,11 @@ function fillAssetData(chain) {
       return;
     }
 
+    // Remove Snowbridge tokens
+    if (asset.symbol.endsWith('-Snowbridge')) {
+      return;
+    }
+
     // Replace (old) in symbols
     asset.symbol = asset.symbol.replace(/ \(old\)/gi, '');
 
@@ -164,7 +169,10 @@ function getTransformedData(rawData) {
     }
 
     const assets = fillAssetData(chain)
-    const nodes = chain.nodes.filter(node => !node.url.includes('{'));
+    const nodes = chain.nodes.filter(node => !node.url.includes('{')).map(node => ({
+      url: node.url,
+      name: node.name
+    }));
 
     const updatedChain = {
       name: chain.name,
@@ -188,16 +196,23 @@ function getTransformedData(rawData) {
 
 function replaceUrl(url, type, name = undefined) {
   const changedBaseUrl = url.replace("nova-utils/master", "nova-spektr-utils/main");
-  const lastPartOfUrl = url.split("/").pop()
+  const lastPartOfUrl = url.split("/").pop();
+
+  const customAssetMappings = {
+    'aSEEDk': 'aSEED-Kusama',
+    'aSEEDp': 'aSEED-Polkadot'
+  };
 
   // handling for 'xc' prefixed token names
   const processedName = name ? name.replace(/^xc/, '') : name;
 
   switch (type) {
     case "chain":
+      const chainName = lastPartOfUrl.split('.')[0];
+      const correctedChainName = chainName.charAt(0).toUpperCase() + chainName.slice(1);
       return changedBaseUrl.replace(
         /\/icons\/.*/,
-        `/icons/${SPEKTR_CONFIG_VERSION}/chains/${lastPartOfUrl}`
+        `/icons/${SPEKTR_CONFIG_VERSION}/chains/${correctedChainName}.svg`
       );
     case "asset":
       const tickerNames = [processedName, processedName.split("-")[0], TICKER_NAMES[processedName]];
@@ -205,7 +220,8 @@ function replaceUrl(url, type, name = undefined) {
       if (!relativePath) {
         console.error(`Can't find file for: ${processedName} in: ${ASSET_ICONS_DIR}`);
         // Fallback to TICKER_NAMES using original name if processedName fails
-        return changedBaseUrl.replace(/\/icons\/.*/, `/${TICKER_NAMES[name] || processedName}`);
+        const mappedName = customAssetMappings[processedName] || TICKER_NAMES[name] || processedName;
+        return changedBaseUrl.replace(/\/icons\/.*/, `/icons/v1/assets/white/${mappedName}.svg`);
       }
 
       return changedBaseUrl.replace(/\/icons\/.*/, `/${relativePath}`);
