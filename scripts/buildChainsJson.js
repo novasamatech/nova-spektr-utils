@@ -126,7 +126,7 @@ function getTransformedData(rawData) {
   });
 
   return filteredData.map(chain => {
-    let externalApi = filterObjectByKeys(chain.externalApi, ['staking', 'history']);
+    let externalApi = filterObjectByKeys(chain.externalApi, ['staking', 'history', 'governance-delegations']);
     const options = [];
 
     if (chain.options?.includes('testnet')) {
