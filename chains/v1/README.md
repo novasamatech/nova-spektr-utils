@@ -27,31 +27,31 @@
 | 14 | Karura | 1 |
 | 15 | Khala | 1 |
 | 16 | KILT | 1 |
-| 17 | Kusama | 1 |
-| 18 | Kusama Asset Hub | 1 |
-| 19 | Kusama Bridge Hub | 1 |
-| 20 | Kusama People | 1 |
-| 21 | Litentry | 0 |
-| 22 | Litmus | 0 |
-| 23 | Moonbeam | 0 |
-| 24 | Moonriver | 1 |
-| 25 | Parallel | 1 |
-| 26 | Parallel Heiko | 1 |
-| 27 | Pendulum | 1 |
-| 28 | Phala | 1 |
-| 29 | Polimec | 1 |
-| 30 | Polkadot | 1 |
-| 31 | Polkadot Asset Hub | 1 |
-| 32 | Polkadot Bridge Hub | 1 |
-| 33 | Polkadot Collectives | 1 |
-| 34 | Robonomics | 0 |
-| 35 | Shiden | 1 |
-| 36 | Subsocial | 0 |
-| 37 | Tinkernet | 1 |
-| 38 | Turing | 1 |
-| 39 | Vara | 1 |
-| 40 | Westend | 1 |
-| 41 | Zeitgeist | 1 |
+| 17 | Kintsugi | 1 |
+| 18 | Kusama | 1 |
+| 19 | Kusama Asset Hub | 1 |
+| 20 | Kusama Bridge Hub | 1 |
+| 21 | Kusama People | 1 |
+| 22 | Litentry | 0 |
+| 23 | Litmus | 0 |
+| 24 | Moonbeam | 0 |
+| 25 | Moonriver | 1 |
+| 26 | Parallel | 1 |
+| 27 | Parallel Heiko | 1 |
+| 28 | Pendulum | 1 |
+| 29 | Phala | 1 |
+| 30 | Polimec | 1 |
+| 31 | Polkadot | 1 |
+| 32 | Polkadot Asset Hub | 1 |
+| 33 | Polkadot Bridge Hub | 1 |
+| 34 | Polkadot Collectives | 1 |
+| 35 | Robonomics | 0 |
+| 36 | Shiden | 1 |
+| 37 | Subsocial | 0 |
+| 38 | Tinkernet | 1 |
+| 39 | Turing | 1 |
+| 40 | Vara | 1 |
+| 41 | Westend | 1 |
 
 ## The list of supported networks
 | -- | Network | Assets count | Explorers |
