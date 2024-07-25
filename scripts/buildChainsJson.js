@@ -29,9 +29,9 @@ const TYPE_EXTRAS_REPLACEMENTS = {
     'cceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf':   'SpacewalkPrimitivesCurrencyId',
     '5d3c298622d5634ed019bf61ea4b71655030015bde9beb0d6a24743714462c86':   'SpacewalkPrimitivesCurrencyId'
 }
-const STAKING_ALLOWED_ARRAY = ['Polkadot', 'Kusama', 'Westend', 'Polkadex', 'Ternoa', 'Ledger Novasama Testnet']
+const STAKING_ALLOWED_ARRAY = ['Polkadot', 'Kusama', 'Westend', 'Polkadex', 'Ternoa', 'Novasama Testnet - Governance']
 
-const GOV_ALLOWED_ARRAY = ['Polkadot', 'Kusama', 'Westend', 'Rococo', 'Ledger Novasama Testnet'];
+const GOV_ALLOWED_ARRAY = ['Polkadot', 'Kusama', 'Westend', 'Rococo', 'Novasama Testnet - Governance'];
 
 const DEFAULT_ASSETS = ['SHIBATALES', 'DEV', 'SIRI', 'PILT', 'cDOT-6/13', 'cDOT-7/14', 'cDOT-8/15', 'cDOT-9/16', 'cDOT-10/17', 'TZERO', 'UNIT', 'Unit', 'tEDG','JOE', 'HOP', 'PAS'];
 
