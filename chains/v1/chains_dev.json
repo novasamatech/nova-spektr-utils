@@ -85,6 +85,12 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-polkadot"
                 }
             ],
+            "governance-delegations": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-polkadot-gov"
+                }
+            ],
             "proxy": [
                 {
                     "type": "subquery",
@@ -177,6 +183,12 @@
                 {
                     "type": "subquery",
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kusama"
+                }
+            ],
+            "governance-delegations": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kusama-governance2"
                 }
             ],
             "proxy": [
@@ -512,7 +524,7 @@
             },
             {
                 "assetId": 1,
-                "symbol": "aSEED",
+                "symbol": "aSEEDk",
                 "precision": 12,
                 "type": "orml",
                 "priceId": "ausd-seed-karura",
@@ -1013,7 +1025,7 @@
             },
             {
                 "assetId": 7,
-                "symbol": "aSEED",
+                "symbol": "aSEEDk",
                 "precision": 12,
                 "type": "statemine",
                 "priceId": "ausd-seed-karura",
@@ -1200,7 +1212,7 @@
             },
             {
                 "assetId": 5,
-                "symbol": "aSEED",
+                "symbol": "aSEEDk",
                 "precision": 12,
                 "type": "orml",
                 "priceId": "ausd-seed-karura",
@@ -1365,9 +1377,7 @@
         "chainId": "0x9af9a64e6e4da8e3073901c3ff0cc4c3aad9563786d89daf6ad820b6e14a0b8b",
         "parentId": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Kintsugi.svg",
-        "options": [
-            "multisig"
-        ],
+        "options": [],
         "nodes": [
             {
                 "url": "wss://api-kusama.interlay.io/parachain",
@@ -1452,7 +1462,7 @@
             },
             {
                 "assetId": 5,
-                "symbol": "aSEED",
+                "symbol": "aSEEDk",
                 "precision": 12,
                 "type": "orml",
                 "priceId": "ausd-seed-karura",
@@ -1567,7 +1577,7 @@
             },
             {
                 "assetId": 2,
-                "symbol": "aSEED",
+                "symbol": "aSEEDk",
                 "precision": 12,
                 "type": "statemine",
                 "priceId": "ausd-seed-karura",
@@ -1687,10 +1697,14 @@
         ],
         "explorers": [
             {
-                "name": "Subscan",
-                "extrinsic": "https://parallel-heiko.subscan.io/extrinsic/{hash}",
-                "account": "https://parallel-heiko.subscan.io/account/{address}",
-                "multisig": "https://parallel-heiko.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
+                "name": "Statescan",
+                "account": "https://heiko.statescan.io/#/accounts/{address}",
+                "extrinsic": "https://heiko.statescan.io/#/extrinsics/{hash}",
+                "event": "https://heiko.statescan.io/#/events/{event}"
+            },
+            {
+                "name": "Sub.ID",
+                "account": "https://sub.id/{address}"
             }
         ],
         "externalApi": {
@@ -1748,7 +1762,7 @@
             },
             {
                 "assetId": 2,
-                "symbol": "aSEED",
+                "symbol": "aSEEDk",
                 "precision": 12,
                 "type": "orml",
                 "priceId": "ausd-seed-karura",
@@ -1961,7 +1975,7 @@
             },
             {
                 "assetId": 5,
-                "symbol": "aSEED",
+                "symbol": "aSEEDk",
                 "precision": 12,
                 "type": "statemine",
                 "priceId": "ausd-seed-karura",
@@ -2293,7 +2307,7 @@
             },
             {
                 "assetId": 2,
-                "symbol": "aSEED",
+                "symbol": "aSEEDp",
                 "precision": 12,
                 "type": "orml",
                 "priceId": "ausd-seed-acala",
@@ -2639,7 +2653,7 @@
             },
             {
                 "assetId": 8,
-                "symbol": "aSEED",
+                "symbol": "aSEEDp",
                 "precision": 12,
                 "type": "statemine",
                 "priceId": "ausd-seed-acala",
@@ -2794,7 +2808,7 @@
             },
             {
                 "assetId": 4,
-                "symbol": "aSEED",
+                "symbol": "aSEEDp",
                 "precision": 12,
                 "type": "statemine",
                 "priceId": "ausd-seed-acala",
@@ -2902,10 +2916,10 @@
         ],
         "explorers": [
             {
-                "name": "Subscan",
-                "extrinsic": "https://parallel.subscan.io/extrinsic/{hash}",
-                "account": "https://parallel.subscan.io/account/{address}",
-                "multisig": "https://parallel.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
+                "name": "Statescan",
+                "account": "https://parallel.statescan.io/#/accounts/{address}",
+                "extrinsic": "https://parallel.statescan.io/#/extrinsics/{hash}",
+                "event": "https://parallel.statescan.io/#/events/{event}"
             },
             {
                 "name": "Sub.ID",
@@ -3048,6 +3062,62 @@
                     "assetId": "31337"
                 },
                 "name": "WUD"
+            },
+            {
+                "assetId": 11,
+                "symbol": "WIFD",
+                "precision": 10,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/WIFD.svg",
+                "typeExtras": {
+                    "assetId": "17"
+                },
+                "name": "Should be included in scripts/data/assetsNameMap"
+            },
+            {
+                "assetId": 12,
+                "symbol": "BORK",
+                "precision": 10,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/BORK.svg",
+                "typeExtras": {
+                    "assetId": "690"
+                },
+                "name": "Should be included in scripts/data/assetsNameMap"
+            },
+            {
+                "assetId": 13,
+                "symbol": "BUNS",
+                "precision": 10,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/BUNS.svg",
+                "typeExtras": {
+                    "assetId": "1234"
+                },
+                "name": "Should be included in scripts/data/assetsNameMap"
+            },
+            {
+                "assetId": 14,
+                "symbol": "KOL",
+                "precision": 12,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/KOL.svg",
+                "typeExtras": {
+                    "assetId": "86"
+                },
+                "name": "Should be included in scripts/data/assetsNameMap"
+            },
+            {
+                "assetId": 15,
+                "symbol": "MYTH",
+                "precision": 18,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/MYTH.svg",
+                "typeExtras": {
+                    "assetId": "0x010100a534",
+                    "palletName": "ForeignAssets"
+                },
+                "name": "Should be included in scripts/data/assetsNameMap"
             }
         ],
         "explorers": [
@@ -3898,6 +3968,76 @@
                     "transfersEnabled": true
                 },
                 "name": "WUD"
+            },
+            {
+                "assetId": 36,
+                "symbol": "MYTH",
+                "precision": 18,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/MYTH.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x1e000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "21367521367521400",
+                    "transfersEnabled": true
+                },
+                "name": "Should be included in scripts/data/assetsNameMap"
+            },
+            {
+                "assetId": 39,
+                "symbol": "WIFD",
+                "precision": 10,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/WIFD.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x92420f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                },
+                "name": "Should be included in scripts/data/assetsNameMap"
+            },
+            {
+                "assetId": 40,
+                "symbol": "BORK",
+                "precision": 10,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/BORK.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0xd4420f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                },
+                "name": "Should be included in scripts/data/assetsNameMap"
+            },
+            {
+                "assetId": 41,
+                "symbol": "BUNS",
+                "precision": 10,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/BUNS.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0xf1420f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                },
+                "name": "Should be included in scripts/data/assetsNameMap"
+            },
+            {
+                "assetId": 42,
+                "symbol": "KOL",
+                "precision": 12,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/KOL.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x07430f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                },
+                "name": "Should be included in scripts/data/assetsNameMap"
             }
         ],
         "explorers": [
@@ -4244,7 +4384,7 @@
             },
             {
                 "assetId": 2,
-                "symbol": "aSEED",
+                "symbol": "aSEEDk",
                 "precision": 12,
                 "type": "orml",
                 "priceId": "ausd-seed-karura",
@@ -4882,10 +5022,7 @@
         "chainId": "0x6408de7737c59c238890533af25896a2c20608d8b380bb01029acb392781063e",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Rococo_Testnet.svg",
         "options": [
-            "testnet",
-            "governance",
-            "regular_proxy",
-            "pure_proxy"
+            "testnet"
         ],
         "nodes": [
             {
@@ -4990,21 +5127,6 @@
                     "transfersEnabled": true
                 },
                 "name": "USD Tether"
-            },
-            {
-                "assetId": 10,
-                "symbol": "GLMR",
-                "precision": 18,
-                "type": "orml",
-                "priceId": "moonbeam",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Moonbeam_(GLMR).svg",
-                "typeExtras": {
-                    "currencyIdScale": "0x0106",
-                    "currencyIdType": "SpacewalkPrimitivesCurrencyId",
-                    "existentialDeposit": "1000",
-                    "transfersEnabled": true
-                },
-                "name": "Moonbeam"
             }
         ],
         "externalApi": {
@@ -5546,7 +5668,7 @@
             },
             {
                 "assetId": 8,
-                "symbol": "xcaSEED",
+                "symbol": "xcaSEEDk",
                 "precision": 12,
                 "type": "statemine",
                 "priceId": "ausd-seed-karura",
@@ -5754,6 +5876,12 @@
                     "type": "subquery",
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonriver"
                 }
+            ],
+            "governance-delegations": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonriver-gov"
+                }
             ]
         }
     },
@@ -5836,10 +5964,6 @@
             {
                 "url": "wss://moonbeam.public.blastapi.io",
                 "name": "Blast node"
-            },
-            {
-                "url": "wss://1rpc.io/glmr",
-                "name": "Automata 1RPC node"
             }
         ],
         "assets": [
@@ -5865,7 +5989,7 @@
             },
             {
                 "assetId": 2,
-                "symbol": "xcaSEED",
+                "symbol": "xcaSEEDp",
                 "precision": 12,
                 "type": "statemine",
                 "priceId": "ausd-seed-acala",
@@ -6159,6 +6283,12 @@
                     "type": "subquery",
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonbeam"
                 }
+            ],
+            "governance-delegations": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonbeam-gov"
+                }
             ]
         }
     },
@@ -6242,7 +6372,9 @@
         "chainId": "0x7eb9354488318e7549c722669dcbdcdc526f1fef1420e7944667212f3601fdbd",
         "parentId": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Polimec.svg",
-        "options": [],
+        "options": [
+            "multisig"
+        ],
         "nodes": [
             {
                 "url": "wss://rpc.polimec.org",
@@ -6257,13 +6389,53 @@
                 "priceId": "polimec",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/PLMC.svg",
                 "name": "Polimec token"
+            },
+            {
+                "assetId": 1,
+                "symbol": "DOT",
+                "precision": 10,
+                "type": "statemine",
+                "priceId": "polkadot",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Polkadot_(DOT).svg",
+                "typeExtras": {
+                    "assetId": "10",
+                    "palletName": "ForeignAssets"
+                },
+                "name": "Polkadot"
+            },
+            {
+                "assetId": 2,
+                "symbol": "USDT",
+                "precision": 6,
+                "type": "statemine",
+                "priceId": "tether",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/USDT.svg",
+                "typeExtras": {
+                    "assetId": "1984",
+                    "palletName": "ForeignAssets"
+                },
+                "name": "USD Tether"
+            },
+            {
+                "assetId": 3,
+                "symbol": "USDC",
+                "precision": 6,
+                "type": "statemine",
+                "priceId": "usd-coin",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/USDC.svg",
+                "typeExtras": {
+                    "assetId": "1337",
+                    "palletName": "ForeignAssets"
+                },
+                "name": "USD Coin"
             }
         ],
         "explorers": [
             {
-                "name": "Statescan",
-                "account": "https://polimec.statescan.io/#/accounts/{address}",
-                "event": "https://polimec.statescan.io/#/events/{event}"
+                "name": "Polimec explorer",
+                "account": "https://explorer.polimec.org/polimec/account/{address}",
+                "event": "https://explorer.polimec.org/polimec/event/{event}",
+                "extrinsic": "https://explorer.polimec.org/polimec/extrinsic/{hash}"
             }
         ],
         "externalApi": {
@@ -6306,9 +6478,9 @@
             }
         ],
         "externalApi": {
-            "governance": [
+            "governance-delegations": [
                 {
-                    "type": "subsquare",
+                    "type": "subquery",
                     "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-test-gov"
                 }
             ]
