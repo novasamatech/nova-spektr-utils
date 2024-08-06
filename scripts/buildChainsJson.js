@@ -186,6 +186,10 @@ function getTransformedData(rawData) {
       explorers,
     };
 
+    if (chain.additional?.identityChain) {
+      updatedChain['additional'] = {identityChain: chain.additional.identityChain};
+    }
+
     if (externalApi) {
       updatedChain['externalApi'] = externalApi
     }
