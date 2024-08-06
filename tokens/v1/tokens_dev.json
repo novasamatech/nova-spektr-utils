@@ -159,6 +159,12 @@
                 "typeExtras": {
                     "assetId": "42259045809535163221576417993425387648"
                 }
+            },
+            {
+                "chainId": "0x67fa177a097bfa18f77ea95ab56e9bcdfeb0e5b8a40e46298bb93e16b6fc5008",
+                "name": "Polkadot People",
+                "assetId": 0,
+                "assetSymbol": "DOT"
             }
         ]
     },
