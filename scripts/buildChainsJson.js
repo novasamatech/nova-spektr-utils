@@ -187,7 +187,7 @@ function getTransformedData(rawData) {
     };
 
     if (chain.additional?.identityChain) {
-      updatedChain['additional'] = {identityChain: chain.additional.identityChain};
+      updatedChain['additional'] = {identityChain: `0x${chain.additional.identityChain}`};
     }
 
     if (externalApi) {
