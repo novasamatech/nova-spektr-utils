@@ -1,8 +1,8 @@
 
 # Supported Features data:
 ### 🕸️ [Supported networks](#supported-network-list): 44
-### 🪙 Added assets: 305
-### 👨‍👩‍👧‍👦 [Multisig supported](#list-of-networks-where-we-are-support-multisig) in: 41
+### 🪙 Added assets: 311
+### 👨‍👩‍👧‍👦 [Multisig supported](#list-of-networks-where-we-are-support-multisig) in: 42
 ### 🥞 Staking supported in: 3
 ### 🕹️ Proxy supported in: 6
 
@@ -52,6 +52,7 @@
 | 39 | Turing | 1 |
 | 40 | Vara | 1 |
 | 41 | Westend | 1 |
+| 42 | Zeitgeist | 1 |
 
 ## The list of supported networks
 | -- | Network | Assets count | Explorers |
@@ -82,11 +83,11 @@
 | 24 | Mangata X | 9 | Subscan |
 | 25 | Moonbeam | 24 | Subscan Moonscan |
 | 26 | Moonriver | 23 | Subscan Moonscan |
-| 27 | Parallel | 13 | Subscan Sub.ID |
-| 28 | Parallel Heiko | 12 | Subscan |
-| 29 | Pendulum | 4 | Subscan |
+| 27 | Parallel | 13 | Statescan Sub.ID |
+| 28 | Parallel Heiko | 12 | Statescan Sub.ID |
+| 29 | Pendulum | 7 | Subscan |
 | 30 | Phala | 1 | Subscan |
-| 31 | Polimec | 1 | Statescan |
+| 31 | Polimec | 4 | Polimec explorer |
 | 32 | Polkadot | 1 | Subscan Sub.ID |
 | 33 | Polkadot Asset Hub | 9 | Subscan Statescan |
 | 34 | Polkadot Bridge Hub | 1 | Subscan |
