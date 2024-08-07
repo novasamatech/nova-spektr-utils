@@ -277,6 +277,9 @@
                     "url": "https://api.subquery.network/sq/nova-wallet/novasama-westend-proxy"
                 }
             ]
+        },
+        "additional": {
+            "identityChain": "1eb6fb0ba5187434de017a70cb84d4f47142df1d571d0ef9e7e1407f2b80b93c"
         }
     },
     {
@@ -6372,6 +6375,39 @@
                 "priceId": "polkadot",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Polkadot_(DOT).svg",
                 "name": "Polkadot"
+            }
+        ]
+    },
+    {
+        "name": "Westend People",
+        "addressPrefix": 42,
+        "chainId": "0x1eb6fb0ba5187434de017a70cb84d4f47142df1d571d0ef9e7e1407f2b80b93c",
+        "parentId": "0xe143f23803ac50e8f6f8e62695d1ce9e4e1d68aa36c1cd2cfd15340213f3423e",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Westend_People.svg",
+        "options": [
+            "testnet"
+        ],
+        "nodes": [
+            {
+                "url": "wss://people-westend-rpc.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
+                "url": "wss://sys.ibp.network/people-westend",
+                "name": "IBP1 node"
+            },
+            {
+                "url": "wss://sys.dotters.network/people-westend",
+                "name": "IBP2 node"
+            }
+        ],
+        "assets": [
+            {
+                "assetId": 0,
+                "symbol": "WND",
+                "precision": 12,
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Westend_(WND).svg",
+                "name": "Westend"
             }
         ]
     }
