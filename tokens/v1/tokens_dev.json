@@ -386,6 +386,12 @@
                 "name": "Novasama Testnet - Governance",
                 "assetId": 0,
                 "assetSymbol": "WND"
+            },
+            {
+                "chainId": "0x1eb6fb0ba5187434de017a70cb84d4f47142df1d571d0ef9e7e1407f2b80b93c",
+                "name": "Westend People",
+                "assetId": 0,
+                "assetSymbol": "WND"
             }
         ]
     },
