@@ -1,8 +1,8 @@
 
 # Supported Features data:
-### 🕸️ [Supported networks](#supported-network-list): 44
-### 🪙 Added assets: 311
-### 👨‍👩‍👧‍👦 [Multisig supported](#list-of-networks-where-we-are-support-multisig) in: 42
+### 🕸️ [Supported networks](#supported-network-list): 45
+### 🪙 Added assets: 312
+### 👨‍👩‍👧‍👦 [Multisig supported](#list-of-networks-where-we-are-support-multisig) in: 43
 ### 🥞 Staking supported in: 3
 ### 🕹️ Proxy supported in: 6
 
@@ -45,14 +45,15 @@
 | 32 | Polkadot Asset Hub | 1 |
 | 33 | Polkadot Bridge Hub | 1 |
 | 34 | Polkadot Collectives | 1 |
-| 35 | Robonomics | 0 |
-| 36 | Shiden | 1 |
-| 37 | Subsocial | 0 |
-| 38 | Tinkernet | 1 |
-| 39 | Turing | 1 |
-| 40 | Vara | 1 |
-| 41 | Westend | 1 |
-| 42 | Zeitgeist | 1 |
+| 35 | Polkadot People | 1 |
+| 36 | Robonomics | 0 |
+| 37 | Shiden | 1 |
+| 38 | Subsocial | 0 |
+| 39 | Tinkernet | 1 |
+| 40 | Turing | 1 |
+| 41 | Vara | 1 |
+| 42 | Westend | 1 |
+| 43 | Zeitgeist | 1 |
 
 ## The list of supported networks
 | -- | Network | Assets count | Explorers |
@@ -92,15 +93,16 @@
 | 33 | Polkadot Asset Hub | 9 | Subscan Statescan |
 | 34 | Polkadot Bridge Hub | 1 | Subscan |
 | 35 | Polkadot Collectives | 1 | Statescan |
-| 36 | QUARTZ | 1 | Subscan Sub.ID |
-| 37 | Robonomics | 1 | Subscan Sub.ID |
-| 38 | Shiden | 13 | Subscan Sub.ID |
-| 39 | Subsocial | 1 | Sub.ID |
-| 40 | Tinkernet | 1 | Have not been added yet |
-| 41 | Turing | 8 | Subscan |
-| 42 | Vara | 1 | Varascan Subscan |
-| 43 | Westend | 1 | Subscan |
-| 44 | Zeitgeist | 1 | Subscan Sub.ID |
+| 36 | Polkadot People | 1 | Have not been added yet |
+| 37 | QUARTZ | 1 | Subscan Sub.ID |
+| 38 | Robonomics | 1 | Subscan Sub.ID |
+| 39 | Shiden | 13 | Subscan Sub.ID |
+| 40 | Subsocial | 1 | Sub.ID |
+| 41 | Tinkernet | 1 | Have not been added yet |
+| 42 | Turing | 8 | Subscan |
+| 43 | Vara | 1 | Varascan Subscan |
+| 44 | Westend | 1 | Subscan |
+| 45 | Zeitgeist | 1 | Subscan Sub.ID |
 
 # List of Networks where we are support proxy feature
 | -- | Network | Pure proxy | Regular proxy |
