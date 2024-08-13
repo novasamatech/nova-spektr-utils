@@ -2,7 +2,7 @@
 # Supported Features data:
 ### 🕸️ [Supported networks](#supported-network-list): 45
 ### 🪙 Added assets: 312
-### 👨‍👩‍👧‍👦 [Multisig supported](#list-of-networks-where-we-are-support-multisig) in: 43
+### 👨‍👩‍👧‍👦 [Multisig supported](#list-of-networks-where-we-are-support-multisig) in: 42
 ### 🥞 Staking supported in: 3
 ### 🕹️ Proxy supported in: 6
 
@@ -48,12 +48,11 @@
 | 35 | Polkadot People | 1 |
 | 36 | Robonomics | 0 |
 | 37 | Shiden | 1 |
-| 38 | Subsocial | 0 |
-| 39 | Tinkernet | 1 |
-| 40 | Turing | 1 |
-| 41 | Vara | 1 |
-| 42 | Westend | 1 |
-| 43 | Zeitgeist | 1 |
+| 38 | Tinkernet | 1 |
+| 39 | Turing | 1 |
+| 40 | Vara | 1 |
+| 41 | Westend | 1 |
+| 42 | Zeitgeist | 1 |
 
 ## The list of supported networks
 | -- | Network | Assets count | Explorers |
