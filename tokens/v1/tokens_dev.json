@@ -3709,6 +3709,167 @@
         ]
     },
     {
+        "name": "Should be included in scripts/data/assetsNameMap",
+        "precision": 10,
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/WIFD.svg",
+        "symbol": "WIFD",
+        "isTestToken": false,
+        "chains": [
+            {
+                "chainId": "0x68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+                "name": "Polkadot Asset Hub",
+                "assetId": 11,
+                "assetSymbol": "WIFD",
+                "type": "statemine",
+                "typeExtras": {
+                    "assetId": "17"
+                }
+            },
+            {
+                "chainId": "0xafdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
+                "name": "Hydration",
+                "assetId": 39,
+                "assetSymbol": "WIFD",
+                "type": "orml",
+                "typeExtras": {
+                    "currencyIdScale": "0x92420f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                }
+            }
+        ]
+    },
+    {
+        "name": "Should be included in scripts/data/assetsNameMap",
+        "precision": 10,
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/BORK.svg",
+        "symbol": "BORK",
+        "isTestToken": false,
+        "chains": [
+            {
+                "chainId": "0x68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+                "name": "Polkadot Asset Hub",
+                "assetId": 12,
+                "assetSymbol": "BORK",
+                "type": "statemine",
+                "typeExtras": {
+                    "assetId": "690"
+                }
+            },
+            {
+                "chainId": "0xafdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
+                "name": "Hydration",
+                "assetId": 40,
+                "assetSymbol": "BORK",
+                "type": "orml",
+                "typeExtras": {
+                    "currencyIdScale": "0xd4420f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                }
+            }
+        ]
+    },
+    {
+        "name": "Should be included in scripts/data/assetsNameMap",
+        "precision": 10,
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/BUNS.svg",
+        "symbol": "BUNS",
+        "isTestToken": false,
+        "chains": [
+            {
+                "chainId": "0x68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+                "name": "Polkadot Asset Hub",
+                "assetId": 13,
+                "assetSymbol": "BUNS",
+                "type": "statemine",
+                "typeExtras": {
+                    "assetId": "1234"
+                }
+            },
+            {
+                "chainId": "0xafdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
+                "name": "Hydration",
+                "assetId": 41,
+                "assetSymbol": "BUNS",
+                "type": "orml",
+                "typeExtras": {
+                    "currencyIdScale": "0xf1420f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                }
+            }
+        ]
+    },
+    {
+        "name": "Should be included in scripts/data/assetsNameMap",
+        "precision": 12,
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/KOL.svg",
+        "symbol": "KOL",
+        "isTestToken": false,
+        "chains": [
+            {
+                "chainId": "0x68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+                "name": "Polkadot Asset Hub",
+                "assetId": 14,
+                "assetSymbol": "KOL",
+                "type": "statemine",
+                "typeExtras": {
+                    "assetId": "86"
+                }
+            },
+            {
+                "chainId": "0xafdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
+                "name": "Hydration",
+                "assetId": 42,
+                "assetSymbol": "KOL",
+                "type": "orml",
+                "typeExtras": {
+                    "currencyIdScale": "0x07430f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                }
+            }
+        ]
+    },
+    {
+        "name": "Should be included in scripts/data/assetsNameMap",
+        "precision": 18,
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/MYTH.svg",
+        "symbol": "MYTH",
+        "isTestToken": false,
+        "chains": [
+            {
+                "chainId": "0x68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+                "name": "Polkadot Asset Hub",
+                "assetId": 15,
+                "assetSymbol": "MYTH",
+                "type": "statemine",
+                "typeExtras": {
+                    "assetId": "0x010100a534",
+                    "palletName": "ForeignAssets"
+                }
+            },
+            {
+                "chainId": "0xafdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
+                "name": "Hydration",
+                "assetId": 36,
+                "assetSymbol": "MYTH",
+                "type": "orml",
+                "typeExtras": {
+                    "currencyIdScale": "0x1e000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "21367521367521400",
+                    "transfersEnabled": true
+                }
+            }
+        ]
+    },
+    {
         "name": "Zeitgeist",
         "precision": 10,
         "priceId": "zeitgeist",

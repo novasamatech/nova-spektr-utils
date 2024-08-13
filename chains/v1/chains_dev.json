@@ -3081,6 +3081,62 @@
                     "assetId": "31337"
                 },
                 "name": "WUD"
+            },
+            {
+                "assetId": 11,
+                "symbol": "WIFD",
+                "precision": 10,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/WIFD.svg",
+                "typeExtras": {
+                    "assetId": "17"
+                },
+                "name": "Should be included in scripts/data/assetsNameMap"
+            },
+            {
+                "assetId": 12,
+                "symbol": "BORK",
+                "precision": 10,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/BORK.svg",
+                "typeExtras": {
+                    "assetId": "690"
+                },
+                "name": "Should be included in scripts/data/assetsNameMap"
+            },
+            {
+                "assetId": 13,
+                "symbol": "BUNS",
+                "precision": 10,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/BUNS.svg",
+                "typeExtras": {
+                    "assetId": "1234"
+                },
+                "name": "Should be included in scripts/data/assetsNameMap"
+            },
+            {
+                "assetId": 14,
+                "symbol": "KOL",
+                "precision": 12,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/KOL.svg",
+                "typeExtras": {
+                    "assetId": "86"
+                },
+                "name": "Should be included in scripts/data/assetsNameMap"
+            },
+            {
+                "assetId": 15,
+                "symbol": "MYTH",
+                "precision": 18,
+                "type": "statemine",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/MYTH.svg",
+                "typeExtras": {
+                    "assetId": "0x010100a534",
+                    "palletName": "ForeignAssets"
+                },
+                "name": "Should be included in scripts/data/assetsNameMap"
             }
         ],
         "explorers": [
@@ -3931,6 +3987,76 @@
                     "transfersEnabled": true
                 },
                 "name": "WUD"
+            },
+            {
+                "assetId": 36,
+                "symbol": "MYTH",
+                "precision": 18,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/MYTH.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x1e000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "21367521367521400",
+                    "transfersEnabled": true
+                },
+                "name": "Should be included in scripts/data/assetsNameMap"
+            },
+            {
+                "assetId": 39,
+                "symbol": "WIFD",
+                "precision": 10,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/WIFD.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x92420f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                },
+                "name": "Should be included in scripts/data/assetsNameMap"
+            },
+            {
+                "assetId": 40,
+                "symbol": "BORK",
+                "precision": 10,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/BORK.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0xd4420f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                },
+                "name": "Should be included in scripts/data/assetsNameMap"
+            },
+            {
+                "assetId": 41,
+                "symbol": "BUNS",
+                "precision": 10,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/BUNS.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0xf1420f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                },
+                "name": "Should be included in scripts/data/assetsNameMap"
+            },
+            {
+                "assetId": 42,
+                "symbol": "KOL",
+                "precision": 12,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/KOL.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x07430f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                },
+                "name": "Should be included in scripts/data/assetsNameMap"
             }
         ],
         "explorers": [
@@ -6420,7 +6546,9 @@
         "chainId": "0x67fa177a097bfa18f77ea95ab56e9bcdfeb0e5b8a40e46298bb93e16b6fc5008",
         "parentId": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Polkadot_People.svg",
-        "options": [],
+        "options": [
+            "multisig"
+        ],
         "nodes": [
             {
                 "url": "wss://polkadot-people-rpc.polkadot.io",
