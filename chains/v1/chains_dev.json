@@ -6551,7 +6551,6 @@
         "chainId": "0x2f0555cc76fc2840a25a6ea3b9637146806f1f44b090c175ffde2a7e5ab36c03",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Bittensor.svg",
         "options": [
-            "multisig",
             "pure_proxy",
             "pure_proxy"
         ],
