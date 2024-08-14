@@ -1,10 +1,10 @@
 
 # Supported Features data:
-### 🕸️ [Supported networks](#supported-network-list): 45
-### 🪙 Added assets: 312
-### 👨‍👩‍👧‍👦 [Multisig supported](#list-of-networks-where-we-are-support-multisig) in: 43
+### 🕸️ [Supported networks](#supported-network-list): 46
+### 🪙 Added assets: 319
+### 👨‍👩‍👧‍👦 [Multisig supported](#list-of-networks-where-we-are-support-multisig) in: 44
 ### 🥞 Staking supported in: 3
-### 🕹️ Proxy supported in: 6
+### 🕹️ Proxy supported in: 7
 
 
 
@@ -19,41 +19,42 @@
 | 6 | Basilisk | 1 |
 | 7 | Bifrost Kusama | 1 |
 | 8 | Bifrost Polkadot | 1 |
-| 9 | Centrifuge Parachain | 1 |
-| 10 | Hydration | 1 |
-| 11 | Imbue | 1 |
-| 12 | Integritee Parachain | 1 |
-| 13 | Interlay | 1 |
-| 14 | Karura | 1 |
-| 15 | Khala | 1 |
-| 16 | KILT | 1 |
-| 17 | Kintsugi | 1 |
-| 18 | Kusama | 1 |
-| 19 | Kusama Asset Hub | 1 |
-| 20 | Kusama Bridge Hub | 1 |
-| 21 | Kusama People | 1 |
-| 22 | Litentry | 0 |
-| 23 | Litmus | 0 |
-| 24 | Moonbeam | 0 |
-| 25 | Moonriver | 1 |
-| 26 | Parallel | 1 |
-| 27 | Parallel Heiko | 1 |
-| 28 | Pendulum | 1 |
-| 29 | Phala | 1 |
-| 30 | Polimec | 1 |
-| 31 | Polkadot | 1 |
-| 32 | Polkadot Asset Hub | 1 |
-| 33 | Polkadot Bridge Hub | 1 |
-| 34 | Polkadot Collectives | 1 |
-| 35 | Polkadot People | 1 |
-| 36 | Robonomics | 0 |
-| 37 | Shiden | 1 |
-| 38 | Subsocial | 0 |
-| 39 | Tinkernet | 1 |
-| 40 | Turing | 1 |
-| 41 | Vara | 1 |
-| 42 | Westend | 1 |
-| 43 | Zeitgeist | 1 |
+| 9 | Bittensor | 1 |
+| 10 | Centrifuge Parachain | 1 |
+| 11 | Hydration | 1 |
+| 12 | Imbue | 1 |
+| 13 | Integritee Parachain | 1 |
+| 14 | Interlay | 1 |
+| 15 | Karura | 1 |
+| 16 | Khala | 1 |
+| 17 | KILT | 1 |
+| 18 | Kintsugi | 1 |
+| 19 | Kusama | 1 |
+| 20 | Kusama Asset Hub | 1 |
+| 21 | Kusama Bridge Hub | 1 |
+| 22 | Kusama People | 1 |
+| 23 | Litentry | 0 |
+| 24 | Litmus | 0 |
+| 25 | Moonbeam | 0 |
+| 26 | Moonriver | 1 |
+| 27 | Parallel | 1 |
+| 28 | Parallel Heiko | 1 |
+| 29 | Pendulum | 1 |
+| 30 | Phala | 1 |
+| 31 | Polimec | 1 |
+| 32 | Polkadot | 1 |
+| 33 | Polkadot Asset Hub | 1 |
+| 34 | Polkadot Bridge Hub | 1 |
+| 35 | Polkadot Collectives | 1 |
+| 36 | Polkadot People | 1 |
+| 37 | Robonomics | 0 |
+| 38 | Shiden | 1 |
+| 39 | Subsocial | 0 |
+| 40 | Tinkernet | 1 |
+| 41 | Turing | 1 |
+| 42 | Vara | 1 |
+| 43 | Westend | 1 |
+| 44 | Zeitgeist | 1 |
 
 ## The list of supported networks
 | -- | Network | Assets count | Explorers |
@@ -66,50 +67,52 @@
 | 6 | Basilisk | 6 | Subscan Sub.ID |
 | 7 | Bifrost Kusama | 14 | Subscan Sub.ID |
 | 8 | Bifrost Polkadot | 12 | Subscan |
-| 9 | Centrifuge Parachain | 1 | Subscan Sub.ID |
-| 10 | Hydration | 33 | Subscan |
-| 11 | Imbue | 1 | Have not been added yet |
-| 12 | Integritee Parachain | 1 | Subscan Sub.ID |
-| 13 | Interlay | 11 | Subscan |
-| 14 | Karura | 26 | Subscan Sub.ID |
-| 15 | Khala | 16 | Subscan Sub.ID |
-| 16 | KILT | 1 | Subscan Sub.ID |
-| 17 | Kintsugi | 9 | Subscan Sub.ID |
-| 18 | Kusama | 1 | Subscan Sub.ID |
-| 19 | Kusama Asset Hub | 7 | Subscan Statescan Sub.ID |
-| 20 | Kusama Bridge Hub | 1 | Subscan |
-| 21 | Kusama People | 1 | Have not been added yet |
-| 22 | Litentry | 1 | Statescan |
-| 23 | Litmus | 1 | Subscan Sub.ID |
-| 24 | Mangata X | 9 | Subscan |
-| 25 | Moonbeam | 24 | Subscan Moonscan |
-| 26 | Moonriver | 23 | Subscan Moonscan |
-| 27 | Parallel | 13 | Statescan Sub.ID |
-| 28 | Parallel Heiko | 12 | Statescan Sub.ID |
-| 29 | Pendulum | 7 | Subscan |
-| 30 | Phala | 1 | Subscan |
-| 31 | Polimec | 4 | Polimec explorer |
-| 32 | Polkadot | 1 | Subscan Sub.ID |
-| 33 | Polkadot Asset Hub | 9 | Subscan Statescan |
-| 34 | Polkadot Bridge Hub | 1 | Subscan |
-| 35 | Polkadot Collectives | 1 | Statescan |
-| 36 | Polkadot People | 1 | Have not been added yet |
-| 37 | QUARTZ | 1 | Subscan Sub.ID |
-| 38 | Robonomics | 1 | Subscan Sub.ID |
-| 39 | Shiden | 13 | Subscan Sub.ID |
-| 40 | Subsocial | 1 | Sub.ID |
-| 41 | Tinkernet | 1 | Have not been added yet |
-| 42 | Turing | 8 | Subscan |
-| 43 | Vara | 1 | Varascan Subscan |
-| 44 | Westend | 1 | Subscan |
-| 45 | Zeitgeist | 1 | Subscan Sub.ID |
+| 9 | Bittensor | 1 | SCAN |
+| 10 | Centrifuge Parachain | 1 | Subscan Sub.ID |
+| 11 | Hydration | 38 | Subscan |
+| 12 | Imbue | 1 | Have not been added yet |
+| 13 | Integritee Parachain | 1 | Subscan Sub.ID |
+| 14 | Interlay | 11 | Subscan |
+| 15 | Karura | 26 | Subscan Sub.ID |
+| 16 | Khala | 16 | Subscan Sub.ID |
+| 17 | KILT | 1 | Subscan Sub.ID |
+| 18 | Kintsugi | 9 | Subscan Sub.ID |
+| 19 | Kusama | 1 | Subscan Sub.ID |
+| 20 | Kusama Asset Hub | 7 | Subscan Statescan Sub.ID |
+| 21 | Kusama Bridge Hub | 1 | Subscan |
+| 22 | Kusama People | 1 | Have not been added yet |
+| 23 | Litentry | 1 | Statescan |
+| 24 | Litmus | 1 | Subscan Sub.ID |
+| 25 | Mangata X | 9 | Subscan |
+| 26 | Moonbeam | 24 | Subscan Moonscan |
+| 27 | Moonriver | 23 | Subscan Moonscan |
+| 28 | Parallel | 13 | Statescan Sub.ID |
+| 29 | Parallel Heiko | 12 | Statescan Sub.ID |
+| 30 | Pendulum | 7 | Subscan |
+| 31 | Phala | 1 | Subscan |
+| 32 | Polimec | 1 | Polimec explorer |
+| 33 | Polkadot | 1 | Subscan Sub.ID |
+| 34 | Polkadot Asset Hub | 13 | Subscan Statescan |
+| 35 | Polkadot Bridge Hub | 1 | Subscan |
+| 36 | Polkadot Collectives | 1 | Statescan |
+| 37 | Polkadot People | 1 | Have not been added yet |
+| 38 | QUARTZ | 1 | Subscan Sub.ID |
+| 39 | Robonomics | 1 | Subscan Sub.ID |
+| 40 | Shiden | 13 | Subscan Sub.ID |
+| 41 | Subsocial | 1 | Sub.ID |
+| 42 | Tinkernet | 1 | Have not been added yet |
+| 43 | Turing | 8 | Subscan |
+| 44 | Vara | 1 | Varascan Subscan |
+| 45 | Westend | 1 | Subscan |
+| 46 | Zeitgeist | 1 | Subscan Sub.ID |
 
 # List of Networks where we are support proxy feature
 | -- | Network | Pure proxy | Regular proxy |
 | -------- | -------- | -------- | -------- |
-| 1 | Hydration | true | true |
-| 2 | Kusama | true | true |
-| 3 | Moonbeam | true | true |
-| 4 | Moonriver | true | true |
-| 5 | Polkadot | true | true |
-| 6 | Westend | true | true |
+| 1 | Bittensor | true | false |
+| 2 | Hydration | true | true |
+| 3 | Kusama | true | true |
+| 4 | Moonbeam | true | true |
+| 5 | Moonriver | true | true |
+| 6 | Polkadot | true | true |
+| 7 | Westend | true | true |
