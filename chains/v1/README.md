@@ -2,7 +2,7 @@
 # Supported Features data:
 ### 🕸️ [Supported networks](#supported-network-list): 46
 ### 🪙 Added assets: 319
-### 👨‍👩‍👧‍👦 [Multisig supported](#list-of-networks-where-we-are-support-multisig) in: 44
+### 👨‍👩‍👧‍👦 [Multisig supported](#list-of-networks-where-we-are-support-multisig) in: 43
 ### 🥞 Staking supported in: 3
 ### 🕹️ Proxy supported in: 7
 
@@ -19,42 +19,41 @@
 | 6 | Basilisk | 1 |
 | 7 | Bifrost Kusama | 1 |
 | 8 | Bifrost Polkadot | 1 |
-| 9 | Bittensor | 1 |
-| 10 | Centrifuge Parachain | 1 |
-| 11 | Hydration | 1 |
-| 12 | Imbue | 1 |
-| 13 | Integritee Parachain | 1 |
-| 14 | Interlay | 1 |
-| 15 | Karura | 1 |
-| 16 | Khala | 1 |
-| 17 | KILT | 1 |
-| 18 | Kintsugi | 1 |
-| 19 | Kusama | 1 |
-| 20 | Kusama Asset Hub | 1 |
-| 21 | Kusama Bridge Hub | 1 |
-| 22 | Kusama People | 1 |
-| 23 | Litentry | 0 |
-| 24 | Litmus | 0 |
-| 25 | Moonbeam | 0 |
-| 26 | Moonriver | 1 |
-| 27 | Parallel | 1 |
-| 28 | Parallel Heiko | 1 |
-| 29 | Pendulum | 1 |
-| 30 | Phala | 1 |
-| 31 | Polimec | 1 |
-| 32 | Polkadot | 1 |
-| 33 | Polkadot Asset Hub | 1 |
-| 34 | Polkadot Bridge Hub | 1 |
-| 35 | Polkadot Collectives | 1 |
-| 36 | Polkadot People | 1 |
-| 37 | Robonomics | 0 |
-| 38 | Shiden | 1 |
-| 39 | Subsocial | 0 |
-| 40 | Tinkernet | 1 |
-| 41 | Turing | 1 |
-| 42 | Vara | 1 |
-| 43 | Westend | 1 |
-| 44 | Zeitgeist | 1 |
+| 9 | Centrifuge Parachain | 1 |
+| 10 | Hydration | 1 |
+| 11 | Imbue | 1 |
+| 12 | Integritee Parachain | 1 |
+| 13 | Interlay | 1 |
+| 14 | Karura | 1 |
+| 15 | Khala | 1 |
+| 16 | KILT | 1 |
+| 17 | Kintsugi | 1 |
+| 18 | Kusama | 1 |
+| 19 | Kusama Asset Hub | 1 |
+| 20 | Kusama Bridge Hub | 1 |
+| 21 | Kusama People | 1 |
+| 22 | Litentry | 0 |
+| 23 | Litmus | 0 |
+| 24 | Moonbeam | 0 |
+| 25 | Moonriver | 1 |
+| 26 | Parallel | 1 |
+| 27 | Parallel Heiko | 1 |
+| 28 | Pendulum | 1 |
+| 29 | Phala | 1 |
+| 30 | Polimec | 1 |
+| 31 | Polkadot | 1 |
+| 32 | Polkadot Asset Hub | 1 |
+| 33 | Polkadot Bridge Hub | 1 |
+| 34 | Polkadot Collectives | 1 |
+| 35 | Polkadot People | 1 |
+| 36 | Robonomics | 0 |
+| 37 | Shiden | 1 |
+| 38 | Subsocial | 0 |
+| 39 | Tinkernet | 1 |
+| 40 | Turing | 1 |
+| 41 | Vara | 1 |
+| 42 | Westend | 1 |
+| 43 | Zeitgeist | 1 |
 
 ## The list of supported networks
 | -- | Network | Assets count | Explorers |
