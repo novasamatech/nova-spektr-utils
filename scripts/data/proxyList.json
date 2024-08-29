@@ -10,7 +10,7 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/novasama-polkadot-proxy"
+                    "url": "https://subquery-proxy-polkadot-prod.novasamatech.org"
                 }
             ]
         }
@@ -26,7 +26,7 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/novasama-kusama-proxy"
+                    "url": "https://subquery-proxy-kusama-prod.novasamatech.org"
                 }
             ]
         }
@@ -42,7 +42,7 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/novasama-westend-proxy"
+                    "url": "https://subquery-proxy-westend-prod.novasamatech.org"
                 }
             ]
         }
@@ -53,7 +53,15 @@
         "options": [
             "regular_proxy",
             "pure_proxy"
-        ]
+        ],
+        "externalApi": {
+            "proxy": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-proxy-moonbeam-prod.novasamatech.org"
+                }
+            ]
+        }
     },
     {
         "name": "Moonriver",
@@ -61,7 +69,15 @@
         "options": [
             "regular_proxy",
             "pure_proxy"
-        ]
+        ],
+        "externalApi": {
+            "proxy": [
+                {
+                    "type": "subquery",
+                    "url": "subquery-proxy-moonriver-prod.novasamatech.org"
+                }
+            ]
+        }
     },
     {
         "name": "Novasama Testnet - Kusama",
@@ -82,7 +98,7 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/proxy-hydradx"
+                    "url": "https://subquery-proxy-hydradx-prod.novasamatech.org"
                 }
             ]
         }
