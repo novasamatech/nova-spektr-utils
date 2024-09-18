@@ -13,7 +13,7 @@
         ],
         "nodes": [
             {
-                "url": "wss://rpc-polkadot.novasamatech.org",
+                "url": "wss://rpc-polkadot.novasama-tech.org",
                 "name": "Novasama node"
             },
             {
@@ -88,7 +88,7 @@
             "governance-delegations": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-governance-polkadot-prod.novasamatech.org"
+                    "url": "https://subquery-governance-polkadot-prod.novasama-tech.org"
                 }
             ],
             "proxy": [
@@ -116,7 +116,7 @@
         ],
         "nodes": [
             {
-                "url": "wss://rpc-kusama.novasamatech.org",
+                "url": "wss://rpc-kusama.novasama-tech.org",
                 "name": "Novasama node"
             },
             {
@@ -191,7 +191,7 @@
             "governance-delegations": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-governance-kusama-prod.novasamatech.org"
+                    "url": "https://subquery-governance-kusama-prod.novasama-tech.org"
                 }
             ],
             "proxy": [
@@ -1544,9 +1544,7 @@
         "chainId": "0x64a1c658a48b2e70a7fb1ad4c39eea35022568c20fc44a6e2e3d0a57aee6053b",
         "parentId": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/ParallelHeiko.svg",
-        "options": [
-            "multisig"
-        ],
+        "options": [],
         "nodes": [
             {
                 "url": "wss://heiko-rpc.parallel.fi",
@@ -4036,6 +4034,20 @@
                     "transfersEnabled": true
                 },
                 "name": "KOL"
+            },
+            {
+                "assetId": 43,
+                "symbol": "vASTR",
+                "precision": 18,
+                "type": "orml",
+                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/vASTR.svg",
+                "typeExtras": {
+                    "currencyIdScale": "0x21000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "133689839572193000",
+                    "transfersEnabled": true
+                },
+                "name": "vASTR"
             }
         ],
         "explorers": [
@@ -4543,7 +4555,7 @@
     {
         "name": "Bifrost Polkadot",
         "specName": "polkadot",
-        "addressPrefix": 6,
+        "addressPrefix": 0,
         "chainId": "0x262e1b2ad728475fd6fe88e62d34c200abe6fd693931ddad144059b1eb884e5b",
         "parentId": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Bifrost_Polkadot.svg",
@@ -5318,13 +5330,13 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---vara"
+                    "url": "https://subquery-history-vara-prod.novasama-tech.org"
                 }
             ],
             "staking": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---vara"
+                    "url": "https://subquery-history-vara-prod.novasama-tech.org"
                 }
             ]
         }
@@ -6443,7 +6455,7 @@
         ],
         "nodes": [
             {
-                "url": "wss://rpc-test-network-1.novasamatech.org",
+                "url": "wss://rpc-test-network-1.novasama-tech.org",
                 "name": "Novasama node"
             }
         ],
@@ -6461,7 +6473,7 @@
             "governance-delegations": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-governance-testnet-stg.novasamatech.org"
+                    "url": "https://subquery-governance-testnet-stg.novasama-tech.org"
                 }
             ]
         }
