@@ -10,7 +10,7 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-proxy-polkadot-prod.novasamatech.org"
+                    "url": "https://subquery-proxy-polkadot-prod.novasama-tech.org"
                 }
             ]
         }
@@ -26,7 +26,7 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-proxy-kusama-prod.novasamatech.org"
+                    "url": "https://subquery-proxy-kusama-prod.novasama-tech.org"
                 }
             ]
         }
@@ -42,7 +42,7 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-proxy-westend-prod.novasamatech.org"
+                    "url": "https://subquery-proxy-westend-prod.novasama-tech.org"
                 }
             ]
         }
@@ -58,7 +58,7 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-proxy-moonbeam-prod.novasamatech.org"
+                    "url": "https://subquery-proxy-moonbeam-prod.novasama-tech.org"
                 }
             ]
         }
@@ -74,7 +74,7 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "subquery-proxy-moonriver-prod.novasamatech.org"
+                    "url": "subquery-proxy-moonriver-prod.novasama-tech.org"
                 }
             ]
         }
@@ -98,7 +98,7 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-proxy-hydradx-prod.novasamatech.org"
+                    "url": "https://subquery-proxy-hydradx-prod.novasama-tech.org"
                 }
             ]
         }
@@ -114,7 +114,23 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-proxy-bittensor-prod.novasamatech.org"
+                    "url": "https://subquery-proxy-bittensor-prod.novasama-tech.org"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Avail",
+        "chainId": "0xb91746b45e0346cc2f815a520b9c6cb4d5c0902af848db0a80f85932d2e8276a",
+        "options":[
+            "regular_proxy",
+            "pure_proxy"
+        ],
+        "externalApi": {
+            "proxy": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-proxy-avail-prod.novasama-tech.org"
                 }
             ]
         }
