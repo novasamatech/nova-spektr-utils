@@ -1,7 +1,7 @@
 
 # Supported Features data:
 ### 🕸️ [Supported networks](#supported-network-list): 46
-### 🪙 Added assets: 319
+### 🪙 Added assets: 318
 ### 👨‍👩‍👧‍👦 [Multisig supported](#list-of-networks-where-we-are-support-multisig) in: 43
 ### 🥞 Staking supported in: 3
 ### 🕹️ Proxy supported in: 7
@@ -34,10 +34,10 @@
 | 21 | Kusama Bridge Hub | 1 |
 | 22 | Kusama People | 1 |
 | 23 | Litentry | 0 |
-| 24 | Litmus | 0 |
-| 25 | Moonbeam | 0 |
-| 26 | Moonriver | 1 |
-| 27 | Parallel | 1 |
+| 24 | Moonbeam | 0 |
+| 25 | Moonriver | 1 |
+| 26 | Parallel | 1 |
+| 27 | Parallel Heiko | 1 |
 | 28 | Pendulum | 1 |
 | 29 | Phala | 1 |
 | 30 | Polimec | 1 |
@@ -83,7 +83,7 @@
 | 23 | Litentry | 1 | Statescan |
 | 24 | Litmus | 1 | Subscan Sub.ID |
 | 25 | Mangata X | 9 | Subscan |
-| 26 | Moonbeam | 24 | Subscan Moonscan |
+| 26 | Moonbeam | 23 | Subscan Moonscan |
 | 27 | Moonriver | 23 | Subscan Moonscan |
 | 28 | Parallel | 13 | Statescan Sub.ID |
 | 29 | Parallel Heiko | 12 | Statescan Sub.ID |
@@ -108,7 +108,7 @@
 # List of Networks where we are support proxy feature
 | -- | Network | Pure proxy | Regular proxy |
 | -------- | -------- | -------- | -------- |
-| 1 | Bittensor | true | false |
+| 1 | Bittensor | true | true |
 | 2 | Hydration | true | true |
 | 3 | Kusama | true | true |
 | 4 | Moonbeam | true | true |
