@@ -276,6 +276,12 @@
                     "type": "subquery",
                     "url": "https://subquery-proxy-westend-prod.novasama-tech.org"
                 }
+            ],
+            "multisig": [
+                {
+                    "type": "subquery",
+                    "url": "https://api.subquery.network/sq/nova-wallet/novasama-westend-proxy__bm92Y"
+                }
             ]
         },
         "additional": {
