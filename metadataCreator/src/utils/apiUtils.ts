@@ -5,7 +5,7 @@ import { MultisigVersionStorage } from "../models/MultisigVersionStorage";
 
 const repoUrl = 'https://api.github.com/repos/novasamatech/subquery-proxy/contents/';
 
-async function fetchYamlFiles(): Promise<any[]> {
+async function fetchSubqueryConfigs(): Promise<any[]> {
     const response = await axios.get(repoUrl);
     const files = response.data.filter((file: any) => file.name.endsWith('.yaml'));
 
@@ -18,7 +18,7 @@ async function fetchYamlFiles(): Promise<any[]> {
 }
 
 export async function calculateMultisigData(chains: Chain[]): Promise<MultisigVersionStorage> {
-    const yamlData = await fetchYamlFiles();
+    const yamlData = await fetchSubqueryConfigs();
     const multisigStorage = new MultisigVersionStorage()
 
     const filteredChains = chains.filter(chain => 
