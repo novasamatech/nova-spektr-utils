@@ -25,94 +25,60 @@
 ## The list of supported networks
 | -- | Network | Assets count | Explorers |
 | -------- | -------- | -------- | -------- |
-| 1 | Acala | 15 | Subscan Sub.ID Polkaholic |
-| 2 | Ajuna | 1 | Have not been added yet |
-| 3 | Aleph Zero | 1 | Subscan |
-| 4 | Altair | 1 | Subscan Sub.ID Polkaholic |
-| 5 | Amplitude | 3 | Have not been added yet |
-| 6 | Astar | 14 | Subscan Sub.ID Polkaholic |
-| 7 | Aventus | 1 | Aventus explorer |
-| 8 | Bajun | 1 | Subscan Polkaholic |
-| 9 | Basilisk | 6 | Subscan Sub.ID Polkaholic |
-| 10 | Bifrost Kusama | 14 | Subscan Sub.ID Polkaholic |
-| 11 | Bifrost Polkadot | 12 | Subscan Polkaholic |
-| 12 | Bit.Country Pioneer | 2 | Subscan Polkaholic |
-| 13 | Bittensor | 1 | SCAN |
-| 14 | Calamari | 7 | Subscan Sub.ID Polkaholic |
-| 15 | Centrifuge Parachain | 1 | Subscan Sub.ID Polkaholic |
-| 16 | CLV Parachain | 1 | Subscan Polkaholic |
-| 17 | Composable Finance | 4 | Subscan Polkaholic |
-| 18 | Continuum | 1 | Subscan |
-| 19 | Crust Polkadot Parachain | 1 | Subscan |
-| 20 | Crust Shadow | 1 | Subscan Polkaholic |
-| 21 | DAO IPCI | 1 | Polkaholic |
-| 22 | Dock | 1 | Subscan |
-| 23 | Edgeware | 1 | Subscan Sub.ID |
-| 24 | Encointer | 1 | Subscan Polkaholic |
-| 25 | Energy Web X | 1 | Have not been added yet |
-| 26 | Enjin Matrix | 1 | Subscan |
-| 27 | Enjin Relay | 1 | Subscan |
-| 28 | Frequency | 1 | Polkaholic |
-| 29 | GIANT | 1 | Have not been added yet |
-| 30 | Hashed Network | 1 | Have not been added yet |
-| 31 | HydraDX | 29 | Subscan Polkaholic |
-| 32 | Imbue | 1 | Polkaholic |
-| 33 | Integritee Parachain | 1 | Subscan Sub.ID Polkaholic |
-| 34 | Interlay | 14 | Subscan Polkaholic |
-| 35 | InvArch | 1 | Have not been added yet |
-| 36 | Joystream | 1 | Subscan |
-| 37 | Jur | 1 | Polkascan |
-| 38 | Kabocha | 1 | Polkaholic |
-| 39 | Karura | 26 | Subscan Sub.ID Polkaholic |
-| 40 | Khala | 16 | Subscan Sub.ID Polkaholic |
-| 41 | KILT | 1 | Subscan Sub.ID Polkaholic |
-| 42 | Kintsugi | 12 | Subscan Sub.ID Polkaholic |
-| 43 | krest | 1 | Subscan |
-| 44 | Kusama | 1 | Subscan Polkascan Sub.ID Polkaholic |
-| 45 | Kusama Asset Hub | 7 | Subscan Statescan Sub.ID Polkaholic |
-| 46 | Kusama Bridge Hub | 1 | Have not been added yet |
-| 47 | Litentry | 1 | Polkaholic |
-| 48 | Litmus | 1 | Subscan Sub.ID Polkaholic |
-| 49 | Mangata X | 9 | Subscan Polkaholic |
-| 50 | Manta Atlantic | 2 | Subscan |
-| 51 | Moonbeam | 24 | Subscan Moonscan Polkaholic |
-| 52 | Moonriver | 23 | Subscan Moonscan Polkaholic |
-| 53 | Myriad | 1 | Explorer |
-| 54 | NeuroWeb | 2 | Polkaholic |
-| 55 | Nodle Parachain | 1 | Subscan Sub.ID Polkaholic |
-| 56 | Parallel | 18 | Subscan Sub.ID Polkaholic |
-| 57 | Parallel Heiko | 12 | Subscan Polkaholic |
-| 58 | Pendulum | 3 | Have not been added yet |
-| 59 | Phala | 1 | Subscan Polkaholic |
-| 60 | Picasso | 4 | Subscan Polkaholic |
-| 61 | Polimec | 1 | Have not been added yet |
-| 62 | Polkadex | 6 | Subscan Sub.ID |
-| 63 | Polkadot | 1 | Subscan Polkascan Sub.ID Polkaholic |
-| 64 | Polkadot Asset Hub | 4 | Subscan Statescan Polkaholic |
-| 65 | Polkadot Bridge Hub | 1 | Have not been added yet |
-| 66 | Polkadot Collectives | 1 | Have not been added yet |
-| 67 | Polymesh | 1 | Subscan |
-| 68 | QUARTZ | 1 | Subscan Sub.ID Polkaholic |
-| 69 | Robonomics | 1 | Subscan Sub.ID Polkaholic |
-| 70 | Shiden | 13 | Subscan Sub.ID Polkaholic |
-| 71 | Subsocial | 1 | Sub.ID Polkaholic |
-| 72 | Ternoa | 1 | Ternoa explorer |
-| 73 | Tinkernet | 1 | Polkaholic |
-| 74 | Turing | 8 | Subscan Polkaholic |
-| 75 | UNIQUE | 1 | Subscan Polkaholic |
-| 76 | Vara | 1 | Varascan |
-| 77 | Watr | 1 | Have not been added yet |
-| 78 | Westend | 1 | Subscan |
-| 79 | XX network | 1 | XX explorer Polkastats |
-| 80 | Zeitgeist | 1 | Subscan Sub.ID Polkaholic |
-| 81 | 3DPass | 1 | 3DPass explorer |
+| 1 | Acala | 16 | Subscan Sub.ID |
+| 2 | Aleph Zero | 1 | Subscan |
+| 3 | Altair | 1 | Subscan Sub.ID |
+| 4 | Amplitude | 3 | Have not been added yet |
+| 5 | Astar | 14 | Subscan Sub.ID |
+| 6 | Basilisk | 6 | Subscan Sub.ID |
+| 7 | Bifrost Kusama | 14 | Subscan Sub.ID |
+| 8 | Bifrost Polkadot | 12 | Subscan |
+| 9 | Bittensor | 1 | SCAN |
+| 10 | Centrifuge Parachain | 1 | Subscan Sub.ID |
+| 11 | Hydration | 38 | Subscan |
+| 12 | Imbue | 1 | Have not been added yet |
+| 13 | Integritee Parachain | 1 | Subscan Sub.ID |
+| 14 | Interlay | 11 | Subscan |
+| 15 | Karura | 26 | Subscan Sub.ID |
+| 16 | Khala | 16 | Subscan Sub.ID |
+| 17 | KILT | 1 | Subscan Sub.ID |
+| 18 | Kintsugi | 9 | Subscan Sub.ID |
+| 19 | Kusama | 1 | Subscan Sub.ID |
+| 20 | Kusama Asset Hub | 7 | Subscan Statescan Sub.ID |
+| 21 | Kusama Bridge Hub | 1 | Subscan |
+| 22 | Kusama People | 1 | Have not been added yet |
+| 23 | Litentry | 1 | Statescan |
+| 24 | Litmus | 1 | Subscan Sub.ID |
+| 25 | Mangata X | 9 | Subscan |
+| 26 | Moonbeam | 23 | Subscan Moonscan |
+| 27 | Moonriver | 23 | Subscan Moonscan |
+| 28 | Parallel | 13 | Statescan Sub.ID |
+| 29 | Parallel Heiko | 12 | Statescan Sub.ID |
+| 30 | Pendulum | 7 | Subscan |
+| 31 | Phala | 1 | Subscan |
+| 32 | Polimec | 1 | Polimec explorer |
+| 33 | Polkadot | 1 | Subscan Sub.ID |
+| 34 | Polkadot Asset Hub | 13 | Subscan Statescan |
+| 35 | Polkadot Bridge Hub | 1 | Subscan |
+| 36 | Polkadot Collectives | 1 | Statescan |
+| 37 | Polkadot People | 1 | Have not been added yet |
+| 38 | QUARTZ | 1 | Subscan Sub.ID |
+| 39 | Robonomics | 1 | Subscan Sub.ID |
+| 40 | Shiden | 13 | Subscan Sub.ID |
+| 41 | Subsocial | 1 | Sub.ID |
+| 42 | Tinkernet | 1 | Have not been added yet |
+| 43 | Turing | 8 | Subscan |
+| 44 | Vara | 1 | Varascan Subscan |
+| 45 | Westend | 1 | Subscan |
+| 46 | Zeitgeist | 1 | Subscan Sub.ID |
 
 # List of Networks where we are support proxy feature
 | -- | Network | Pure proxy | Regular proxy |
 | -------- | -------- | -------- | -------- |
-| 1 | HydraDX | true | true |
-| 2 | Kusama | true | true |
-| 3 | Moonbeam | true | true |
-| 4 | Moonriver | true | true |
-| 5 | Polkadot | true | true |
-| 6 | Westend | true | true |
+| 1 | Bittensor | true | true |
+| 2 | Hydration | true | true |
+| 3 | Kusama | true | true |
+| 4 | Moonbeam | true | true |
+| 5 | Moonriver | true | true |
+| 6 | Polkadot | true | true |
+| 7 | Westend | true | true |

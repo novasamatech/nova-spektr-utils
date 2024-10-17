@@ -14,13 +14,7 @@ const NOVA_CONFIG_URL = `https://raw.githubusercontent.com/novasamatech/nova-uti
 const ASSET_ICONS_DIR = `icons/v1/assets/white`
 
 const CHAINS_ENV = ['chains_dev.json', 'chains.json'];
-const EXCLUDED_CHAINS = {
-  '89d3ec46d2fb43ef5a9713833373d5ea666b092fa8fd68fbc34596036571b907': 'Equilibrium', // Custom logic
-  '55b88a59dded27563391d619d805572dd6b6b89d302b0dd792d01b3c41cfe5b1': 'Singular testnet', // testnet
-  '23fc729c2cdb7bd6770a4e8c58748387cc715fcf338f1f74a16833d90383f4b0': 'Acala Mandala',
-  'c9824829d23066e7dd92b80cfef52559c7692866fcfc3530e737e3fe01410eef': 'GIANT testnet',
-  '9b86ea7366584c5ddf67de243433fcc05732864933258de9467db46eb9bef8b5': 'VARA testnet'
-}
+const ALLOWED_CHAINS = require('./data/allowedChains.json');
 
 const TYPE_EXTRAS_REPLACEMENTS = {
     'baf5aabe40646d11f0ee8abbdc64f4a4b7674925cba08e4a05ff9ebed6e2126b':   'AcalaPrimitivesCurrencyCurrencyId',
@@ -35,7 +29,9 @@ const TYPE_EXTRAS_REPLACEMENTS = {
     'cceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf':   'SpacewalkPrimitivesCurrencyId',
     '5d3c298622d5634ed019bf61ea4b71655030015bde9beb0d6a24743714462c86':   'SpacewalkPrimitivesCurrencyId'
 }
-const STAKING_ALLOWED_ARRAY = ['Polkadot', 'Kusama', 'Westend', 'Polkadex', 'Ternoa', 'Novasama Testnet - Kusama']
+const STAKING_ALLOWED_ARRAY = ['Polkadot', 'Kusama', 'Westend', 'Polkadex', 'Ternoa', 'Novasama Testnet - Governance']
+
+const GOV_ALLOWED_ARRAY = ['Polkadot', 'Kusama', 'Westend', 'Rococo', 'Novasama Testnet - Governance'];
 
 const DEFAULT_ASSETS = ['SHIBATALES', 'DEV', 'SIRI', 'PILT', 'cDOT-6/13', 'cDOT-7/14', 'cDOT-8/15', 'cDOT-9/16', 'cDOT-10/17', 'TZERO', 'UNIT', 'Unit', 'tEDG','JOE', 'HOP', 'PAS'];
 
@@ -79,10 +75,39 @@ function getStakingValue(staking, chainName) {
 function fillAssetData(chain) {
   const assetsList = [];
   chain.assets.map(asset => {
+    // Skip assets with typeExtras.palletName: "ForeignAssets"
+    if (asset.typeExtras?.palletName === "ForeignAssets") {
+      return;
+    }
+
     // Temp remove, waiting for "AssetManagement pallet support. It's used by Zeitgeist." https://app.clickup.com/t/85ztgpy7n
     if (chain.name === 'Zeitgeist' && asset.symbol === 'DOT') {
       return;
     }
+    if (asset.symbol.endsWith('.s')) {
+      return;
+    }
+    // Remove Pool tokens
+    if (asset.symbol.includes('Pool')) {
+      return;
+    }
+    // Remove LP tokens
+    if (asset.symbol.startsWith('LP ')) {
+      return;
+    }
+    // Remove Special DOT tokens
+    if (asset.symbol.startsWith('cDOT')) {
+      return;
+    }
+
+    // Remove Snowbridge tokens
+    if (asset.symbol.endsWith('-Snowbridge')) {
+      return;
+    }
+
+    // Replace (old) in symbols
+    asset.symbol = asset.symbol.replace(/ \(old\)/gi, '');
+
     assetsList.push({
       assetId: asset.assetId,
       symbol: asset.symbol,
@@ -101,90 +126,102 @@ function fillAssetData(chain) {
 
 function getTransformedData(rawData) {
   const filteredData = rawData.filter(chain => {
-    const isEvmChain = chain.options?.includes('ethereumBased') 
-    const isSupportedEvmChain = evmChains.some((chainId) => chainId.includes(chain.chainId));
-    const isExcludedChain = chain.chainId in EXCLUDED_CHAINS;
-    const isPausedChain = chain.name.includes('PAUSE');
-
-
-    return (!isEvmChain || isSupportedEvmChain) && !isExcludedChain && !isPausedChain;
+    const isAllowedChain = chain.chainId in ALLOWED_CHAINS;
+    return isAllowedChain;
   });
 
   return filteredData.map(chain => {
-      let externalApi = filterObjectByKeys(chain.externalApi, ['staking', 'history']);
-      const options = [];
+    let externalApi = filterObjectByKeys(chain.externalApi, ['staking', 'history', 'governance-delegations']);
+    const options = [];
 
-      if (chain.options?.includes('testnet')) {
-        options.push('testnet');
+    if (chain.options?.includes('testnet')) {
+      options.push('testnet');
+    }
+
+    if (multisigMap[chain.name]) {
+      options.push('multisig');
+    }
+
+    if (chain.options?.includes("ethereumBased")) {
+      options.push('ethereum_based');
+    }
+
+    if (GOV_ALLOWED_ARRAY.includes(chain.name)) {
+      options.push('governance');
+    }
+
+    const explorers = chain.explorers?.map(explorer => {
+      if (explorer.name === 'Subscan') {
+        const accountParam = explorer.account;
+        const domain = accountParam.substring(0, accountParam.indexOf('account'));
+        return {
+          ...explorer,
+          multisig: `${domain}multisig_extrinsic/{index}?call_hash={callHash}`
+        };
       }
 
-      if (multisigMap[chain.name]) {
-        options.push('multisig');
-      }
-
-      if (chain.options?.includes("ethereumBased")) {
-        options.push('ethereum_based');
-      }
-
-      const explorers = chain.explorers?.map(explorer => {
-        if (explorer.name === 'Subscan') {
-          const accountParam = explorer.account;
-          const domain = accountParam.substring(0, accountParam.indexOf('account'));
-          return {
-            ...explorer,
-            multisig: `${domain}multisig_extrinsic/{index}?call_hash={callHash}`
-          };
-        }
-
-        return explorer;
-      });
-
-      const proxyData = PROXY_LIST.find(p => p.chainId.includes(chain.chainId));
-
-      if (proxyData) {
-        options.push(...proxyData.options)
-      }
-
-      if (proxyData?.externalApi) {
-        externalApi = { ...externalApi, ...proxyData.externalApi }
-      }
-
-
-      const assets = fillAssetData(chain)
-      const nodes = chain.nodes.filter(node => !node.url.includes('{'));
-
-      const updatedChain = {
-        name: chain.name,
-        addressPrefix: chain.addressPrefix,
-        chainId: `0x${chain.chainId}`,
-        parentId: chain.parentId ? `0x${chain.parentId}` : undefined,
-        icon: replaceUrl(chain.icon, 'chain'),
-        options,
-        nodes: nodes,
-        assets,
-        explorers,
-      };
-
-      if (externalApi) {
-        updatedChain['externalApi'] = externalApi
-      }
-
-      return updatedChain;
+      return explorer;
     });
+
+    const proxyData = PROXY_LIST.find(p => p.chainId.includes(chain.chainId));
+
+    if (proxyData) {
+      options.push(...proxyData.options)
+    }
+
+    if (proxyData?.externalApi) {
+      externalApi = { ...externalApi, ...proxyData.externalApi }
+    }
+
+    const assets = fillAssetData(chain)
+    const nodes = chain.nodes.filter(node => !node.url.includes('{')).map(node => ({
+      url: node.url,
+      name: node.name
+    }));
+
+    const updatedChain = {
+      name: chain.name,
+      addressPrefix: chain.addressPrefix,
+      chainId: `0x${chain.chainId}`,
+      parentId: chain.parentId ? `0x${chain.parentId}` : undefined,
+      icon: replaceUrl(chain.icon, 'chain'),
+      options,
+      nodes: nodes,
+      assets,
+      explorers,
+    };
+
+    if (chain.additional?.identityChain) {
+      updatedChain['additional'] = {identityChain: `0x${chain.additional.identityChain}`};
+    }
+
+    if (externalApi) {
+      updatedChain['externalApi'] = externalApi
+    }
+
+    return updatedChain;
+  });
 }
 
 function replaceUrl(url, type, name = undefined) {
   const changedBaseUrl = url.replace("nova-utils/master", "nova-spektr-utils/main");
-  const lastPartOfUrl = url.split("/").pop()
+  const lastPartOfUrl = url.split("/").pop();
+
+  const customAssetMappings = {
+    'aSEEDk': 'aSEED-Kusama',
+    'aSEEDp': 'aSEED-Polkadot'
+  };
 
   // handling for 'xc' prefixed token names
   const processedName = name ? name.replace(/^xc/, '') : name;
 
   switch (type) {
     case "chain":
+      const chainName = lastPartOfUrl.split('.')[0];
+      const correctedChainName = chainName.charAt(0).toUpperCase() + chainName.slice(1);
       return changedBaseUrl.replace(
         /\/icons\/.*/,
-        `/icons/${SPEKTR_CONFIG_VERSION}/chains/${lastPartOfUrl}`
+        `/icons/${SPEKTR_CONFIG_VERSION}/chains/${correctedChainName}.svg`
       );
     case "asset":
       const tickerNames = [processedName, processedName.split("-")[0], TICKER_NAMES[processedName]];
@@ -192,7 +229,8 @@ function replaceUrl(url, type, name = undefined) {
       if (!relativePath) {
         console.error(`Can't find file for: ${processedName} in: ${ASSET_ICONS_DIR}`);
         // Fallback to TICKER_NAMES using original name if processedName fails
-        return changedBaseUrl.replace(/\/icons\/.*/, `/${TICKER_NAMES[name] || processedName}`);
+        const mappedName = customAssetMappings[processedName] || TICKER_NAMES[name] || processedName;
+        return changedBaseUrl.replace(/\/icons\/.*/, `/icons/v1/assets/white/${mappedName}.svg`);
       }
 
       return changedBaseUrl.replace(/\/icons\/.*/, `/${relativePath}`);

@@ -10,7 +10,7 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/novasama-polkadot-proxy"
+                    "url": "https://subquery-proxy-polkadot-prod.novasama-tech.org"
                 }
             ]
         }
@@ -26,7 +26,7 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/novasama-kusama-proxy"
+                    "url": "https://subquery-proxy-kusama-prod.novasama-tech.org"
                 }
             ]
         }
@@ -42,7 +42,7 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/novasama-westend-proxy"
+                    "url": "https://subquery-proxy-westend-prod.novasama-tech.org"
                 }
             ]
         }
@@ -53,7 +53,15 @@
         "options": [
             "regular_proxy",
             "pure_proxy"
-        ]
+        ],
+        "externalApi": {
+            "proxy": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-proxy-moonbeam-prod.novasama-tech.org"
+                }
+            ]
+        }
     },
     {
         "name": "Moonriver",
@@ -61,7 +69,15 @@
         "options": [
             "regular_proxy",
             "pure_proxy"
-        ]
+        ],
+        "externalApi": {
+            "proxy": [
+                {
+                    "type": "subquery",
+                    "url": "subquery-proxy-moonriver-prod.novasama-tech.org"
+                }
+            ]
+        }
     },
     {
         "name": "Novasama Testnet - Kusama",
@@ -82,7 +98,119 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/proxy-hydradx"
+                    "url": "https://subquery-proxy-hydradx-prod.novasama-tech.org"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Bittensor",
+        "chainId": "0x2f0555cc76fc2840a25a6ea3b9637146806f1f44b090c175ffde2a7e5ab36c03",
+        "options":[
+            "regular_proxy",
+            "pure_proxy"
+        ],
+        "externalApi": {
+            "proxy": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-proxy-bittensor-prod.novasama-tech.org"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Avail",
+        "chainId": "0xb91746b45e0346cc2f815a520b9c6cb4d5c0902af848db0a80f85932d2e8276a",
+        "options":[
+            "regular_proxy",
+            "pure_proxy"
+        ],
+        "externalApi": {
+            "proxy": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-proxy-avail-prod.novasama-tech.org"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Aleph Zero",
+        "chainId": "0x70255b4d28de0fc4e1a193d7e175ad1ccef431598211c55538f1018651a0344e",
+        "options":[
+            "regular_proxy",
+            "pure_proxy"
+        ],
+        "externalApi": {
+            "proxy": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-proxy-aleph-zero-prod.novasama-tech.org"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Polkadot Asset Hub",
+        "chainId": "0x68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+        "options":[
+            "regular_proxy",
+            "pure_proxy"
+        ],
+        "externalApi": {
+            "proxy": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-proxy-polkadot-ah-prod.novasama-tech.org"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Polkadot People",
+        "chainId": "0x67fa177a097bfa18f77ea95ab56e9bcdfeb0e5b8a40e46298bb93e16b6fc5008",
+        "options":[
+            "regular_proxy",
+            "pure_proxy"
+        ],
+        "externalApi": {
+            "proxy": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-proxy-polkadot-people-prod.novasama-tech.org"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Kusama People",
+        "chainId": "0xc1af4cb4eb3918e5db15086c0cc5ec17fb334f728b7c65dd44bfe1e174ff8b3f",
+        "options":[
+            "regular_proxy",
+            "pure_proxy"
+        ],
+        "externalApi": {
+            "proxy": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-proxy-kusama-people-prod.novasama-tech.org"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Kusama Asset Hub",
+        "chainId": "0x48239ef607d7928874027a43a67689209727dfb3d3dc5e5b03a39bdc2eda771a",
+        "options":[
+            "regular_proxy",
+            "pure_proxy"
+        ],
+        "externalApi": {
+            "proxy": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-proxy-kusama-ah-prod.novasama-tech.org"
                 }
             ]
         }
