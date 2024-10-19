@@ -206,80 +206,6 @@
         }
     },
     {
-        "name": "Westend",
-        "specName": "westend",
-        "addressPrefix": 42,
-        "chainId": "0xe143f23803ac50e8f6f8e62695d1ce9e4e1d68aa36c1cd2cfd15340213f3423e",
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Westend_Testnet.svg",
-        "options": [
-            "testnet",
-            "multisig",
-            "governance",
-            "regular_proxy",
-            "pure_proxy"
-        ],
-        "nodes": [
-            {
-                "url": "wss://westend-rpc.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
-                "url": "wss://rpc.ibp.network/westend",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://rpc.dotters.network/westend",
-                "name": "IBP2 node"
-            },
-            {
-                "url": "wss://westend.public.curie.radiumblock.co/ws",
-                "name": "RadiumBlock node"
-            },
-            {
-                "url": "wss://westend.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            }
-        ],
-        "assets": [
-            {
-                "assetId": 0,
-                "symbol": "WND",
-                "precision": 12,
-                "staking": "relaychain",
-                "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Westend_(WND).svg",
-                "name": "Westend"
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://westend.subscan.io/extrinsic/{hash}",
-                "account": "https://westend.subscan.io/account/{address}",
-                "multisig": "https://westend.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
-            }
-        ],
-        "externalApi": {
-            "staking": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-westend"
-                }
-            ],
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-westend"
-                }
-            ],
-            "proxy": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-proxy-westend-prod.novasama-tech.org"
-                }
-            ]
-        }
-    },
-    {
         "name": "Kusama Asset Hub",
         "specName": "kusama",
         "addressPrefix": 2,
@@ -1053,10 +979,6 @@
             {
                 "url": "wss://bifrost-rpc.dwellir.com",
                 "name": "Dwellir node"
-            },
-            {
-                "url": "wss://bifrost-parachain.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
             }
         ],
         "assets": [
@@ -1996,10 +1918,6 @@
         ],
         "nodes": [
             {
-                "url": "wss://rpc-acala.luckyfriday.io",
-                "name": "LuckyFriday node"
-            },
-            {
                 "url": "wss://acala-polkadot.api.onfinality.io/public-ws",
                 "name": "OnFinality node"
             },
@@ -2509,10 +2427,6 @@
             {
                 "url": "wss://polkadot-parallel-rpc.parallel.fi",
                 "name": "Parallel node"
-            },
-            {
-                "url": "wss://parallel-rpc.dwellir.com",
-                "name": "Dwellir node"
             }
         ],
         "assets": [
@@ -2905,10 +2819,6 @@
             {
                 "url": "wss://kusama.rpc.robonomics.network/",
                 "name": "Airalab node"
-            },
-            {
-                "url": "wss://robonomics.0xsamsara.com",
-                "name": "Samsara node"
             }
         ],
         "assets": [
@@ -6258,16 +6168,28 @@
         ],
         "nodes": [
             {
-                "url": "wss://zeref-api.slowops.xyz/ws",
-                "name": "Turing node"
+                "url": "wss://avail-mainnet.public.blastapi.io/",
+                "name": "Bware node"
             },
             {
-                "url": "wss://avail-mainnet.public.blastapi.io/",
-                "name": "Blastapi node"
+                "url": "wss://avail-rpc.rubynodes.io/",
+                "name": "RubyNode node"
+            },
+            {
+                "url": "wss://avail-us.brightlystake.com",
+                "name": "BrightlyStake node"
+            },
+            {
+                "url": "wss://rpc-avail.globalstake.io",
+                "name": "GlobalStake node"
             },
             {
                 "url": "wss://avail.rpc.bountyblok.io",
                 "name": "Bountyblok node"
+            },
+            {
+                "url": "wss://avail.public.curie.radiumblock.co/ws",
+                "name": "RadiumBlock node"
             }
         ],
         "assets": [
