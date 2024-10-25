@@ -2,8 +2,7 @@ const path = require('path');
 const {writeFile, readFile} = require('fs/promises');
 
 const SPEKTR_CONFIG_PATH = './chains';
-const SPEKTR_CONFIG_VERSION = 'v1';
-// const SPEKTR_CONFIG_VERSION = process.env.SPEKTR_CONFIG_VERSION;
+const SPEKTR_CONFIG_VERSION = process.env.SPEKTR_CONFIG_VERSION;
 
 const CONFIG_PATH = `tokens/${SPEKTR_CONFIG_VERSION}/`;
 

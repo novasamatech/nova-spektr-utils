@@ -9,9 +9,8 @@ const PROXY_LIST = require('./data/proxyList.json');
 const EXCEPTIONAL_CHAINS = require('./data/exceptionalChains.json');
 const ALLOWED_CHAINS = require('./data/allowedChains.json');
 
-const NOVA_CONFIG_VERSION = 'v20';
-// const NOVA_CONFIG_VERSION = process.env.NOVA_CONFIG_VERSION;
-const SPEKTR_CONFIG_VERSION = 'v1';
+const NOVA_CONFIG_VERSION = process.env.NOVA_CONFIG_VERSION;
+const SPEKTR_CONFIG_VERSION = process.env.SPEKTR_CONFIG_VERSION;
 const CONFIG_PATH = `chains/${SPEKTR_CONFIG_VERSION}/`;
 const NOVA_CONFIG_URL = `https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/${NOVA_CONFIG_VERSION}/`;
 const ASSET_ICONS_DIR = `icons/v1/assets/white`
