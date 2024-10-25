@@ -1,8 +1,9 @@
 const path = require('path');
-const { writeFile, readFile } = require('fs/promises');
+const {writeFile, readFile} = require('fs/promises');
 
 const SPEKTR_CONFIG_PATH = './chains';
-const SPEKTR_CONFIG_VERSION = process.env.SPEKTR_CONFIG_VERSION;
+const SPEKTR_CONFIG_VERSION = 'v1';
+// const SPEKTR_CONFIG_VERSION = process.env.SPEKTR_CONFIG_VERSION;
 
 const CONFIG_PATH = `tokens/${SPEKTR_CONFIG_VERSION}/`;
 
@@ -36,7 +37,7 @@ function transformChainstoTokens(chains) {
     chainOptionsMap.set(i.chainId, i.options);
     i.assets.forEach((asset) => {
       const normalizedSymbol = normalizeSymbol(asset.symbol);
-      const uniqueAsset = containsUniqueAsset(asset.symbol); 
+      const uniqueAsset = containsUniqueAsset(asset.symbol);
       const key = uniqueAsset || asset.priceId || normalizedSymbol;
       const updateObj = obj[key] || {
         name: asset.name,
@@ -57,7 +58,7 @@ function transformChainstoTokens(chains) {
         typeExtras: asset.typeExtras,
       };
 
-      
+
       obj[key] = {
         ...updateObj,
         chains: [...updateObj.chains, chainData],

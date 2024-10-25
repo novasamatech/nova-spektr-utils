@@ -4,16 +4,16 @@ const path = require('path');
 const dirPath = path.join(__dirname, '../icons/');
 
 function renameFiles(parentDir, callback) {
-  fs.readdir(parentDir, function(err, files) {
+  fs.readdir(parentDir, (err, files) => {
     if (err) {
       console.error('Error while reading directory:', err);
       return;
     }
 
-    files.forEach(function(file) {
+    files.forEach((file) => {
       const oldPath = path.join(parentDir, file);
 
-      fs.stat(oldPath, function(err, stats) {
+      fs.stat(oldPath, (err, stats) => {
         if (err) {
           console.error('Error while getting file stats:', err);
           return;
@@ -25,7 +25,7 @@ function renameFiles(parentDir, callback) {
           const newFilename = file.replace(/\s+/g, '_');  // Replace spaces with underscores
           const newPath = path.join(parentDir, newFilename);
 
-          fs.rename(oldPath, newPath, function(err) {
+          fs.rename(oldPath, newPath, (err) => {
             if (err) {
               console.error(`Error while renaming file '${oldPath}':`, err);
             } else {

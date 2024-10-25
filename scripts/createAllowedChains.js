@@ -20,7 +20,7 @@ async function createAllowedChains() {
 
   const allowedChains = chainsDev.reduce((acc, chain) => {
     const chainId = chain.chainId.startsWith('0x') ? chain.chainId.slice(2) : chain.chainId;
-    acc.push({ chainId, name: chain.name });
+    acc.push({chainId, name: chain.name});
     return acc;
   }, []);
 
