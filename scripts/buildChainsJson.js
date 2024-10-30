@@ -56,7 +56,7 @@ const evmChains = [
   "0x91bc6e169807aaa54802737e1c504b2577d4fafedd5a02c10293b1cd60e39527", // Moonbase alpha
 ]
 
-function getDataViaHttp(url, filePath) {
+function getDataFromUrl(url, filePath) {
   return fetch(url + filePath, {method: 'GET'})
     .then(response => response.json())
     .catch(error => console.log('Error: ', error?.message || 'getDataViaHttp failed'));
@@ -86,7 +86,7 @@ function fillAssetData(chain) {
     // Remove Snowbridge tokens
     if (asset.symbol.endsWith('-Snowbridge')) return;
 
-    const symbol = asset.symbol.replace(/ \(old\)/gi, '')
+    const symbol = asset.symbol.replace(/[_ ]+\(old\)/gi, '')
 
     return {
       name: TOKEN_NAMES[symbol] || 'Should be included in scripts/data/assetsNameMap',
@@ -96,7 +96,7 @@ function fillAssetData(chain) {
       type: asset.type || 'native',
       priceId: asset.priceId,
       staking: getStakingValue(asset.staking, chain.name),
-      icon: replaceUrl(asset.icon, 'asset', asset.symbol),
+      icon: replaceUrl(asset.icon, 'asset', symbol),
       typeExtras: replaceTypeExtras(asset.typeExtras, chain.chainId),
     };
   });
@@ -195,7 +195,7 @@ function replaceUrl(url, type, name = undefined) {
       const tickerNames = [processedName, processedName.split("-")[0], TICKER_NAMES[processedName]];
       const relativePath = findFileByTicker(tickerNames, ASSET_ICONS_DIR);
       if (!relativePath) {
-        console.error(`Can't find file for: ${processedName} in: ${ASSET_ICONS_DIR}`);
+        console.warn(`Can't find file for: ${processedName} in: ${ASSET_ICONS_DIR}. Trying fallback with customAssetMappings`);
         // Fallback to TICKER_NAMES using original name if processedName fails
         const mappedName = customAssetMappings[processedName] || TICKER_NAMES[name] || processedName;
         return changedBaseUrl.replace(/\/icons\/.*/, `/icons/v1/assets/white/${mappedName}.svg`);
@@ -304,7 +304,7 @@ async function saveNewFile(newJson, file_name) {
 
 async function buildFullChainsJSON() {
   const requests = CHAINS_ENV.map((fileName) => {
-    return getDataViaHttp(NOVA_CONFIG_URL, fileName).then(getPreparedChains)
+    return getDataFromUrl(NOVA_CONFIG_URL, fileName).then(getPreparedChains);
   });
 
   const [dev, prod] = await Promise.allSettled(requests);
@@ -319,7 +319,7 @@ async function buildFullChainsJSON() {
 
   await saveNewFile(dev.value, CHAINS_ENV[0]);
   await saveNewFile(prod.value, CHAINS_ENV[1]);
-  console.log('❇️ Successfully generated for DEV & PROD');
+  console.log('❇️ Successfully generated CHAINS for DEV & PROD');
   console.log('⚠️ Exceptional PROD chains - ', toProd.map(c => c.name));
 }
 

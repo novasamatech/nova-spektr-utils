@@ -1,6 +1,8 @@
 const path = require('path');
 const {writeFile, readFile} = require('fs/promises');
 
+const EXCEPTIONAL_CHAINS = require("./data/exceptionalChains.json");
+
 const SPEKTR_CONFIG_PATH = './chains';
 const SPEKTR_CONFIG_VERSION = process.env.SPEKTR_CONFIG_VERSION;
 
@@ -11,7 +13,7 @@ const CHAINS_ENV = ['chains_dev.json', 'chains.json'];
 // That assets will be taken as an unique asset, despite priceId
 const UNIQUE_ASSET_LIST = ['EQD', 'iBTC', 'kBTC', 'RING'];
 
-async function getDataViaFile(filePath) {
+async function getDataFromFile(filePath) {
   try {
     const data = await readFile(filePath, 'utf8');
 
@@ -29,12 +31,15 @@ function normalizeSymbol(symbol) {
   return symbol.startsWith('xc') ? symbol.slice(2) : symbol;
 }
 
-function transformChainstoTokens(chains) {
+function transformChainsToTokens(chains) {
   const obj = {};
   const chainOptionsMap = new Map();
-  chains.forEach((i) => {
-    chainOptionsMap.set(i.chainId, i.options);
-    i.assets.forEach((asset) => {
+
+  chains.forEach((chain) => {
+    chainOptionsMap.set(chain.chainId, chain.options);
+    chain.assets.forEach((asset) => {
+      if (!asset) return; // Westmint has no assets
+
       const normalizedSymbol = normalizeSymbol(asset.symbol);
       const uniqueAsset = containsUniqueAsset(asset.symbol);
       const key = uniqueAsset || asset.priceId || normalizedSymbol;
@@ -49,8 +54,8 @@ function transformChainstoTokens(chains) {
       };
 
       const chainData = {
-        chainId: i.chainId,
-        name: i.name,
+        chainId: chain.chainId,
+        name: chain.name,
         assetId: asset.assetId,
         assetSymbol: asset.symbol,
         type: asset.type,
@@ -65,12 +70,11 @@ function transformChainstoTokens(chains) {
     });
   });
 
-  const tokens = Object.values(obj).map((token) => {
-    token.isTestToken = token.chains.every((chain) => chainOptionsMap.get(chain.chainId)?.includes('testnet'));
-    return token;
-  });
-
-  return tokens;
+  return Object.values(obj).map((token) => ({
+      ...token,
+      isTestToke: token.chains.every((chain) => chainOptionsMap.get(chain.chainId)?.includes('testnet')),
+    })
+  );
 }
 
 async function saveNewFile(newJson, file_name) {
@@ -84,24 +88,28 @@ async function saveNewFile(newJson, file_name) {
 }
 
 async function buildFullTokensJSON() {
-  const requests = CHAINS_ENV.map(async (chain) => {
-    try {
-      const localChainsConfig = await getDataViaFile(`${SPEKTR_CONFIG_PATH}/${SPEKTR_CONFIG_VERSION}/${chain}`);
-      const tokensData = transformChainstoTokens(localChainsConfig);
-      await saveNewFile(tokensData, chain.replace('chains', 'tokens'));
-      console.log('❇️ Successfully generated for: ' + chain);
-    } catch (e) {
-      console.error('️🔴 Error for: ', chain, e);
-      process.exit(1);
-    }
+  const requests = CHAINS_ENV.map((chain) => {
+    return getDataFromFile(`${SPEKTR_CONFIG_PATH}/${SPEKTR_CONFIG_VERSION}/${chain}`).then(transformChainsToTokens);
   });
 
-  await Promise.allSettled(requests);
+  const [dev, prod] = await Promise.allSettled(requests);
+
+  if (prod.status === 'rejected' || dev.status === 'rejected') {
+    console.log(prod.reason || dev.reason);
+    throw new Error('️🔴 Error preparing DEV or PROD file');
+  }
+
+  const toProd = dev.value.filter(chain => EXCEPTIONAL_CHAINS.prod[chain.chainId]);
+  prod.value.push(...toProd);
+
+  await saveNewFile(dev.value, CHAINS_ENV[0].replace('chains', 'tokens'));
+  await saveNewFile(prod.value, CHAINS_ENV[1].replace('chains', 'tokens'));
+  console.log('❇️ Successfully generated TOKENS for DEV & PROD');
+  console.log('⚠️ Exceptional PROD chains - ', toProd.map(c => c.name));
 }
 
-buildFullTokensJSON()
-  .then(() => console.log('🏁 buildFullTokensJSON finished'))
-  .catch(e => {
-    console.error('🔴 Error in buildFullTokensJSON: ', e);
-    process.exit(1);
-  });
+buildFullTokensJSON().catch((error) => {
+  console.error(error);
+  process.exit(1);
+});
+
