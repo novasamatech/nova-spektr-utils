@@ -99,7 +99,7 @@ function fillAssetData(chain) {
       icon: replaceUrl(asset.icon, 'asset', symbol),
       typeExtras: replaceTypeExtras(asset.typeExtras, chain.chainId),
     };
-  });
+  }).filter(Boolean);
 }
 
 function getPreparedChains(rawData) {
