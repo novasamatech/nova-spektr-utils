@@ -325,7 +325,6 @@
                     "assetId": "81"
                 }
             },
-            null,
             {
                 "name": "JOE token",
                 "assetId": 3,
@@ -1929,9 +1928,6 @@
                     "transfersEnabled": true
                 }
             },
-            null,
-            null,
-            null,
             {
                 "name": "Kitsugi BTC",
                 "assetId": 9,
@@ -3726,11 +3722,6 @@
                     "isSufficient": true
                 }
             },
-            null,
-            null,
-            null,
-            null,
-            null,
             {
                 "name": "Interlay",
                 "assetId": 12,
@@ -3963,8 +3954,6 @@
                     "assetId": "31337"
                 }
             },
-            null,
-            null,
             {
                 "name": "WIFD",
                 "assetId": 11,
@@ -4008,8 +3997,7 @@
                 "typeExtras": {
                     "assetId": "86"
                 }
-            },
-            null
+            }
         ],
         "explorers": [
             {
@@ -4129,8 +4117,7 @@
                 "type": "native",
                 "priceId": "zeitgeist",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Zeitgeist_(ZTG).svg"
-            },
-            null
+            }
         ],
         "explorers": [
             {
@@ -4667,9 +4654,6 @@
                     "transfersEnabled": true
                 }
             },
-            null,
-            null,
-            null,
             {
                 "name": "UNIQUE",
                 "assetId": 25,
@@ -4845,8 +4829,6 @@
                     "transfersEnabled": true
                 }
             },
-            null,
-            null,
             {
                 "name": "WIFD",
                 "assetId": 39,
@@ -5086,9 +5068,6 @@
                     "transfersEnabled": true
                 }
             },
-            null,
-            null,
-            null,
             {
                 "name": "Interlay BTC",
                 "assetId": 11,
@@ -6034,14 +6013,7 @@
                     "existentialDeposit": "0",
                     "transfersEnabled": true
                 }
-            },
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null
+            }
         ],
         "externalApi": {
             "history": [
@@ -6123,13 +6095,6 @@
                     "transfersEnabled": true
                 }
             },
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
-            null,
             {
                 "name": "Moonbeam",
                 "assetId": 11,
@@ -6618,10 +6583,7 @@
                 "type": "native",
                 "priceId": "polimec",
                 "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/PLMC.svg"
-            },
-            null,
-            null,
-            null
+            }
         ],
         "explorers": [
             {
