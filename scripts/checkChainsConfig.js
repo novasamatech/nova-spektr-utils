@@ -47,6 +47,18 @@ function checkSpecNames(chainsJSON) {
   return errors;
 }
 
+function checkMultisigProxyConfig(chainsJSON) {
+  const errors = [];
+  chainsJSON.forEach(chain => {
+    if (chain.options && chain.options.includes('multisig')) {
+      if (!chain.externalApi || !chain.externalApi.proxy) {
+        errors.push(`Chain "${chain.name}" has multisig enabled but missing externalApi.proxy configuration`);
+      }
+    }
+  });
+  return errors;
+}
+
 let hasError = false;
 
 function checkChainsFile(filePath) {
@@ -55,6 +67,14 @@ function checkChainsFile(filePath) {
 
   // check that new explorers were not added
   checkBlockExplorers(chainsJSON)
+
+  const multisigProxyErrors = checkMultisigProxyConfig(chainsJSON);
+  if (multisigProxyErrors.length > 0) {
+    console.error(`Errors in file ${filePath}:`);
+    multisigProxyErrors.forEach(error => console.error(error));
+    hasError = true;
+  }
+
   const specNameErrors = checkSpecNames(chainsJSON);
   if (specNameErrors.length > 0) {
     console.error(`Errors in file ${filePath}:`);
