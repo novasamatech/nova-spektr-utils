@@ -130,7 +130,7 @@
       "proxy": [
         {
           "type": "subquery",
-          "url": "https://subquery-proxy-avail-prod.novasama-tech.org"
+          "url": "https://subquery-proxy-avail-stg.novasama-tech.org"
         }
       ]
     }
