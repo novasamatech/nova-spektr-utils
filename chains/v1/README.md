@@ -2,7 +2,7 @@
 # Supported Features data:
 ### 🕸️ [Supported networks](#supported-network-list): 46
 ### 🪙 Added assets: 319
-### 👨‍👩‍👧‍👦 [Multisig supported](#list-of-networks-where-we-are-support-multisig) in: 12
+### 👨‍👩‍👧‍👦 [Multisig supported](#list-of-networks-where-we-are-support-multisig) in: 13
 ### 🥞 Staking supported in: 3
 ### 🕹️ Proxy supported in: 13
 
@@ -12,17 +12,18 @@
 | -- | Network | Multisig version |
 | -------- | -------- | -------- |
 | 1 | Aleph Zero | 1 |
-| 2 | Bittensor | 1 |
-| 3 | Hydration | 1 |
-| 4 | Kusama | 1 |
-| 5 | Kusama Asset Hub | 1 |
-| 6 | Kusama People | 1 |
-| 7 | Moonbeam | 0 |
-| 8 | Moonriver | 1 |
-| 9 | Polkadot | 1 |
-| 10 | Polkadot Asset Hub | 1 |
-| 11 | Polkadot People | 1 |
-| 12 | Westend | 1 |
+| 2 | Avail | 1 |
+| 3 | Bittensor | 1 |
+| 4 | Hydration | 1 |
+| 5 | Kusama | 1 |
+| 6 | Kusama Asset Hub | 1 |
+| 7 | Kusama People | 1 |
+| 8 | Moonbeam | 0 |
+| 9 | Moonriver | 1 |
+| 10 | Polkadot | 1 |
+| 11 | Polkadot Asset Hub | 1 |
+| 12 | Polkadot People | 1 |
+| 13 | Westend | 1 |
 
 ## The list of supported networks
 | -- | Network | Assets count | Explorers |
