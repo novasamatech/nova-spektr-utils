@@ -2211,7 +2211,7 @@
         "precision": 12,
         "priceId": "litentry",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Litentry_(LIT).svg",
-        "symbol": "LIT",
+        "symbol": "xcLIT",
         "isTestToken": false,
         "chains": [
             {
@@ -2224,13 +2224,6 @@
                     "assetId": "65216491554813189869575508812319036608",
                     "isSufficient": true
                 }
-            },
-            {
-                "chainId": "0x2fc8bb6ed7c0051bdcf4866c322ed32b6276572713607e3297ccf411b8f14aa9",
-                "name": "Litentry",
-                "assetId": 0,
-                "assetSymbol": "LIT",
-                "type": "native"
             }
         ]
     },
@@ -4605,6 +4598,23 @@
                     "existentialDeposit": "10000000000000",
                     "transfersEnabled": true
                 }
+            }
+        ]
+    },
+    {
+        "name": "Litentry",
+        "precision": 18,
+        "priceId": "litentry",
+        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/assets/white/Litentry_(LIT).svg",
+        "symbol": "LIT",
+        "isTestToken": false,
+        "chains": [
+            {
+                "chainId": "0x2fc8bb6ed7c0051bdcf4866c322ed32b6276572713607e3297ccf411b8f14aa9",
+                "name": "Litentry",
+                "assetId": 0,
+                "assetSymbol": "LIT",
+                "type": "native"
             }
         ]
     },
