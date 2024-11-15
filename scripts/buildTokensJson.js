@@ -53,6 +53,10 @@ function transformChainsToTokens(chains) {
         chains: [],
       };
 
+      if (asset.symbol.length < updateObj.symbol.length) {
+        updateObj.symbol = asset.symbol;
+      }
+
       const chainData = {
         chainId: chain.chainId,
         name: chain.name,
@@ -72,7 +76,7 @@ function transformChainsToTokens(chains) {
 
   return Object.values(obj).map((token) => ({
       ...token,
-      isTestToke: token.chains.every((chain) => chainOptionsMap.get(chain.chainId)?.includes('testnet')),
+      isTestToken: token.chains.every((chain) => chainOptionsMap.get(chain.chainId)?.includes('testnet')),
     })
   );
 }
