@@ -65,6 +65,7 @@ function checkChainsFile(filePath) {
   let chainsFile = fs.readFileSync(filePath);
   let chainsJSON = JSON.parse(chainsFile);
 
+  // check that new explorers were not added
   checkBlockExplorers(chainsJSON);
 
   const multisigProxyErrors = checkMultisigProxyConfig(chainsJSON);
