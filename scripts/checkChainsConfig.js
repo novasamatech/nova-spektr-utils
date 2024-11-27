@@ -65,8 +65,7 @@ function checkChainsFile(filePath) {
   let chainsFile = fs.readFileSync(filePath);
   let chainsJSON = JSON.parse(chainsFile);
 
-  // check that new explorers were not added
-  checkBlockExplorers(chainsJSON)
+  checkBlockExplorers(chainsJSON);
 
   const multisigProxyErrors = checkMultisigProxyConfig(chainsJSON);
   if (multisigProxyErrors.length > 0) {
@@ -82,47 +81,7 @@ function checkChainsFile(filePath) {
     hasError = true;
   }
 
-  let allIcons = jp.query(chainsJSON, "$..icon");
-  let relativeIcons = [];
-  for (let i in allIcons) {
-    relativeIcons.push('.' + allIcons[i].substring(allIcons[i].indexOf('/icons/')))
-  }
-
-  let badPath = new Set();
-  for (i in relativeIcons) {
-    let path = relativeIcons[i];
-    try {
-      fs.readFileSync(path);
-    } catch (error) {
-      badPath.add(path);
-    }
-  }
-  if (badPath.size > 0) {
-    console.error("No icons for chains or assets in " + filePath);
-    console.log(badPath);
-    hasError = true;
-  } else {
-    console.log("All icons found in " + filePath);
-  }
-
-  let assetIcons = jp.query(chainsJSON, "$..assets[*].icon");
-  let badAssetIcon = new Set();
-  for (let i in assetIcons) {
-    if (assetIcons[i].indexOf(`${BASE_ICON_PATH}`) === -1) {
-      badAssetIcon.add(assetIcons[i]);
-    }
-    if (assetIcons[i].indexOf(`/assets/white/`) === -1) {
-      badAssetIcon.add(assetIcons[i]);
-    }
-  }
-  if (badAssetIcon.size > 0) {
-    console.error("Bad asset icons paths in " + filePath);
-    console.log(badAssetIcon);
-    hasError = true;
-  } else {
-    console.log("All asset icons path is correct in " + filePath);
-  }
-
+  // Check chain icons
   let chainIcons = jp.query(chainsJSON, "$[*].icon");
   let badChainIcons = new Set();
   for (let i in chainIcons) {
@@ -141,12 +100,79 @@ function checkChainsFile(filePath) {
     console.log("All chain icons path is correct in " + filePath);
   }
 
+  // Check asset icons
+  let assetIcons = jp.query(chainsJSON, "$..assets[*].icon");
+  let badAssetIcon = new Set();
+  
+  for (let i in assetIcons) {
+    const icon = assetIcons[i];
+    
+    // Check if icon has both monochrome and colored properties
+    if (!icon.monochrome || !icon.colored) {
+      badAssetIcon.add(JSON.stringify(icon));
+      continue;
+    }
+
+    // Check monochrome icon path
+    if (icon.monochrome.indexOf(`${BASE_ICON_PATH}`) === -1 || 
+        icon.monochrome.indexOf(`/assets/white/`) === -1) {
+      badAssetIcon.add(icon.monochrome);
+    }
+
+    // Check colored icon path
+    if (icon.colored.indexOf(`${BASE_ICON_PATH}`) === -1 || 
+        icon.colored.indexOf(`/assets/alternative/`) === -1) {
+      badAssetIcon.add(icon.colored);
+    }
+  }
+
+  if (badAssetIcon.size > 0) {
+    console.error("Bad asset icons paths in " + filePath);
+    console.log(badAssetIcon);
+    hasError = true;
+  } else {
+    console.log("All asset icons path is correct in " + filePath);
+  }
+
+  // Check local file existence
+  let allIcons = [
+    ...jp.query(chainsJSON, "$[*].icon"),
+    ...jp.query(chainsJSON, "$..assets[*].icon.monochrome"),
+    ...jp.query(chainsJSON, "$..assets[*].icon.colored")
+  ];
+
+  let relativeIcons = [];
+  for (let i in allIcons) {
+    if (typeof allIcons[i] === 'string') {
+      relativeIcons.push('.' + allIcons[i].substring(allIcons[i].indexOf('/icons/')));
+    }
+  }
+
+  let badPath = new Set();
+  for (i in relativeIcons) {
+    let path = relativeIcons[i];
+    try {
+      fs.readFileSync(path);
+    } catch (error) {
+      badPath.add(path);
+    }
+  }
+  
+  if (badPath.size > 0) {
+    console.error("No icons for chains or assets in " + filePath);
+    console.log(badPath);
+    hasError = true;
+  } else {
+    console.log("All icons found in " + filePath);
+  }
+
   let buyProviders = jp.query(chainsJSON, "$..buyProviders");
   if (buyProviders.length > 0) {
     console.error("Buy providers has to be excluded from " + filePath);
     console.log(buyProviders);
     hasError = true;
   }
+
   let chainTypes = jp.query(chainsJSON, "$..types");
   if (chainTypes.length > 0) {
     console.error("Chain types has to be removed from " + filePath);

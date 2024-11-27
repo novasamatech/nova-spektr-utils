@@ -13,7 +13,7 @@ const NOVA_CONFIG_VERSION = process.env.NOVA_CONFIG_VERSION;
 const SPEKTR_CONFIG_VERSION = process.env.SPEKTR_CONFIG_VERSION;
 const CONFIG_PATH = `chains/${SPEKTR_CONFIG_VERSION}/`;
 const NOVA_CONFIG_URL = `https://raw.githubusercontent.com/novasamatech/nova-utils/master/chains/${NOVA_CONFIG_VERSION}/`;
-const ASSET_ICONS_DIR = `icons/v1/assets/white`
+const ASSET_ICONS_DIR = `icons/v2/assets`
 
 const CHAINS_ENV = ['chains_dev.json', 'chains.json'];
 
@@ -87,6 +87,7 @@ function fillAssetData(chain) {
     if (asset.symbol.endsWith('-Snowbridge')) return;
 
     const symbol = asset.symbol.replace(/[_ ]+\(old\)/gi, '')
+    const iconPaths = replaceAssetIconUrl(asset.icon, symbol);
 
     return {
       name: TOKEN_NAMES[symbol] || 'Should be included in scripts/data/assetsNameMap',
@@ -96,7 +97,7 @@ function fillAssetData(chain) {
       type: asset.type || 'native',
       priceId: asset.priceId,
       staking: getStakingValue(asset.staking, chain.name),
-      icon: replaceUrl(asset.icon, 'asset', symbol),
+      icon: iconPaths,
       typeExtras: replaceTypeExtras(asset.typeExtras, chain.chainId),
     };
   }).filter(Boolean);
@@ -152,7 +153,7 @@ function getPreparedChains(rawData) {
       addressPrefix: chain.addressPrefix,
       chainId: `0x${chain.chainId}`,
       parentId: chain.parentId ? `0x${chain.parentId}` : undefined,
-      icon: replaceUrl(chain.icon, 'chain'),
+      icon: replaceChainIconUrl(chain.icon),
       options,
       nodes,
       assets,
@@ -171,40 +172,25 @@ function getPreparedChains(rawData) {
   });
 }
 
-function replaceUrl(url, type, name = undefined) {
+function replaceAssetIconUrl(originalIconPath) {
+  const BASE_URL = 'https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/' + ASSET_ICONS_DIR;
+
+  return {
+    monochrome: `${BASE_URL}/white/${originalIconPath}`,
+    colored: `${BASE_URL}/alternative/${originalIconPath}`
+  };
+}
+
+function replaceChainIconUrl(url) {
   const changedBaseUrl = url.replace("nova-utils/master", "nova-spektr-utils/main");
   const lastPartOfUrl = url.split("/").pop();
 
-  const customAssetMappings = {
-    'aSEEDk': 'aSEED-Kusama',
-    'aSEEDp': 'aSEED-Polkadot'
-  };
-
-  // handling for 'xc' prefixed token names
-  const processedName = name ? name.replace(/^xc/, '') : name;
-
-  switch (type) {
-    case "chain":
-      const chainName = lastPartOfUrl.split('.')[0];
-      const correctedChainName = chainName.charAt(0).toUpperCase() + chainName.slice(1);
-      return changedBaseUrl.replace(
+  const chainName = lastPartOfUrl.split('.')[0];
+  const correctedChainName = chainName.charAt(0).toUpperCase() + chainName.slice(1);
+  return changedBaseUrl.replace(
         /\/icons\/.*/,
         `/icons/${SPEKTR_CONFIG_VERSION}/chains/${correctedChainName}.svg`
       );
-    case "asset":
-      const tickerNames = [processedName, processedName.split("-")[0], TICKER_NAMES[processedName]];
-      const relativePath = findFileByTicker(tickerNames, ASSET_ICONS_DIR);
-      if (!relativePath) {
-        console.warn(`Can't find file for: ${processedName} in: ${ASSET_ICONS_DIR}. Trying fallback with customAssetMappings`);
-        // Fallback to TICKER_NAMES using original name if processedName fails
-        const mappedName = customAssetMappings[processedName] || TICKER_NAMES[name] || processedName;
-        return changedBaseUrl.replace(/\/icons\/.*/, `/icons/v1/assets/white/${mappedName}.svg`);
-      }
-
-      return changedBaseUrl.replace(/\/icons\/.*/, `/${relativePath}`);
-    default:
-      throw new Error("Unknown type: " + type);
-  }
 }
 
 function replaceTypeExtras(typeExtras, chainId) {
