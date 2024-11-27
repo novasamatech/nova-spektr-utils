@@ -115,14 +115,14 @@ function checkChainsFile(filePath) {
     }
 
     // Check monochrome icon path
-    if (icon.monochrome.indexOf(`${BASE_ICON_PATH}`) === -1 || 
-        icon.monochrome.indexOf(`/assets/monochrome/`) === -1) {
+    if (!icon.monochrome.includes(`${BASE_ICON_PATH}`) || 
+        !icon.monochrome.includes(`/assets/monochrome/`)) {
       badAssetIcon.add(icon.monochrome);
     }
 
     // Check colored icon path
-    if (icon.colored.indexOf(`${BASE_ICON_PATH}`) === -1 || 
-        icon.colored.indexOf(`/assets/colored/`) === -1) {
+    if (!icon.colored.includes(`${BASE_ICON_PATH}`) || 
+        !icon.colored.includes(`/assets/colored/`)) {
       badAssetIcon.add(icon.colored);
     }
   }
