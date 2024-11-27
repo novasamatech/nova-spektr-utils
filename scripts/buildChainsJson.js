@@ -176,8 +176,8 @@ function replaceAssetIconUrl(originalIconPath) {
   const BASE_URL = 'https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/' + ASSET_ICONS_DIR;
 
   return {
-    monochrome: `${BASE_URL}/white/${originalIconPath}`,
-    colored: `${BASE_URL}/alternative/${originalIconPath}`
+    monochrome: `${BASE_URL}/monochrome/${originalIconPath}`,
+    colored: `${BASE_URL}/colored/${originalIconPath}`
   };
 }
 

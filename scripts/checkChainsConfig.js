@@ -116,13 +116,13 @@ function checkChainsFile(filePath) {
 
     // Check monochrome icon path
     if (icon.monochrome.indexOf(`${BASE_ICON_PATH}`) === -1 || 
-        icon.monochrome.indexOf(`/assets/white/`) === -1) {
+        icon.monochrome.indexOf(`/assets/monochrome/`) === -1) {
       badAssetIcon.add(icon.monochrome);
     }
 
     // Check colored icon path
     if (icon.colored.indexOf(`${BASE_ICON_PATH}`) === -1 || 
-        icon.colored.indexOf(`/assets/alternative/`) === -1) {
+        icon.colored.indexOf(`/assets/colored/`) === -1) {
       badAssetIcon.add(icon.colored);
     }
   }
