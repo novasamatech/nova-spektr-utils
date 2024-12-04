@@ -7818,6 +7818,7 @@
     },
     {
         "name": "Novasama Testnet - Fellowship",
+        "specName": "collectives-westend",
         "addressPrefix": 42,
         "chainId": "0xa35b4d0bf5767fcc3a4795aca93ef3b152c7c280d558d49eea535cae56a3a93e",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Westend_Testnet.svg",
