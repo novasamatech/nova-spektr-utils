@@ -4883,6 +4883,32 @@
         ]
     },
     {
+        "name": "Should be included in scripts/data/assetsNameMap",
+        "precision": 18,
+        "priceId": "aave",
+        "icon": {
+            "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/AAVE.svg",
+            "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/AAVE.svg"
+        },
+        "symbol": "AAVE",
+        "isTestToken": false,
+        "chains": [
+            {
+                "chainId": "0xafdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
+                "name": "Hydration",
+                "assetId": 45,
+                "assetSymbol": "AAVE",
+                "type": "orml",
+                "typeExtras": {
+                    "currencyIdScale": "0xb0440f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "59084194977843",
+                    "transfersEnabled": true
+                }
+            }
+        ]
+    },
+    {
         "name": "Interlay DOT",
         "precision": 10,
         "icon": {
