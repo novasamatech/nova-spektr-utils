@@ -5669,6 +5669,24 @@
                     "existentialDeposit": "100786131828",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "name": "Should be included in scripts/data/assetsNameMap",
+                "assetId": 45,
+                "symbol": "AAVE",
+                "precision": 18,
+                "type": "orml",
+                "priceId": "aave",
+                "icon": {
+                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/AAVE.svg",
+                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/AAVE.svg"
+                },
+                "typeExtras": {
+                    "currencyIdScale": "0xb0440f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "59084194977843",
+                    "transfersEnabled": true
+                }
             }
         ],
         "explorers": [
