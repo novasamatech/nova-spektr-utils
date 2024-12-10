@@ -214,5 +214,21 @@
         }
       ]
     }
+  },
+  {
+    "name": "Mythos",
+    "chainId": "0xf6ee56e9c5277df5b4ce6ae9983ee88f3cbed27d31beeb98f9f84f997a1ab0b9",
+    "options": [
+      "regular_proxy",
+      "pure_proxy"
+    ],
+    "externalApi": {
+      "proxy": [
+        {
+          "type": "subquery",
+          "url": "https://subquery-proxy-mythos-prod.novasama-tech.org"
+        }
+      ]
+    }
   }
 ]
