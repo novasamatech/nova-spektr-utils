@@ -72,8 +72,6 @@ function getStakingValue(staking, chainName) {
 
 function fillAssetData(chain) {
   return chain.assets.map(asset => {
-    // Skip assets with typeExtras.palletName: "ForeignAssets"
-    if (asset.typeExtras?.palletName === "ForeignAssets") return;
     // Temp remove, waiting for "AssetManagement pallet support. It's used by Zeitgeist." https://app.clickup.com/t/85ztgpy7n
     if (chain.name === 'Zeitgeist' && asset.symbol === 'DOT') return;
     if (asset.symbol.endsWith('.s')) return;
@@ -212,6 +210,9 @@ function replaceTypeExtras(typeExtras, chainId) {
     ...(typeExtras.transfersEnabled !== undefined && {
       transfersEnabled: typeExtras.transfersEnabled
     }),
+    ...(typeExtras.palletName && {
+      palletName: typeExtras.palletName
+    })
   };
 
   return Object.keys(result).length > 0 ? result : undefined;
