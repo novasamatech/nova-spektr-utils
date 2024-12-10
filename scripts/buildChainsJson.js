@@ -72,8 +72,6 @@ function getStakingValue(staking, chainName) {
 
 function fillAssetData(chain) {
   return chain.assets.map(asset => {
-    // Skip assets with typeExtras.palletName: "ForeignAssets"
-    if (asset.typeExtras?.palletName === "ForeignAssets") return;
     // Temp remove, waiting for "AssetManagement pallet support. It's used by Zeitgeist." https://app.clickup.com/t/85ztgpy7n
     if (chain.name === 'Zeitgeist' && asset.symbol === 'DOT') return;
     if (asset.symbol.endsWith('.s')) return;
@@ -194,15 +192,30 @@ function replaceChainIconUrl(url) {
 }
 
 function replaceTypeExtras(typeExtras, chainId) {
-  if (typeExtras && typeExtras.currencyIdType) {
-    const replacement = TYPE_EXTRAS_REPLACEMENTS[chainId];
+  if (!typeExtras) return undefined;
 
-    if (replacement) {
-      typeExtras.currencyIdType = replacement;
-    }
-  }
+  const result = {
+    ...(typeExtras.currencyIdScale && {
+      currencyIdScale: typeExtras.currencyIdScale
+    }),
+    ...(typeExtras.currencyIdType && {
+      currencyIdType: TYPE_EXTRAS_REPLACEMENTS[chainId] || typeExtras.currencyIdType
+    }),
+    ...(typeExtras.assetId && {
+      assetId: typeExtras.assetId
+    }),
+    ...(typeExtras.existentialDeposit && {
+      existentialDeposit: typeExtras.existentialDeposit
+    }),
+    ...(typeExtras.transfersEnabled !== undefined && {
+      transfersEnabled: typeExtras.transfersEnabled
+    }),
+    ...(typeExtras.palletName && {
+      palletName: typeExtras.palletName
+    })
+  };
 
-  return typeExtras;
+  return Object.keys(result).length > 0 ? result : undefined;
 }
 
 function findFileByTicker(tickers, dirPath) {
