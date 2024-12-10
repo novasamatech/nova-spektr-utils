@@ -194,15 +194,27 @@ function replaceChainIconUrl(url) {
 }
 
 function replaceTypeExtras(typeExtras, chainId) {
-  if (typeExtras && typeExtras.currencyIdType) {
-    const replacement = TYPE_EXTRAS_REPLACEMENTS[chainId];
+  if (!typeExtras) return undefined;
 
-    if (replacement) {
-      typeExtras.currencyIdType = replacement;
-    }
-  }
+  const result = {
+    ...(typeExtras.currencyIdScale && {
+      currencyIdScale: typeExtras.currencyIdScale
+    }),
+    ...(typeExtras.currencyIdType && {
+      currencyIdType: TYPE_EXTRAS_REPLACEMENTS[chainId] || typeExtras.currencyIdType
+    }),
+    ...(typeExtras.assetId && {
+      assetId: typeExtras.assetId
+    }),
+    ...(typeExtras.existentialDeposit && {
+      existentialDeposit: typeExtras.existentialDeposit
+    }),
+    ...(typeExtras.transfersEnabled !== undefined && {
+      transfersEnabled: typeExtras.transfersEnabled
+    }),
+  };
 
-  return typeExtras;
+  return Object.keys(result).length > 0 ? result : undefined;
 }
 
 function findFileByTicker(tickers, dirPath) {
