@@ -13,6 +13,14 @@
         ],
         "nodes": [
             {
+                "url": "wss://rpc-polkadot-1.novasama-tech.org",
+                "name": "Novasama node"
+            },
+            {
+                "url": "wss://rpc-polkadot-2.novasama-tech.org",
+                "name": "Novasama node"
+            },
+            {
                 "url": "wss://rpc-polkadot.novasama-tech.org",
                 "name": "Novasama node"
             },
@@ -119,6 +127,14 @@
             "pure_proxy"
         ],
         "nodes": [
+            {
+                "url": "wss://rpc-kusama-1.novasama-tech.org",
+                "name": "Novasama node"
+            },
+            {
+                "url": "wss://rpc-kusama-2.novasama-tech.org",
+                "name": "Novasama node"
+            },
             {
                 "url": "wss://rpc-kusama.novasama-tech.org",
                 "name": "Novasama node"
@@ -1779,7 +1795,7 @@
     {
         "name": "Bifrost Kusama",
         "specName": "kusama",
-        "addressPrefix": 6,
+        "addressPrefix": 0,
         "chainId": "0x9f28c6a68e0fc9646eff64935684f6eeeece527e37bbe1f213d22caa1d9d6bed",
         "parentId": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Bifrost_Kusama.svg",
@@ -4330,6 +4346,10 @@
         ],
         "nodes": [
             {
+                "url": "wss://rpc-assethub.novasama-tech.org",
+                "name": "Novasama node"
+            },
+            {
                 "url": "wss://sys.ibp.network/asset-hub-polkadot",
                 "name": "IBP1 node"
             },
@@ -4466,6 +4486,7 @@
                 "symbol": "WUD",
                 "precision": 10,
                 "type": "statemine",
+                "priceId": "gavun-wud",
                 "icon": {
                     "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/WUD.svg",
                     "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/WUD.svg"
@@ -4544,6 +4565,34 @@
                 "typeExtras": {
                     "assetId": "0x010100a534",
                     "palletName": "ForeignAssets"
+                }
+            },
+            {
+                "name": "Should be included in scripts/data/assetsNameMap",
+                "assetId": 20,
+                "symbol": "BASTI",
+                "precision": 12,
+                "type": "statemine",
+                "icon": {
+                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/Default.svg",
+                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/Default.svg"
+                },
+                "typeExtras": {
+                    "assetId": "22222015"
+                }
+            },
+            {
+                "name": "Should be included in scripts/data/assetsNameMap",
+                "assetId": 21,
+                "symbol": "DAMN",
+                "precision": 12,
+                "type": "statemine",
+                "icon": {
+                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/Default.svg",
+                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/Default.svg"
+                },
+                "typeExtras": {
+                    "assetId": "22222012"
                 }
             }
         ],
@@ -4868,6 +4917,10 @@
             "pure_proxy"
         ],
         "nodes": [
+            {
+                "url": "wss://rpc-hydra.novasama-tech.org",
+                "name": "Novasama node"
+            },
             {
                 "url": "wss://rpc.hydradx.cloud",
                 "name": "Galactic Council node"
@@ -5457,6 +5510,7 @@
                 "symbol": "WUD",
                 "precision": 10,
                 "type": "orml",
+                "priceId": "gavun-wud",
                 "icon": {
                     "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/WUD.svg",
                     "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/WUD.svg"
@@ -5604,6 +5658,40 @@
                     "currencyIdScale": "0xb0440f00",
                     "currencyIdType": "u32",
                     "existentialDeposit": "59084194977843",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "name": "Should be included in scripts/data/assetsNameMap",
+                "assetId": 46,
+                "symbol": "BASTI",
+                "precision": 12,
+                "type": "orml",
+                "icon": {
+                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/Default.svg",
+                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/Default.svg"
+                },
+                "typeExtras": {
+                    "currencyIdScale": "0x64430f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "name": "Should be included in scripts/data/assetsNameMap",
+                "assetId": 47,
+                "symbol": "DAMN",
+                "precision": 12,
+                "type": "orml",
+                "icon": {
+                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/Default.svg",
+                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/Default.svg"
+                },
+                "typeExtras": {
+                    "currencyIdScale": "0x5e430f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
                     "transfersEnabled": true
                 }
             }
