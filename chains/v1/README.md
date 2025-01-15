@@ -2,7 +2,7 @@
 # Supported Features data:
 ### 🕸️ [Supported networks](#supported-network-list): 45
 ### 🪙 Added assets: 313
-### 👨‍👩‍👧‍👦 [Multisig supported](#list-of-networks-where-we-are-support-multisig) in: 13
+### 👨‍👩‍👧‍👦 [Multisig supported](#list-of-networks-where-we-are-support-multisig) in: 14
 ### 🥞 Staking supported in: 3
 ### 🕹️ Proxy supported in: 15
 
@@ -20,10 +20,11 @@
 | 7 | Kusama People | 1 |
 | 8 | Moonbeam | 0 |
 | 9 | Moonriver | 1 |
-| 10 | Polkadot | 1 |
-| 11 | Polkadot Asset Hub | 1 |
-| 12 | Polkadot People | 1 |
-| 13 | Westend | 1 |
+| 10 | Mythos | 1 |
+| 11 | Polkadot | 1 |
+| 12 | Polkadot Asset Hub | 1 |
+| 13 | Polkadot People | 1 |
+| 14 | Westend | 1 |
 
 ## The list of supported networks
 | -- | Network | Assets count | Explorers |

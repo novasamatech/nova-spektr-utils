@@ -7442,7 +7442,10 @@
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Westend_Testnet.svg",
         "options": [
             "testnet",
-            "governance"
+            "governance",
+            "pure_proxy",
+            "regular_proxy",
+            "multisig"
         ],
         "nodes": [
             {
