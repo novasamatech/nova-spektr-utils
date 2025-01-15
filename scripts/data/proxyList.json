@@ -237,7 +237,7 @@
     "options": [
       "regular_proxy"
     ],
-    "externalApi":{
+    "externalApi": {
       "collectives": [
         {
           "type": "subquery",
@@ -252,7 +252,7 @@
     "options": [
       "regular_proxy"
     ],
-    "externalApi":{
+    "externalApi": {
       "collectives": [
         {
           "type": "subquery",
@@ -267,7 +267,7 @@
     "options": [
       "regular_proxy"
     ],
-    "externalApi":{
+    "externalApi": {
       "collectives": [
         {
           "type": "subquery",
@@ -283,6 +283,14 @@
       "pure_proxy",
       "regular_proxy",
       "multisig"
-    ]
+    ],
+    "externalApi": {
+      "proxy": [
+        {
+          "type": "subquery",
+          "url": "https://subquery-proxy-testnet-stg.novasama-tech.org"
+        }
+      ]
+    }
   }
 ]
