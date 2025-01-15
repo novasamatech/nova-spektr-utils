@@ -7473,6 +7473,12 @@
                     "type": "subquery",
                     "url": "https://subquery-governance-testnet-stg.novasama-tech.org"
                 }
+            ],
+            "proxy": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-proxy-testnet-stg.novasama-tech.org"
+                }
             ]
         }
     },
