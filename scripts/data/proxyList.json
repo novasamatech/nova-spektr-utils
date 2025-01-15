@@ -230,5 +230,67 @@
         }
       ]
     }
+  },
+  {
+    "name": "Polkadot Collectives",
+    "chainId": "0x46ee89aa2eedd13e988962630ec9fb7565964cf5023bb351f2b6b25c1b68b0b2",
+    "options": [
+      "regular_proxy"
+    ],
+    "externalApi": {
+      "collectives": [
+        {
+          "type": "subquery",
+          "url": "https://subquery-collectives-polkadot-stg.novasama-tech.org"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Westend Collectives",
+    "chainId": "0x713daf193a6301583ff467be736da27ef0a72711b248927ba413f573d2b38e44",
+    "options": [
+      "regular_proxy"
+    ],
+    "externalApi": {
+      "collectives": [
+        {
+          "type": "subquery",
+          "url": "https://subquery-collectives-westend-stg.novasama-tech.org"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Novasama Testnet - Fellowship",
+    "chainId": "0xa35b4d0bf5767fcc3a4795aca93ef3b152c7c280d558d49eea535cae56a3a93e",
+    "options": [
+      "regular_proxy"
+    ],
+    "externalApi": {
+      "collectives": [
+        {
+          "type": "subquery",
+          "url": "https://subquery-collectives-testnet-stg.novasama-tech.org"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Novasama Testnet - Governance",
+    "chainId": "0x3dbb473ae9b2b77ecf077c03546f0f8670c020e453dddb457da155e6cc7cba42",
+    "options": [
+      "pure_proxy",
+      "regular_proxy",
+      "multisig"
+    ],
+    "externalApi": {
+      "proxy": [
+        {
+          "type": "subquery",
+          "url": "https://subquery-proxy-testnet-stg.novasama-tech.org"
+        }
+      ]
+    }
   }
 ]
