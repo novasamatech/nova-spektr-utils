@@ -3119,6 +3119,23 @@
                     "existentialDeposit": "1000000000",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "name": "Should be included in scripts/data/assetsNameMap",
+                "assetId": 16,
+                "symbol": "NEMO",
+                "precision": 18,
+                "type": "orml",
+                "icon": {
+                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/Default.svg",
+                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/Default.svg"
+                },
+                "typeExtras": {
+                    "currencyIdScale": "0x02fa904c86b73fd041d6cc2aeed9e6ec0148fd51da",
+                    "currencyIdType": "AcalaPrimitivesCurrencyCurrencyId",
+                    "existentialDeposit": "0",
+                    "transfersEnabled": true
+                }
             }
         ],
         "explorers": [
@@ -3827,6 +3844,10 @@
         "options": [],
         "nodes": [
             {
+                "url": "wss://parallel.gatotech.network",
+                "name": "Gatotech node"
+            },
+            {
                 "url": "wss://polkadot-parallel-rpc.parallel.fi",
                 "name": "Parallel node"
             }
@@ -4277,6 +4298,34 @@
                 "typeExtras": {
                     "assetId": "0x010100a534",
                     "palletName": "ForeignAssets"
+                }
+            },
+            {
+                "name": "Should be included in scripts/data/assetsNameMap",
+                "assetId": 20,
+                "symbol": "BASTI",
+                "precision": 12,
+                "type": "statemine",
+                "icon": {
+                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/Default.svg",
+                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/Default.svg"
+                },
+                "typeExtras": {
+                    "assetId": "22222015"
+                }
+            },
+            {
+                "name": "Should be included in scripts/data/assetsNameMap",
+                "assetId": 21,
+                "symbol": "DAMN",
+                "precision": 12,
+                "type": "statemine",
+                "icon": {
+                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/DAMN.svg",
+                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/DAMN.svg"
+                },
+                "typeExtras": {
+                    "assetId": "22222012"
                 }
             }
         ],
@@ -5342,6 +5391,40 @@
                     "currencyIdScale": "0xb0440f00",
                     "currencyIdType": "u32",
                     "existentialDeposit": "59084194977843",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "name": "Should be included in scripts/data/assetsNameMap",
+                "assetId": 46,
+                "symbol": "BASTI",
+                "precision": 12,
+                "type": "orml",
+                "icon": {
+                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/Default.svg",
+                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/Default.svg"
+                },
+                "typeExtras": {
+                    "currencyIdScale": "0x64430f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "name": "Should be included in scripts/data/assetsNameMap",
+                "assetId": 47,
+                "symbol": "DAMN",
+                "precision": 12,
+                "type": "orml",
+                "icon": {
+                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/DAMN.svg",
+                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/DAMN.svg"
+                },
+                "typeExtras": {
+                    "currencyIdScale": "0x5e430f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "1",
                     "transfersEnabled": true
                 }
             }
