@@ -6,7 +6,7 @@
       "https://github.com/ChainSafe/gossamer",
       "https://github.com/encointer/pallets",
       "https://github.com/paseo-network/runtimes",
-      "https://github.com/OpenZeppelin/polkadot-runtime-templates/",
+      "https://github.com/OpenZeppelin/polkadot-runtime-templates",
       "https://github.com/gavofyork/graypaper"
     ]
 }
