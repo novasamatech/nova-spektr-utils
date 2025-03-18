@@ -88,7 +88,7 @@ function fillAssetData(chain) {
     const iconPaths = replaceAssetIconUrl(asset.icon, symbol);
 
     return {
-      name: TOKEN_NAMES[symbol] || 'Should be included in scripts/data/assetsNameMap',
+      name: TOKEN_NAMES[symbol] || symbol,
       assetId: asset.assetId,
       symbol,
       precision: asset.precision,
