@@ -345,6 +345,22 @@
                 "typeExtras": {
                     "assetId": "1984"
                 }
+            },
+            {
+                "name": "Polkadot",
+                "assetId": 8,
+                "symbol": "DOT",
+                "precision": 10,
+                "type": "statemine",
+                "priceId": "polkadot",
+                "icon": {
+                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/DOT.svg",
+                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/DOT.svg"
+                },
+                "typeExtras": {
+                    "assetId": "0x02010902",
+                    "palletName": "ForeignAssets"
+                }
             }
         ],
         "explorers": [
@@ -3794,6 +3810,22 @@
                 "typeExtras": {
                     "assetId": "50000075"
                 }
+            },
+            {
+                "name": "Kusama",
+                "assetId": 23,
+                "symbol": "KSM",
+                "precision": 12,
+                "type": "statemine",
+                "priceId": "kusama",
+                "icon": {
+                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/KSM.svg",
+                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/KSM.svg"
+                },
+                "typeExtras": {
+                    "assetId": "0x02010903",
+                    "palletName": "ForeignAssets"
+                }
             }
         ],
         "explorers": [
@@ -5120,6 +5152,42 @@
                     "currencyIdScale": "0x3a450f00",
                     "currencyIdType": "u32",
                     "existentialDeposit": "1",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "name": "Kusama",
+                "assetId": 52,
+                "symbol": "KSM",
+                "precision": 12,
+                "type": "orml",
+                "priceId": "kusama",
+                "icon": {
+                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/KSM.svg",
+                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/KSM.svg"
+                },
+                "typeExtras": {
+                    "currencyIdScale": "0x43450f00",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "313283208",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "name": "Energy Web token",
+                "assetId": 53,
+                "symbol": "EWT",
+                "precision": 18,
+                "type": "orml",
+                "priceId": "energy-web-token",
+                "icon": {
+                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/EWT.svg",
+                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/EWT.svg"
+                },
+                "typeExtras": {
+                    "currencyIdScale": "0x6dda0300",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "3244646333550",
                     "transfersEnabled": true
                 }
             }
