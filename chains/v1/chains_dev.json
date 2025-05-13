@@ -158,10 +158,6 @@
             {
                 "url": "wss://kusama.public.curie.radiumblock.co/ws",
                 "name": "Radium node"
-            },
-            {
-                "url": "wss://kusama.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
             }
         ],
         "assets": [
@@ -250,10 +246,6 @@
             {
                 "url": "wss://westend.public.curie.radiumblock.co/ws",
                 "name": "RadiumBlock node"
-            },
-            {
-                "url": "wss://westend.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
             }
         ],
         "assets": [
@@ -285,13 +277,13 @@
             "staking": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-westend"
+                    "url": "https://subquery-history-westend-prod.novasama-tech.org/"
                 }
             ],
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-westend"
+                    "url": "https://subquery-history-westend-prod.novasama-tech.org/"
                 }
             ],
             "proxy": [
@@ -324,7 +316,7 @@
                 "name": "IBP2 node"
             },
             {
-                "url": "wss://statemine-rpc.dwellir.com",
+                "url": "wss://asset-hub-kusama-rpc.dwellir.com",
                 "name": "Dwellir node"
             }
         ],
@@ -502,8 +494,8 @@
                 "name": "Acala Foundation 3 node"
             },
             {
-                "url": "wss://karura.api.onfinality.io/public-ws",
-                "name": "Onfinality node"
+                "url": "wss://karura-rpc.dwellir.com",
+                "name": "Dwellir node"
             }
         ],
         "assets": [
@@ -1425,10 +1417,6 @@
             {
                 "url": "wss://shiden.public.curie.radiumblock.co/ws",
                 "name": "RadiumBlock node"
-            },
-            {
-                "url": "wss://shiden.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
             }
         ],
         "assets": [
@@ -1660,8 +1648,8 @@
                 "name": "Liebi node"
             },
             {
-                "url": "wss://bifrost-rpc.dwellir.com",
-                "name": "Dwellir node"
+                "url": "wss://us.bifrost-rpc.liebi.com/ws",
+                "name": "LiebiUS node"
             }
         ],
         "assets": [
@@ -2284,8 +2272,8 @@
         "options": [],
         "nodes": [
             {
-                "url": "wss://altair.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
+                "url": "wss://fullnode.altair.centrifuge.io",
+                "name": "Centrifuge node"
             }
         ],
         "assets": [
@@ -2339,10 +2327,6 @@
             {
                 "url": "wss://kilt.dotters.network",
                 "name": "IBP2 node"
-            },
-            {
-                "url": "wss://kilt-rpc.dwellir.com",
-                "name": "Dwellir node"
             },
             {
                 "url": "wss://spiritnet.kilt.io/",
@@ -2455,10 +2439,6 @@
         "options": [],
         "nodes": [
             {
-                "url": "wss://acala-polkadot.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
                 "url": "wss://acala-rpc-0.aca-api.network",
                 "name": "Acala Foundation 0 node"
             },
@@ -2473,10 +2453,6 @@
             {
                 "url": "wss://acala-rpc-3.aca-api.network/ws",
                 "name": "Acala Foundation 3 node"
-            },
-            {
-                "url": "wss://acala.polkawallet.io",
-                "name": "Polkawallet node"
             },
             {
                 "url": "wss://acala-rpc.dwellir.com",
@@ -3240,10 +3216,6 @@
             {
                 "url": "wss://astar.public.curie.radiumblock.co/ws",
                 "name": "RadiumBlock node"
-            },
-            {
-                "url": "wss://astar.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
             }
         ],
         "assets": [
@@ -3477,7 +3449,7 @@
         }
     },
     {
-        "name": "Parallel",
+        "name": "Parallel (PAUSED)",
         "specName": "polkadot",
         "addressPrefix": 172,
         "chainId": "0xe61a41c53f5dcd0beb09df93b34402aada44cb05117b71059cce40a2723a4e97",
@@ -3729,12 +3701,8 @@
                 "name": "IBP2 node"
             },
             {
-                "url": "wss://statemint-rpc.dwellir.com",
+                "url": "wss://asset-hub-polkadot-rpc.dwellir.com",
                 "name": "Dwellir node"
-            },
-            {
-                "url": "wss://statemint.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
             }
         ],
         "assets": [
@@ -3995,6 +3963,20 @@
                     "assetId": "0x02010903",
                     "palletName": "ForeignAssets"
                 }
+            },
+            {
+                "name": "GIGADOT",
+                "assetId": 25,
+                "symbol": "GIGADOT",
+                "precision": 12,
+                "type": "statemine",
+                "icon": {
+                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/GIGADOT.svg",
+                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/GIGADOT.svg"
+                },
+                "typeExtras": {
+                    "assetId": "50000092"
+                }
             }
         ],
         "explorers": [
@@ -4154,10 +4136,6 @@
         "options": [],
         "nodes": [
             {
-                "url": "wss://subsocial-rpc.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
                 "url": "wss://para.f3joule.space",
                 "name": "Subsocial node"
             },
@@ -4207,10 +4185,6 @@
             {
                 "url": "wss://kusama.api.integritee.network",
                 "name": "Integritee node"
-            },
-            {
-                "url": "wss://integritee-kusama.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
             }
         ],
         "assets": [
@@ -4258,12 +4232,12 @@
         "options": [],
         "nodes": [
             {
-                "url": "wss://centrifuge-rpc.dwellir.com",
-                "name": "Dwellir node"
+                "url": "wss://fullnode.centrifuge.io",
+                "name": "Centrifuge node"
             },
             {
-                "url": "wss://centrifuge-parachain.api.onfinality.io/public-ws",
-                "name": "Onfinality node"
+                "url": "wss://rpc-centrifuge.luckyfriday.io",
+                "name": "LuckyFriday node"
             }
         ],
         "assets": [
@@ -5132,6 +5106,7 @@
                 "symbol": "tBTC",
                 "precision": 18,
                 "type": "orml",
+                "priceId": "tbtc",
                 "icon": {
                     "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/tBTC.svg",
                     "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/tBTC.svg"
@@ -5200,7 +5175,7 @@
                 "name": "LINK",
                 "assetId": 54,
                 "symbol": "LINK",
-                "precision": 12,
+                "precision": 18,
                 "type": "orml",
                 "priceId": "chainlink",
                 "icon": {
@@ -5248,6 +5223,40 @@
                     "existentialDeposit": "211685012701101000",
                     "transfersEnabled": true
                 }
+            },
+            {
+                "name": "GIGADOT",
+                "assetId": 58,
+                "symbol": "GIGADOT",
+                "precision": 18,
+                "type": "orml",
+                "icon": {
+                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/GIGADOT.svg",
+                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/GIGADOT.svg"
+                },
+                "typeExtras": {
+                    "currencyIdScale": "0x45000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "0",
+                    "transfersEnabled": true
+                }
+            },
+            {
+                "name": "aDOT",
+                "assetId": 60,
+                "symbol": "aDOT",
+                "precision": 10,
+                "type": "orml",
+                "icon": {
+                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/DOT.svg",
+                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/DOT.svg"
+                },
+                "typeExtras": {
+                    "currencyIdScale": "0xe9030000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "0",
+                    "transfersEnabled": true
+                }
             }
         ],
         "explorers": [
@@ -5285,10 +5294,6 @@
             {
                 "url": "wss://api.interlay.io/parachain",
                 "name": "Kintsugi Labs node"
-            },
-            {
-                "url": "wss://interlay-rpc.dwellir.com",
-                "name": "Dwellir node"
             },
             {
                 "url": "wss://rpc-interlay.luckyfriday.io/",
@@ -5545,10 +5550,6 @@
                 "name": "Helikon node"
             },
             {
-                "url": "wss://phala.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
                 "url": "wss://api.phala.network/ws",
                 "name": "Phala node"
             },
@@ -5589,7 +5590,7 @@
         }
     },
     {
-        "name": "Turing",
+        "name": "Turing (PAUSED)",
         "specName": "kusama",
         "addressPrefix": 51,
         "chainId": "0x0f62b701fb12d02237a33b84818c11f621653d2b1614c777973babf4652b535d",
@@ -5843,6 +5844,10 @@
             {
                 "url": "wss://hk.p.bifrost-rpc.liebi.com/ws",
                 "name": "Liebi node"
+            },
+            {
+                "url": "wss://eu.bifrost-polkadot-rpc.liebi.com/ws",
+                "name": "LiebiEU node"
             }
         ],
         "assets": [
@@ -6084,7 +6089,7 @@
                 "name": "Litentry node"
             },
             {
-                "url": "wss://litentry-rpc.dwellir.com",
+                "url": "wss://heima-rpc.n.dwellir.com",
                 "name": "Dwellir node"
             }
         ],
@@ -6120,7 +6125,7 @@
         }
     },
     {
-        "name": "Mangata X",
+        "name": "Mangata X (PAUSED)",
         "specName": "kusama",
         "addressPrefix": 42,
         "chainId": "0xd611f22d291c5b7b69f1e105cca03352984c344c4421977efaa4cbdd1834e2aa",
@@ -6873,10 +6878,6 @@
             {
                 "url": "wss://dot-rpc.stakeworld.io/collectives",
                 "name": "Stakeworld node"
-            },
-            {
-                "url": "wss://collectives.api.onfinality.io/public-ws",
-                "name": "Onfinality node"
             }
         ],
         "assets": [
@@ -7217,8 +7218,8 @@
         ],
         "nodes": [
             {
-                "url": "wss://zeref-api.slowops.xyz/ws",
-                "name": "Turing node"
+                "url": "wss://mainnet-rpc.avail.so/ws",
+                "name": "Avail node"
             },
             {
                 "url": "wss://avail-mainnet.public.blastapi.io/",
