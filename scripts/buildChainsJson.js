@@ -140,6 +140,7 @@ function getPreparedChains(rawData) {
     const updatedChain = {
       name: chain.name,
       addressPrefix: chain.addressPrefix,
+      legacyAddressPrefix: chain.legacyAddressPrefix || undefined,
       chainId: `0x${chain.chainId}`,
       parentId: chain.parentId ? `0x${chain.parentId}` : undefined,
       icon: replaceChainIconUrl(chain.icon),
@@ -147,15 +148,9 @@ function getPreparedChains(rawData) {
       nodes,
       assets,
       explorers,
+      ...(externalApi && { externalApi }),
+      ...(chain.additional?.identityChain && { additional: { identityChain: `0x${chain.additional.identityChain}` } })
     };
-
-    if (chain.additional?.identityChain) {
-      updatedChain['additional'] = {identityChain: `0x${chain.additional.identityChain}`};
-    }
-
-    if (externalApi) {
-      updatedChain['externalApi'] = externalApi
-    }
 
     return updatedChain;
   });
@@ -235,24 +230,12 @@ async function saveNewFile(newJson, file_name) {
       return map;
     }, {});
 
-    const filteredExistingData = existingData.filter(item => newItemsMap.hasOwnProperty(item.chainId));
+    const filteredExistingData = existingData.filter(item => !newItemsMap.hasOwnProperty(item.chainId));
 
-    // Merge existing data with new data
-    const mergedData = [...filteredExistingData];
-
-    newJson.forEach(newItem => {
-      const existingItemIndex = filteredExistingData.findIndex(
-        item => item.chainId === newItem.chainId
-      );
-
-      if (existingItemIndex >= 0) {
-        // If item already exists, update it
-        mergedData[existingItemIndex] = {...mergedData[existingItemIndex], ...newItem};
-      } else {
-        // If item doesn't exist, add it
-        mergedData.push(newItem);
-      }
-    });
+    const mergedData = [
+      ...filteredExistingData,
+      ...newJson
+    ];
 
     await writeFile(filePath, JSON.stringify(mergedData, null, 4));
     console.log('Successfully saved file: ' + file_name);
