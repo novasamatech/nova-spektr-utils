@@ -228,26 +228,8 @@ function filterObjectByKeys(obj, keys) {
 async function saveNewFile(newJson, file_name) {
   try {
     const filePath = path.resolve(CONFIG_PATH, file_name);
-    let existingData = [];
 
-    if (fs.existsSync(filePath)) {
-      const existingFileContent = await readFile(filePath, 'utf8');
-      existingData = JSON.parse(existingFileContent);
-    }
-
-    const newItemsMap = newJson.reduce((map, item) => {
-      map[item.chainId] = item;
-      return map;
-    }, {});
-
-    const filteredExistingData = existingData.filter(item => !newItemsMap.hasOwnProperty(item.chainId));
-
-    const mergedData = [
-      ...filteredExistingData,
-      ...newJson
-    ];
-
-    await writeFile(filePath, JSON.stringify(mergedData, null, 4));
+    await writeFile(filePath, JSON.stringify(newJson, null, 4));
     console.log('Successfully saved file: ' + file_name);
   } catch (error) {
     console.log('Error: ', error?.message || '🛑 Something went wrong in writing file');
@@ -269,8 +251,12 @@ async function buildFullChainsJSON() {
   const toProd = dev.value.filter(chain => EXCEPTIONAL_CHAINS.prod[chain.chainId]);
   prod.value.push(...toProd);
 
-  await saveNewFile(dev.value, CHAINS_ENV[0]);
-  await saveNewFile(prod.value, CHAINS_ENV[1]);
+  // Filter out paused chains after merge
+  const filteredDev = dev.value.filter(chain => !chain.name.includes('PAUSED'));
+  const filteredProd = prod.value.filter(chain => !chain.name.includes('PAUSED'));
+
+  await saveNewFile(filteredDev, CHAINS_ENV[0]);
+  await saveNewFile(filteredProd, CHAINS_ENV[1]);
   console.log('❇️ Successfully generated CHAINS for DEV & PROD');
   console.log('⚠️ Exceptional PROD chains - ', toProd.map(c => c.name));
 }
