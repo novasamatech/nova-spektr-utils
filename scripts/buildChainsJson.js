@@ -132,10 +132,20 @@ function getPreparedChains(rawData) {
     });
 
     const assets = fillAssetData(chain)
-    const nodes = chain.nodes.filter(node => !node.url.includes('{')).map(node => ({
-      url: node.url,
-      name: node.name
-    }));
+    const nodes = chain.nodes
+      .filter(node => !node.url.includes('{'))
+      .sort((a, b) => {
+        // Put Dwellir nodes first
+        const aIsDwellir = a.name.toLowerCase().includes('dwellir');
+        const bIsDwellir = b.name.toLowerCase().includes('dwellir');
+        if (aIsDwellir && !bIsDwellir) return -1;
+        if (!aIsDwellir && bIsDwellir) return 1;
+        return 0;
+      })
+      .map(node => ({
+        url: node.url,
+        name: node.name
+      }));
 
     const updatedChain = {
       name: chain.name,
