@@ -3,7 +3,6 @@ const {writeFile, readFile} = require('fs/promises');
 const fs = require('fs');
 
 const TOKEN_NAMES = require('./data/assetsNameMap.json');
-const TICKER_NAMES = require('./data/assetTickerMap.json');
 const PROXY_LIST = require('./data/proxyList.json');
 
 const EXCEPTIONAL_CHAINS = require('./data/exceptionalChains.json');
@@ -34,8 +33,6 @@ const STAKING_ALLOWED_ARRAY = ['Polkadot', 'Kusama', 'Westend', 'Polkadex', 'Ter
 
 const GOV_ALLOWED_ARRAY = ['Polkadot', 'Kusama', 'Westend', 'Rococo', 'Novasama Testnet - Governance'];
 
-const DEFAULT_ASSETS = ['SHIBATALES', 'DEV', 'SIRI', 'PILT', 'cDOT-6/13', 'cDOT-7/14', 'cDOT-8/15', 'cDOT-9/16', 'cDOT-10/17', 'TZERO', 'UNIT', 'Unit', 'tEDG', 'JOE', 'HOP', 'PAS'];
-
 const readmeContent = fs.readFileSync('chains/v1/README.md', 'utf8');
 const multisigSection = readmeContent.split('# List of Networks where we are support Multisig pallet')[1].split('## The list of supported networks')[0];
 const multisigLines = multisigSection.split('\n').slice(3); // Skip the table header
@@ -49,12 +46,6 @@ multisigLines.forEach(line => {
     multisigMap[network] = multisigVersion;
   }
 });
-
-const evmChains = [
-  "0xfe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d", // Moonbeam
-  "0x401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b", // Moonriver
-  "0x91bc6e169807aaa54802737e1c504b2577d4fafedd5a02c10293b1cd60e39527", // Moonbase alpha
-]
 
 function getDataFromUrl(url, filePath) {
   return fetch(url + filePath, {method: 'GET'})
@@ -216,37 +207,6 @@ function replaceTypeExtras(typeExtras, chainId) {
   };
 
   return Object.keys(result).length > 0 ? result : undefined;
-}
-
-function findFileByTicker(tickers, dirPath) {
-  const [fullName, shortName, mappedName] = tickers;
-
-  try {
-    const files = fs.readdirSync(dirPath);
-    // Loop through files to find match based on ticker pattern
-    for (let i = 0; i < files.length; i++) {
-      if (DEFAULT_ASSETS.includes(fullName)) {
-        return dirPath + '/Default.svg' // Set default icon for some assets
-      }
-
-      // Check if file satisfies ticker pattern
-      const currentFile = files[i];
-
-      const byFullName = new RegExp(`^${fullName}.svg\\b|\\(${fullName}\\)\\.svg`, "i");
-      const byShortName = new RegExp(`^${shortName}.svg\\b|\\(${shortName}\\)\\.svg`, "i");
-      const byMappedName = new RegExp(`^${mappedName}.svg\\b|\\(${mappedName}\\)\\.svg`, "i");
-
-      if (
-        currentFile.match(byFullName)
-        || currentFile.match(byShortName)
-        || currentFile.match(byMappedName)
-      ) {
-        return path.join(dirPath, currentFile);
-      }
-    }
-  } catch (error) {
-    throw new Error(error);
-  }
 }
 
 function filterObjectByKeys(obj, keys) {
