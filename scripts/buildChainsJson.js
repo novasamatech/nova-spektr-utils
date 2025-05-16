@@ -3,7 +3,6 @@ const {writeFile, readFile} = require('fs/promises');
 const fs = require('fs');
 
 const TOKEN_NAMES = require('./data/assetsNameMap.json');
-const TICKER_NAMES = require('./data/assetTickerMap.json');
 const PROXY_LIST = require('./data/proxyList.json');
 
 const EXCEPTIONAL_CHAINS = require('./data/exceptionalChains.json');
@@ -34,8 +33,6 @@ const STAKING_ALLOWED_ARRAY = ['Polkadot', 'Kusama', 'Westend', 'Polkadex', 'Ter
 
 const GOV_ALLOWED_ARRAY = ['Polkadot', 'Kusama', 'Westend', 'Rococo', 'Novasama Testnet - Governance'];
 
-const DEFAULT_ASSETS = ['SHIBATALES', 'DEV', 'SIRI', 'PILT', 'cDOT-6/13', 'cDOT-7/14', 'cDOT-8/15', 'cDOT-9/16', 'cDOT-10/17', 'TZERO', 'UNIT', 'Unit', 'tEDG', 'JOE', 'HOP', 'PAS'];
-
 const readmeContent = fs.readFileSync('chains/v1/README.md', 'utf8');
 const multisigSection = readmeContent.split('# List of Networks where we are support Multisig pallet')[1].split('## The list of supported networks')[0];
 const multisigLines = multisigSection.split('\n').slice(3); // Skip the table header
@@ -49,12 +46,6 @@ multisigLines.forEach(line => {
     multisigMap[network] = multisigVersion;
   }
 });
-
-const evmChains = [
-  "0xfe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d", // Moonbeam
-  "0x401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b", // Moonriver
-  "0x91bc6e169807aaa54802737e1c504b2577d4fafedd5a02c10293b1cd60e39527", // Moonbase alpha
-]
 
 function getDataFromUrl(url, filePath) {
   return fetch(url + filePath, {method: 'GET'})
@@ -141,14 +132,25 @@ function getPreparedChains(rawData) {
     });
 
     const assets = fillAssetData(chain)
-    const nodes = chain.nodes.filter(node => !node.url.includes('{')).map(node => ({
-      url: node.url,
-      name: node.name
-    }));
+    const nodes = chain.nodes
+      .filter(node => !node.url.includes('{'))
+      .sort((a, b) => {
+        // Put Dwellir nodes first
+        const aIsDwellir = a.name.toLowerCase().includes('dwellir');
+        const bIsDwellir = b.name.toLowerCase().includes('dwellir');
+        if (aIsDwellir && !bIsDwellir) return -1;
+        if (!aIsDwellir && bIsDwellir) return 1;
+        return 0;
+      })
+      .map(node => ({
+        url: node.url,
+        name: node.name
+      }));
 
     const updatedChain = {
       name: chain.name,
       addressPrefix: chain.addressPrefix,
+      legacyAddressPrefix: chain.legacyAddressPrefix || undefined,
       chainId: `0x${chain.chainId}`,
       parentId: chain.parentId ? `0x${chain.parentId}` : undefined,
       icon: replaceChainIconUrl(chain.icon),
@@ -156,15 +158,9 @@ function getPreparedChains(rawData) {
       nodes,
       assets,
       explorers,
+      ...(externalApi && { externalApi }),
+      ...(chain.additional?.identityChain && { additional: { identityChain: `0x${chain.additional.identityChain}` } })
     };
-
-    if (chain.additional?.identityChain) {
-      updatedChain['additional'] = {identityChain: `0x${chain.additional.identityChain}`};
-    }
-
-    if (externalApi) {
-      updatedChain['externalApi'] = externalApi
-    }
 
     return updatedChain;
   });
@@ -218,37 +214,6 @@ function replaceTypeExtras(typeExtras, chainId) {
   return Object.keys(result).length > 0 ? result : undefined;
 }
 
-function findFileByTicker(tickers, dirPath) {
-  const [fullName, shortName, mappedName] = tickers;
-
-  try {
-    const files = fs.readdirSync(dirPath);
-    // Loop through files to find match based on ticker pattern
-    for (let i = 0; i < files.length; i++) {
-      if (DEFAULT_ASSETS.includes(fullName)) {
-        return dirPath + '/Default.svg' // Set default icon for some assets
-      }
-
-      // Check if file satisfies ticker pattern
-      const currentFile = files[i];
-
-      const byFullName = new RegExp(`^${fullName}.svg\\b|\\(${fullName}\\)\\.svg`, "i");
-      const byShortName = new RegExp(`^${shortName}.svg\\b|\\(${shortName}\\)\\.svg`, "i");
-      const byMappedName = new RegExp(`^${mappedName}.svg\\b|\\(${mappedName}\\)\\.svg`, "i");
-
-      if (
-        currentFile.match(byFullName)
-        || currentFile.match(byShortName)
-        || currentFile.match(byMappedName)
-      ) {
-        return path.join(dirPath, currentFile);
-      }
-    }
-  } catch (error) {
-    throw new Error(error);
-  }
-}
-
 function filterObjectByKeys(obj, keys) {
   if (obj == null) return null;
 
@@ -263,38 +228,8 @@ function filterObjectByKeys(obj, keys) {
 async function saveNewFile(newJson, file_name) {
   try {
     const filePath = path.resolve(CONFIG_PATH, file_name);
-    let existingData = [];
 
-    if (fs.existsSync(filePath)) {
-      const existingFileContent = await readFile(filePath, 'utf8');
-      existingData = JSON.parse(existingFileContent);
-    }
-
-    const newItemsMap = newJson.reduce((map, item) => {
-      map[item.chainId] = item;
-      return map;
-    }, {});
-
-    const filteredExistingData = existingData.filter(item => newItemsMap.hasOwnProperty(item.chainId));
-
-    // Merge existing data with new data
-    const mergedData = [...filteredExistingData];
-
-    newJson.forEach(newItem => {
-      const existingItemIndex = filteredExistingData.findIndex(
-        item => item.chainId === newItem.chainId
-      );
-
-      if (existingItemIndex >= 0) {
-        // If item already exists, update it
-        mergedData[existingItemIndex] = {...mergedData[existingItemIndex], ...newItem};
-      } else {
-        // If item doesn't exist, add it
-        mergedData.push(newItem);
-      }
-    });
-
-    await writeFile(filePath, JSON.stringify(mergedData, null, 4));
+    await writeFile(filePath, JSON.stringify(newJson, null, 4));
     console.log('Successfully saved file: ' + file_name);
   } catch (error) {
     console.log('Error: ', error?.message || '🛑 Something went wrong in writing file');
@@ -316,8 +251,12 @@ async function buildFullChainsJSON() {
   const toProd = dev.value.filter(chain => EXCEPTIONAL_CHAINS.prod[chain.chainId]);
   prod.value.push(...toProd);
 
-  await saveNewFile(dev.value, CHAINS_ENV[0]);
-  await saveNewFile(prod.value, CHAINS_ENV[1]);
+  // Filter out paused chains after merge
+  const filteredDev = dev.value.filter(chain => !chain.name.includes('PAUSED'));
+  const filteredProd = prod.value.filter(chain => !chain.name.includes('PAUSED'));
+
+  await saveNewFile(filteredDev, CHAINS_ENV[0]);
+  await saveNewFile(filteredProd, CHAINS_ENV[1]);
   console.log('❇️ Successfully generated CHAINS for DEV & PROD');
   console.log('⚠️ Exceptional PROD chains - ', toProd.map(c => c.name));
 }
