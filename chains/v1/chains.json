@@ -6357,6 +6357,9 @@
                     "url": "https://subquery-collectives-polkadot-stg.novasama-tech.org"
                 }
             ]
+        },
+        "additional": {
+            "identityChain": "0x67fa177a097bfa18f77ea95ab56e9bcdfeb0e5b8a40e46298bb93e16b6fc5008"
         }
     },
     {
