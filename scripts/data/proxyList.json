@@ -292,5 +292,37 @@
         }
       ]
     }
+  },
+  {
+    "name": "Kusama Coretime",
+    "chainId": "0x638cd2b9af4b3bb54b8c1f0d22711fc89924ca93300f0caf25a580432b29d050",
+    "options": [
+      "pure_proxy",
+      "regular_proxy"
+    ],
+    "externalApi": {
+      "proxy": [
+        {
+          "type": "subquery",
+          "url": "https://subquery-proxy-kusama-coretime-stg.novasama-tech.org"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Polkadot Coretime",
+    "chainId": "0xefb56e30d9b4a24099f88820987d0f45fb645992416535d87650d98e00f46fc4",
+    "options": [
+      "pure_proxy",
+      "regular_proxy"
+    ],
+    "externalApi": {
+      "proxy": [
+        {
+          "type": "subquery",
+          "url": "https://subquery-proxy-polkadot-coretime-stg.novasama-tech.org"
+        }
+      ]
+    }
   }
 ]
