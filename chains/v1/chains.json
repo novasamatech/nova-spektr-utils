@@ -3659,6 +3659,36 @@
                     "assetId": "0x02010903",
                     "palletName": "ForeignAssets"
                 }
+            },
+            {
+                "name": "MPC",
+                "assetId": 26,
+                "symbol": "MPC",
+                "precision": 12,
+                "type": "statemine",
+                "priceId": "my-paqman-coin",
+                "icon": {
+                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/MPC.png",
+                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/MPC.png"
+                },
+                "typeExtras": {
+                    "assetId": "50000103"
+                }
+            },
+            {
+                "name": "DON",
+                "assetId": 27,
+                "symbol": "DON",
+                "precision": 12,
+                "type": "statemine",
+                "priceId": "paydon",
+                "icon": {
+                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/DON.png",
+                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/DON.png"
+                },
+                "typeExtras": {
+                    "assetId": "50000111"
+                }
             }
         ],
         "explorers": [
@@ -6357,9 +6387,6 @@
                     "url": "https://subquery-collectives-polkadot-stg.novasama-tech.org"
                 }
             ]
-        },
-        "additional": {
-            "identityChain": "0x67fa177a097bfa18f77ea95ab56e9bcdfeb0e5b8a40e46298bb93e16b6fc5008"
         }
     },
     {
