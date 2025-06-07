@@ -59,10 +59,7 @@
                 "name": "Moonbeam",
                 "assetId": 1,
                 "assetSymbol": "xcDOT",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "42259045809535163221576417993425387648"
-                }
+                "type": "evm"
             },
             {
                 "chainId": "0x9eb76c5184c4ab8679d2d5d819fdf90b9c001403e9e17da2e14b6d8aec4029c6",
@@ -217,10 +214,7 @@
                 "name": "Moonriver",
                 "assetId": 2,
                 "assetSymbol": "xcKSM",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "42259045809535163221576417993425387648"
-                }
+                "type": "evm"
             },
             {
                 "chainId": "0xf1cf9022c7ebb34b162d5b5e34e705a5a740b2d0ecc1009fb89023e62a488108",
@@ -447,10 +441,7 @@
                 "name": "Moonriver",
                 "assetId": 1,
                 "assetSymbol": "xcRMRK",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "182365888117048807484804376330534607370"
-                }
+                "type": "evm"
             },
             {
                 "chainId": "0x9f28c6a68e0fc9646eff64935684f6eeeece527e37bbe1f213d22caa1d9d6bed",
@@ -594,10 +585,7 @@
                 "name": "Moonriver",
                 "assetId": 7,
                 "assetSymbol": "xcUSDT",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "311091173110107856861649819128533077277"
-                }
+                "type": "evm"
             },
             {
                 "chainId": "0xf1cf9022c7ebb34b162d5b5e34e705a5a740b2d0ecc1009fb89023e62a488108",
@@ -666,10 +654,7 @@
                 "name": "Moonbeam",
                 "assetId": 10,
                 "assetSymbol": "xcUSDT",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "311091173110107856861649819128533077277"
-                }
+                "type": "evm"
             },
             {
                 "chainId": "0x9eb76c5184c4ab8679d2d5d819fdf90b9c001403e9e17da2e14b6d8aec4029c6",
@@ -805,10 +790,7 @@
                 "name": "Moonriver",
                 "assetId": 4,
                 "assetSymbol": "xcKAR",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "10810581592933651521121702237638664357"
-                }
+                "type": "evm"
             },
             {
                 "chainId": "0xf1cf9022c7ebb34b162d5b5e34e705a5a740b2d0ecc1009fb89023e62a488108",
@@ -949,10 +931,7 @@
                 "name": "Moonriver",
                 "assetId": 5,
                 "assetSymbol": "xcBNC",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "319623561105283008236062145480775032445"
-                }
+                "type": "evm"
             },
             {
                 "chainId": "0xf1cf9022c7ebb34b162d5b5e34e705a5a740b2d0ecc1009fb89023e62a488108",
@@ -976,10 +955,7 @@
                 "name": "Moonbeam",
                 "assetId": 12,
                 "assetSymbol": "xcBNC",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "165823357460190568952172802245839421906"
-                }
+                "type": "evm"
             },
             {
                 "chainId": "0x9eb76c5184c4ab8679d2d5d819fdf90b9c001403e9e17da2e14b6d8aec4029c6",
@@ -1117,10 +1093,7 @@
                 "name": "Moonriver",
                 "assetId": 10,
                 "assetSymbol": "xcPHA",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "189307976387032586987344677431204943363"
-                }
+                "type": "evm"
             },
             {
                 "chainId": "0xf1cf9022c7ebb34b162d5b5e34e705a5a740b2d0ecc1009fb89023e62a488108",
@@ -1150,10 +1123,7 @@
                 "name": "Moonbeam",
                 "assetId": 9,
                 "assetSymbol": "xcPHA",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "132685552157663328694213725410064821485"
-                }
+                "type": "evm"
             },
             {
                 "chainId": "0x9eb76c5184c4ab8679d2d5d819fdf90b9c001403e9e17da2e14b6d8aec4029c6",
@@ -1216,10 +1186,7 @@
                 "name": "Moonriver",
                 "assetId": 3,
                 "assetSymbol": "xcKINT",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "175400718394635817552109270754364440562"
-                }
+                "type": "evm"
             },
             {
                 "chainId": "0xf1cf9022c7ebb34b162d5b5e34e705a5a740b2d0ecc1009fb89023e62a488108",
@@ -1288,10 +1255,7 @@
                 "name": "Moonriver",
                 "assetId": 6,
                 "assetSymbol": "xckBTC",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "328179947973504579459046439826496046832"
-                }
+                "type": "evm"
             },
             {
                 "chainId": "0xf1cf9022c7ebb34b162d5b5e34e705a5a740b2d0ecc1009fb89023e62a488108",
@@ -1562,10 +1526,7 @@
                 "name": "Moonriver",
                 "assetId": 11,
                 "assetSymbol": "xcHKO",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "76100021443485661246318545281171740067"
-                }
+                "type": "evm"
             }
         ]
     },
@@ -1598,10 +1559,7 @@
                 "name": "Moonriver",
                 "assetId": 9,
                 "assetSymbol": "xcCSM",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "108457044225666871745333730479173774551"
-                }
+                "type": "evm"
             },
             {
                 "chainId": "0xf1cf9022c7ebb34b162d5b5e34e705a5a740b2d0ecc1009fb89023e62a488108",
@@ -1644,10 +1602,7 @@
                 "name": "Moonriver",
                 "assetId": 12,
                 "assetSymbol": "xcKMA",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "213357169630950964874127107356898319277"
-                }
+                "type": "evm"
             }
         ]
     },
@@ -1680,10 +1635,7 @@
                 "name": "Moonriver",
                 "assetId": 14,
                 "assetSymbol": "xcTEER",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "105075627293246237499203909093923548958"
-                }
+                "type": "evm"
             },
             {
                 "chainId": "0xcdedc8eadbfa209d3f207bba541e57c3c58a667b05a2e1d1e86353c9000758da",
@@ -1866,10 +1818,7 @@
                 "name": "Moonbeam",
                 "assetId": 14,
                 "assetSymbol": "xcEQD",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "187224307232923873519830480073807488153"
-                }
+                "type": "evm"
             },
             {
                 "chainId": "0x9eb76c5184c4ab8679d2d5d819fdf90b9c001403e9e17da2e14b6d8aec4029c6",
@@ -1912,10 +1861,7 @@
                 "name": "Moonriver",
                 "assetId": 13,
                 "assetSymbol": "xcCRAB",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "173481220575862801646329923366065693029"
-                }
+                "type": "evm"
             }
         ]
     },
@@ -2076,10 +2022,7 @@
                 "name": "Moonriver",
                 "assetId": 19,
                 "assetSymbol": "xcvBNC",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "72145018963825376852137222787619937732"
-                }
+                "type": "evm"
             },
             {
                 "chainId": "0x9f28c6a68e0fc9646eff64935684f6eeeece527e37bbe1f213d22caa1d9d6bed",
@@ -2124,10 +2067,7 @@
                 "name": "Moonriver",
                 "assetId": 20,
                 "assetSymbol": "xcvMOVR",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "203223821023327994093278529517083736593"
-                }
+                "type": "evm"
             },
             {
                 "chainId": "0x9f28c6a68e0fc9646eff64935684f6eeeece527e37bbe1f213d22caa1d9d6bed",
@@ -2360,10 +2300,7 @@
                 "name": "Moonbeam",
                 "assetId": 3,
                 "assetSymbol": "xcACA",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "224821240862170613278369189818311486111"
-                }
+                "type": "evm"
             },
             {
                 "chainId": "0x9eb76c5184c4ab8679d2d5d819fdf90b9c001403e9e17da2e14b6d8aec4029c6",
@@ -2582,10 +2519,7 @@
                 "name": "Moonbeam",
                 "assetId": 4,
                 "assetSymbol": "xcPARA",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "32615670524745285411807346420584982855"
-                }
+                "type": "evm"
             }
         ]
     },
@@ -2668,10 +2602,7 @@
                 "name": "Moonbeam",
                 "assetId": 5,
                 "assetSymbol": "xcINTR",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "101170542313601871197860408087030232491"
-                }
+                "type": "evm"
             },
             {
                 "chainId": "0x9eb76c5184c4ab8679d2d5d819fdf90b9c001403e9e17da2e14b6d8aec4029c6",
@@ -2740,10 +2671,7 @@
                 "name": "Moonbeam",
                 "assetId": 8,
                 "assetSymbol": "xcASTR",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "224077081838586484055667086558292981199"
-                }
+                "type": "evm"
             },
             {
                 "chainId": "0x9eb76c5184c4ab8679d2d5d819fdf90b9c001403e9e17da2e14b6d8aec4029c6",
@@ -2822,10 +2750,7 @@
                 "name": "Moonbeam",
                 "assetId": 13,
                 "assetSymbol": "xcEQ",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "190590555344745888270686124937537713878"
-                }
+                "type": "evm"
             }
         ]
     },
@@ -2858,10 +2783,7 @@
                 "name": "Moonbeam",
                 "assetId": 6,
                 "assetSymbol": "xciBTC",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "120637696315203257380661607956669368914"
-                }
+                "type": "evm"
             },
             {
                 "chainId": "0x9eb76c5184c4ab8679d2d5d819fdf90b9c001403e9e17da2e14b6d8aec4029c6",
@@ -3068,10 +2990,7 @@
                 "name": "Moonbeam",
                 "assetId": 11,
                 "assetSymbol": "xcCFG",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "91372035960551235635465443179559840483"
-                }
+                "type": "evm"
             },
             {
                 "chainId": "0xb3db41421702df9a7fcac62b53ffeac85f7853cc4e689e0b93aeb3db18c09d82",
@@ -3111,10 +3030,7 @@
                 "name": "Moonbeam",
                 "assetId": 15,
                 "assetSymbol": "xcHDX",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "69606720909260275826784788104880799692"
-                }
+                "type": "evm"
             },
             {
                 "chainId": "0xafdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
@@ -3154,10 +3070,7 @@
                 "name": "Moonbeam",
                 "assetId": 16,
                 "assetSymbol": "xcNODL",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "309163521958167876851250718453738106865"
-                }
+                "type": "evm"
             },
             {
                 "chainId": "0xafdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
@@ -3190,10 +3103,7 @@
                 "name": "Moonbeam",
                 "assetId": 17,
                 "assetSymbol": "xcRING",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "125699734534028342599692732320197985871"
-                }
+                "type": "evm"
             }
         ]
     },
@@ -3235,10 +3145,7 @@
                 "name": "Moonbeam",
                 "assetId": 19,
                 "assetSymbol": "xcvDOT",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "29085784439601774464560083082574142143"
-                }
+                "type": "evm"
             },
             {
                 "chainId": "0x9eb76c5184c4ab8679d2d5d819fdf90b9c001403e9e17da2e14b6d8aec4029c6",
@@ -3306,10 +3213,7 @@
                 "name": "Moonbeam",
                 "assetId": 20,
                 "assetSymbol": "xcvFIL",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "272547899416482196831721420898811311297"
-                }
+                "type": "evm"
             },
             {
                 "chainId": "0x262e1b2ad728475fd6fe88e62d34c200abe6fd693931ddad144059b1eb884e5b",
@@ -3342,10 +3246,7 @@
                 "name": "Moonbeam",
                 "assetId": 21,
                 "assetSymbol": "xcvGLMR",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "204507659831918931608354793288110796652"
-                }
+                "type": "evm"
             },
             {
                 "chainId": "0x262e1b2ad728475fd6fe88e62d34c200abe6fd693931ddad144059b1eb884e5b",
@@ -3378,10 +3279,7 @@
                 "name": "Moonbeam",
                 "assetId": 22,
                 "assetSymbol": "xcMANTA",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "166446646689194205559791995948102903873"
-                }
+                "type": "evm"
             },
             {
                 "chainId": "0x262e1b2ad728475fd6fe88e62d34c200abe6fd693931ddad144059b1eb884e5b",
@@ -3414,10 +3312,7 @@
                 "name": "Moonbeam",
                 "assetId": 23,
                 "assetSymbol": "xcUSDC",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "166377000701797186346254371275954761085"
-                }
+                "type": "evm"
             },
             {
                 "chainId": "0x68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
@@ -4001,6 +3896,52 @@
                 "type": "statemine",
                 "typeExtras": {
                     "assetId": "50000092"
+                }
+            }
+        ]
+    },
+    {
+        "name": "MPC",
+        "precision": 12,
+        "priceId": "my-paqman-coin",
+        "icon": {
+            "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/MPC.png",
+            "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/MPC.png"
+        },
+        "symbol": "MPC",
+        "isTestToken": false,
+        "chains": [
+            {
+                "chainId": "0x68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+                "name": "Polkadot Asset Hub",
+                "assetId": 26,
+                "assetSymbol": "MPC",
+                "type": "statemine",
+                "typeExtras": {
+                    "assetId": "50000103"
+                }
+            }
+        ]
+    },
+    {
+        "name": "DON",
+        "precision": 12,
+        "priceId": "paydon",
+        "icon": {
+            "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/DON.png",
+            "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/DON.png"
+        },
+        "symbol": "DON",
+        "isTestToken": false,
+        "chains": [
+            {
+                "chainId": "0x68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
+                "name": "Polkadot Asset Hub",
+                "assetId": 27,
+                "assetSymbol": "DON",
+                "type": "statemine",
+                "typeExtras": {
+                    "assetId": "50000111"
                 }
             }
         ]
