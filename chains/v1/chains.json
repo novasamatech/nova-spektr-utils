@@ -1544,8 +1544,8 @@
                 "name": "Moonbeam Foundation node"
             },
             {
-                "url": "wss://moonriver.public.blastapi.io",
-                "name": "Blast node"
+                "url": "wss://moonriver-rpc.publicnode.com",
+                "name": "Allnodes node"
             },
             {
                 "url": "wss://moonriver.public.curie.radiumblock.co/ws",
@@ -3990,53 +3990,6 @@
         }
     },
     {
-        "name": "Subsocial",
-        "specName": "kusama",
-        "addressPrefix": 28,
-        "chainId": "0x4a12be580bb959937a1c7a61d5cf24428ed67fa571974b4007645d1886e7c89f",
-        "parentId": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Subsocial_Parachain.svg",
-        "options": [],
-        "nodes": [
-            {
-                "url": "wss://para.f3joule.space",
-                "name": "Subsocial node"
-            },
-            {
-                "url": "wss://para.subsocial.network",
-                "name": "Dappforce node"
-            }
-        ],
-        "assets": [
-            {
-                "name": "Subsocial",
-                "assetId": 0,
-                "symbol": "SUB",
-                "precision": 10,
-                "type": "native",
-                "priceId": "subsocial",
-                "icon": {
-                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/SUB.svg",
-                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/SUB.svg"
-                }
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Sub.ID",
-                "account": "https://sub.id/{address}"
-            }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x34"
-                }
-            ]
-        }
-    },
-    {
         "name": "Integritee Parachain",
         "specName": "kusama",
         "addressPrefix": 13,
@@ -5396,7 +5349,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-phala"
+                    "url": "https://subquery-history-phala-prod.novasama-tech.org"
                 }
             ]
         }
@@ -5782,7 +5735,8 @@
     {
         "name": "Amplitude",
         "specName": "kusama",
-        "addressPrefix": 57,
+        "addressPrefix": 0,
+        "legacyAddressPrefix": 57,
         "chainId": "0xcceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf",
         "parentId": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Amplitude.svg",
@@ -5854,7 +5808,8 @@
     {
         "name": "Pendulum",
         "specName": "polkadot",
-        "addressPrefix": 56,
+        "addressPrefix": 0,
+        "legacyAddressPrefix": 56,
         "chainId": "0x5d3c298622d5634ed019bf61ea4b71655030015bde9beb0d6a24743714462c86",
         "parentId": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Pendulum.svg",

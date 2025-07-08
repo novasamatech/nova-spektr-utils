@@ -147,6 +147,11 @@ function getPreparedChains(rawData) {
         name: node.name
       }));
 
+    const additional = {
+      ...(chain.additional?.identityChain && { identityChain: `0x${chain.additional.identityChain}` }),
+      ...(chain.additional?.timelineChain && { timelineChain: `0x${chain.additional.timelineChain}` })
+    }
+
     const updatedChain = {
       name: chain.name,
       addressPrefix: chain.addressPrefix,
@@ -159,7 +164,7 @@ function getPreparedChains(rawData) {
       assets,
       explorers,
       ...(externalApi && { externalApi }),
-      ...(chain.additional?.identityChain && { additional: { identityChain: `0x${chain.additional.identityChain}` } })
+      ...(Object.keys(additional).length && { additional })
     };
 
     return updatedChain;
