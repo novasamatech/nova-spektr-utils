@@ -3828,36 +3828,6 @@
                 "typeExtras": {
                     "assetId": "50000092"
                 }
-            },
-            {
-                "name": "MPC",
-                "assetId": 26,
-                "symbol": "MPC",
-                "precision": 12,
-                "type": "statemine",
-                "priceId": "my-paqman-coin",
-                "icon": {
-                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/MPC.png",
-                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/MPC.png"
-                },
-                "typeExtras": {
-                    "assetId": "50000103"
-                }
-            },
-            {
-                "name": "DON",
-                "assetId": 27,
-                "symbol": "DON",
-                "precision": 12,
-                "type": "statemine",
-                "priceId": "paydon",
-                "icon": {
-                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/DON.png",
-                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/DON.png"
-                },
-                "typeExtras": {
-                    "assetId": "50000111"
-                }
             }
         ],
         "explorers": [
