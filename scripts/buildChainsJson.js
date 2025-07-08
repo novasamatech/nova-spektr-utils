@@ -159,7 +159,8 @@ function getPreparedChains(rawData) {
       assets,
       explorers,
       ...(externalApi && { externalApi }),
-      ...(chain.additional?.identityChain && { additional: { identityChain: `0x${chain.additional.identityChain}` } })
+      ...(chain.additional?.identityChain && { additional: { identityChain: `0x${chain.additional.identityChain}` } }),
+      ...(chain.additional?.timelineChain && { additional: { ...chain.additional, timelineChain: `0x${chain.additional.timelineChain}` } })
     };
 
     return updatedChain;
