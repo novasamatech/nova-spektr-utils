@@ -22,7 +22,7 @@ export async function calculateMultisigData(chains: Chain[]): Promise<MultisigVe
     const multisigStorage = new MultisigVersionStorage()
 
     const filteredChains = chains.filter(chain => 
-        yamlData.some(yamlChain => yamlChain.network.chainId === chain.chainId)
+        yamlData.some(yamlChain => yamlChain.network?.chainId === chain.chainId)
     );
 
     await Promise.all(filteredChains.map(async element => {
