@@ -364,6 +364,12 @@
                     "type": "subquery",
                     "url": "https://subquery-history-westend-ah-prod.novasama-tech.org"
                 }
+            ],
+            "proxy": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-proxy-westend-ah-prod.novasama-tech.org"
+                }
             ]
         },
         "additional": {
