@@ -96,7 +96,7 @@
             "governance-delegations": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-governance-polkadot-prod.novasama-tech.org"
+                    "url": "https://subquery-governance-polkadot-stg.novasama-tech.org"
                 }
             ],
             "proxy": [
@@ -203,7 +203,7 @@
             "governance-delegations": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-governance-kusama-prod.novasama-tech.org"
+                    "url": "https://subquery-governance-kusama-stg.novasama-tech.org"
                 }
             ],
             "proxy": [
@@ -234,12 +234,8 @@
                 "name": "Dwellir node"
             },
             {
-                "url": "wss://rpc.ibp.network/westend",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://westend.dotters.network",
-                "name": "IBP2 node"
+                "url": "wss://westend-rpc.polkadot.io",
+                "name": "Parity node"
             },
             {
                 "url": "wss://westend.public.curie.radiumblock.co/ws",
@@ -451,7 +447,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-statemine"
+                    "url": "https://subquery-history-kusama-ah-prod.novasama-tech.org"
                 }
             ],
             "proxy": [
@@ -525,6 +521,9 @@
                     "url": "https://subquery-proxy-polkadot-people-stg.novasama-tech.org"
                 }
             ]
+        },
+        "additional": {
+            "identityChain": "0x67fa177a097bfa18f77ea95ab56e9bcdfeb0e5b8a40e46298bb93e16b6fc5008"
         }
     },
     {
@@ -1510,7 +1509,7 @@
             "governance-delegations": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonbeam-gov"
+                    "url": "https://subquery-governance-moonbeam-stg.novasama-tech.org"
                 }
             ],
             "proxy": [
@@ -1929,7 +1928,7 @@
             "governance-delegations": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-moonriver-gov"
+                    "url": "https://subquery-governance-moonriver-stg.novasama-tech.org"
                 }
             ],
             "proxy": [
@@ -3366,7 +3365,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x1f"
+                    "url": "https://subquery-history-astar-prod.novasama-tech.org"
                 }
             ]
         }
@@ -3678,7 +3677,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x35"
+                    "url": "https://subquery-history-polkadot-ah-prod.novasama-tech.org"
                 }
             ],
             "proxy": [
@@ -3929,7 +3928,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-kintsugi"
+                    "url": "https://subquery-history-kintsugi-prod.novasama-tech.org"
                 }
             ]
         }
@@ -4033,7 +4032,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-integritee"
+                    "url": "https://subquery-history-integritee-prod.novasama-tech.org"
                 }
             ]
         }
@@ -4086,7 +4085,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-centrifuge"
+                    "url": "https://subquery-history-centrifuge-prod.novasama-tech.org"
                 }
             ]
         }
@@ -4802,6 +4801,7 @@
                 "symbol": "vASTR",
                 "precision": 18,
                 "type": "orml",
+                "priceId": "bifrost-voucher-astr",
                 "icon": {
                     "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/vASTR.svg",
                     "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/vASTR.svg"
@@ -5054,7 +5054,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-hydra"
+                    "url": "https://subquery-history-hydra-prod.novasama-tech.org"
                 }
             ],
             "proxy": [
@@ -5292,7 +5292,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-interlay"
+                    "url": "https://subquery-history-interlay-prod.novasama-tech.org"
                 }
             ]
         }
@@ -5397,13 +5397,13 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x1c"
+                    "url": "https://subquery-history-aleph-zero-prod.novasama-tech.org"
                 }
             ],
             "staking": [
                 {
                     "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x1c"
+                    "url": "https://subquery-history-aleph-zero-prod.novasama-tech.org"
                 }
             ],
             "proxy": [
@@ -5585,6 +5585,7 @@
                 "symbol": "vASTR",
                 "precision": 18,
                 "type": "orml",
+                "priceId": "bifrost-voucher-astr",
                 "icon": {
                     "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/vASTR.svg",
                     "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/vASTR.svg"
@@ -5678,7 +5679,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-bifrost-polkadot"
+                    "url": "https://subquery-history-bifrost-polkadot-prod.novasama-tech.org"
                 }
             ]
         }
@@ -5727,7 +5728,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-litentry"
+                    "url": "https://subquery-history-litentry-prod.novasama-tech.org"
                 }
             ]
         }
@@ -5800,7 +5801,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-amplitude"
+                    "url": "https://subquery-history-amplitude-prod.novasama-tech.org"
                 }
             ]
         }
@@ -6025,7 +6026,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-pendulum"
+                    "url": "https://subquery-history-pendulum-prod.novasama-tech.org"
                 }
             ]
         }
@@ -6071,7 +6072,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-bittensor"
+                    "url": "https://subquery-history-bittensor-prod.novasama-tech.org"
                 }
             ],
             "proxy": [
@@ -6185,7 +6186,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/polkadot-bridgehub"
+                    "url": "https://subquery-history-polkadot-bh-prod.novasama-tech.org"
                 }
             ]
         }
@@ -6238,7 +6239,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---kusama-bridgehub"
+                    "url": "https://subquery-history-kusama-bh-prod.novasama-tech.org"
                 }
             ]
         }
@@ -6303,7 +6304,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/polkadot-collectives"
+                    "url": "https://subquery-history-polkadot-col-prod.novasama-tech.org"
                 }
             ],
             "collectives": [
@@ -6413,13 +6414,13 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---polymec"
+                    "url": "https://subquery-history-polimec-prod.novasama-tech.org"
                 }
             ],
             "staking": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet---polymec"
+                    "url": "https://subquery-history-polimec-prod.novasama-tech.org"
                 }
             ]
         }
@@ -6545,13 +6546,13 @@
             "staking": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-avail"
+                    "url": "https://subquery-history-avail-prod.novasama-tech.org"
                 }
             ],
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-avail"
+                    "url": "https://subquery-history-avail-prod.novasama-tech.org"
                 }
             ],
             "proxy": [

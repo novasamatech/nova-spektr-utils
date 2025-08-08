@@ -4203,6 +4203,7 @@
     {
         "name": "vASTR",
         "precision": 18,
+        "priceId": "bifrost-voucher-astr",
         "icon": {
             "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/vASTR.svg",
             "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/vASTR.svg"
@@ -4472,6 +4473,7 @@
     {
         "name": "GIGADOT",
         "precision": 18,
+        "priceId": "gigadot",
         "icon": {
             "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/GIGADOT.svg",
             "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/GIGADOT.svg"
