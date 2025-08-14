@@ -271,7 +271,7 @@
       "collectives": [
         {
           "type": "subquery",
-          "url": "https://subquery-collectives-testnet-prod.novasama-tech.org"
+          "url": "https://subquery-collectives-testnet-stg.novasama-tech.org"
         }
       ]
     }
