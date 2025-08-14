@@ -102,7 +102,7 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-proxy-polkadot-stg.novasama-tech.org"
+                    "url": "https://subquery-proxy-polkadot-prod.novasama-tech.org"
                 }
             ]
         },
@@ -210,7 +210,7 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-proxy-kusama-stg.novasama-tech.org"
+                    "url": "https://subquery-proxy-kusama-prod.novasama-tech.org"
                 }
             ]
         },
@@ -283,7 +283,7 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-proxy-westend-stg.novasama-tech.org"
+                    "url": "https://subquery-proxy-westend-prod.novasama-tech.org"
                 }
             ]
         },
@@ -545,7 +545,7 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-proxy-kusama-ah-stg.novasama-tech.org"
+                    "url": "https://subquery-proxy-kusama-ah-prod.novasama-tech.org"
                 }
             ]
         },
@@ -1054,14 +1054,6 @@
                 "account": "https://sub.id/{address}"
             }
         ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x39"
-                }
-            ]
-        },
         "additional": {
             "supportsGenericLedgerApp": true
         }
@@ -1455,7 +1447,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x1d"
+                    "url": "https://subquery-history-moonriver-prod.novasama-tech.org"
                 },
                 {
                     "type": "etherscan",
@@ -1480,7 +1472,7 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-proxy-moonriver-stg.novasama-tech.org"
+                    "url": "https://subquery-proxy-moonriver-prod.novasama-tech.org"
                 }
             ]
         },
@@ -1716,14 +1708,6 @@
                 "account": "https://sub.id/{address}"
             }
         ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x40"
-                }
-            ]
-        },
         "additional": {
             "supportsGenericLedgerApp": true
         }
@@ -2004,20 +1988,6 @@
                 "account": "https://sub.id/{address}"
             }
         ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x38"
-                }
-            ],
-            "staking": [
-                {
-                    "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x38"
-                }
-            ]
-        },
         "additional": {
             "supportsGenericLedgerApp": true
         }
@@ -2350,15 +2320,7 @@
                 "name": "Sub.ID",
                 "account": "https://sub.id/{address}"
             }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x3f"
-                }
-            ]
-        }
+        ]
     },
     {
         "name": "Altair",
@@ -2399,15 +2361,7 @@
                 "name": "Sub.ID",
                 "account": "https://sub.id/{address}"
             }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x37"
-                }
-            ]
-        }
+        ]
     },
     {
         "name": "KILT",
@@ -2457,14 +2411,6 @@
                 "account": "https://sub.id/{address}"
             }
         ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x3d"
-                }
-            ]
-        },
         "additional": {
             "supportsGenericLedgerApp": true
         }
@@ -2521,14 +2467,6 @@
                 "account": "https://sub.id/{address}"
             }
         ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x3e"
-                }
-            ]
-        },
         "additional": {
             "supportsGenericLedgerApp": true
         }
@@ -2872,14 +2810,6 @@
                 "account": "https://sub.id/{address}"
             }
         ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x3c"
-                }
-            ]
-        },
         "additional": {
             "supportsGenericLedgerApp": true
         }
@@ -3277,7 +3207,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x1e"
+                    "url": "https://subquery-history-moonbeam-v2-prod.novasama-tech.org"
                 },
                 {
                     "type": "etherscan",
@@ -3290,7 +3220,7 @@
             "staking": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-history-moonbeam-prod.novasama-tech.org"
+                    "url": "https://subquery-history-moonbeam-v2-prod.novasama-tech.org"
                 }
             ],
             "governance-delegations": [
@@ -3302,7 +3232,7 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-proxy-moonbeam-stg.novasama-tech.org"
+                    "url": "https://subquery-proxy-moonbeam-prod.novasama-tech.org"
                 }
             ]
         },
@@ -3888,7 +3818,7 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-proxy-polkadot-ah-stg.novasama-tech.org"
+                    "url": "https://subquery-proxy-polkadot-ah-prod.novasama-tech.org"
                 }
             ]
         },
@@ -3950,15 +3880,7 @@
                 "name": "Sub.ID",
                 "account": "https://sub.id/{address}"
             }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-robonomics"
-                }
-            ]
-        }
+        ]
     },
     {
         "name": "Zeitgeist",
@@ -4004,13 +3926,13 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-zeitgeist"
+                    "url": "https://subquery-history-zeitgeist-prod.novasama-tech.org"
                 }
             ],
             "staking": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-zeitgeist"
+                    "url": "https://subquery-history-zeitgeist-prod.novasama-tech.org"
                 }
             ]
         }
@@ -5128,7 +5050,7 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-proxy-hydradx-stg.novasama-tech.org"
+                    "url": "https://subquery-proxy-hydradx-prod.novasama-tech.org"
                 }
             ]
         },
@@ -5501,7 +5423,7 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-proxy-aleph-zero-stg.novasama-tech.org"
+                    "url": "https://subquery-proxy-aleph-zero-prod.novasama-tech.org"
                 }
             ]
         }
@@ -6214,7 +6136,7 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-proxy-bittensor-stg.novasama-tech.org"
+                    "url": "https://subquery-proxy-bittensor-prod.novasama-tech.org"
                 }
             ]
         },
@@ -6458,7 +6380,7 @@
             "collectives": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-collectives-polkadot-stg.novasama-tech.org"
+                    "url": "https://subquery-collectives-polkadot-prod.novasama-tech.org"
                 }
             ]
         },
@@ -6527,7 +6449,7 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-proxy-polkadot-people-stg.novasama-tech.org"
+                    "url": "https://subquery-proxy-polkadot-people-prod.novasama-tech.org"
                 }
             ]
         },
@@ -6592,7 +6514,7 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-proxy-kusama-people-stg.novasama-tech.org"
+                    "url": "https://subquery-proxy-kusama-people-prod.novasama-tech.org"
                 }
             ]
         }
@@ -6821,7 +6743,7 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-proxy-mythos-stg.novasama-tech.org"
+                    "url": "https://subquery-proxy-mythos-prod.novasama-tech.org"
                 }
             ]
         },
@@ -6892,7 +6814,7 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-proxy-avail-stg.novasama-tech.org"
+                    "url": "https://subquery-proxy-avail-prod.novasama-tech.org"
                 }
             ]
         }
@@ -6940,7 +6862,7 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-proxy-testnet-stg.novasama-tech.org"
+                    "url": "https://subquery-proxy-testnet-prod.novasama-tech.org"
                 }
             ]
         }
@@ -7016,7 +6938,7 @@
             "collectives": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-collectives-testnet-stg.novasama-tech.org"
+                    "url": "https://subquery-collectives-testnet-prod.novasama-tech.org"
                 }
             ]
         }
@@ -7059,7 +6981,7 @@
             "collectives": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-collectives-westend-stg.novasama-tech.org"
+                    "url": "https://subquery-collectives-westend-prod.novasama-tech.org"
                 }
             ]
         }
@@ -7120,7 +7042,7 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-proxy-polkadot-coretime-stg.novasama-tech.org"
+                    "url": "https://subquery-proxy-polkadot-coretime-prod.novasama-tech.org"
                 }
             ]
         },
@@ -7192,7 +7114,7 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-proxy-kusama-coretime-stg.novasama-tech.org"
+                    "url": "https://subquery-proxy-kusama-coretime-prod.novasama-tech.org"
                 }
             ]
         },
