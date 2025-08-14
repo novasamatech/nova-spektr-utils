@@ -96,13 +96,13 @@
             "governance-delegations": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-governance-polkadot-stg.novasama-tech.org"
+                    "url": "https://subquery-governance-polkadot-prod.novasama-tech.org"
                 }
             ],
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-proxy-polkadot-stg.novasama-tech.org"
+                    "url": "https://subquery-proxy-polkadot-prod.novasama-tech.org"
                 }
             ]
         },
@@ -204,13 +204,13 @@
             "governance-delegations": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-governance-kusama-stg.novasama-tech.org"
+                    "url": "https://subquery-governance-kusama-prod.novasama-tech.org"
                 }
             ],
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-proxy-kusama-stg.novasama-tech.org"
+                    "url": "https://subquery-proxy-kusama-prod.novasama-tech.org"
                 }
             ]
         },
@@ -281,7 +281,7 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-proxy-westend-stg.novasama-tech.org"
+                    "url": "https://subquery-proxy-westend-prod.novasama-tech.org"
                 }
             ]
         },
@@ -458,7 +458,7 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-proxy-kusama-ah-stg.novasama-tech.org"
+                    "url": "https://subquery-proxy-kusama-ah-prod.novasama-tech.org"
                 }
             ]
         },
@@ -526,7 +526,7 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-proxy-polkadot-people-stg.novasama-tech.org"
+                    "url": "https://subquery-proxy-polkadot-people-prod.novasama-tech.org"
                 }
             ]
         },
@@ -591,7 +591,7 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-proxy-kusama-people-stg.novasama-tech.org"
+                    "url": "https://subquery-proxy-kusama-people-prod.novasama-tech.org"
                 }
             ]
         }
@@ -1521,13 +1521,13 @@
             "governance-delegations": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-governance-moonbeam-stg.novasama-tech.org"
+                    "url": "https://subquery-governance-moonbeam-prod.novasama-tech.org"
                 }
             ],
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-proxy-moonbeam-stg.novasama-tech.org"
+                    "url": "https://subquery-proxy-moonbeam-prod.novasama-tech.org"
                 }
             ]
         },
@@ -1943,13 +1943,13 @@
             "governance-delegations": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-governance-moonriver-stg.novasama-tech.org"
+                    "url": "https://subquery-governance-moonriver-prod.novasama-tech.org"
                 }
             ],
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-proxy-moonriver-stg.novasama-tech.org"
+                    "url": "https://subquery-proxy-moonriver-prod.novasama-tech.org"
                 }
             ]
         },
@@ -3713,7 +3713,7 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-proxy-polkadot-ah-stg.novasama-tech.org"
+                    "url": "https://subquery-proxy-polkadot-ah-prod.novasama-tech.org"
                 }
             ]
         },
@@ -5093,7 +5093,7 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-proxy-hydradx-stg.novasama-tech.org"
+                    "url": "https://subquery-proxy-hydradx-prod.novasama-tech.org"
                 }
             ]
         },
@@ -5448,7 +5448,7 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-proxy-aleph-zero-stg.novasama-tech.org"
+                    "url": "https://subquery-proxy-aleph-zero-prod.novasama-tech.org"
                 }
             ]
         }
@@ -6126,7 +6126,7 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-proxy-bittensor-stg.novasama-tech.org"
+                    "url": "https://subquery-proxy-bittensor-prod.novasama-tech.org"
                 }
             ]
         },
@@ -6364,7 +6364,7 @@
             "collectives": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-collectives-polkadot-stg.novasama-tech.org"
+                    "url": "https://subquery-collectives-polkadot-prod.novasama-tech.org"
                 }
             ]
         },
@@ -6547,7 +6547,7 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-proxy-mythos-stg.novasama-tech.org"
+                    "url": "https://subquery-proxy-mythos-prod.novasama-tech.org"
                 }
             ]
         },
@@ -6618,7 +6618,7 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-proxy-avail-stg.novasama-tech.org"
+                    "url": "https://subquery-proxy-avail-prod.novasama-tech.org"
                 }
             ]
         }
@@ -6679,7 +6679,7 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-proxy-polkadot-coretime-stg.novasama-tech.org"
+                    "url": "https://subquery-proxy-polkadot-coretime-prod.novasama-tech.org"
                 }
             ]
         },
@@ -6751,7 +6751,7 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-proxy-kusama-coretime-stg.novasama-tech.org"
+                    "url": "https://subquery-proxy-kusama-coretime-prod.novasama-tech.org"
                 }
             ]
         },
