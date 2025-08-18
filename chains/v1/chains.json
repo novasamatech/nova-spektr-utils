@@ -6364,7 +6364,7 @@
             "collectives": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-collectives-polkadot-prod.novasama-tech.org"
+                    "url": "https://subquery-collectives-polkadot-stg.novasama-tech.org"
                 }
             ]
         },
