@@ -13,10 +13,6 @@
         ],
         "nodes": [
             {
-                "url": "wss://polkadot-rpc.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
                 "url": "wss://rpc-polkadot-1.novasama-tech.org",
                 "name": "Novasama node"
             },
@@ -35,6 +31,10 @@
             {
                 "url": "wss://apps-rpc.polkadot.io",
                 "name": "Public node"
+            },
+            {
+                "url": "wss://polkadot-rpc.dwellir.com",
+                "name": "Dwellir node"
             },
             {
                 "url": "wss://dot-rpc.stakeworld.io",
@@ -124,10 +124,6 @@
         ],
         "nodes": [
             {
-                "url": "wss://kusama-rpc.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
                 "url": "wss://rpc-kusama-1.novasama-tech.org",
                 "name": "Novasama node"
             },
@@ -146,6 +142,10 @@
             {
                 "url": "wss://apps-kusama-rpc.polkadot.io",
                 "name": "Public node"
+            },
+            {
+                "url": "wss://kusama-rpc.dwellir.com",
+                "name": "Dwellir node"
             },
             {
                 "url": "wss://rpc-kusama.luckyfriday.io",
@@ -298,16 +298,16 @@
         ],
         "nodes": [
             {
-                "url": "wss://asset-hub-kusama-rpc.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
                 "url": "wss://sys.ibp.network/statemine",
                 "name": "IBP1 node"
             },
             {
                 "url": "wss://asset-hub-kusama.dotters.network",
                 "name": "IBP2 node"
+            },
+            {
+                "url": "wss://asset-hub-kusama-rpc.dwellir.com",
+                "name": "Dwellir node"
             }
         ],
         "assets": [
@@ -597,10 +597,6 @@
         "options": [],
         "nodes": [
             {
-                "url": "wss://karura-rpc.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
                 "url": "wss://karura-rpc-0.aca-api.network",
                 "name": "Acala Foundation 0 node"
             },
@@ -615,6 +611,10 @@
             {
                 "url": "wss://karura-rpc-3.aca-api.network/ws",
                 "name": "Acala Foundation 3 node"
+            },
+            {
+                "url": "wss://karura-rpc.dwellir.com",
+                "name": "Dwellir node"
             }
         ],
         "assets": [
@@ -1535,10 +1535,6 @@
         ],
         "nodes": [
             {
-                "url": "wss://moonriver-rpc.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
                 "url": "wss://wss.api.moonriver.moonbeam.network",
                 "name": "Moonbeam Foundation node"
             },
@@ -1549,6 +1545,10 @@
             {
                 "url": "wss://moonriver.public.curie.radiumblock.co/ws",
                 "name": "RadiumBlock node"
+            },
+            {
+                "url": "wss://moonriver-rpc.dwellir.com",
+                "name": "Dwellir node"
             }
         ],
         "assets": [
@@ -1949,12 +1949,12 @@
         "options": [],
         "nodes": [
             {
-                "url": "wss://shiden-rpc.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
                 "url": "wss://rpc.shiden.astar.network",
                 "name": "StakeTechnologies node"
+            },
+            {
+                "url": "wss://shiden-rpc.dwellir.com",
+                "name": "Dwellir node"
             },
             {
                 "url": "wss://shiden.public.curie.radiumblock.co/ws",
@@ -2471,12 +2471,12 @@
         "options": [],
         "nodes": [
             {
-                "url": "wss://basilisk-rpc.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
                 "url": "wss://rpc.basilisk.cloud",
                 "name": "Basilisk node"
+            },
+            {
+                "url": "wss://basilisk-rpc.dwellir.com",
+                "name": "Dwellir node"
             }
         ],
         "assets": [
@@ -2780,10 +2780,6 @@
         "options": [],
         "nodes": [
             {
-                "url": "wss://acala-rpc.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
                 "url": "wss://acala-rpc-0.aca-api.network",
                 "name": "Acala Foundation 0 node"
             },
@@ -2798,6 +2794,10 @@
             {
                 "url": "wss://acala-rpc-3.aca-api.network/ws",
                 "name": "Acala Foundation 3 node"
+            },
+            {
+                "url": "wss://acala-rpc.dwellir.com",
+                "name": "Dwellir node"
             }
         ],
         "assets": [
@@ -3128,12 +3128,12 @@
         "options": [],
         "nodes": [
             {
-                "url": "wss://astar-rpc.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
                 "url": "wss://rpc.astar.network",
                 "name": "Astar node"
+            },
+            {
+                "url": "wss://astar-rpc.dwellir.com",
+                "name": "Dwellir node"
             },
             {
                 "url": "wss://astar.public.curie.radiumblock.co/ws",
@@ -3384,10 +3384,6 @@
         ],
         "nodes": [
             {
-                "url": "wss://asset-hub-polkadot-rpc.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
                 "url": "wss://rpc-assethub.novasama-tech.org",
                 "name": "Novasama node"
             },
@@ -3398,6 +3394,10 @@
             {
                 "url": "wss://asset-hub-polkadot.dotters.network",
                 "name": "IBP2 node"
+            },
+            {
+                "url": "wss://asset-hub-polkadot-rpc.dwellir.com",
+                "name": "Dwellir node"
             }
         ],
         "assets": [
@@ -4105,10 +4105,6 @@
         ],
         "nodes": [
             {
-                "url": "wss://hydradx-rpc.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
                 "url": "wss://rpc-hydra.novasama-tech.org",
                 "name": "Novasama node"
             },
@@ -4123,6 +4119,10 @@
             {
                 "url": "wss://hydration.dotters.network",
                 "name": "IBP2 node"
+            },
+            {
+                "url": "wss://hydradx-rpc.dwellir.com",
+                "name": "Dwellir node"
             }
         ],
         "assets": [
@@ -5694,12 +5694,12 @@
         "options": [],
         "nodes": [
             {
-                "url": "wss://heima-rpc.n.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
                 "url": "wss://rpc.litentry-parachain.litentry.io",
                 "name": "Litentry node"
+            },
+            {
+                "url": "wss://heima-rpc.n.dwellir.com",
+                "name": "Dwellir node"
             }
         ],
         "assets": [

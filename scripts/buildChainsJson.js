@@ -135,11 +135,11 @@ function getPreparedChains(rawData) {
     const nodes = chain.nodes
       .filter(node => !node.url.includes('{'))
       .sort((a, b) => {
-        // Put Dwellir nodes first
-        const aIsDwellir = a.name.toLowerCase().includes('dwellir');
-        const bIsDwellir = b.name.toLowerCase().includes('dwellir');
-        if (aIsDwellir && !bIsDwellir) return -1;
-        if (!aIsDwellir && bIsDwellir) return 1;
+        // Put Novasama nodes first
+        const aIsNovasama = a.name.toLowerCase().includes('novasama');
+        const bIsNovasama = b.name.toLowerCase().includes('novasama');
+        if (aIsNovasama && !bIsNovasama) return -1;
+        if (!aIsNovasama && bIsNovasama) return 1;
         return 0;
       })
       .map(node => ({
