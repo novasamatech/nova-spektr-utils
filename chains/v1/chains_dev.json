@@ -408,6 +408,7 @@
         "options": [
             "multisig",
             "regular_proxy",
+            "governance",
             "pure_proxy"
         ],
         "nodes": [
@@ -432,6 +433,7 @@
                 "precision": 12,
                 "type": "native",
                 "priceId": "kusama",
+                "staking": "relaychain",
                 "icon": {
                     "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/KSM.svg",
                     "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/KSM.svg"
