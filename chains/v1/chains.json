@@ -76,8 +76,10 @@
                 "multisig": "https://polkadot.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
             },
             {
-                "name": "Sub.ID",
-                "account": "https://sub.id/{address}"
+                "name": "Statescan",
+                "account": "https://polkadot.statescan.io/#/accounts/{address}",
+                "extrinsic": "https://polkadot.statescan.io/#/extrinsics/{hash}",
+                "event": "https://polkadot.statescan.io/#/events/{event}"
             }
         ],
         "externalApi": {
@@ -183,8 +185,10 @@
                 "multisig": "https://kusama.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
             },
             {
-                "name": "Sub.ID",
-                "account": "https://sub.id/{address}"
+                "name": "Statescan",
+                "account": "https://kusama.statescan.io/#/accounts/{address}",
+                "extrinsic": "https://kusama.statescan.io/#/extrinsics/{hash}",
+                "event": "https://kusama.statescan.io/#/events/{event}"
             }
         ],
         "externalApi": {
@@ -261,6 +265,12 @@
                 "extrinsic": "https://westend.subscan.io/extrinsic/{hash}",
                 "account": "https://westend.subscan.io/account/{address}",
                 "multisig": "https://westend.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
+            },
+            {
+                "name": "Statescan",
+                "account": "https://westend.statescan.io/#/accounts/{address}",
+                "extrinsic": "https://westend.statescan.io/#/extrinsics/{hash}",
+                "event": "https://westend.statescan.io/#/events/{event}"
             }
         ],
         "externalApi": {
@@ -435,12 +445,9 @@
             },
             {
                 "name": "Statescan",
-                "account": "https://statemine.statescan.io/#/accounts/{address}",
-                "event": "https://statemine.statescan.io/#/events/{event}"
-            },
-            {
-                "name": "Sub.ID",
-                "account": "https://sub.id/{address}"
+                "account": "https://assethub-kusama.statescan.io/#/accounts/{address}",
+                "extrinsic": "https://assethub-kusama.statescan.io/#/extrinsics/{hash}",
+                "event": "https://assethub-kusama.statescan.io/#/events/{event}"
             }
         ],
         "externalApi": {
@@ -456,6 +463,9 @@
                     "url": "https://subquery-proxy-kusama-ah-prod.novasama-tech.org"
                 }
             ]
+        },
+        "additional": {
+            "identityChain": "0xc1af4cb4eb3918e5db15086c0cc5ec17fb334f728b7c65dd44bfe1e174ff8b3f"
         }
     },
     {
@@ -512,6 +522,12 @@
                 "extrinsic": "https://people-polkadot.subscan.io/extrinsic/{hash}",
                 "account": "https://people-polkadot.subscan.io/account/{address}",
                 "multisig": "https://people-polkadot.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
+            },
+            {
+                "name": "Statescan",
+                "account": "https://people-polkadot.statescan.io/#/accounts/{address}",
+                "extrinsic": "https://people-polkadot.statescan.io/#/extrinsics/{hash}",
+                "event": "https://people-polkadot.statescan.io/#/events/{event}"
             }
         ],
         "externalApi": {
@@ -576,6 +592,12 @@
                 "extrinsic": "https://people-kusama.subscan.io/extrinsic/{hash}",
                 "account": "https://people-kusama.subscan.io/account/{address}",
                 "multisig": "https://people-kusama.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
+            },
+            {
+                "name": "Statescan",
+                "account": "https://people-kusama.statescan.io/#/accounts/{address}",
+                "extrinsic": "https://people-kusama.statescan.io/#/extrinsics/{hash}",
+                "event": "https://people-kusama.statescan.io/#/events/{event}"
             }
         ],
         "externalApi": {
@@ -585,6 +607,9 @@
                     "url": "https://subquery-proxy-kusama-people-prod.novasama-tech.org"
                 }
             ]
+        },
+        "additional": {
+            "identityChain": "0xc1af4cb4eb3918e5db15086c0cc5ec17fb334f728b7c65dd44bfe1e174ff8b3f"
         }
     },
     {
@@ -1082,20 +1107,8 @@
                 "extrinsic": "https://karura.subscan.io/extrinsic/{hash}",
                 "account": "https://karura.subscan.io/account/{address}",
                 "multisig": "https://karura.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
-            },
-            {
-                "name": "Sub.ID",
-                "account": "https://sub.id/{address}"
             }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x39"
-                }
-            ]
-        }
+        ]
     },
     {
         "name": "Moonbeam",
@@ -1490,7 +1503,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x1e"
+                    "url": "https://subquery-history-moonbeam-v2-prod.novasama-tech.org"
                 },
                 {
                     "type": "etherscan",
@@ -1503,7 +1516,7 @@
             "staking": [
                 {
                     "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x1e"
+                    "url": "https://subquery-history-moonbeam-v2-prod.novasama-tech.org"
                 }
             ],
             "governance-delegations": [
@@ -1909,7 +1922,7 @@
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x1d"
+                    "url": "https://subquery-history-moonriver-prod.novasama-tech.org"
                 },
                 {
                     "type": "etherscan",
@@ -1922,7 +1935,7 @@
             "staking": [
                 {
                     "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x1d"
+                    "url": "https://subquery-history-moonriver-prod.novasama-tech.org"
                 }
             ],
             "governance-delegations": [
@@ -2161,20 +2174,8 @@
                 "extrinsic": "https://shiden.subscan.io/extrinsic/{hash}",
                 "account": "https://shiden.subscan.io/account/{address}",
                 "multisig": "https://shiden.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
-            },
-            {
-                "name": "Sub.ID",
-                "account": "https://sub.id/{address}"
             }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x40"
-                }
-            ]
-        }
+        ]
     },
     {
         "name": "Bifrost Kusama",
@@ -2446,20 +2447,8 @@
                 "extrinsic": "https://bifrost-kusama.subscan.io/extrinsic/{hash}",
                 "account": "https://bifrost-kusama.subscan.io/account/{address}",
                 "multisig": "https://bifrost-kusama.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
-            },
-            {
-                "name": "Sub.ID",
-                "account": "https://sub.id/{address}"
             }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x38"
-                }
-            ]
-        }
+        ]
     },
     {
         "name": "Basilisk",
@@ -2588,20 +2577,8 @@
                 "extrinsic": "https://basilisk.subscan.io/extrinsic/{hash}",
                 "account": "https://basilisk.subscan.io/account/{address}",
                 "multisig": "https://basilisk.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
-            },
-            {
-                "name": "Sub.ID",
-                "account": "https://sub.id/{address}"
             }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x3f"
-                }
-            ]
-        }
+        ]
     },
     {
         "name": "Altair",
@@ -2637,20 +2614,8 @@
                 "extrinsic": "https://altair.subscan.io/extrinsic/{hash}",
                 "account": "https://altair.subscan.io/account/{address}",
                 "multisig": "https://altair.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
-            },
-            {
-                "name": "Sub.ID",
-                "account": "https://sub.id/{address}"
             }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x37"
-                }
-            ]
-        }
+        ]
     },
     {
         "name": "KILT",
@@ -2694,20 +2659,8 @@
                 "extrinsic": "https://spiritnet.subscan.io/extrinsic/{hash}",
                 "account": "https://spiritnet.subscan.io/account/{address}",
                 "multisig": "https://spiritnet.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
-            },
-            {
-                "name": "Sub.ID",
-                "account": "https://sub.id/{address}"
             }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x3d"
-                }
-            ]
-        }
+        ]
     },
     {
         "name": "QUARTZ",
@@ -2748,27 +2701,7 @@
                     "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/QTZ.svg"
                 }
             }
-        ],
-        "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://quartz.subscan.io/extrinsic/{hash}",
-                "account": "https://quartz.subscan.io/account/{address}",
-                "multisig": "https://quartz.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
-            },
-            {
-                "name": "Sub.ID",
-                "account": "https://sub.id/{address}"
-            }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x3e"
-                }
-            ]
-        }
+        ]
     },
     {
         "name": "Acala",
@@ -3103,20 +3036,8 @@
                 "extrinsic": "https://acala.subscan.io/extrinsic/{hash}",
                 "account": "https://acala.subscan.io/account/{address}",
                 "multisig": "https://acala.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
-            },
-            {
-                "name": "Sub.ID",
-                "account": "https://sub.id/{address}"
             }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://gateway.subquery.network/query/0x3c"
-                }
-            ]
-        }
+        ]
     },
     {
         "name": "Astar",
@@ -3355,10 +3276,6 @@
                 "extrinsic": "https://astar.subscan.io/extrinsic/{hash}",
                 "account": "https://astar.subscan.io/account/{address}",
                 "multisig": "https://astar.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
-            },
-            {
-                "name": "Sub.ID",
-                "account": "https://sub.id/{address}"
             }
         ],
         "externalApi": {
@@ -3669,8 +3586,9 @@
             },
             {
                 "name": "Statescan",
-                "account": "https://statemint.statescan.io/#/accounts/{address}",
-                "event": "https://statemint.statescan.io/#/events/{event}"
+                "account": "https://assethub-polkadot.statescan.io/#/accounts/{address}",
+                "extrinsic": "https://assethub-polkadot.statescan.io/#/extrinsics/{hash}",
+                "event": "https://assethub-polkadot.statescan.io/#/events/{event}"
             }
         ],
         "externalApi": {
@@ -3686,6 +3604,9 @@
                     "url": "https://subquery-proxy-polkadot-ah-prod.novasama-tech.org"
                 }
             ]
+        },
+        "additional": {
+            "identityChain": "0x67fa177a097bfa18f77ea95ab56e9bcdfeb0e5b8a40e46298bb93e16b6fc5008"
         }
     },
     {
@@ -3722,20 +3643,8 @@
                 "extrinsic": "https://robonomics.subscan.io/extrinsic/{hash}",
                 "account": "https://robonomics.subscan.io/account/{address}",
                 "multisig": "https://robonomics.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
-            },
-            {
-                "name": "Sub.ID",
-                "account": "https://sub.id/{address}"
             }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-robonomics"
-                }
-            ]
-        }
+        ]
     },
     {
         "name": "Kintsugi",
@@ -3918,10 +3827,6 @@
                 "extrinsic": "https://kintsugi.subscan.io/extrinsic/{hash}",
                 "account": "https://kintsugi.subscan.io/account/{address}",
                 "multisig": "https://kintsugi.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
-            },
-            {
-                "name": "Sub.ID",
-                "account": "https://sub.id/{address}"
             }
         ],
         "externalApi": {
@@ -3961,29 +3866,17 @@
                 }
             }
         ],
-        "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://zeitgeist.subscan.io/extrinsic/{hash}",
-                "account": "https://zeitgeist.subscan.io/account/{address}",
-                "multisig": "https://zeitgeist.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
-            },
-            {
-                "name": "Sub.ID",
-                "account": "https://sub.id/{address}"
-            }
-        ],
         "externalApi": {
             "history": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-zeitgeist"
+                    "url": "https://subquery-history-zeitgeist-prod.novasama-tech.org"
                 }
             ],
             "staking": [
                 {
                     "type": "subquery",
-                    "url": "https://api.subquery.network/sq/nova-wallet/nova-wallet-zeitgeist"
+                    "url": "https://subquery-history-zeitgeist-prod.novasama-tech.org"
                 }
             ]
         }
@@ -4022,10 +3915,6 @@
                 "extrinsic": "https://integritee.subscan.io/extrinsic/{hash}",
                 "account": "https://integritee.subscan.io/account/{address}",
                 "multisig": "https://integritee.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
-            },
-            {
-                "name": "Sub.ID",
-                "account": "https://sub.id/{address}"
             }
         ],
         "externalApi": {
@@ -4075,10 +3964,6 @@
                 "extrinsic": "https://centrifuge-parachain.subscan.io/extrinsic/{hash}",
                 "account": "https://centrifuge-parachain.subscan.io/account/{address}",
                 "multisig": "https://centrifuge-parachain.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
-            },
-            {
-                "name": "Sub.ID",
-                "account": "https://sub.id/{address}"
             }
         ],
         "externalApi": {
@@ -4889,6 +4774,7 @@
                 "symbol": "SOL-Wormhole",
                 "precision": 9,
                 "type": "orml",
+                "priceId": "solana",
                 "icon": {
                     "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/SOL-Wormhole.svg",
                     "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/SOL-Wormhole.svg"
@@ -6180,6 +6066,12 @@
                 "extrinsic": "https://bridgehub-polkadot.subscan.io/extrinsic/{hash}",
                 "account": "https://bridgehub-polkadot.subscan.io/account/{address}",
                 "multisig": "https://bridgehub-polkadot.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
+            },
+            {
+                "name": "Statescan",
+                "account": "https://bridgehub-polkadot.statescan.io/#/accounts/{address}",
+                "extrinsic": "https://bridgehub-polkadot.statescan.io/#/extrinsics/{hash}",
+                "event": "https://bridgehub-polkadot.statescan.io/#/events/{event}"
             }
         ],
         "externalApi": {
@@ -6189,6 +6081,9 @@
                     "url": "https://subquery-history-polkadot-bh-prod.novasama-tech.org"
                 }
             ]
+        },
+        "additional": {
+            "identityChain": "0x67fa177a097bfa18f77ea95ab56e9bcdfeb0e5b8a40e46298bb93e16b6fc5008"
         }
     },
     {
@@ -6233,6 +6128,12 @@
                 "extrinsic": "https://bridgehub-kusama.subscan.io/extrinsic/{hash}",
                 "account": "https://bridgehub-kusama.subscan.io/account/{address}",
                 "multisig": "https://bridgehub-kusama.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
+            },
+            {
+                "name": "Statescan",
+                "account": "https://bridgehub-kusama.statescan.io/#/accounts/{address}",
+                "extrinsic": "https://bridgehub-kusama.statescan.io/#/extrinsics/{hash}",
+                "event": "https://bridgehub-kusama.statescan.io/#/events/{event}"
             }
         ],
         "externalApi": {
@@ -6242,6 +6143,9 @@
                     "url": "https://subquery-history-kusama-bh-prod.novasama-tech.org"
                 }
             ]
+        },
+        "additional": {
+            "identityChain": "0xc1af4cb4eb3918e5db15086c0cc5ec17fb334f728b7c65dd44bfe1e174ff8b3f"
         }
     },
     {
@@ -6311,116 +6215,6 @@
                 {
                     "type": "subquery",
                     "url": "https://subquery-collectives-polkadot-stg.novasama-tech.org"
-                }
-            ]
-        },
-        "additional": {
-            "identityChain": "0x67fa177a097bfa18f77ea95ab56e9bcdfeb0e5b8a40e46298bb93e16b6fc5008"
-        }
-    },
-    {
-        "name": "Polimec",
-        "specName": "polkadot",
-        "addressPrefix": 41,
-        "chainId": "0x7eb9354488318e7549c722669dcbdcdc526f1fef1420e7944667212f3601fdbd",
-        "parentId": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Polimec.svg",
-        "options": [],
-        "nodes": [
-            {
-                "url": "wss://rpc.polimec.org",
-                "name": "Polimec node"
-            },
-            {
-                "url": "wss://polimec.ibp.network",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://polimec.dotters.network",
-                "name": "IBP2 node"
-            }
-        ],
-        "assets": [
-            {
-                "name": "Polimec token",
-                "assetId": 0,
-                "symbol": "PLMC",
-                "precision": 10,
-                "type": "native",
-                "priceId": "polimec",
-                "icon": {
-                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/PLMC.svg",
-                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/PLMC.svg"
-                }
-            },
-            {
-                "name": "Polkadot",
-                "assetId": 1,
-                "symbol": "DOT",
-                "precision": 10,
-                "type": "statemine",
-                "priceId": "polkadot",
-                "icon": {
-                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/DOT.svg",
-                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/DOT.svg"
-                },
-                "typeExtras": {
-                    "assetId": "0x0100",
-                    "palletName": "ForeignAssets"
-                }
-            },
-            {
-                "name": "USD Tether",
-                "assetId": 2,
-                "symbol": "USDT",
-                "precision": 6,
-                "type": "statemine",
-                "priceId": "tether",
-                "icon": {
-                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/USDT.svg",
-                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/USDT.svg"
-                },
-                "typeExtras": {
-                    "assetId": "0x010300a10f043205011f",
-                    "palletName": "ForeignAssets"
-                }
-            },
-            {
-                "name": "USD Coin",
-                "assetId": 3,
-                "symbol": "USDC",
-                "precision": 6,
-                "type": "statemine",
-                "priceId": "usd-coin",
-                "icon": {
-                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/USDC.svg",
-                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/USDC.svg"
-                },
-                "typeExtras": {
-                    "assetId": "0x010300a10f043205e514",
-                    "palletName": "ForeignAssets"
-                }
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Statescan",
-                "account": "https://polimec.statescan.io/#/accounts/{address}",
-                "event": "https://polimec.statescan.io/#/events/{event}",
-                "extrinsic": "https://polimec.statescan.io/#/extrinsics/{hash}"
-            }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-history-polimec-prod.novasama-tech.org"
-                }
-            ],
-            "staking": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-history-polimec-prod.novasama-tech.org"
                 }
             ]
         }
@@ -6613,6 +6407,12 @@
                 "extrinsic": "https://coretime-polkadot.subscan.io/extrinsic/{hash}",
                 "account": "https://coretime-polkadot.subscan.io/account/{address}",
                 "multisig": "https://coretime-polkadot.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
+            },
+            {
+                "name": "Statescan",
+                "account": "https://coretime-polkadot.statescan.io/#/accounts/{address}",
+                "extrinsic": "https://coretime-polkadot.statescan.io/#/extrinsics/{hash}",
+                "event": "https://coretime-polkadot.statescan.io/#/events/{event}"
             }
         ],
         "externalApi": {
@@ -6622,6 +6422,9 @@
                     "url": "https://subquery-proxy-polkadot-coretime-prod.novasama-tech.org"
                 }
             ]
+        },
+        "additional": {
+            "identityChain": "0x67fa177a097bfa18f77ea95ab56e9bcdfeb0e5b8a40e46298bb93e16b6fc5008"
         }
     },
     {
@@ -6682,6 +6485,12 @@
                 "extrinsic": "https://coretime-kusama.subscan.io/extrinsic/{hash}",
                 "account": "https://coretime-kusama.subscan.io/account/{address}",
                 "multisig": "https://coretime-kusama.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
+            },
+            {
+                "name": "Statescan",
+                "account": "https://coretime-kusama.statescan.io/#/accounts/{address}",
+                "extrinsic": "https://coretime-kusama.statescan.io/#/extrinsics/{hash}",
+                "event": "https://coretime-kusama.statescan.io/#/events/{event}"
             }
         ],
         "externalApi": {
@@ -6691,6 +6500,9 @@
                     "url": "https://subquery-proxy-kusama-coretime-prod.novasama-tech.org"
                 }
             ]
+        },
+        "additional": {
+            "identityChain": "0xc1af4cb4eb3918e5db15086c0cc5ec17fb334f728b7c65dd44bfe1e174ff8b3f"
         }
     }
 ]

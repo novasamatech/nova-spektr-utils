@@ -12,7 +12,7 @@
         "chains": [
             {
                 "chainId": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-                "name": "Polkadot",
+                "name": "Polkadot Relay",
                 "assetId": 0,
                 "assetSymbol": "DOT",
                 "type": "native"
@@ -155,17 +155,6 @@
                 "type": "native"
             },
             {
-                "chainId": "0x7eb9354488318e7549c722669dcbdcdc526f1fef1420e7944667212f3601fdbd",
-                "name": "Polimec",
-                "assetId": 1,
-                "assetSymbol": "DOT",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "0x0100",
-                    "palletName": "ForeignAssets"
-                }
-            },
-            {
                 "chainId": "0xefb56e30d9b4a24099f88820987d0f45fb645992416535d87650d98e00f46fc4",
                 "name": "Polkadot Coretime",
                 "assetId": 0,
@@ -187,7 +176,7 @@
         "chains": [
             {
                 "chainId": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-                "name": "Kusama",
+                "name": "Kusama Relay",
                 "assetId": 0,
                 "assetSymbol": "KSM",
                 "type": "native"
@@ -774,17 +763,6 @@
                     "currencyIdType": "SpacewalkPrimitivesCurrencyId",
                     "existentialDeposit": "1000",
                     "transfersEnabled": true
-                }
-            },
-            {
-                "chainId": "0x7eb9354488318e7549c722669dcbdcdc526f1fef1420e7944667212f3601fdbd",
-                "name": "Polimec",
-                "assetId": 2,
-                "assetSymbol": "USDT",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "0x010300a10f043205011f",
-                    "palletName": "ForeignAssets"
                 }
             }
         ]
@@ -3474,17 +3452,6 @@
                     "existentialDeposit": "1000",
                     "transfersEnabled": true
                 }
-            },
-            {
-                "chainId": "0x7eb9354488318e7549c722669dcbdcdc526f1fef1420e7944667212f3601fdbd",
-                "name": "Polimec",
-                "assetId": 3,
-                "assetSymbol": "USDC",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "0x010300a10f043205e514",
-                    "palletName": "ForeignAssets"
-                }
             }
         ]
     },
@@ -3991,28 +3958,6 @@
         ]
     },
     {
-        "name": "GIGADOT",
-        "precision": 12,
-        "icon": {
-            "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/GIGADOT.svg",
-            "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/GIGADOT.svg"
-        },
-        "symbol": "GIGADOT",
-        "isTestToken": false,
-        "chains": [
-            {
-                "chainId": "0x68d56f15f85d3136970ec16946040bc1752654e906147f7e43e9d539d7c3de2f",
-                "name": "Polkadot Asset Hub",
-                "assetId": 25,
-                "assetSymbol": "GIGADOT",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "50000092"
-                }
-            }
-        ]
-    },
-    {
         "name": "Zeitgeist",
         "precision": 10,
         "priceId": "zeitgeist",
@@ -4294,6 +4239,7 @@
     {
         "name": "SOL-Wormhole",
         "precision": 9,
+        "priceId": "solana",
         "icon": {
             "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/SOL-Wormhole.svg",
             "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/SOL-Wormhole.svg"
@@ -4471,26 +4417,26 @@
         ]
     },
     {
-        "name": "GIGADOT",
+        "name": "GDOT",
         "precision": 18,
         "priceId": "gigadot",
         "icon": {
             "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/GIGADOT.svg",
             "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/GIGADOT.svg"
         },
-        "symbol": "GIGADOT",
+        "symbol": "GDOT",
         "isTestToken": false,
         "chains": [
             {
                 "chainId": "0xafdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
                 "name": "Hydration",
                 "assetId": 58,
-                "assetSymbol": "GIGADOT",
+                "assetSymbol": "GDOT",
                 "type": "orml",
                 "typeExtras": {
                     "currencyIdScale": "0x45000000",
                     "currencyIdType": "u32",
-                    "existentialDeposit": "0",
+                    "existentialDeposit": "5290724013368937",
                     "transfersEnabled": true
                 }
             }
@@ -4756,26 +4702,6 @@
                 "name": "Vara",
                 "assetId": 0,
                 "assetSymbol": "VARA",
-                "type": "native"
-            }
-        ]
-    },
-    {
-        "name": "Polimec token",
-        "precision": 10,
-        "priceId": "polimec",
-        "icon": {
-            "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/PLMC.svg",
-            "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/PLMC.svg"
-        },
-        "symbol": "PLMC",
-        "isTestToken": false,
-        "chains": [
-            {
-                "chainId": "0x7eb9354488318e7549c722669dcbdcdc526f1fef1420e7944667212f3601fdbd",
-                "name": "Polimec",
-                "assetId": 0,
-                "assetSymbol": "PLMC",
                 "type": "native"
             }
         ]
