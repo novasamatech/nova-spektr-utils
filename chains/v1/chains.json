@@ -1,6 +1,6 @@
 [
     {
-        "name": "Polkadot",
+        "name": "Polkadot Relay",
         "specName": "polkadot",
         "addressPrefix": 0,
         "chainId": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
@@ -113,14 +113,13 @@
         }
     },
     {
-        "name": "Kusama",
+        "name": "Kusama Relay",
         "specName": "kusama",
         "addressPrefix": 2,
         "chainId": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Kusama.svg",
         "options": [
             "multisig",
-            "governance",
             "regular_proxy",
             "pure_proxy"
         ],
@@ -170,7 +169,6 @@
                 "precision": 12,
                 "type": "native",
                 "priceId": "kusama",
-                "staking": "relaychain",
                 "icon": {
                     "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/KSM.svg",
                     "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/KSM.svg"
@@ -304,6 +302,7 @@
         "options": [
             "multisig",
             "regular_proxy",
+            "governance",
             "pure_proxy"
         ],
         "nodes": [
@@ -328,6 +327,7 @@
                 "precision": 12,
                 "type": "native",
                 "priceId": "kusama",
+                "staking": "relaychain",
                 "icon": {
                     "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/KSM.svg",
                     "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/KSM.svg"
@@ -461,6 +461,18 @@
                 {
                     "type": "subquery",
                     "url": "https://subquery-proxy-kusama-ah-prod.novasama-tech.org"
+                }
+            ],
+            "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-kusama-ah-prod.novasama-tech.org"
+                }
+            ],
+            "governance-delegations": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-governance-kusama-ah-prod.novasama-tech.org"
                 }
             ]
         },
