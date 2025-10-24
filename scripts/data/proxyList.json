@@ -241,7 +241,7 @@
       "collectives": [
         {
           "type": "subquery",
-          "url": "https://subquery-collectives-polkadot-stg.novasama-tech.org"
+          "url": "https://subquery-collectives-polkadot-prod.novasama-tech.org"
         }
       ]
     }
@@ -256,7 +256,7 @@
       "collectives": [
         {
           "type": "subquery",
-          "url": "https://subquery-collectives-westend-stg.novasama-tech.org"
+          "url": "https://subquery-collectives-westend-prod.novasama-tech.org"
         }
       ]
     }
@@ -271,7 +271,7 @@
       "collectives": [
         {
           "type": "subquery",
-          "url": "https://subquery-collectives-testnet-stg.novasama-tech.org"
+          "url": "https://subquery-collectives-testnet-prod.novasama-tech.org"
         }
       ]
     }
