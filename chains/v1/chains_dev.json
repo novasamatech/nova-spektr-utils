@@ -120,7 +120,6 @@
         "chainId": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Kusama.svg",
         "options": [
-            "multisig",
             "regular_proxy",
             "pure_proxy"
         ],
@@ -564,6 +563,18 @@
                     "url": "https://subquery-history-kusama-ah-prod.novasama-tech.org"
                 }
             ],
+            "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-kusama-prod.novasama-tech.org"
+                }
+            ],
+            "governance-delegations": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-governance-kusama-ah-prod.novasama-tech.org"
+                }
+            ],
             "proxy": [
                 {
                     "type": "subquery",
@@ -603,7 +614,7 @@
                 "name": "Acala Foundation 3 node"
             },
             {
-                "url": "wss://karura-rpc.dwellir.com",
+                "url": "wss://karura-rpc.n.dwellir.com",
                 "name": "Dwellir node"
             }
         ],
@@ -1515,7 +1526,7 @@
                 "name": "StakeTechnologies node"
             },
             {
-                "url": "wss://shiden-rpc.dwellir.com",
+                "url": "wss://shiden-rpc.n.dwellir.com",
                 "name": "Dwellir node"
             },
             {
@@ -2432,10 +2443,6 @@
             {
                 "url": "wss://us-ws-quartz.unique.network",
                 "name": "Unique US node"
-            },
-            {
-                "url": "wss://asia-ws-quartz.unique.network",
-                "name": "Unique Asia node"
             }
         ],
         "assets": [
@@ -2482,7 +2489,7 @@
                 "name": "Acala Foundation 3 node"
             },
             {
-                "url": "wss://acala-rpc.dwellir.com",
+                "url": "wss://acala-rpc.n.dwellir.com",
                 "name": "Dwellir node"
             }
         ],
@@ -5260,7 +5267,7 @@
         "options": [],
         "nodes": [
             {
-                "url": "wss://phala-rpc.dwellir.com",
+                "url": "wss://phala-rpc.n.dwellir.com",
                 "name": "Dwellir node"
             },
             {
@@ -6278,7 +6285,9 @@
         "parentId": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Polkadot_Collectives.svg",
         "options": [
-            "regular_proxy"
+            "multisig",
+            "regular_proxy",
+            "pure_proxy"
         ],
         "nodes": [
             {
@@ -6788,7 +6797,8 @@
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Westend_Testnet.svg",
         "options": [
             "testnet",
-            "regular_proxy"
+            "regular_proxy",
+            "pure_proxy"
         ],
         "nodes": [
             {
@@ -6827,7 +6837,8 @@
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Westend_Testnet.svg",
         "options": [
             "testnet",
-            "regular_proxy"
+            "regular_proxy",
+            "pure_proxy"
         ],
         "nodes": [
             {

@@ -109,7 +109,8 @@
             ]
         },
         "additional": {
-            "identityChain": "0x67fa177a097bfa18f77ea95ab56e9bcdfeb0e5b8a40e46298bb93e16b6fc5008"
+            "identityChain": "0x67fa177a097bfa18f77ea95ab56e9bcdfeb0e5b8a40e46298bb93e16b6fc5008",
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -119,7 +120,6 @@
         "chainId": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Kusama.svg",
         "options": [
-            "multisig",
             "regular_proxy",
             "pure_proxy"
         ],
@@ -216,7 +216,8 @@
             ]
         },
         "additional": {
-            "identityChain": "0xc1af4cb4eb3918e5db15086c0cc5ec17fb334f728b7c65dd44bfe1e174ff8b3f"
+            "identityChain": "0xc1af4cb4eb3918e5db15086c0cc5ec17fb334f728b7c65dd44bfe1e174ff8b3f",
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -290,6 +291,9 @@
                     "url": "https://subquery-proxy-westend-prod.novasama-tech.org"
                 }
             ]
+        },
+        "additional": {
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -457,10 +461,10 @@
                     "url": "https://subquery-history-kusama-ah-prod.novasama-tech.org"
                 }
             ],
-            "proxy": [
+            "governance-delegations": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-proxy-kusama-ah-prod.novasama-tech.org"
+                    "url": "https://subquery-governance-kusama-ah-prod.novasama-tech.org"
                 }
             ],
             "staking": [
@@ -469,16 +473,17 @@
                     "url": "https://subquery-history-kusama-ah-prod.novasama-tech.org"
                 }
             ],
-            "governance-delegations": [
+            "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-governance-kusama-ah-prod.novasama-tech.org"
+                    "url": "https://subquery-proxy-kusama-ah-prod.novasama-tech.org"
                 }
             ]
         },
         "additional": {
             "identityChain": "0xc1af4cb4eb3918e5db15086c0cc5ec17fb334f728b7c65dd44bfe1e174ff8b3f",
-            "timelineChain": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe"
+            "timelineChain": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -552,7 +557,8 @@
             ]
         },
         "additional": {
-            "identityChain": "0x67fa177a097bfa18f77ea95ab56e9bcdfeb0e5b8a40e46298bb93e16b6fc5008"
+            "identityChain": "0x67fa177a097bfa18f77ea95ab56e9bcdfeb0e5b8a40e46298bb93e16b6fc5008",
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -651,7 +657,7 @@
                 "name": "Acala Foundation 3 node"
             },
             {
-                "url": "wss://karura-rpc.dwellir.com",
+                "url": "wss://karura-rpc.n.dwellir.com",
                 "name": "Dwellir node"
             }
         ],
@@ -1121,7 +1127,10 @@
                 "account": "https://karura.subscan.io/account/{address}",
                 "multisig": "https://karura.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
             }
-        ]
+        ],
+        "additional": {
+            "supportsGenericLedgerApp": true
+        }
     },
     {
         "name": "Moonbeam",
@@ -1544,6 +1553,9 @@
                     "url": "https://subquery-proxy-moonbeam-prod.novasama-tech.org"
                 }
             ]
+        },
+        "additional": {
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -1963,6 +1975,9 @@
                     "url": "https://subquery-proxy-moonriver-prod.novasama-tech.org"
                 }
             ]
+        },
+        "additional": {
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -1979,7 +1994,7 @@
                 "name": "StakeTechnologies node"
             },
             {
-                "url": "wss://shiden-rpc.dwellir.com",
+                "url": "wss://shiden-rpc.n.dwellir.com",
                 "name": "Dwellir node"
             },
             {
@@ -2461,7 +2476,10 @@
                 "account": "https://bifrost-kusama.subscan.io/account/{address}",
                 "multisig": "https://bifrost-kusama.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
             }
-        ]
+        ],
+        "additional": {
+            "supportsGenericLedgerApp": true
+        }
     },
     {
         "name": "Basilisk",
@@ -2673,7 +2691,10 @@
                 "account": "https://spiritnet.subscan.io/account/{address}",
                 "multisig": "https://spiritnet.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
             }
-        ]
+        ],
+        "additional": {
+            "supportsGenericLedgerApp": true
+        }
     },
     {
         "name": "QUARTZ",
@@ -2695,10 +2716,6 @@
             {
                 "url": "wss://us-ws-quartz.unique.network",
                 "name": "Unique US node"
-            },
-            {
-                "url": "wss://asia-ws-quartz.unique.network",
-                "name": "Unique Asia node"
             }
         ],
         "assets": [
@@ -2742,7 +2759,7 @@
                 "name": "Acala Foundation 3 node"
             },
             {
-                "url": "wss://acala-rpc.dwellir.com",
+                "url": "wss://acala-rpc.n.dwellir.com",
                 "name": "Dwellir node"
             }
         ],
@@ -3050,7 +3067,10 @@
                 "account": "https://acala.subscan.io/account/{address}",
                 "multisig": "https://acala.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
             }
-        ]
+        ],
+        "additional": {
+            "supportsGenericLedgerApp": true
+        }
     },
     {
         "name": "Astar",
@@ -3066,7 +3086,7 @@
                 "name": "Astar node"
             },
             {
-                "url": "wss://astar-rpc.dwellir.com",
+                "url": "wss://astar-rpc.n.dwellir.com",
                 "name": "Dwellir node"
             },
             {
@@ -3298,6 +3318,9 @@
                     "url": "https://subquery-history-astar-prod.novasama-tech.org"
                 }
             ]
+        },
+        "additional": {
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -3619,7 +3642,8 @@
             ]
         },
         "additional": {
-            "identityChain": "0x67fa177a097bfa18f77ea95ab56e9bcdfeb0e5b8a40e46298bb93e16b6fc5008"
+            "identityChain": "0x67fa177a097bfa18f77ea95ab56e9bcdfeb0e5b8a40e46298bb93e16b6fc5008",
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -4962,6 +4986,9 @@
                     "url": "https://subquery-proxy-hydradx-prod.novasama-tech.org"
                 }
             ]
+        },
+        "additional": {
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -5206,7 +5233,7 @@
         "options": [],
         "nodes": [
             {
-                "url": "wss://phala-rpc.dwellir.com",
+                "url": "wss://phala-rpc.n.dwellir.com",
                 "name": "Dwellir node"
             },
             {
@@ -5251,6 +5278,9 @@
                     "url": "https://subquery-history-phala-prod.novasama-tech.org"
                 }
             ]
+        },
+        "additional": {
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -5581,6 +5611,9 @@
                     "url": "https://subquery-history-bifrost-polkadot-prod.novasama-tech.org"
                 }
             ]
+        },
+        "additional": {
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -5703,6 +5736,9 @@
                     "url": "https://subquery-history-amplitude-prod.novasama-tech.org"
                 }
             ]
+        },
+        "additional": {
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -5928,6 +5964,9 @@
                     "url": "https://subquery-history-pendulum-prod.novasama-tech.org"
                 }
             ]
+        },
+        "additional": {
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -5980,6 +6019,9 @@
                     "url": "https://subquery-proxy-bittensor-prod.novasama-tech.org"
                 }
             ]
+        },
+        "additional": {
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -6035,6 +6077,9 @@
                     "url": "https://subquery-history-vara-prod.novasama-tech.org"
                 }
             ]
+        },
+        "additional": {
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -6169,7 +6214,9 @@
         "parentId": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Polkadot_Collectives.svg",
         "options": [
-            "regular_proxy"
+            "multisig",
+            "regular_proxy",
+            "pure_proxy"
         ],
         "nodes": [
             {
@@ -6300,6 +6347,9 @@
                     "url": "https://subquery-proxy-mythos-prod.novasama-tech.org"
                 }
             ]
+        },
+        "additional": {
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -6437,7 +6487,8 @@
             ]
         },
         "additional": {
-            "identityChain": "0x67fa177a097bfa18f77ea95ab56e9bcdfeb0e5b8a40e46298bb93e16b6fc5008"
+            "identityChain": "0x67fa177a097bfa18f77ea95ab56e9bcdfeb0e5b8a40e46298bb93e16b6fc5008",
+            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -6515,7 +6566,8 @@
             ]
         },
         "additional": {
-            "identityChain": "0xc1af4cb4eb3918e5db15086c0cc5ec17fb334f728b7c65dd44bfe1e174ff8b3f"
+            "identityChain": "0xc1af4cb4eb3918e5db15086c0cc5ec17fb334f728b7c65dd44bfe1e174ff8b3f",
+            "supportsGenericLedgerApp": true
         }
     }
 ]
