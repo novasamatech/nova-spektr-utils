@@ -7,7 +7,6 @@
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Polkadot.svg",
         "options": [
             "multisig",
-            "governance",
             "regular_proxy",
             "pure_proxy"
         ],
@@ -61,7 +60,6 @@
                 "precision": 10,
                 "type": "native",
                 "priceId": "polkadot",
-                "staking": "relaychain",
                 "icon": {
                     "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/DOT.svg",
                     "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/DOT.svg"
@@ -470,7 +468,7 @@
             "staking": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-history-kusama-ah-prod.novasama-tech.org"
+                    "url": "https://subquery-history-kusama-prod.novasama-tech.org"
                 }
             ],
             "proxy": [
@@ -3361,6 +3359,7 @@
                 "precision": 10,
                 "type": "native",
                 "priceId": "polkadot",
+                "staking": "relaychain",
                 "icon": {
                     "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/DOT.svg",
                     "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/DOT.svg"
@@ -3634,6 +3633,18 @@
                     "url": "https://subquery-history-polkadot-ah-prod.novasama-tech.org"
                 }
             ],
+            "staking": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-history-polkadot-prod.novasama-tech.org"
+                }
+            ],
+            "governance-delegations": [
+                {
+                    "type": "subquery",
+                    "url": "https://subquery-governance-polkadot-ah-prod.novasama-tech.org"
+                }
+            ],
             "proxy": [
                 {
                     "type": "subquery",
@@ -3643,6 +3654,7 @@
         },
         "additional": {
             "identityChain": "0x67fa177a097bfa18f77ea95ab56e9bcdfeb0e5b8a40e46298bb93e16b6fc5008",
+            "timelineChain": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
             "supportsGenericLedgerApp": true
         }
     },
@@ -6275,6 +6287,12 @@
                 {
                     "type": "subquery",
                     "url": "https://subquery-collectives-polkadot-prod.novasama-tech.org"
+                }
+            ],
+            "proxy": [
+                {
+                    "type":"subquery",
+                    "url": "https://subquery-accounts-stg.novasama-tech.org"
                 }
             ]
         }
