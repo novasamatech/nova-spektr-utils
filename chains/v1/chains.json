@@ -3331,7 +3331,8 @@
         "options": [
             "multisig",
             "regular_proxy",
-            "pure_proxy"
+            "pure_proxy",
+            "governance"
         ],
         "nodes": [
             {
