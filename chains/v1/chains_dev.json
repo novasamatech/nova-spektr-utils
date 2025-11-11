@@ -3511,6 +3511,7 @@
                 "precision": 10,
                 "type": "native",
                 "priceId": "polkadot",
+                "staking": "relaychain",
                 "icon": {
                     "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/DOT.svg",
                     "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/DOT.svg"
@@ -6357,6 +6358,12 @@
                 {
                     "type": "subquery",
                     "url": "https://subquery-collectives-polkadot-prod.novasama-tech.org"
+                }
+            ],
+            "proxy": [
+                {
+                    "type":"subquery",
+                    "url": "https://subquery-accounts-stg.novasama-tech.org"
                 }
             ]
         },
