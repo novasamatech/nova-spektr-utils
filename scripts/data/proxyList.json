@@ -10,7 +10,7 @@
       "proxy": [
         {
           "type": "subquery",
-          "url": "https://subquery-proxy-polkadot-prod.novasama-tech.org"
+          "url": "https://subquery-accounts-prod.novasama-tech.org"
         }
       ]
     }
@@ -26,7 +26,7 @@
       "proxy": [
         {
           "type": "subquery",
-          "url": "https://subquery-proxy-kusama-prod.novasama-tech.org"
+          "url": "https://subquery-accounts-prod.novasama-tech.org"
         }
       ]
     }
@@ -42,7 +42,7 @@
       "proxy": [
         {
           "type": "subquery",
-          "url": "https://subquery-proxy-westend-prod.novasama-tech.org"
+          "url": "https://subquery-accounts-prod.novasama-tech.org"
         }
       ]
     }
@@ -58,7 +58,7 @@
       "proxy": [
         {
           "type": "subquery",
-          "url": "https://subquery-proxy-moonbeam-prod.novasama-tech.org"
+          "url": "https://subquery-accounts-prod.novasama-tech.org"
         }
       ]
     }
@@ -74,7 +74,7 @@
       "proxy": [
         {
           "type": "subquery",
-          "url": "https://subquery-proxy-moonriver-prod.novasama-tech.org"
+          "url": "https://subquery-accounts-prod.novasama-tech.org"
         }
       ]
     }
@@ -98,7 +98,7 @@
       "proxy": [
         {
           "type": "subquery",
-          "url": "https://subquery-proxy-hydradx-prod.novasama-tech.org"
+          "url": "https://subquery-accounts-prod.novasama-tech.org"
         }
       ]
     }
@@ -114,7 +114,7 @@
       "proxy": [
         {
           "type": "subquery",
-          "url": "https://subquery-proxy-bittensor-prod.novasama-tech.org"
+          "url": "https://subquery-accounts-prod.novasama-tech.org"
         }
       ]
     }
@@ -130,7 +130,7 @@
       "proxy": [
         {
           "type": "subquery",
-          "url": "https://subquery-proxy-avail-prod.novasama-tech.org"
+          "url": "https://subquery-accounts-prod.novasama-tech.org"
         }
       ]
     }
@@ -146,7 +146,7 @@
       "proxy": [
         {
           "type": "subquery",
-          "url": "https://subquery-proxy-aleph-zero-prod.novasama-tech.org"
+          "url": "https://subquery-accounts-prod.novasama-tech.org"
         }
       ]
     }
@@ -162,7 +162,7 @@
       "proxy": [
         {
           "type": "subquery",
-          "url": "https://subquery-proxy-polkadot-ah-prod.novasama-tech.org"
+          "url": "https://subquery-accounts-prod.novasama-tech.org"
         }
       ]
     }
@@ -178,7 +178,7 @@
       "proxy": [
         {
           "type": "subquery",
-          "url": "https://subquery-proxy-polkadot-people-prod.novasama-tech.org"
+          "url": "https://subquery-accounts-prod.novasama-tech.org"
         }
       ]
     }
@@ -194,7 +194,7 @@
       "proxy": [
         {
           "type": "subquery",
-          "url": "https://subquery-proxy-kusama-people-prod.novasama-tech.org"
+          "url": "https://subquery-accounts-prod.novasama-tech.org"
         }
       ]
     }
@@ -210,7 +210,7 @@
       "proxy": [
         {
           "type": "subquery",
-          "url": "https://subquery-proxy-kusama-ah-prod.novasama-tech.org"
+          "url": "https://subquery-accounts-prod.novasama-tech.org"
         }
       ]
     }
@@ -226,7 +226,7 @@
       "proxy": [
         {
           "type": "subquery",
-          "url": "https://subquery-proxy-mythos-prod.novasama-tech.org"
+          "url": "https://subquery-accounts-prod.novasama-tech.org"
         }
       ]
     }
@@ -297,7 +297,7 @@
       "proxy": [
         {
           "type": "subquery",
-          "url": "https://subquery-proxy-testnet-prod.novasama-tech.org"
+          "url": "https://subquery-accounts-prod.novasama-tech.org"
         }
       ]
     }
@@ -313,7 +313,7 @@
       "proxy": [
         {
           "type": "subquery",
-          "url": "https://subquery-proxy-kusama-coretime-prod.novasama-tech.org"
+          "url": "https://subquery-accounts-prod.novasama-tech.org"
         }
       ]
     }
@@ -329,7 +329,7 @@
       "proxy": [
         {
           "type": "subquery",
-          "url": "https://subquery-proxy-polkadot-coretime-prod.novasama-tech.org"
+          "url": "https://subquery-accounts-prod.novasama-tech.org"
         }
       ]
     }
@@ -345,7 +345,7 @@
       "proxy": [
         {
           "type": "subquery",
-          "url": "https://subquery-proxy-westend-ah-prod.novasama-tech.org"
+          "url": "https://subquery-accounts-prod.novasama-tech.org"
         }
       ]
     }
