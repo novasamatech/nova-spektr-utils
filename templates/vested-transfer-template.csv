@@ -1,0 +1,4 @@
+# example of a csv file
+# address in ss58 format, locked - amount in planks, starting_block - block number, per_block - amount of planks per block
+target,locked,starting_block,per_block
+5C5BDLw8tzzWB6XQbVPuzeL34d6GmPYPH1NaqsWBaJWzz42J,1000000000000,123456,100000000
