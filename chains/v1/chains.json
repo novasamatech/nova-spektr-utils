@@ -305,7 +305,8 @@
             "multisig",
             "regular_proxy",
             "governance",
-            "pure_proxy"
+            "pure_proxy",
+            "vested_transfer"
         ],
         "nodes": [
             {
@@ -3332,7 +3333,8 @@
             "multisig",
             "regular_proxy",
             "pure_proxy",
-            "governance"
+            "governance",
+            "vested_transfer"
         ],
         "nodes": [
             {
