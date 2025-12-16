@@ -310,7 +310,8 @@
             "pure_proxy",
             "regular_proxy",
             "governance",
-            "vested_transfer"
+            "vested_transfer",
+            "multi_transfer"
         ],
         "nodes": [
             {
@@ -409,7 +410,8 @@
             "regular_proxy",
             "governance",
             "pure_proxy",
-            "vested_transfer"
+            "vested_transfer",
+            "multi_transfer"
         ],
         "nodes": [
             {
@@ -3487,7 +3489,8 @@
             "regular_proxy",
             "pure_proxy",
             "governance",
-            "vested_transfer"
+            "vested_transfer",
+            "multi_transfer"
         ],
         "nodes": [
             {
