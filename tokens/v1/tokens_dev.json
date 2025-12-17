@@ -272,16 +272,6 @@
                 }
             },
             {
-                "chainId": "0x631ccc82a078481584041656af292834e1ae6daab61d2875b4dd0c14bb9b17bc",
-                "name": "Robonomics",
-                "assetId": 1,
-                "assetSymbol": "KSM",
-                "type": "statemine",
-                "typeExtras": {
-                    "assetId": "4294967295"
-                }
-            },
-            {
                 "chainId": "0xafdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
                 "name": "Hydration",
                 "assetId": 52,
@@ -1669,13 +1659,6 @@
                 "typeExtras": {
                     "assetId": "105075627293246237499203909093923548958"
                 }
-            },
-            {
-                "chainId": "0xcdedc8eadbfa209d3f207bba541e57c3c58a667b05a2e1d1e86353c9000758da",
-                "name": "Integritee Parachain",
-                "assetId": 0,
-                "assetSymbol": "TEER",
-                "type": "native"
             }
         ]
     },
@@ -1990,13 +1973,6 @@
                     "existentialDeposit": "1683502",
                     "transfersEnabled": true
                 }
-            },
-            {
-                "chainId": "0x631ccc82a078481584041656af292834e1ae6daab61d2875b4dd0c14bb9b17bc",
-                "name": "Robonomics",
-                "assetId": 0,
-                "assetSymbol": "XRT",
-                "type": "native"
             }
         ]
     },
@@ -4432,7 +4408,7 @@
                 "name": "Hydration",
                 "assetId": 58,
                 "assetSymbol": "GDOT",
-                "type": "orml",
+                "type": "orml-hydration-evm",
                 "typeExtras": {
                     "currencyIdScale": "0x45000000",
                     "currencyIdType": "u32",
@@ -4457,7 +4433,7 @@
                 "name": "Hydration",
                 "assetId": 60,
                 "assetSymbol": "aDOT",
-                "type": "orml",
+                "type": "orml-hydration-evm",
                 "typeExtras": {
                     "currencyIdScale": "0xe9030000",
                     "currencyIdType": "u32",

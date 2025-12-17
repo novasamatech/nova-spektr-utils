@@ -32,10 +32,6 @@
                 "name": "Public node"
             },
             {
-                "url": "wss://polkadot-rpc.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
                 "url": "wss://dot-rpc.stakeworld.io",
                 "name": "Stakeworld node"
             },
@@ -143,10 +139,6 @@
                 "name": "Public node"
             },
             {
-                "url": "wss://kusama-rpc.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
                 "url": "wss://rpc-kusama.luckyfriday.io",
                 "name": "LuckyFriday node"
             },
@@ -231,10 +223,6 @@
             "pure_proxy"
         ],
         "nodes": [
-            {
-                "url": "wss://westend-rpc.dwellir.com",
-                "name": "Dwellir node"
-            },
             {
                 "url": "wss://westend-rpc.polkadot.io",
                 "name": "Parity node"
@@ -421,10 +409,6 @@
             {
                 "url": "wss://asset-hub-kusama.dotters.network",
                 "name": "IBP2 node"
-            },
-            {
-                "url": "wss://asset-hub-kusama-rpc.dwellir.com",
-                "name": "Dwellir node"
             }
         ],
         "assets": [
@@ -1117,10 +1101,6 @@
             {
                 "url": "wss://moonriver.public.curie.radiumblock.co/ws",
                 "name": "RadiumBlock node"
-            },
-            {
-                "url": "wss://moonriver-rpc.dwellir.com",
-                "name": "Dwellir node"
             }
         ],
         "assets": [
@@ -2220,12 +2200,12 @@
         "options": [],
         "nodes": [
             {
-                "url": "wss://rpc.basilisk.cloud",
-                "name": "Basilisk node"
+                "url": "wss://basilisk-rpc.n.dwellir.com",
+                "name": "Dwellir node"
             },
             {
-                "url": "wss://basilisk-rpc.dwellir.com",
-                "name": "Dwellir node"
+                "url": "wss://rpc.basilisk.cloud",
+                "name": "Basilisk node"
             }
         ],
         "assets": [
@@ -2833,10 +2813,6 @@
             {
                 "url": "wss://moonbeam.public.curie.radiumblock.co/ws",
                 "name": "RadiumBlock node"
-            },
-            {
-                "url": "wss://moonbeam.public.blastapi.io",
-                "name": "Blast node"
             }
         ],
         "assets": [
@@ -3494,8 +3470,8 @@
         ],
         "nodes": [
             {
-                "url": "wss://rpc-assethub.novasama-tech.org",
-                "name": "Novasama node"
+                "url": "wss://asset-hub-polkadot-rpc.n.dwellir.com",
+                "name": "Dwellir node"
             },
             {
                 "url": "wss://sys.ibp.network/asset-hub-polkadot",
@@ -3504,10 +3480,6 @@
             {
                 "url": "wss://asset-hub-polkadot.dotters.network",
                 "name": "IBP2 node"
-            },
-            {
-                "url": "wss://asset-hub-polkadot-rpc.dwellir.com",
-                "name": "Dwellir node"
             }
         ],
         "assets": [
@@ -3818,58 +3790,6 @@
         }
     },
     {
-        "name": "Robonomics",
-        "specName": "kusama",
-        "addressPrefix": 32,
-        "chainId": "0x631ccc82a078481584041656af292834e1ae6daab61d2875b4dd0c14bb9b17bc",
-        "parentId": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Robonomics.svg",
-        "options": [],
-        "nodes": [
-            {
-                "url": "wss://kusama.rpc.robonomics.network/",
-                "name": "Airalab node"
-            }
-        ],
-        "assets": [
-            {
-                "name": "Robonomics",
-                "assetId": 0,
-                "symbol": "XRT",
-                "precision": 9,
-                "type": "native",
-                "priceId": "robonomics-network",
-                "icon": {
-                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/XRT.svg",
-                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/XRT.svg"
-                }
-            },
-            {
-                "name": "Kusama",
-                "assetId": 1,
-                "symbol": "KSM",
-                "precision": 12,
-                "type": "statemine",
-                "priceId": "kusama",
-                "icon": {
-                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/KSM.svg",
-                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/KSM.svg"
-                },
-                "typeExtras": {
-                    "assetId": "4294967295"
-                }
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://robonomics.subscan.io/extrinsic/{hash}",
-                "account": "https://robonomics.subscan.io/account/{address}",
-                "multisig": "https://robonomics.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
-            }
-        ]
-    },
-    {
         "name": "Zeitgeist",
         "specName": "kusama",
         "addressPrefix": 73,
@@ -3910,54 +3830,6 @@
                     "url": "https://subquery-history-zeitgeist-prod.novasama-tech.org"
                 }
             ]
-        }
-    },
-    {
-        "name": "Integritee Parachain",
-        "specName": "kusama",
-        "addressPrefix": 13,
-        "chainId": "0xcdedc8eadbfa209d3f207bba541e57c3c58a667b05a2e1d1e86353c9000758da",
-        "parentId": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Integritee.svg",
-        "options": [],
-        "nodes": [
-            {
-                "url": "wss://kusama.api.integritee.network",
-                "name": "Integritee node"
-            }
-        ],
-        "assets": [
-            {
-                "name": "Integritee",
-                "assetId": 0,
-                "symbol": "TEER",
-                "precision": 12,
-                "type": "native",
-                "priceId": "integritee",
-                "icon": {
-                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/TEER.svg",
-                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/TEER.svg"
-                }
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://integritee.subscan.io/extrinsic/{hash}",
-                "account": "https://integritee.subscan.io/account/{address}",
-                "multisig": "https://integritee.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
-            }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-history-integritee-prod.novasama-tech.org"
-                }
-            ]
-        },
-        "additional": {
-            "supportsGenericLedgerApp": true
         }
     },
     {
@@ -4041,10 +3913,6 @@
             {
                 "url": "wss://hydration.dotters.network",
                 "name": "IBP2 node"
-            },
-            {
-                "url": "wss://hydradx-rpc.dwellir.com",
-                "name": "Dwellir node"
             }
         ],
         "assets": [
@@ -4969,7 +4837,7 @@
                 "assetId": 58,
                 "symbol": "GDOT",
                 "precision": 18,
-                "type": "orml",
+                "type": "orml-hydration-evm",
                 "priceId": "gigadot",
                 "icon": {
                     "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/GIGADOT.svg",
@@ -4987,7 +4855,7 @@
                 "assetId": 60,
                 "symbol": "aDOT",
                 "precision": 10,
-                "type": "orml",
+                "type": "orml-hydration-evm",
                 "icon": {
                     "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/DOT.svg",
                     "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/DOT.svg"
@@ -5288,10 +5156,6 @@
             {
                 "url": "wss://phala-rpc.n.dwellir.com",
                 "name": "Dwellir node"
-            },
-            {
-                "url": "wss://rpc.helikon.io/phala",
-                "name": "Helikon node"
             },
             {
                 "url": "wss://api.phala.network/ws",
@@ -6070,6 +5934,14 @@
         ],
         "nodes": [
             {
+                "url": "wss://lite.sub.latent.to:443",
+                "name": "Latent Holdings (Lite) node"
+            },
+            {
+                "url": "wss://bittensor-finney.api.onfinality.io/public-ws",
+                "name": "OnFinality (Archive) node"
+            },
+            {
                 "url": "wss://entrypoint-finney.opentensor.ai:443",
                 "name": "Opentensor Fdn node"
             }
@@ -6369,7 +6241,7 @@
             ],
             "proxy": [
                 {
-                    "type":"subquery",
+                    "type": "subquery",
                     "url": "https://subquery-accounts-stg.novasama-tech.org"
                 }
             ]
@@ -6590,14 +6462,6 @@
             {
                 "url": "wss://polkadot-mythos-rpc.polkadot.io",
                 "name": "Parity node"
-            },
-            {
-                "url": "wss://mythos.ibp.network",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://mythos.dotters.network",
-                "name": "IBP2 node"
             }
         ],
         "assets": [
@@ -6663,10 +6527,6 @@
                 "name": "Avail node"
             },
             {
-                "url": "wss://avail-mainnet.public.blastapi.io/",
-                "name": "Blastapi node"
-            },
-            {
                 "url": "wss://avail.rpc.bountyblok.io",
                 "name": "Bountyblok node"
             }
@@ -6725,7 +6585,9 @@
             "governance",
             "pure_proxy",
             "regular_proxy",
-            "multisig"
+            "multisig",
+            "vested_transfer",
+            "multi_transfer"
         ],
         "nodes": [
             {
@@ -6989,10 +6851,6 @@
             "regular_proxy"
         ],
         "nodes": [
-            {
-                "url": "wss://coretime-kusama-rpc.dwellir.com",
-                "name": "Dwellir node"
-            },
             {
                 "url": "wss://sys.ibp.network/coretime-kusama",
                 "name": "IBP1 node"
