@@ -61,8 +61,14 @@ function getStakingValue(staking, chainName) {
   return Array.isArray(staking) ? staking[0] : typeof staking === 'string' ? staking : undefined;
 }
 
+const MOONBEAM_ONLY_TOKENS = ['GLMR'];
+const MOONRIVER_ONLY_TOKENS = ['MOVR'];
+
 function fillAssetData(chain) {
   return chain.assets.map(asset => {
+    // Moonbeam and Moonriver: keep only native tokens (GLMR and MOVR respectively)
+    if (chain.name === 'Moonbeam' && !MOONBEAM_ONLY_TOKENS.includes(asset.symbol)) return;
+    if (chain.name === 'Moonriver' && !MOONRIVER_ONLY_TOKENS.includes(asset.symbol)) return;
     // Temp remove, waiting for "AssetManagement pallet support. It's used by Zeitgeist." https://app.clickup.com/t/85ztgpy7n
     if (chain.name === 'Zeitgeist' && asset.symbol === 'DOT') return;
     if (asset.symbol.endsWith('.s')) return;
