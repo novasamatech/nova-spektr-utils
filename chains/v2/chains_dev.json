@@ -1071,7 +1071,6 @@
                 "multisig": "https://karura.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
             }
         ],
-        "externalApi": {},
         "additional": {
             "supportsGenericLedgerApp": true
         }
@@ -5339,8 +5338,12 @@
         "options": [],
         "nodes": [
             {
-                "url": "wss://rpc.vara-network.io",
+                "url": "wss://rpc.vara.network",
                 "name": "Gear Tech node"
+            },
+            {
+                "url": "wss://rpc.vara-network.io",
+                "name": "Gear Tech node 2"
             }
         ],
         "assets": [
@@ -5869,12 +5872,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://mainnet-rpc.avail.so/ws",
-                "name": "Avail node"
+                "url": "wss://avail.api.onfinality.io/public-ws",
+                "name": "Avail primary node"
             },
             {
-                "url": "wss://avail.rpc.bountyblok.io",
-                "name": "Bountyblok node"
+                "url": "wss://mainnet.avail-rpc.com/",
+                "name": "Avail secondary node"
             }
         ],
         "assets": [

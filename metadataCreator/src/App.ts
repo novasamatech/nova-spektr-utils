@@ -8,7 +8,7 @@ async function buildMetadataMarkdown() {
     try {
 
         // Sort list in alphabet order
-        const chains = new ChainArray('../chains/v1/chains.json')
+        const chains = new ChainArray('../chains/v2/chains.json')
         const sortedChains = chains.generateChainsObject()
 
         // Await each async function call
@@ -25,7 +25,7 @@ async function buildMetadataMarkdown() {
         const markdownChains = markdownChainsTable(sortedChains);
 
         // Corrected file write using string concatenation
-        fs.writeFileSync('../chains/v1/README.md', markdownMetaHeader + markdownMultisig + markdownChains + proxyTable);
+        fs.writeFileSync('../chains/v2/README.md', markdownMetaHeader + markdownMultisig + markdownChains + proxyTable);
         await chains.disconnectAll()
         process.exit(0)
     } catch (error) {
