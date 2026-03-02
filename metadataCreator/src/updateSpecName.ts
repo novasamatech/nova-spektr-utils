@@ -77,6 +77,6 @@ async function updateSpecName(url: string) {
 }
 
 Promise.all([
-    updateSpecName("../chains/v1/chains_dev.json"),
-    updateSpecName("../chains/v1/chains.json")
+    updateSpecName("../chains/v2/chains_dev.json"),
+    updateSpecName("../chains/v2/chains.json")
 ]).then(() => process.exit(0));

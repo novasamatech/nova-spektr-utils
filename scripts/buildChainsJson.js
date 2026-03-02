@@ -170,7 +170,7 @@ function getPreparedChains(rawData) {
       nodes,
       assets,
       explorers,
-      ...(externalApi && { externalApi }),
+      ...(externalApi && Object.keys(externalApi).length > 0 && { externalApi }),
       ...(Object.keys(additional).length && { additional })
     };
 
