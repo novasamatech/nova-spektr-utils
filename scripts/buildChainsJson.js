@@ -156,7 +156,8 @@ function getPreparedChains(rawData) {
     const additional = {
       ...(chain.additional?.identityChain && { identityChain: `0x${chain.additional.identityChain}` }),
       ...(chain.additional?.timelineChain && { timelineChain: `0x${chain.additional.timelineChain}` }),
-      ...(chain.additional?.supportsGenericLedgerApp && { supportsGenericLedgerApp: chain.additional.supportsGenericLedgerApp })
+      ...(chain.additional?.supportsGenericLedgerApp && { supportsGenericLedgerApp: chain.additional.supportsGenericLedgerApp }),
+      ...(chain.additional?.defaultBlockTime !== undefined && { defaultBlockTime: chain.additional.defaultBlockTime })
     }
 
     const updatedChain = {
