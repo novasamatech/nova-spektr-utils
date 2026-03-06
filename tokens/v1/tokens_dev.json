@@ -278,19 +278,6 @@
                 }
             },
             {
-                "chainId": "0xcceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf",
-                "name": "Amplitude",
-                "assetId": 1,
-                "assetSymbol": "KSM",
-                "type": "orml",
-                "typeExtras": {
-                    "currencyIdScale": "0x0100",
-                    "currencyIdType": "SpacewalkPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": true
-                }
-            },
-            {
                 "chainId": "0x00dcb981df86429de8bbacf9803401f09485366c44efbf53af9ecfab03adc7e5",
                 "name": "Kusama Bridge Hub",
                 "assetId": 0,
@@ -676,19 +663,6 @@
                     "currencyIdScale": "0x0802",
                     "currencyIdType": "BifrostPrimitivesCurrencyCurrencyId",
                     "existentialDeposit": "1000",
-                    "transfersEnabled": true
-                }
-            },
-            {
-                "chainId": "0xcceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf",
-                "name": "Amplitude",
-                "assetId": 2,
-                "assetSymbol": "USDT",
-                "type": "orml",
-                "typeExtras": {
-                    "currencyIdScale": "0x0101",
-                    "currencyIdType": "SpacewalkPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
                     "transfersEnabled": true
                 }
             },
@@ -1313,13 +1287,6 @@
                     "existentialDeposit": "1000000000000000000",
                     "transfersEnabled": true
                 }
-            },
-            {
-                "chainId": "0xcd4d732201ebe5d6b014edda071c4203e16867305332301dc8d092044b28e554",
-                "name": "QUARTZ",
-                "assetId": 0,
-                "assetSymbol": "QTZ",
-                "type": "native"
             }
         ]
     },
@@ -4069,25 +4036,6 @@
                 "name": "Rococo Testnet",
                 "assetId": 0,
                 "assetSymbol": "ROC",
-                "type": "native"
-            }
-        ]
-    },
-    {
-        "name": "Amplitude",
-        "precision": 12,
-        "icon": {
-            "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/AMPE.svg",
-            "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/AMPE.svg"
-        },
-        "symbol": "AMPE",
-        "isTestToken": false,
-        "chains": [
-            {
-                "chainId": "0xcceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf",
-                "name": "Amplitude",
-                "assetId": 0,
-                "assetSymbol": "AMPE",
                 "type": "native"
             }
         ]
