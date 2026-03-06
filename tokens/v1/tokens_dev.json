@@ -3855,26 +3855,6 @@
         ]
     },
     {
-        "name": "Aleph Zero",
-        "precision": 12,
-        "priceId": "aleph-zero",
-        "icon": {
-            "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/AZERO.svg",
-            "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/AZERO.svg"
-        },
-        "symbol": "AZERO",
-        "isTestToken": false,
-        "chains": [
-            {
-                "chainId": "0x70255b4d28de0fc4e1a193d7e175ad1ccef431598211c55538f1018651a0344e",
-                "name": "Aleph Zero",
-                "assetId": 0,
-                "assetSymbol": "AZERO",
-                "type": "native"
-            }
-        ]
-    },
-    {
         "name": "vGLMR",
         "precision": 18,
         "priceId": "voucher-glmr",

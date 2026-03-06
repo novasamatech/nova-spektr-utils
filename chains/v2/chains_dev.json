@@ -4511,69 +4511,6 @@
         }
     },
     {
-        "name": "Aleph Zero",
-        "specName": "aleph-node",
-        "addressPrefix": 42,
-        "chainId": "0x70255b4d28de0fc4e1a193d7e175ad1ccef431598211c55538f1018651a0344e",
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/AlephZero.svg",
-        "options": [
-            "multisig",
-            "regular_proxy",
-            "pure_proxy"
-        ],
-        "nodes": [
-            {
-                "url": "wss://ws.azero.dev",
-                "name": "Aleph Zero node"
-            }
-        ],
-        "assets": [
-            {
-                "name": "Aleph Zero",
-                "assetId": 0,
-                "symbol": "AZERO",
-                "precision": 12,
-                "type": "native",
-                "priceId": "aleph-zero",
-                "icon": {
-                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/AZERO.svg",
-                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/AZERO.svg"
-                }
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://alephzero.subscan.io/extrinsic/{hash}",
-                "account": "https://alephzero.subscan.io/account/{address}",
-                "multisig": "https://alephzero.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
-            }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-history-aleph-zero-prod.novasama-tech.org"
-                }
-            ],
-            "staking": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-history-aleph-zero-prod.novasama-tech.org"
-                }
-            ],
-            "proxy": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-accounts-prod.novasama-tech.org"
-                }
-            ]
-        },
-        "additional": {
-            "defaultBlockTime": 1000
-        }
-    },
-    {
         "name": "Bifrost Polkadot",
         "specName": "polkadot",
         "addressPrefix": 0,
