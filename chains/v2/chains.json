@@ -2021,43 +2021,6 @@
         }
     },
     {
-        "name": "QUARTZ",
-        "specName": "kusama",
-        "addressPrefix": 255,
-        "chainId": "0xcd4d732201ebe5d6b014edda071c4203e16867305332301dc8d092044b28e554",
-        "parentId": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Quartz.svg",
-        "options": [],
-        "nodes": [
-            {
-                "url": "wss://quartz.unique.network",
-                "name": "Unique node"
-            },
-            {
-                "url": "wss://eu-ws-quartz.unique.network",
-                "name": "Unique Europe node"
-            },
-            {
-                "url": "wss://us-ws-quartz.unique.network",
-                "name": "Unique US node"
-            }
-        ],
-        "assets": [
-            {
-                "name": "Quartz",
-                "assetId": 0,
-                "symbol": "QTZ",
-                "precision": 18,
-                "type": "native",
-                "priceId": "quartz",
-                "icon": {
-                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/QTZ.svg",
-                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/QTZ.svg"
-                }
-            }
-        ]
-    },
-    {
         "name": "Acala",
         "specName": "polkadot",
         "addressPrefix": 10,
@@ -4915,82 +4878,6 @@
                     "url": "https://subquery-history-litentry-prod.novasama-tech.org"
                 }
             ]
-        }
-    },
-    {
-        "name": "Amplitude",
-        "specName": "kusama",
-        "addressPrefix": 0,
-        "legacyAddressPrefix": 57,
-        "chainId": "0xcceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf",
-        "parentId": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Amplitude.svg",
-        "options": [],
-        "nodes": [
-            {
-                "url": "wss://rpc-amplitude.pendulumchain.tech",
-                "name": "PendulumChain node"
-            }
-        ],
-        "assets": [
-            {
-                "name": "Amplitude",
-                "assetId": 0,
-                "symbol": "AMPE",
-                "precision": 12,
-                "type": "native",
-                "icon": {
-                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/AMPE.svg",
-                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/AMPE.svg"
-                }
-            },
-            {
-                "name": "Kusama",
-                "assetId": 1,
-                "symbol": "KSM",
-                "precision": 12,
-                "type": "orml",
-                "priceId": "kusama",
-                "icon": {
-                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/KSM.svg",
-                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/KSM.svg"
-                },
-                "typeExtras": {
-                    "currencyIdScale": "0x0100",
-                    "currencyIdType": "SpacewalkPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": true
-                }
-            },
-            {
-                "name": "USD Tether",
-                "assetId": 2,
-                "symbol": "USDT",
-                "precision": 6,
-                "type": "orml",
-                "priceId": "tether",
-                "icon": {
-                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/USDT.svg",
-                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/USDT.svg"
-                },
-                "typeExtras": {
-                    "currencyIdScale": "0x0101",
-                    "currencyIdType": "SpacewalkPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": true
-                }
-            }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-history-amplitude-prod.novasama-tech.org"
-                }
-            ]
-        },
-        "additional": {
-            "supportsGenericLedgerApp": true
         }
     },
     {
