@@ -1974,54 +1974,6 @@
         ]
     },
     {
-        "name": "KILT",
-        "specName": "polkadot",
-        "addressPrefix": 38,
-        "chainId": "0x411f057b9107718c9624d6aa4a3f23c1653898297f3d4d529d9bb6511a39dd21",
-        "parentId": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/KILT_Spiritnet.svg",
-        "options": [],
-        "nodes": [
-            {
-                "url": "wss://kilt.ibp.network",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://kilt.dotters.network",
-                "name": "IBP2 node"
-            },
-            {
-                "url": "wss://spiritnet.kilt.io/",
-                "name": "KILT Protocol node"
-            }
-        ],
-        "assets": [
-            {
-                "name": "KILT Spiritnet",
-                "assetId": 0,
-                "symbol": "KILT",
-                "precision": 15,
-                "type": "native",
-                "priceId": "kilt-protocol",
-                "icon": {
-                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/KILT.svg",
-                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/KILT.svg"
-                }
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://spiritnet.subscan.io/extrinsic/{hash}",
-                "account": "https://spiritnet.subscan.io/account/{address}",
-                "multisig": "https://spiritnet.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
-            }
-        ],
-        "additional": {
-            "supportsGenericLedgerApp": true
-        }
-    },
-    {
         "name": "Acala",
         "specName": "polkadot",
         "addressPrefix": 10,

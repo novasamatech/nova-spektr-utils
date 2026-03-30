@@ -1924,39 +1924,6 @@
         ]
     },
     {
-        "name": "KILT Spiritnet",
-        "precision": 15,
-        "priceId": "kilt-protocol",
-        "icon": {
-            "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/KILT.svg",
-            "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/KILT.svg"
-        },
-        "symbol": "KILT",
-        "isTestToken": false,
-        "chains": [
-            {
-                "chainId": "0x411f057b9107718c9624d6aa4a3f23c1653898297f3d4d529d9bb6511a39dd21",
-                "name": "KILT",
-                "assetId": 0,
-                "assetSymbol": "KILT",
-                "type": "native"
-            },
-            {
-                "chainId": "0xafdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
-                "name": "Hydration",
-                "assetId": 34,
-                "assetSymbol": "KILT",
-                "type": "orml",
-                "typeExtras": {
-                    "currencyIdScale": "0x1c000000",
-                    "currencyIdType": "u32",
-                    "existentialDeposit": "21358393848783",
-                    "transfersEnabled": true
-                }
-            }
-        ]
-    },
-    {
         "name": "Acala",
         "precision": 12,
         "priceId": "acala",
@@ -3502,6 +3469,32 @@
                     "currencyIdScale": "0x1b000000",
                     "currencyIdType": "u32",
                     "existentialDeposit": "7874015748",
+                    "transfersEnabled": true
+                }
+            }
+        ]
+    },
+    {
+        "name": "KILT Spiritnet",
+        "precision": 15,
+        "priceId": "kilt-protocol",
+        "icon": {
+            "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/KILT.svg",
+            "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/KILT.svg"
+        },
+        "symbol": "KILT",
+        "isTestToken": false,
+        "chains": [
+            {
+                "chainId": "0xafdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d",
+                "name": "Hydration",
+                "assetId": 34,
+                "assetSymbol": "KILT",
+                "type": "orml",
+                "typeExtras": {
+                    "currencyIdScale": "0x1c000000",
+                    "currencyIdType": "u32",
+                    "existentialDeposit": "21358393848783",
                     "transfersEnabled": true
                 }
             }
