@@ -3855,25 +3855,6 @@
         ]
     },
     {
-        "name": "Rococo Testnet",
-        "precision": 12,
-        "icon": {
-            "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/ROC.svg",
-            "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/ROC.svg"
-        },
-        "symbol": "ROC",
-        "isTestToken": true,
-        "chains": [
-            {
-                "chainId": "0x6408de7737c59c238890533af25896a2c20608d8b380bb01029acb392781063e",
-                "name": "Rococo Testnet",
-                "assetId": 0,
-                "assetSymbol": "ROC",
-                "type": "native"
-            }
-        ]
-    },
-    {
         "name": "Pendulum token",
         "precision": 12,
         "priceId": "pendulum-chain",

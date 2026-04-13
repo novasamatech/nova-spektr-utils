@@ -2504,6 +2504,10 @@
         ],
         "nodes": [
             {
+                "url": "wss://rpc-assethub.novasama-tech.org",
+                "name": "Novasama node"
+            },
+            {
                 "url": "wss://asset-hub-polkadot-rpc.n.dwellir.com",
                 "name": "Dwellir node"
             },
@@ -4557,38 +4561,6 @@
                 }
             ]
         },
-        "additional": {
-            "supportsGenericLedgerApp": true
-        }
-    },
-    {
-        "name": "Rococo Testnet",
-        "specName": "rococo",
-        "addressPrefix": 42,
-        "chainId": "0x6408de7737c59c238890533af25896a2c20608d8b380bb01029acb392781063e",
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Rococo_Testnet.svg",
-        "options": [
-            "testnet"
-        ],
-        "nodes": [
-            {
-                "url": "wss://rococo-rpc.polkadot.io/",
-                "name": "Rococo node"
-            }
-        ],
-        "assets": [
-            {
-                "name": "Rococo Testnet",
-                "assetId": 0,
-                "symbol": "ROC",
-                "precision": 12,
-                "type": "native",
-                "icon": {
-                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/ROC.svg",
-                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/ROC.svg"
-                }
-            }
-        ],
         "additional": {
             "supportsGenericLedgerApp": true
         }
