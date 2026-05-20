@@ -46,6 +46,34 @@
             {
                 "url": "wss://rpc-polkadot.luckyfriday.io",
                 "name": "LuckyFriday node"
+            },
+            {
+                "url": "wss://polkadot-rpc.publicnode.com",
+                "name": "Allnodes node"
+            },
+            {
+                "url": "wss://polkadot-rpc.n.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
+                "url": "wss://rpc-polkadot.helixstreet.io",
+                "name": "Helixstreet node"
+            },
+            {
+                "url": "wss://polkadot.ibp.network",
+                "name": "IBP1 node"
+            },
+            {
+                "url": "wss://polkadot.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            },
+            {
+                "url": "wss://rpc-polkadot.stakeworld.io",
+                "name": "Stakeworld node"
+            },
+            {
+                "url": "wss://polkadot.rpc.subquery.network/public/ws",
+                "name": "Subquery node"
             }
         ],
         "assets": [
@@ -149,6 +177,30 @@
             {
                 "url": "wss://kusama.public.curie.radiumblock.co/ws",
                 "name": "Radium node"
+            },
+            {
+                "url": "wss://kusama-rpc.publicnode.com",
+                "name": "Allnodes node"
+            },
+            {
+                "url": "wss://kusama-rpc.n.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
+                "url": "wss://rpc-kusama.helixstreet.io",
+                "name": "Helixstreet node"
+            },
+            {
+                "url": "wss://kusama.ibp.network",
+                "name": "IBP1 node"
+            },
+            {
+                "url": "wss://kusama.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            },
+            {
+                "url": "wss://rpc-kusama.stakeworld.io",
+                "name": "Stakeworld node"
             }
         ],
         "assets": [
@@ -229,6 +281,18 @@
             {
                 "url": "wss://westend.public.curie.radiumblock.co/ws",
                 "name": "RadiumBlock node"
+            },
+            {
+                "url": "wss://westend-rpc.n.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
+                "url": "wss://westend.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            },
+            {
+                "url": "wss://rpc.public.curie.radiumblock.xyz/ws-westend",
+                "name": "Radium node"
             }
         ],
         "assets": [
@@ -305,6 +369,30 @@
             {
                 "url": "wss://asset-hub-kusama.dotters.network",
                 "name": "IBP2 node"
+            },
+            {
+                "url": "wss://asset-hub-kusama-rpc.n.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
+                "url": "wss://asset-hub-kusama.ibp.network",
+                "name": "IBP1 node"
+            },
+            {
+                "url": "wss://rpc-asset-hub-kusama.luckyfriday.io",
+                "name": "LuckyFriday node"
+            },
+            {
+                "url": "wss://assethub-kusama.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            },
+            {
+                "url": "wss://kusama-asset-hub-rpc.polkadot.io",
+                "name": "Parity node"
+            },
+            {
+                "url": "wss://statemine.public.curie.radiumblock.co/ws",
+                "name": "Radium node"
             }
         ],
         "assets": [
@@ -502,6 +590,18 @@
             {
                 "url": "wss://people-polkadot.public.curie.radiumblock.co/ws",
                 "name": "Radium node"
+            },
+            {
+                "url": "wss://people-polkadot-rpc.n.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
+                "url": "wss://people-polkadot.ibp.network",
+                "name": "IBP1 node"
+            },
+            {
+                "url": "wss://people-polkadot.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             }
         ],
         "assets": [
@@ -573,6 +673,30 @@
             {
                 "url": "wss://ksm-rpc.stakeworld.io/people",
                 "name": "Stakeworld node"
+            },
+            {
+                "url": "wss://people-kusama-rpc.n.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
+                "url": "wss://rpc-people-kusama.helixstreet.io",
+                "name": "Helixstreet node"
+            },
+            {
+                "url": "wss://people-kusama.ibp.network",
+                "name": "IBP1 node"
+            },
+            {
+                "url": "wss://rpc-people-kusama.luckyfriday.io",
+                "name": "LuckyFriday node"
+            },
+            {
+                "url": "wss://people-kusama.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            },
+            {
+                "url": "wss://people-kusama.public.curie.radiumblock.co/ws",
+                "name": "Radium node"
             }
         ],
         "assets": [
@@ -1145,6 +1269,22 @@
             {
                 "url": "wss://moonbeam.public.curie.radiumblock.co/ws",
                 "name": "RadiumBlock node"
+            },
+            {
+                "url": "wss://moonbeam-rpc.publicnode.com",
+                "name": "Allnodes node"
+            },
+            {
+                "url": "wss://moonbeam-rpc.n.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
+                "url": "wss://moonbeam.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            },
+            {
+                "url": "wss://moonbeam.unitedbloc.com",
+                "name": "UnitedBloc node"
             }
         ],
         "assets": [
@@ -1563,6 +1703,18 @@
             {
                 "url": "wss://moonriver.public.curie.radiumblock.co/ws",
                 "name": "RadiumBlock node"
+            },
+            {
+                "url": "wss://moonriver-rpc.n.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
+                "url": "wss://moonriver.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            },
+            {
+                "url": "wss://moonriver.unitedbloc.com",
+                "name": "UnitedBloc node"
             }
         ],
         "assets": [
@@ -1976,6 +2128,10 @@
             {
                 "url": "wss://shiden.public.curie.radiumblock.co/ws",
                 "name": "RadiumBlock node"
+            },
+            {
+                "url": "wss://shiden.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             }
         ],
         "assets": [
@@ -3068,6 +3224,10 @@
             {
                 "url": "wss://astar.public.curie.radiumblock.co/ws",
                 "name": "RadiumBlock node"
+            },
+            {
+                "url": "wss://astar.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             }
         ],
         "assets": [
@@ -3326,6 +3486,26 @@
             {
                 "url": "wss://asset-hub-polkadot.dotters.network",
                 "name": "IBP2 node"
+            },
+            {
+                "url": "wss://asset-hub-polkadot.ibp.network",
+                "name": "IBP1 node"
+            },
+            {
+                "url": "wss://rpc-asset-hub-polkadot.luckyfriday.io",
+                "name": "LuckyFriday node"
+            },
+            {
+                "url": "wss://statemint.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            },
+            {
+                "url": "wss://polkadot-asset-hub-rpc.polkadot.io",
+                "name": "Parity node"
+            },
+            {
+                "url": "wss://statemint.public.curie.radiumblock.co/ws",
+                "name": "Radium node"
             }
         ],
         "assets": [
@@ -3647,6 +3827,10 @@
             {
                 "url": "wss://api-kusama.interlay.io/parachain",
                 "name": "Kintsugi Labs node"
+            },
+            {
+                "url": "wss://kintsugi.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             }
         ],
         "assets": [
@@ -3886,6 +4070,10 @@
             {
                 "url": "wss://rpc-centrifuge.luckyfriday.io",
                 "name": "LuckyFriday node"
+            },
+            {
+                "url": "wss://centrifuge-parachain.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             }
         ],
         "assets": [
@@ -3948,6 +4136,14 @@
             {
                 "url": "wss://hydration.dotters.network",
                 "name": "IBP2 node"
+            },
+            {
+                "url": "wss://hydration-rpc.n.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
+                "url": "wss://rpc.helikon.io/hydradx",
+                "name": "Helikon node"
             }
         ],
         "assets": [
@@ -5531,6 +5727,10 @@
             {
                 "url": "wss://heima-rpc.n.dwellir.com",
                 "name": "Dwellir node"
+            },
+            {
+                "url": "wss://rpc.heima-parachain.heima.network",
+                "name": "Heima node"
             }
         ],
         "assets": [
@@ -6009,6 +6209,30 @@
             {
                 "url": "wss://dot-rpc.stakeworld.io/bridgehub",
                 "name": "Stakeworld node"
+            },
+            {
+                "url": "wss://bridge-hub-polkadot-rpc.n.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
+                "url": "wss://bridge-hub-polkadot.ibp.network",
+                "name": "IBP1 node"
+            },
+            {
+                "url": "wss://rpc-bridge-hub-polkadot.luckyfriday.io",
+                "name": "LuckyFriday node"
+            },
+            {
+                "url": "wss://bridgehub-polkadot.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            },
+            {
+                "url": "wss://polkadot-bridge-hub-rpc.polkadot.io",
+                "name": "Parity node"
+            },
+            {
+                "url": "wss://bridgehub-polkadot.public.curie.radiumblock.co/ws",
+                "name": "Radium node"
             }
         ],
         "assets": [
@@ -6071,6 +6295,30 @@
             {
                 "url": "wss://ksm-rpc.stakeworld.io/bridgehub",
                 "name": "Stakeworld node"
+            },
+            {
+                "url": "wss://bridge-hub-kusama-rpc.n.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
+                "url": "wss://bridge-hub-kusama.ibp.network",
+                "name": "IBP1 node"
+            },
+            {
+                "url": "wss://rpc-bridge-hub-kusama.luckyfriday.io",
+                "name": "LuckyFriday node"
+            },
+            {
+                "url": "wss://bridgehub-kusama.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            },
+            {
+                "url": "wss://kusama-bridge-hub-rpc.polkadot.io",
+                "name": "Parity node"
+            },
+            {
+                "url": "wss://bridgehub-kusama.public.curie.radiumblock.co/ws",
+                "name": "Radium node"
             }
         ],
         "assets": [
@@ -6141,6 +6389,26 @@
             {
                 "url": "wss://dot-rpc.stakeworld.io/collectives",
                 "name": "Stakeworld node"
+            },
+            {
+                "url": "wss://collectives-polkadot-rpc.n.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
+                "url": "wss://collectives-polkadot.ibp.network",
+                "name": "IBP1 node"
+            },
+            {
+                "url": "wss://rpc-collectives-polkadot.luckyfriday.io",
+                "name": "LuckyFriday node"
+            },
+            {
+                "url": "wss://collectives.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            },
+            {
+                "url": "wss://polkadot-collectives-rpc.polkadot.io",
+                "name": "Parity node"
             }
         ],
         "assets": [
@@ -6349,6 +6617,22 @@
             {
                 "url": "wss://polkadot-coretime-rpc.polkadot.io",
                 "name": "Parity node"
+            },
+            {
+                "url": "wss://coretime-polkadot-rpc.n.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
+                "url": "wss://coretime-polkadot.ibp.network",
+                "name": "IBP1 node"
+            },
+            {
+                "url": "wss://coretime-polkadot.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
+            },
+            {
+                "url": "wss://coretime-polkadot.public.curie.radiumblock.co/ws",
+                "name": "Radium node"
             }
         ],
         "assets": [
@@ -6424,6 +6708,18 @@
             {
                 "url": "wss://ksm-rpc.stakeworld.io/coretime",
                 "name": "Stakeworld node"
+            },
+            {
+                "url": "wss://coretime-kusama-rpc.n.dwellir.com",
+                "name": "Dwellir node"
+            },
+            {
+                "url": "wss://coretime-kusama.ibp.network",
+                "name": "IBP1 node"
+            },
+            {
+                "url": "wss://coretime-kusama.api.onfinality.io/public-ws",
+                "name": "OnFinality node"
             }
         ],
         "assets": [
