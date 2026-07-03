@@ -446,7 +446,7 @@
             "proxy": [
                 {
                     "type": "subquery",
-                    "url": "https://subquery-accounts-prod-2.novasama-tech.org"
+                    "url": "https://subquery-accounts-prod.novasama-tech.org"
                 }
             ]
         },
