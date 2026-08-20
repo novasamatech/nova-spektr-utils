@@ -274,41 +274,6 @@
     }
   },
   {
-    "name": "Novasama Testnet - Fellowship",
-    "chainId": "0xc84b77ebc80ef7413dbc04b6385b9ae7dff5811cfb2fd38025e67487389f666a",
-    "options": [
-      "regular_proxy",
-      "pure_proxy"
-    ],
-    "externalApi": {
-      "collectives": [
-        {
-          "type": "subquery",
-          "url": "https://subquery-collectives-testnet-prod.novasama-tech.org"
-        }
-      ]
-    }
-  },
-  {
-    "name": "Novasama Testnet - Governance",
-    "chainId": "0x3dbb473ae9b2b77ecf077c03546f0f8670c020e453dddb457da155e6cc7cba42",
-    "options": [
-      "pure_proxy",
-      "regular_proxy",
-      "multisig",
-      "vested_transfer",
-      "multi_transfer"
-    ],
-    "externalApi": {
-      "proxy": [
-        {
-          "type": "subquery",
-          "url": "https://subquery-accounts-prod.novasama-tech.org"
-        }
-      ]
-    }
-  },
-  {
     "name": "Kusama Coretime",
     "chainId": "0x638cd2b9af4b3bb54b8c1f0d22711fc89924ca93300f0caf25a580432b29d050",
     "options": [

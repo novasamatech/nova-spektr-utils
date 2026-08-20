@@ -29,9 +29,9 @@ const TYPE_EXTRAS_REPLACEMENTS = {
   'cceae7f3b9947cdb67369c026ef78efa5f34a08fe5808d373c04421ecf4f1aaf': 'SpacewalkPrimitivesCurrencyId',
   '5d3c298622d5634ed019bf61ea4b71655030015bde9beb0d6a24743714462c86': 'SpacewalkPrimitivesCurrencyId'
 }
-const STAKING_ALLOWED_ARRAY = ['Polkadot', 'Kusama', 'Westend', 'Polkadex', 'Ternoa', 'Novasama Testnet - Governance']
+const STAKING_ALLOWED_ARRAY = ['Polkadot', 'Kusama', 'Westend', 'Polkadex', 'Ternoa']
 
-const GOV_ALLOWED_ARRAY = ['Polkadot', 'Kusama', 'Westend', 'Rococo', 'Novasama Testnet - Governance'];
+const GOV_ALLOWED_ARRAY = ['Polkadot', 'Kusama', 'Westend', 'Rococo'];
 
 const readmeContent = fs.readFileSync('chains/v1/README.md', 'utf8');
 const multisigSection = readmeContent.split('# List of Networks where we are support Multisig pallet')[1].split('## The list of supported networks')[0];
