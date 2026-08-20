@@ -6855,56 +6855,6 @@
         }
     },
     {
-        "name": "Novasama Testnet - Governance",
-        "specName": "westend",
-        "addressPrefix": 42,
-        "chainId": "0x3dbb473ae9b2b77ecf077c03546f0f8670c020e453dddb457da155e6cc7cba42",
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Westend_Testnet.svg",
-        "options": [
-            "testnet",
-            "governance",
-            "pure_proxy",
-            "regular_proxy",
-            "multisig",
-            "vested_transfer",
-            "multi_transfer"
-        ],
-        "nodes": [
-            {
-                "url": "wss://rpc-test-network-1.novasama-tech.org",
-                "name": "Novasama node"
-            }
-        ],
-        "assets": [
-            {
-                "name": "Westend",
-                "assetId": 0,
-                "symbol": "WND",
-                "precision": 12,
-                "type": "native",
-                "staking": "relaychain",
-                "icon": {
-                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/WND.svg",
-                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/WND.svg"
-                }
-            }
-        ],
-        "externalApi": {
-            "governance-delegations": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-governance-testnet-stg.novasama-tech.org"
-                }
-            ],
-            "proxy": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-accounts-prod.novasama-tech.org"
-                }
-            ]
-        }
-    },
-    {
         "name": "Westend People",
         "specName": "westend",
         "addressPrefix": 42,
@@ -6955,45 +6905,6 @@
                 "event": "https://people-westend.statescan.io/#/events/{event}"
             }
         ]
-    },
-    {
-        "name": "Novasama Testnet - Fellowship",
-        "specName": "collectives-westend",
-        "addressPrefix": 42,
-        "chainId": "0xc84b77ebc80ef7413dbc04b6385b9ae7dff5811cfb2fd38025e67487389f666a",
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Westend_Testnet.svg",
-        "options": [
-            "testnet",
-            "regular_proxy",
-            "pure_proxy"
-        ],
-        "nodes": [
-            {
-                "url": "wss://westend-collectives-a-parachain.novasama-tech.org/dd98924e-ac7f-49e8-ac8f-00673c616bdc",
-                "name": "Novasama node"
-            }
-        ],
-        "assets": [
-            {
-                "name": "Westend",
-                "assetId": 0,
-                "symbol": "WND",
-                "precision": 12,
-                "type": "native",
-                "icon": {
-                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/WND.svg",
-                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/WND.svg"
-                }
-            }
-        ],
-        "externalApi": {
-            "collectives": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-collectives-testnet-prod.novasama-tech.org"
-                }
-            ]
-        }
     },
     {
         "name": "Westend Collectives",

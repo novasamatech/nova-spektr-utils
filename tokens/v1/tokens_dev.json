@@ -322,22 +322,8 @@
                 "type": "native"
             },
             {
-                "chainId": "0x3dbb473ae9b2b77ecf077c03546f0f8670c020e453dddb457da155e6cc7cba42",
-                "name": "Novasama Testnet - Governance",
-                "assetId": 0,
-                "assetSymbol": "WND",
-                "type": "native"
-            },
-            {
                 "chainId": "0x1eb6fb0ba5187434de017a70cb84d4f47142df1d571d0ef9e7e1407f2b80b93c",
                 "name": "Westend People",
-                "assetId": 0,
-                "assetSymbol": "WND",
-                "type": "native"
-            },
-            {
-                "chainId": "0xc84b77ebc80ef7413dbc04b6385b9ae7dff5811cfb2fd38025e67487389f666a",
-                "name": "Novasama Testnet - Fellowship",
                 "assetId": 0,
                 "assetSymbol": "WND",
                 "type": "native"
