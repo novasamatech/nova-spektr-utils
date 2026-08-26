@@ -1877,43 +1877,6 @@
         ]
     },
     {
-        "name": "Altair",
-        "specName": "kusama",
-        "addressPrefix": 136,
-        "chainId": "0xaa3876c1dc8a1afcc2e9a685a49ff7704cfd36ad8c90bf2702b9d1b00cc40011",
-        "parentId": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Altair.svg",
-        "options": [],
-        "nodes": [
-            {
-                "url": "wss://altair.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            }
-        ],
-        "assets": [
-            {
-                "name": "Altair",
-                "assetId": 0,
-                "symbol": "AIR",
-                "precision": 18,
-                "type": "native",
-                "priceId": "altair",
-                "icon": {
-                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/AIR.svg",
-                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/AIR.svg"
-                }
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://altair.subscan.io/extrinsic/{hash}",
-                "account": "https://altair.subscan.io/account/{address}",
-                "multisig": "https://altair.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
-            }
-        ]
-    },
-    {
         "name": "Acala",
         "specName": "polkadot",
         "addressPrefix": 10,
@@ -2978,49 +2941,6 @@
             "timelineChain": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
             "supportsGenericLedgerApp": true,
             "defaultBlockTime": 2000
-        }
-    },
-    {
-        "name": "Zeitgeist",
-        "specName": "kusama",
-        "addressPrefix": 73,
-        "chainId": "0x1bf2a2ecb4a868de66ea8610f2ce7c8c43706561b6476031315f6640fe38e060",
-        "parentId": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Zeitgeist.svg",
-        "options": [],
-        "nodes": [
-            {
-                "url": "wss://zeitgeist.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            }
-        ],
-        "assets": [
-            {
-                "name": "Zeitgeist",
-                "assetId": 0,
-                "symbol": "ZTG",
-                "precision": 10,
-                "type": "native",
-                "priceId": "zeitgeist",
-                "icon": {
-                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/ZTG.svg",
-                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/ZTG.svg"
-                }
-            }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-history-zeitgeist-prod.novasama-tech.org"
-                }
-            ],
-            "staking": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-history-zeitgeist-prod.novasama-tech.org"
-                }
-            ]
         }
     },
     {
@@ -4346,62 +4266,6 @@
                     "url": "https://subquery-history-interlay-prod.novasama-tech.org"
                 }
             ]
-        }
-    },
-    {
-        "name": "Phala",
-        "specName": "polkadot",
-        "addressPrefix": 30,
-        "chainId": "0x1bb969d85965e4bb5a651abbedf21a54b6b31a21f66b5401cc3f1e286268d736",
-        "parentId": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Phala.svg",
-        "options": [],
-        "nodes": [
-            {
-                "url": "wss://phala-rpc.n.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
-                "url": "wss://api.phala.network/ws",
-                "name": "Phala node"
-            },
-            {
-                "url": "wss://phala.public.curie.radiumblock.co/ws",
-                "name": "RadiumBlock node"
-            }
-        ],
-        "assets": [
-            {
-                "name": "Phala",
-                "assetId": 0,
-                "symbol": "PHA",
-                "precision": 12,
-                "type": "native",
-                "priceId": "pha",
-                "icon": {
-                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/PHA.svg",
-                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/PHA.svg"
-                }
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://phala.subscan.io/extrinsic/{hash}",
-                "account": "https://phala.subscan.io/account/{address}",
-                "multisig": "https://phala.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
-            }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-history-phala-prod.novasama-tech.org"
-                }
-            ]
-        },
-        "additional": {
-            "supportsGenericLedgerApp": true
         }
     },
     {
