@@ -21,7 +21,9 @@ const KNOWN_EXPLORERS = [
   'Polkastats',
   'Governance2 Testnet explorer',
   'Moonscan',
-  'Polimec explorer'
+  'Polimec explorer',
+  'Neckwork',
+  'TaoApp'
 ]
 
 

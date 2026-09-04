@@ -85,19 +85,6 @@
                 }
             },
             {
-                "chainId": "0xbf88efe70e9e0e916416e8bed61f2b45717f517d7f3523e33c7b001e5ffcbc72",
-                "name": "Interlay",
-                "assetId": 2,
-                "assetSymbol": "DOT",
-                "type": "orml",
-                "typeExtras": {
-                    "currencyIdScale": "0x0000",
-                    "currencyIdType": "InterbtcPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": true
-                }
-            },
-            {
                 "chainId": "0x262e1b2ad728475fd6fe88e62d34c200abe6fd693931ddad144059b1eb884e5b",
                 "name": "Bifrost Polkadot",
                 "assetId": 2,
@@ -205,19 +192,6 @@
                 }
             },
             {
-                "chainId": "0x9af9a64e6e4da8e3073901c3ff0cc4c3aad9563786d89daf6ad820b6e14a0b8b",
-                "name": "Kintsugi",
-                "assetId": 2,
-                "assetSymbol": "KSM",
-                "type": "orml",
-                "typeExtras": {
-                    "currencyIdScale": "0x000a",
-                    "currencyIdType": "InterbtcPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": true
-                }
-            },
-            {
                 "chainId": "0xa85cfb9b9fd4d622a5b28289a02347af987d8f73fa3108450e2b4a11c1ce5755",
                 "name": "Basilisk",
                 "assetId": 1,
@@ -251,19 +225,6 @@
                     "currencyIdScale": "0x43450f00",
                     "currencyIdType": "u32",
                     "existentialDeposit": "313283208",
-                    "transfersEnabled": true
-                }
-            },
-            {
-                "chainId": "0xbf88efe70e9e0e916416e8bed61f2b45717f517d7f3523e33c7b001e5ffcbc72",
-                "name": "Interlay",
-                "assetId": 5,
-                "assetSymbol": "KSM",
-                "type": "orml",
-                "typeExtras": {
-                    "currencyIdScale": "0x000a",
-                    "currencyIdType": "InterbtcPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
                     "transfersEnabled": true
                 }
             },
@@ -522,19 +483,6 @@
                 }
             },
             {
-                "chainId": "0x9af9a64e6e4da8e3073901c3ff0cc4c3aad9563786d89daf6ad820b6e14a0b8b",
-                "name": "Kintsugi",
-                "assetId": 4,
-                "assetSymbol": "USDT",
-                "type": "orml",
-                "typeExtras": {
-                    "currencyIdScale": "0x0103000000",
-                    "currencyIdType": "InterbtcPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": true
-                }
-            },
-            {
                 "chainId": "0xa85cfb9b9fd4d622a5b28289a02347af987d8f73fa3108450e2b4a11c1ce5755",
                 "name": "Basilisk",
                 "assetId": 4,
@@ -603,19 +551,6 @@
                     "currencyIdScale": "0x17000000",
                     "currencyIdType": "u32",
                     "existentialDeposit": "10000",
-                    "transfersEnabled": true
-                }
-            },
-            {
-                "chainId": "0xbf88efe70e9e0e916416e8bed61f2b45717f517d7f3523e33c7b001e5ffcbc72",
-                "name": "Interlay",
-                "assetId": 7,
-                "assetSymbol": "USDT",
-                "type": "orml",
-                "typeExtras": {
-                    "currencyIdScale": "0x0102000000",
-                    "currencyIdType": "InterbtcPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
                     "transfersEnabled": true
                 }
             },
@@ -718,19 +653,6 @@
                 }
             },
             {
-                "chainId": "0x9af9a64e6e4da8e3073901c3ff0cc4c3aad9563786d89daf6ad820b6e14a0b8b",
-                "name": "Kintsugi",
-                "assetId": 5,
-                "assetSymbol": "aSEEDk",
-                "type": "orml",
-                "typeExtras": {
-                    "currencyIdScale": "0x0101000000",
-                    "currencyIdType": "InterbtcPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": true
-                }
-            },
-            {
                 "chainId": "0xa85cfb9b9fd4d622a5b28289a02347af987d8f73fa3108450e2b4a11c1ce5755",
                 "name": "Basilisk",
                 "assetId": 2,
@@ -800,19 +722,6 @@
                 }
             },
             {
-                "chainId": "0xbf88efe70e9e0e916416e8bed61f2b45717f517d7f3523e33c7b001e5ffcbc72",
-                "name": "Interlay",
-                "assetId": 14,
-                "assetSymbol": "BNC",
-                "type": "orml",
-                "typeExtras": {
-                    "currencyIdScale": "0x010b000000",
-                    "currencyIdType": "InterbtcPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": false
-                }
-            },
-            {
                 "chainId": "0x262e1b2ad728475fd6fe88e62d34c200abe6fd693931ddad144059b1eb884e5b",
                 "name": "Bifrost Polkadot",
                 "assetId": 0,
@@ -855,19 +764,6 @@
                     "currencyIdScale": "0x0083",
                     "currencyIdType": "AcalaPrimitivesCurrencyCurrencyId",
                     "existentialDeposit": "500000000",
-                    "transfersEnabled": true
-                }
-            },
-            {
-                "chainId": "0x9af9a64e6e4da8e3073901c3ff0cc4c3aad9563786d89daf6ad820b6e14a0b8b",
-                "name": "Kintsugi",
-                "assetId": 3,
-                "assetSymbol": "LKSM",
-                "type": "orml",
-                "typeExtras": {
-                    "currencyIdScale": "0x0102000000",
-                    "currencyIdType": "InterbtcPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
                     "transfersEnabled": true
                 }
             }
@@ -958,32 +854,6 @@
                     "existentialDeposit": "133330000",
                     "transfersEnabled": true
                 }
-            },
-            {
-                "chainId": "0x9af9a64e6e4da8e3073901c3ff0cc4c3aad9563786d89daf6ad820b6e14a0b8b",
-                "name": "Kintsugi",
-                "assetId": 0,
-                "assetSymbol": "KINT",
-                "type": "orml",
-                "typeExtras": {
-                    "currencyIdScale": "0x000c",
-                    "currencyIdType": "InterbtcPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": true
-                }
-            },
-            {
-                "chainId": "0xbf88efe70e9e0e916416e8bed61f2b45717f517d7f3523e33c7b001e5ffcbc72",
-                "name": "Interlay",
-                "assetId": 3,
-                "assetSymbol": "KINT",
-                "type": "orml",
-                "typeExtras": {
-                    "currencyIdScale": "0x000c",
-                    "currencyIdType": "InterbtcPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": true
-                }
             }
         ]
     },
@@ -1021,45 +891,6 @@
                     "currencyIdScale": "0x0802",
                     "currencyIdType": "BifrostPrimitivesCurrencyCurrencyId",
                     "existentialDeposit": "100",
-                    "transfersEnabled": true
-                }
-            },
-            {
-                "chainId": "0x9af9a64e6e4da8e3073901c3ff0cc4c3aad9563786d89daf6ad820b6e14a0b8b",
-                "name": "Kintsugi",
-                "assetId": 1,
-                "assetSymbol": "kBTC",
-                "type": "orml",
-                "typeExtras": {
-                    "currencyIdScale": "0x000b",
-                    "currencyIdType": "InterbtcPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": true
-                }
-            },
-            {
-                "chainId": "0x9af9a64e6e4da8e3073901c3ff0cc4c3aad9563786d89daf6ad820b6e14a0b8b",
-                "name": "Kintsugi",
-                "assetId": 9,
-                "assetSymbol": "qkBTC",
-                "type": "orml",
-                "typeExtras": {
-                    "currencyIdScale": "0x0201000000",
-                    "currencyIdType": "InterbtcPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": false
-                }
-            },
-            {
-                "chainId": "0xbf88efe70e9e0e916416e8bed61f2b45717f517d7f3523e33c7b001e5ffcbc72",
-                "name": "Interlay",
-                "assetId": 4,
-                "assetSymbol": "kBTC",
-                "type": "orml",
-                "typeExtras": {
-                    "currencyIdScale": "0x000b",
-                    "currencyIdType": "InterbtcPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
                     "transfersEnabled": true
                 }
             }
@@ -1202,13 +1033,6 @@
                     "existentialDeposit": "1000000000000000",
                     "transfersEnabled": true
                 }
-            },
-            {
-                "chainId": "0x401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
-                "name": "Moonriver",
-                "assetId": 0,
-                "assetSymbol": "MOVR",
-                "type": "native"
             },
             {
                 "chainId": "0x9f28c6a68e0fc9646eff64935684f6eeeece527e37bbe1f213d22caa1d9d6bed",
@@ -1642,69 +1466,6 @@
         ]
     },
     {
-        "name": "Kitsugi KSM",
-        "precision": 12,
-        "icon": {
-            "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/qKSM.svg",
-            "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/qKSM.svg"
-        },
-        "symbol": "qKSM",
-        "isTestToken": false,
-        "chains": [
-            {
-                "chainId": "0x9af9a64e6e4da8e3073901c3ff0cc4c3aad9563786d89daf6ad820b6e14a0b8b",
-                "name": "Kintsugi",
-                "assetId": 10,
-                "assetSymbol": "qKSM",
-                "type": "orml",
-                "typeExtras": {
-                    "currencyIdScale": "0x0202000000",
-                    "currencyIdType": "InterbtcPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": false
-                }
-            }
-        ]
-    },
-    {
-        "name": "USD Tether",
-        "precision": 6,
-        "icon": {
-            "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/qUSDT.svg",
-            "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/qUSDT.svg"
-        },
-        "symbol": "qUSDT",
-        "isTestToken": false,
-        "chains": [
-            {
-                "chainId": "0x9af9a64e6e4da8e3073901c3ff0cc4c3aad9563786d89daf6ad820b6e14a0b8b",
-                "name": "Kintsugi",
-                "assetId": 11,
-                "assetSymbol": "qUSDT",
-                "type": "orml",
-                "typeExtras": {
-                    "currencyIdScale": "0x0203000000",
-                    "currencyIdType": "InterbtcPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": false
-                }
-            },
-            {
-                "chainId": "0xbf88efe70e9e0e916416e8bed61f2b45717f517d7f3523e33c7b001e5ffcbc72",
-                "name": "Interlay",
-                "assetId": 12,
-                "assetSymbol": "qUSDT",
-                "type": "orml",
-                "typeExtras": {
-                    "currencyIdScale": "0x0203000000",
-                    "currencyIdType": "InterbtcPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": false
-                }
-            }
-        ]
-    },
-    {
         "name": "Tinkernet",
         "precision": 12,
         "icon": {
@@ -1818,19 +1579,6 @@
                 "typeExtras": {
                     "assetId": "18446744073709551618"
                 }
-            },
-            {
-                "chainId": "0xbf88efe70e9e0e916416e8bed61f2b45717f517d7f3523e33c7b001e5ffcbc72",
-                "name": "Interlay",
-                "assetId": 6,
-                "assetSymbol": "LDOT",
-                "type": "orml",
-                "typeExtras": {
-                    "currencyIdScale": "0x0101000000",
-                    "currencyIdType": "InterbtcPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": true
-                }
             }
         ]
     },
@@ -1893,13 +1641,6 @@
                     "existentialDeposit": "100000000000000000",
                     "transfersEnabled": true
                 }
-            },
-            {
-                "chainId": "0xfe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
-                "name": "Moonbeam",
-                "assetId": 0,
-                "assetSymbol": "GLMR",
-                "type": "native"
             },
             {
                 "chainId": "0x9eb76c5184c4ab8679d2d5d819fdf90b9c001403e9e17da2e14b6d8aec4029c6",
@@ -2073,19 +1814,6 @@
                     "existentialDeposit": "6164274209",
                     "transfersEnabled": true
                 }
-            },
-            {
-                "chainId": "0xbf88efe70e9e0e916416e8bed61f2b45717f517d7f3523e33c7b001e5ffcbc72",
-                "name": "Interlay",
-                "assetId": 0,
-                "assetSymbol": "INTR",
-                "type": "orml",
-                "typeExtras": {
-                    "currencyIdScale": "0x0002",
-                    "currencyIdType": "InterbtcPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": true
-                }
             }
         ]
     },
@@ -2232,32 +1960,6 @@
                     "currencyIdType": "u32",
                     "existentialDeposit": "36",
                     "transfersEnabled": true
-                }
-            },
-            {
-                "chainId": "0xbf88efe70e9e0e916416e8bed61f2b45717f517d7f3523e33c7b001e5ffcbc72",
-                "name": "Interlay",
-                "assetId": 1,
-                "assetSymbol": "iBTC",
-                "type": "orml",
-                "typeExtras": {
-                    "currencyIdScale": "0x0001",
-                    "currencyIdType": "InterbtcPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": true
-                }
-            },
-            {
-                "chainId": "0xbf88efe70e9e0e916416e8bed61f2b45717f517d7f3523e33c7b001e5ffcbc72",
-                "name": "Interlay",
-                "assetId": 11,
-                "assetSymbol": "qiBTC",
-                "type": "orml",
-                "typeExtras": {
-                    "currencyIdScale": "0x0201000000",
-                    "currencyIdType": "InterbtcPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": false
                 }
             }
         ]
@@ -3643,31 +3345,6 @@
                     "currencyIdType": "u32",
                     "existentialDeposit": "0",
                     "transfersEnabled": true
-                }
-            }
-        ]
-    },
-    {
-        "name": "Interlay DOT",
-        "precision": 10,
-        "icon": {
-            "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/qDOT.svg",
-            "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/qDOT.svg"
-        },
-        "symbol": "qDOT",
-        "isTestToken": false,
-        "chains": [
-            {
-                "chainId": "0xbf88efe70e9e0e916416e8bed61f2b45717f517d7f3523e33c7b001e5ffcbc72",
-                "name": "Interlay",
-                "assetId": 13,
-                "assetSymbol": "qDOT",
-                "type": "orml",
-                "typeExtras": {
-                    "currencyIdScale": "0x0202000000",
-                    "currencyIdType": "InterbtcPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": false
                 }
             }
         ]

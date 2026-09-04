@@ -12,22 +12,6 @@
         ],
         "nodes": [
             {
-                "url": "wss://rpc-polkadot-1.novasama-tech.org",
-                "name": "Novasama node"
-            },
-            {
-                "url": "wss://rpc-polkadot-2.novasama-tech.org",
-                "name": "Novasama node"
-            },
-            {
-                "url": "wss://rpc.ibp.network/polkadot",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://polkadot.dotters.network",
-                "name": "IBP2 node"
-            },
-            {
                 "url": "wss://apps-rpc.polkadot.io",
                 "name": "Public node"
             },
@@ -36,44 +20,24 @@
                 "name": "Stakeworld node"
             },
             {
-                "url": "wss://polkadot.public.curie.radiumblock.co/ws",
-                "name": "Radium node"
-            },
-            {
-                "url": "wss://1rpc.io/dot",
-                "name": "Automata 1RPC node"
-            },
-            {
                 "url": "wss://rpc-polkadot.luckyfriday.io",
                 "name": "LuckyFriday node"
-            },
-            {
-                "url": "wss://polkadot-rpc.publicnode.com",
-                "name": "Allnodes node"
             },
             {
                 "url": "wss://polkadot-rpc.n.dwellir.com",
                 "name": "Dwellir node"
             },
             {
+                "url": "wss://polkadot.gatotech.network",
+                "name": "Gatotech node"
+            },
+            {
+                "url": "wss://polkadot-rpc.publicnode.com",
+                "name": "Allnodes node"
+            },
+            {
                 "url": "wss://rpc-polkadot.helixstreet.io",
                 "name": "Helixstreet node"
-            },
-            {
-                "url": "wss://polkadot.ibp.network",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://polkadot.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
-                "url": "wss://rpc-polkadot.stakeworld.io",
-                "name": "Stakeworld node"
-            },
-            {
-                "url": "wss://polkadot.rpc.subquery.network/public/ws",
-                "name": "Subquery node"
             }
         ],
         "assets": [
@@ -148,22 +112,6 @@
         ],
         "nodes": [
             {
-                "url": "wss://rpc-kusama-1.novasama-tech.org",
-                "name": "Novasama node"
-            },
-            {
-                "url": "wss://rpc-kusama-2.novasama-tech.org",
-                "name": "Novasama node"
-            },
-            {
-                "url": "wss://rpc.ibp.network/kusama",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://kusama.dotters.network",
-                "name": "IBP2 node"
-            },
-            {
                 "url": "wss://apps-kusama-rpc.polkadot.io",
                 "name": "Public node"
             },
@@ -172,36 +120,20 @@
                 "name": "LuckyFriday node"
             },
             {
-                "url": "wss://1rpc.io/ksm",
-                "name": "Automata 1RPC node"
-            },
-            {
-                "url": "wss://kusama.public.curie.radiumblock.co/ws",
-                "name": "Radium node"
-            },
-            {
-                "url": "wss://kusama-rpc.publicnode.com",
-                "name": "Allnodes node"
-            },
-            {
                 "url": "wss://kusama-rpc.n.dwellir.com",
                 "name": "Dwellir node"
             },
             {
+                "url": "wss://kusama.gatotech.network",
+                "name": "Gatotech node"
+            },
+            {
+                "url": "wss://ksm-rpc.stakeworld.io",
+                "name": "Stakeworld node"
+            },
+            {
                 "url": "wss://rpc-kusama.helixstreet.io",
                 "name": "Helixstreet node"
-            },
-            {
-                "url": "wss://kusama.ibp.network",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://kusama.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
-                "url": "wss://rpc-kusama.stakeworld.io",
-                "name": "Stakeworld node"
             }
         ],
         "assets": [
@@ -278,22 +210,6 @@
             {
                 "url": "wss://westend-rpc.polkadot.io",
                 "name": "Parity node"
-            },
-            {
-                "url": "wss://westend.public.curie.radiumblock.co/ws",
-                "name": "RadiumBlock node"
-            },
-            {
-                "url": "wss://westend-rpc.n.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
-                "url": "wss://westend.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
-                "url": "wss://rpc.public.curie.radiumblock.xyz/ws-westend",
-                "name": "Radium node"
             }
         ],
         "assets": [
@@ -364,32 +280,8 @@
         ],
         "nodes": [
             {
-                "url": "wss://asset-hub-westend-rpc.dwellir.com",
-                "name": "Dwellir"
-            },
-            {
-                "url": "wss://westmint-rpc-tn.dwellir.com",
-                "name": "Dwellir Tunisia"
-            },
-            {
-                "url": "wss://sys.ibp.network/asset-hub-westend",
-                "name": "IBP1"
-            },
-            {
-                "url": "wss://asset-hub-westend.dotters.network",
-                "name": "IBP2"
-            },
-            {
                 "url": "wss://westend-asset-hub-rpc.polkadot.io",
                 "name": "Parity"
-            },
-            {
-                "url": "wss://asset-hub-westend.rpc.permanence.io",
-                "name": "Permanence DAO EU"
-            },
-            {
-                "url": "wss://asset-hub-westend-rpc.n.dwellir.com",
-                "name": "Dwellir node"
             }
         ],
         "assets": [
@@ -462,36 +354,20 @@
         ],
         "nodes": [
             {
-                "url": "wss://sys.ibp.network/statemine",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://asset-hub-kusama.dotters.network",
-                "name": "IBP2 node"
-            },
-            {
                 "url": "wss://asset-hub-kusama-rpc.n.dwellir.com",
                 "name": "Dwellir node"
             },
             {
-                "url": "wss://asset-hub-kusama.ibp.network",
-                "name": "IBP1 node"
-            },
-            {
                 "url": "wss://rpc-asset-hub-kusama.luckyfriday.io",
-                "name": "LuckyFriday node"
-            },
-            {
-                "url": "wss://assethub-kusama.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
+                "name": "Lucky Friday node"
             },
             {
                 "url": "wss://kusama-asset-hub-rpc.polkadot.io",
                 "name": "Parity node"
             },
             {
-                "url": "wss://statemine.public.curie.radiumblock.co/ws",
-                "name": "Radium node"
+                "url": "wss://asset-hub-kusama.rotko.net",
+                "name": "Rotko node"
             }
         ],
         "assets": [
@@ -676,32 +552,12 @@
                 "name": "Parity node"
             },
             {
-                "url": "wss://sys.ibp.network/people-polkadot",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://people-polkadot.dotters.network",
-                "name": "IBP2 node"
-            },
-            {
                 "url": "wss://rpc-people-polkadot.luckyfriday.io",
                 "name": "LuckyFriday node"
             },
             {
-                "url": "wss://people-polkadot.public.curie.radiumblock.co/ws",
-                "name": "Radium node"
-            },
-            {
-                "url": "wss://people-polkadot-rpc.n.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
-                "url": "wss://people-polkadot.ibp.network",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://people-polkadot.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
+                "url": "wss://people-polkadot.rotko.net",
+                "name": "Rotko node"
             }
         ],
         "assets": [
@@ -763,40 +619,12 @@
                 "name": "Parity node"
             },
             {
-                "url": "wss://sys.ibp.network/people-kusama",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://people-kusama.dotters.network",
-                "name": "IBP2 node"
-            },
-            {
                 "url": "wss://ksm-rpc.stakeworld.io/people",
                 "name": "Stakeworld node"
             },
             {
-                "url": "wss://people-kusama-rpc.n.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
-                "url": "wss://rpc-people-kusama.helixstreet.io",
-                "name": "Helixstreet node"
-            },
-            {
-                "url": "wss://people-kusama.ibp.network",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://rpc-people-kusama.luckyfriday.io",
-                "name": "LuckyFriday node"
-            },
-            {
-                "url": "wss://people-kusama.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
-                "url": "wss://people-kusama.public.curie.radiumblock.co/ws",
-                "name": "Radium node"
+                "url": "wss://people-kusama.rotko.net",
+                "name": "Rotko node"
             }
         ],
         "assets": [
@@ -1341,222 +1169,6 @@
         }
     },
     {
-        "name": "Moonbeam",
-        "specName": "polkadot",
-        "addressPrefix": 1284,
-        "chainId": "0xfe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d",
-        "parentId": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Moonbeam.svg",
-        "options": [
-            "multisig",
-            "ethereum_based",
-            "regular_proxy",
-            "pure_proxy"
-        ],
-        "nodes": [
-            {
-                "url": "wss://wss.api.moonbeam.network",
-                "name": "Moonbeam Foundation node"
-            },
-            {
-                "url": "wss://moonbeam.ibp.network",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://moonbeam.dotters.network",
-                "name": "IBP2 node"
-            },
-            {
-                "url": "wss://moonbeam.public.curie.radiumblock.co/ws",
-                "name": "RadiumBlock node"
-            },
-            {
-                "url": "wss://moonbeam-rpc.publicnode.com",
-                "name": "Allnodes node"
-            },
-            {
-                "url": "wss://moonbeam-rpc.n.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
-                "url": "wss://moonbeam.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
-                "url": "wss://moonbeam.unitedbloc.com",
-                "name": "UnitedBloc node"
-            }
-        ],
-        "assets": [
-            {
-                "name": "Moonbeam",
-                "assetId": 0,
-                "symbol": "GLMR",
-                "precision": 18,
-                "type": "native",
-                "priceId": "moonbeam",
-                "icon": {
-                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/GLMR.svg",
-                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/GLMR.svg"
-                }
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://moonbeam.subscan.io/extrinsic/{hash}",
-                "account": "https://moonbeam.subscan.io/account/{address}",
-                "multisig": "https://moonbeam.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
-            },
-            {
-                "name": "Moonscan",
-                "extrinsic": "https://moonbeam.moonscan.io/tx/{hash}",
-                "account": "https://moonbeam.moonscan.io/address/{address}"
-            }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-history-moonbeam-v2-prod.novasama-tech.org"
-                },
-                {
-                    "type": "etherscan",
-                    "url": "https://api-moonbeam.moonscan.io/api",
-                    "parameters": {
-                        "assetType": "evm"
-                    }
-                }
-            ],
-            "staking": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-history-moonbeam-v2-prod.novasama-tech.org"
-                }
-            ],
-            "governance-delegations": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-governance-moonbeam-prod.novasama-tech.org"
-                }
-            ],
-            "proxy": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-accounts-prod.novasama-tech.org"
-                }
-            ]
-        },
-        "additional": {
-            "supportsGenericLedgerApp": true,
-            "defaultBlockTime": 6000
-        }
-    },
-    {
-        "name": "Moonriver",
-        "specName": "kusama",
-        "addressPrefix": 1285,
-        "chainId": "0x401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b",
-        "parentId": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Moonriver.svg",
-        "options": [
-            "multisig",
-            "ethereum_based",
-            "regular_proxy",
-            "pure_proxy"
-        ],
-        "nodes": [
-            {
-                "url": "wss://wss.api.moonriver.moonbeam.network",
-                "name": "Moonbeam Foundation node"
-            },
-            {
-                "url": "wss://moonriver-rpc.publicnode.com",
-                "name": "Allnodes node"
-            },
-            {
-                "url": "wss://moonriver.public.curie.radiumblock.co/ws",
-                "name": "RadiumBlock node"
-            },
-            {
-                "url": "wss://moonriver-rpc.n.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
-                "url": "wss://moonriver.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
-                "url": "wss://moonriver.unitedbloc.com",
-                "name": "UnitedBloc node"
-            }
-        ],
-        "assets": [
-            {
-                "name": "Moonriver",
-                "assetId": 0,
-                "symbol": "MOVR",
-                "precision": 18,
-                "type": "native",
-                "priceId": "moonriver",
-                "icon": {
-                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/MOVR.svg",
-                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/MOVR.svg"
-                }
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://moonriver.subscan.io/extrinsic/{hash}",
-                "account": "https://moonriver.subscan.io/account/{address}",
-                "multisig": "https://moonriver.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
-            },
-            {
-                "name": "Moonscan",
-                "extrinsic": "https://moonriver.moonscan.io/tx/{hash}",
-                "account": "https://moonriver.moonscan.io/address/{address}"
-            }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-history-moonriver-prod.novasama-tech.org"
-                },
-                {
-                    "type": "etherscan",
-                    "url": "https://api-moonriver.moonscan.io/api",
-                    "parameters": {
-                        "assetType": "evm"
-                    }
-                }
-            ],
-            "staking": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-history-moonriver-prod.novasama-tech.org"
-                }
-            ],
-            "governance-delegations": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-governance-moonriver-prod.novasama-tech.org"
-                }
-            ],
-            "proxy": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-accounts-prod.novasama-tech.org"
-                }
-            ]
-        },
-        "additional": {
-            "supportsGenericLedgerApp": true,
-            "defaultBlockTime": 6000
-        }
-    },
-    {
         "name": "Bifrost Kusama",
         "specName": "kusama",
         "addressPrefix": 0,
@@ -1986,10 +1598,6 @@
             {
                 "url": "wss://acala-rpc-3.aca-api.network/ws",
                 "name": "Acala Foundation 3 node"
-            },
-            {
-                "url": "wss://acala-rpc.n.dwellir.com",
-                "name": "Dwellir node"
             }
         ],
         "assets": [
@@ -2317,14 +1925,6 @@
             {
                 "url": "wss://astar-rpc.n.dwellir.com",
                 "name": "Dwellir node"
-            },
-            {
-                "url": "wss://astar.public.curie.radiumblock.co/ws",
-                "name": "RadiumBlock node"
-            },
-            {
-                "url": "wss://astar.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
             }
         ],
         "assets": [
@@ -2577,32 +2177,20 @@
                 "name": "Dwellir node"
             },
             {
-                "url": "wss://sys.ibp.network/asset-hub-polkadot",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://asset-hub-polkadot.dotters.network",
-                "name": "IBP2 node"
-            },
-            {
-                "url": "wss://asset-hub-polkadot.ibp.network",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://rpc-asset-hub-polkadot.luckyfriday.io",
-                "name": "LuckyFriday node"
-            },
-            {
-                "url": "wss://statemint.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
+                "url": "wss://asset-hub-polkadot.rotko.net",
+                "name": "Rotko node"
             },
             {
                 "url": "wss://polkadot-asset-hub-rpc.polkadot.io",
                 "name": "Parity node"
             },
             {
-                "url": "wss://statemint.public.curie.radiumblock.co/ws",
-                "name": "Radium node"
+                "url": "wss://rpc-asset-hub-polkadot.stakeworld.io",
+                "name": "Stakeworld node"
+            },
+            {
+                "url": "wss://rpc-asset-hub-polkadot.luckyfriday.io",
+                "name": "LuckyFriday node"
             }
         ],
         "assets": [
@@ -2914,202 +2502,6 @@
         }
     },
     {
-        "name": "Kintsugi",
-        "specName": "kusama",
-        "addressPrefix": 2092,
-        "chainId": "0x9af9a64e6e4da8e3073901c3ff0cc4c3aad9563786d89daf6ad820b6e14a0b8b",
-        "parentId": "0xb0a8d493285c2df73290dfb7e61f870f17b41801197a149ca93654499ea3dafe",
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Kintsugi.svg",
-        "options": [],
-        "nodes": [
-            {
-                "url": "wss://api-kusama.interlay.io/parachain",
-                "name": "Kintsugi Labs node"
-            },
-            {
-                "url": "wss://kintsugi.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            }
-        ],
-        "assets": [
-            {
-                "name": "Kintsugi",
-                "assetId": 0,
-                "symbol": "KINT",
-                "precision": 12,
-                "type": "orml",
-                "priceId": "kintsugi",
-                "icon": {
-                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/KINT.svg",
-                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/KINT.svg"
-                },
-                "typeExtras": {
-                    "currencyIdScale": "0x000c",
-                    "currencyIdType": "InterbtcPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": true
-                }
-            },
-            {
-                "name": "KINT Bitcoin",
-                "assetId": 1,
-                "symbol": "kBTC",
-                "precision": 8,
-                "type": "orml",
-                "priceId": "bitcoin",
-                "icon": {
-                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/kBTC.svg",
-                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/kBTC.svg"
-                },
-                "typeExtras": {
-                    "currencyIdScale": "0x000b",
-                    "currencyIdType": "InterbtcPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": true
-                }
-            },
-            {
-                "name": "Kusama",
-                "assetId": 2,
-                "symbol": "KSM",
-                "precision": 12,
-                "type": "orml",
-                "priceId": "kusama",
-                "icon": {
-                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/KSM.svg",
-                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/KSM.svg"
-                },
-                "typeExtras": {
-                    "currencyIdScale": "0x000a",
-                    "currencyIdType": "InterbtcPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": true
-                }
-            },
-            {
-                "name": "Liquid KSM",
-                "assetId": 3,
-                "symbol": "LKSM",
-                "precision": 12,
-                "type": "orml",
-                "priceId": "liquid-ksm",
-                "icon": {
-                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/LKSM.svg",
-                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/LKSM.svg"
-                },
-                "typeExtras": {
-                    "currencyIdScale": "0x0102000000",
-                    "currencyIdType": "InterbtcPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": true
-                }
-            },
-            {
-                "name": "USD Tether",
-                "assetId": 4,
-                "symbol": "USDT",
-                "precision": 6,
-                "type": "orml",
-                "priceId": "tether",
-                "icon": {
-                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/USDT.svg",
-                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/USDT.svg"
-                },
-                "typeExtras": {
-                    "currencyIdScale": "0x0103000000",
-                    "currencyIdType": "InterbtcPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": true
-                }
-            },
-            {
-                "name": "Acala SEED",
-                "assetId": 5,
-                "symbol": "aSEEDk",
-                "precision": 12,
-                "type": "orml",
-                "priceId": "ausd-seed-karura",
-                "icon": {
-                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/aSEEDk.svg",
-                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/aSEEDk.svg"
-                },
-                "typeExtras": {
-                    "currencyIdScale": "0x0101000000",
-                    "currencyIdType": "InterbtcPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": true
-                }
-            },
-            {
-                "name": "Kitsugi BTC",
-                "assetId": 9,
-                "symbol": "qkBTC",
-                "precision": 8,
-                "type": "orml",
-                "icon": {
-                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/qkBTC.svg",
-                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/qkBTC.svg"
-                },
-                "typeExtras": {
-                    "currencyIdScale": "0x0201000000",
-                    "currencyIdType": "InterbtcPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": false
-                }
-            },
-            {
-                "name": "Kitsugi KSM",
-                "assetId": 10,
-                "symbol": "qKSM",
-                "precision": 12,
-                "type": "orml",
-                "icon": {
-                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/qKSM.svg",
-                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/qKSM.svg"
-                },
-                "typeExtras": {
-                    "currencyIdScale": "0x0202000000",
-                    "currencyIdType": "InterbtcPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": false
-                }
-            },
-            {
-                "name": "USD Tether",
-                "assetId": 11,
-                "symbol": "qUSDT",
-                "precision": 6,
-                "type": "orml",
-                "icon": {
-                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/qUSDT.svg",
-                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/qUSDT.svg"
-                },
-                "typeExtras": {
-                    "currencyIdScale": "0x0203000000",
-                    "currencyIdType": "InterbtcPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": false
-                }
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Subscan",
-                "extrinsic": "https://kintsugi.subscan.io/extrinsic/{hash}",
-                "account": "https://kintsugi.subscan.io/account/{address}",
-                "multisig": "https://kintsugi.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
-            }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-history-kintsugi-prod.novasama-tech.org"
-                }
-            ]
-        }
-    },
-    {
         "name": "Centrifuge Parachain",
         "specName": "polkadot",
         "addressPrefix": 36,
@@ -3125,10 +2517,6 @@
             {
                 "url": "wss://rpc-centrifuge.luckyfriday.io",
                 "name": "LuckyFriday node"
-            },
-            {
-                "url": "wss://centrifuge-parachain.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
             }
         ],
         "assets": [
@@ -3177,28 +2565,28 @@
         ],
         "nodes": [
             {
-                "url": "wss://rpc-hydra.novasama-tech.org",
-                "name": "Novasama node"
-            },
-            {
-                "url": "wss://rpc.hydradx.cloud",
-                "name": "Galactic Council node"
-            },
-            {
-                "url": "wss://hydration.ibp.network",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://hydration.dotters.network",
-                "name": "IBP2 node"
-            },
-            {
                 "url": "wss://hydration-rpc.n.dwellir.com",
                 "name": "Dwellir node"
             },
             {
-                "url": "wss://rpc.helikon.io/hydradx",
-                "name": "Helikon node"
+                "url": "wss://hydration-rpc.neckwork.net",
+                "name": "Neckwork node"
+            },
+            {
+                "url": "wss://node-sparrow-1.sparrow.shadow-senate.com",
+                "name": "Sparrow node"
+            },
+            {
+                "url": "wss://hdx.tarn.hydration.cloud",
+                "name": "Tarn node"
+            },
+            {
+                "url": "wss://hydration.rotko.net",
+                "name": "Rotko node"
+            },
+            {
+                "url": "wss://rpc.hydradx.cloud",
+                "name": "Galactic Council node"
             }
         ],
         "assets": [
@@ -4121,10 +3509,10 @@
         ],
         "explorers": [
             {
-                "name": "Subscan",
-                "extrinsic": "https://hydradx.subscan.io/extrinsic/{hash}",
-                "account": "https://hydradx.subscan.io/account/{address}",
-                "multisig": "https://hydradx.subscan.io/multisig_extrinsic/{index}?call_hash={callHash}"
+                "name": "Neckwork",
+                "extrinsic": "https://hydration-explorer.neckwork.net/extrinsic/{hash}",
+                "account": "https://hydration-explorer.neckwork.net/account/{address}",
+                "event": "https://hydration-explorer.neckwork.net/event/{event}"
             }
         ],
         "externalApi": {
@@ -4147,238 +3535,6 @@
         }
     },
     {
-        "name": "Interlay",
-        "specName": "polkadot",
-        "addressPrefix": 2032,
-        "chainId": "0xbf88efe70e9e0e916416e8bed61f2b45717f517d7f3523e33c7b001e5ffcbc72",
-        "parentId": "0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3",
-        "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Interlay.svg",
-        "options": [],
-        "nodes": [
-            {
-                "url": "wss://api.interlay.io/parachain",
-                "name": "Kintsugi Labs node"
-            },
-            {
-                "url": "wss://rpc-interlay.luckyfriday.io/",
-                "name": "LuckyFriday node"
-            }
-        ],
-        "assets": [
-            {
-                "name": "Interlay",
-                "assetId": 0,
-                "symbol": "INTR",
-                "precision": 10,
-                "type": "orml",
-                "priceId": "interlay",
-                "icon": {
-                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/INTR.svg",
-                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/INTR.svg"
-                },
-                "typeExtras": {
-                    "currencyIdScale": "0x0002",
-                    "currencyIdType": "InterbtcPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": true
-                }
-            },
-            {
-                "name": "Interlay Bitcoin",
-                "assetId": 1,
-                "symbol": "iBTC",
-                "precision": 8,
-                "type": "orml",
-                "priceId": "bitcoin",
-                "icon": {
-                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/iBTC.svg",
-                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/iBTC.svg"
-                },
-                "typeExtras": {
-                    "currencyIdScale": "0x0001",
-                    "currencyIdType": "InterbtcPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": true
-                }
-            },
-            {
-                "name": "Polkadot",
-                "assetId": 2,
-                "symbol": "DOT",
-                "precision": 10,
-                "type": "orml",
-                "priceId": "polkadot",
-                "icon": {
-                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/DOT.svg",
-                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/DOT.svg"
-                },
-                "typeExtras": {
-                    "currencyIdScale": "0x0000",
-                    "currencyIdType": "InterbtcPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": true
-                }
-            },
-            {
-                "name": "Kintsugi",
-                "assetId": 3,
-                "symbol": "KINT",
-                "precision": 12,
-                "type": "orml",
-                "priceId": "kintsugi",
-                "icon": {
-                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/KINT.svg",
-                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/KINT.svg"
-                },
-                "typeExtras": {
-                    "currencyIdScale": "0x000c",
-                    "currencyIdType": "InterbtcPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": true
-                }
-            },
-            {
-                "name": "KINT Bitcoin",
-                "assetId": 4,
-                "symbol": "kBTC",
-                "precision": 8,
-                "type": "orml",
-                "priceId": "bitcoin",
-                "icon": {
-                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/kBTC.svg",
-                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/kBTC.svg"
-                },
-                "typeExtras": {
-                    "currencyIdScale": "0x000b",
-                    "currencyIdType": "InterbtcPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": true
-                }
-            },
-            {
-                "name": "Kusama",
-                "assetId": 5,
-                "symbol": "KSM",
-                "precision": 12,
-                "type": "orml",
-                "priceId": "kusama",
-                "icon": {
-                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/KSM.svg",
-                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/KSM.svg"
-                },
-                "typeExtras": {
-                    "currencyIdScale": "0x000a",
-                    "currencyIdType": "InterbtcPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": true
-                }
-            },
-            {
-                "name": "Liquid DOT",
-                "assetId": 6,
-                "symbol": "LDOT",
-                "precision": 10,
-                "type": "orml",
-                "priceId": "liquid-staking-dot",
-                "icon": {
-                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/LDOT.svg",
-                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/LDOT.svg"
-                },
-                "typeExtras": {
-                    "currencyIdScale": "0x0101000000",
-                    "currencyIdType": "InterbtcPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": true
-                }
-            },
-            {
-                "name": "USD Tether",
-                "assetId": 7,
-                "symbol": "USDT",
-                "precision": 6,
-                "type": "orml",
-                "priceId": "tether",
-                "icon": {
-                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/USDT.svg",
-                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/USDT.svg"
-                },
-                "typeExtras": {
-                    "currencyIdScale": "0x0102000000",
-                    "currencyIdType": "InterbtcPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": true
-                }
-            },
-            {
-                "name": "Interlay BTC",
-                "assetId": 11,
-                "symbol": "qiBTC",
-                "precision": 8,
-                "type": "orml",
-                "icon": {
-                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/qiBTC.svg",
-                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/qiBTC.svg"
-                },
-                "typeExtras": {
-                    "currencyIdScale": "0x0201000000",
-                    "currencyIdType": "InterbtcPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": false
-                }
-            },
-            {
-                "name": "USD Tether",
-                "assetId": 12,
-                "symbol": "qUSDT",
-                "precision": 6,
-                "type": "orml",
-                "icon": {
-                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/qUSDT.svg",
-                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/qUSDT.svg"
-                },
-                "typeExtras": {
-                    "currencyIdScale": "0x0203000000",
-                    "currencyIdType": "InterbtcPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": false
-                }
-            },
-            {
-                "name": "Interlay DOT",
-                "assetId": 13,
-                "symbol": "qDOT",
-                "precision": 10,
-                "type": "orml",
-                "icon": {
-                    "monochrome": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/monochrome/qDOT.svg",
-                    "colored": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v2/assets/colored/qDOT.svg"
-                },
-                "typeExtras": {
-                    "currencyIdScale": "0x0202000000",
-                    "currencyIdType": "InterbtcPrimitivesCurrencyId",
-                    "existentialDeposit": "0",
-                    "transfersEnabled": false
-                }
-            }
-        ],
-        "explorers": [
-            {
-                "name": "Statescan",
-                "account": "https://interlay.statescan.io/#/accounts/{address}",
-                "event": "https://interlay.statescan.io/#/events/{event}",
-                "extrinsic": "https://interlay.statescan.io/#/extrinsics/{hash}"
-            }
-        ],
-        "externalApi": {
-            "history": [
-                {
-                    "type": "subquery",
-                    "url": "https://subquery-history-interlay-prod.novasama-tech.org"
-                }
-            ]
-        }
-    },
-    {
         "name": "Bifrost Polkadot",
         "specName": "polkadot",
         "addressPrefix": 0,
@@ -4388,18 +3544,6 @@
         "icon": "https://raw.githubusercontent.com/novasamatech/nova-spektr-utils/main/icons/v1/chains/Bifrost_Polkadot.svg",
         "options": [],
         "nodes": [
-            {
-                "url": "wss://bifrost-polkadot.ibp.network",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://bifrost-polkadot.dotters.network",
-                "name": "IBP2 node"
-            },
-            {
-                "url": "wss://hk.p.bifrost-rpc.liebi.com/ws",
-                "name": "Liebi node"
-            },
             {
                 "url": "wss://eu.bifrost-polkadot-rpc.liebi.com/ws",
                 "name": "LiebiEU node"
@@ -4667,10 +3811,6 @@
             {
                 "url": "wss://heima-rpc.n.dwellir.com",
                 "name": "Dwellir node"
-            },
-            {
-                "url": "wss://rpc.heima-parachain.heima.network",
-                "name": "Heima node"
             }
         ],
         "assets": [
@@ -4973,8 +4113,9 @@
         ],
         "explorers": [
             {
-                "name": "SCAN",
-                "account": "https://bittensor.com/scan/address/{address}"
+                "name": "TaoApp",
+                "account": "https://tao.app/account/{address}",
+                "extrinsic": "https://tao.app/tx/{hash}"
             }
         ],
         "externalApi": {
@@ -5063,40 +4204,12 @@
         "options": [],
         "nodes": [
             {
-                "url": "wss://sys.ibp.network/bridgehub-polkadot",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://bridge-hub-polkadot.dotters.network",
-                "name": "IBP2 node"
-            },
-            {
                 "url": "wss://dot-rpc.stakeworld.io/bridgehub",
                 "name": "Stakeworld node"
             },
             {
-                "url": "wss://bridge-hub-polkadot-rpc.n.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
-                "url": "wss://bridge-hub-polkadot.ibp.network",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://rpc-bridge-hub-polkadot.luckyfriday.io",
-                "name": "LuckyFriday node"
-            },
-            {
-                "url": "wss://bridgehub-polkadot.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
-                "url": "wss://polkadot-bridge-hub-rpc.polkadot.io",
-                "name": "Parity node"
-            },
-            {
-                "url": "wss://bridgehub-polkadot.public.curie.radiumblock.co/ws",
-                "name": "Radium node"
+                "url": "wss://bridge-hub-polkadot.rotko.net",
+                "name": "Rotko node"
             }
         ],
         "assets": [
@@ -5149,40 +4262,12 @@
         "options": [],
         "nodes": [
             {
-                "url": "wss://sys.ibp.network/bridgehub-kusama",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://bridge-hub-kusama.dotters.network",
-                "name": "IBP2 node"
-            },
-            {
                 "url": "wss://ksm-rpc.stakeworld.io/bridgehub",
                 "name": "Stakeworld node"
             },
             {
-                "url": "wss://bridge-hub-kusama-rpc.n.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
-                "url": "wss://bridge-hub-kusama.ibp.network",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://rpc-bridge-hub-kusama.luckyfriday.io",
-                "name": "LuckyFriday node"
-            },
-            {
-                "url": "wss://bridgehub-kusama.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
-                "url": "wss://kusama-bridge-hub-rpc.polkadot.io",
-                "name": "Parity node"
-            },
-            {
-                "url": "wss://bridgehub-kusama.public.curie.radiumblock.co/ws",
-                "name": "Radium node"
+                "url": "wss://bridge-hub-kusama.rotko.net",
+                "name": "Rotko node"
             }
         ],
         "assets": [
@@ -5239,40 +4324,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://sys.ibp.network/collectives-polkadot",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://collectives-polkadot.dotters.network",
-                "name": "IBP2 node"
-            },
-            {
-                "url": "wss://collectives.public.curie.radiumblock.co/ws",
-                "name": "Radium node"
-            },
-            {
                 "url": "wss://dot-rpc.stakeworld.io/collectives",
                 "name": "Stakeworld node"
             },
             {
-                "url": "wss://collectives-polkadot-rpc.n.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
-                "url": "wss://collectives-polkadot.ibp.network",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://rpc-collectives-polkadot.luckyfriday.io",
-                "name": "LuckyFriday node"
-            },
-            {
-                "url": "wss://collectives.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
-                "url": "wss://polkadot-collectives-rpc.polkadot.io",
-                "name": "Parity node"
+                "url": "wss://collectives-polkadot.rotko.net",
+                "name": "Rotko node"
             }
         ],
         "assets": [
@@ -5344,7 +4401,7 @@
         "nodes": [
             {
                 "url": "wss://mythos-rpc.dmarket.com",
-                "name": "Parity node"
+                "name": "DMarket node"
             }
         ],
         "assets": [
@@ -5409,10 +4466,6 @@
             {
                 "url": "wss://avail.api.onfinality.io/public-ws",
                 "name": "Avail primary node"
-            },
-            {
-                "url": "wss://mainnet.avail-rpc.com/",
-                "name": "Avail secondary node"
             }
         ],
         "assets": [
@@ -5472,14 +4525,6 @@
         ],
         "nodes": [
             {
-                "url": "wss://sys.ibp.network/coretime-polkadot",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://coretime-polkadot.dotters.network",
-                "name": "IBP2 node"
-            },
-            {
                 "url": "wss://rpc-coretime-polkadot.luckyfriday.io",
                 "name": "LuckyFriday node"
             },
@@ -5488,20 +4533,8 @@
                 "name": "Parity node"
             },
             {
-                "url": "wss://coretime-polkadot-rpc.n.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
-                "url": "wss://coretime-polkadot.ibp.network",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://coretime-polkadot.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
-            },
-            {
-                "url": "wss://coretime-polkadot.public.curie.radiumblock.co/ws",
-                "name": "Radium node"
+                "url": "wss://coretime-polkadot.rotko.net",
+                "name": "Rotko node"
             }
         ],
         "assets": [
@@ -5559,14 +4592,6 @@
         ],
         "nodes": [
             {
-                "url": "wss://sys.ibp.network/coretime-kusama",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://coretime-kusama.dotters.network",
-                "name": "IBP2 node"
-            },
-            {
                 "url": "wss://rpc-coretime-kusama.luckyfriday.io",
                 "name": "LuckyFriday node"
             },
@@ -5579,16 +4604,8 @@
                 "name": "Stakeworld node"
             },
             {
-                "url": "wss://coretime-kusama-rpc.n.dwellir.com",
-                "name": "Dwellir node"
-            },
-            {
-                "url": "wss://coretime-kusama.ibp.network",
-                "name": "IBP1 node"
-            },
-            {
-                "url": "wss://coretime-kusama.api.onfinality.io/public-ws",
-                "name": "OnFinality node"
+                "url": "wss://coretime-kusama.rotko.net",
+                "name": "Rotko node"
             }
         ],
         "assets": [
