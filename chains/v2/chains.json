@@ -32,12 +32,12 @@
                 "name": "Gatotech node"
             },
             {
-                "url": "wss://polkadot-rpc.publicnode.com",
-                "name": "Allnodes node"
-            },
-            {
                 "url": "wss://rpc-polkadot.helixstreet.io",
                 "name": "Helixstreet node"
+            },
+            {
+                "url": "wss://polkadot-rpc.publicnode.com",
+                "name": "Allnodes node"
             }
         ],
         "assets": [
@@ -4085,12 +4085,12 @@
         ],
         "nodes": [
             {
-                "url": "wss://lite.sub.latent.to:443",
-                "name": "Latent Holdings (Lite) node"
-            },
-            {
                 "url": "wss://bittensor-finney.api.onfinality.io/public-ws",
                 "name": "OnFinality (Archive) node"
+            },
+            {
+                "url": "wss://lite.sub.latent.to:443",
+                "name": "Latent Holdings (Lite) node"
             },
             {
                 "url": "wss://entrypoint-finney.opentensor.ai:443",
